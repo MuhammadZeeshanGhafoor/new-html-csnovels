@@ -1,0 +1,32 @@
+# netlify.toml
+
+[build]
+  # Directory where the build output is located (for static site generators)
+  publish = "public"
+
+  # Directory containing Netlify serverless functions
+  functions = "netlify/functions"
+
+[functions]
+  # Specifies runtime version for serverless functions
+  # For Node.js, you can specify a specific version
+  node_bundler = "esbuild"  # or "zisi"
+  included_files = ["path/to/additional/files/**"]  # Include additional files required by functions
+
+[build.environment]
+  # Define environment variables used during build
+  NODE_VERSION = "18"  # Specify the Node.js version
+  # Any other build-related environment variables
+
+[[redirects]]
+  # Redirect rules if needed
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
+
+[[headers]]
+  # Custom headers for security or other purposes
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"

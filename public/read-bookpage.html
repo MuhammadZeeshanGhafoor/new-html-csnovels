@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="./output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+<!-- <link rel="stylesheet" href="./styles.css" ></link> -->
+<link rel="shortcut icon" href="./assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<title>Document</title>
+<style>
+    #closeIcon {
+        /* display: none; */
+    }
+</style>
+</head>
+
+<body class=" w-full flex flex-col items-center font-montessart">
+    <!-- Top NavBar -->
+    <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+        <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+            <img src="./assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+            <div class="w-7/12">
+                <input type="text"
+                    class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                    placeholder="Search..." />
+                <img src="./assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+            </div>
+            <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                <p class=" text-3xl">
+                    Z
+                </p>
+            </div>
+        </div>
+        <ul class="w-full flex justify-between p-1 overflow-hidden">
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                id="navbar">Category</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+        </ul>
+    </div>
+
+
+
+    <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
+        <img src="./assets/Images/CSnovel.png" alt="" class="h-12 w-16">
+        <b id="bookname">
+        </b>
+    </div>
+
+    <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
+        <div class="md:w-3/4 mx-auto bg-white">
+            <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
+                <div class="border border-gray-200 " id="cover-img">
+                    <img src="./assets/Images/1676487363451the-invisible-rich-man.jpg" alt=""
+                        class="md:w-52 md:h-72 p-1" id="cover-img">
+                </div>
+                <b id="bookname">
+
+                </b>
+                <p>
+                    © CSNovels
+                </p>
+
+            </div>
+            <div class="relative">
+                <img src="./assets/Images/1676487363451the-invisible-rich-man.jpg"
+                    class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
+                    alt="Your Image" id="cover-img">
+                <hr class="bg-black md:px-16 px-2">
+            </div>
+            <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
+            <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
+                <b class="md:text-xl">
+                    Chapter 1 Prologue
+                </b>
+                <img src="./assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
+            </div>
+            <div class="md:px-16 px-6">
+                <p id="chaptercontent">
+                </p>
+                <div id="chapters">
+                </div>
+            </div>
+            <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
+                <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center ">
+                    <i class="fa-solid fa-arrow-left text-white "></i>
+                </div>
+                <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center ">
+                    <i class="fa-solid fa-arrow-right text-white "></i>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
+            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
+            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
+                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
+                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
+                        <b>
+                            Table of Contents
+                        </b>
+                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
+                    </div>
+                    <p class="text-[#83848F] my-2 pl-3">
+                        Volume 1
+                    </p>
+                </div>
+                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
+                    <hr>
+                    <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">Dropdown Item 1</a>
+                    <hr>
+                    <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">Dropdown Item 2</a>
+                    <hr>
+                    <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">Dropdown Item 3</a>
+                    <hr>
+                    <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">Dropdown Item 1</a>
+                    <hr>
+                    <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">Dropdown Item 2</a>
+                    <hr>
+                    <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200">Dropdown Item 3</a>
+                    <hr>
+                </div>
+                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
+                    id="index-pagination">
+                    <p>
+                        1-600
+                    </p>
+
+                </div>
+            </div>
+            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
+            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
+                id="closeIcon">
+                <div class=" w-96  p-2 rounded-t-xl">
+                    <div class="flex justify-end ">
+                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+                    </div>
+                    <b class="text-lg px-6 py-3 font-bold">
+                        Display Options
+                    </b>
+                    <p class="px-6 py-2 font-bold">
+                        Background
+                    </p>
+                    <div class="flex space-x-3 px-6 cursor-pointer">
+                        <div class="bg-white h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+
+                        </div>
+                    </div>
+                    <p class="px-6 py-2 font-bold">
+                        Font
+                    </p>
+                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Nunito Sans
+                            </p>
+                        </div>
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Merriweather
+                            </p>
+                        </div>
+                    </div>
+                    <p class="px-6 py-2">
+                        Size
+                    </p>
+                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
+                        <p class="cursor-pointer">
+                            A+
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        </p>
+
+                        <p>
+                            14
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        <p class="cursor-pointer">
+                            A-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./readBookPage.js"></script> 
+</body>
+
+</html>
