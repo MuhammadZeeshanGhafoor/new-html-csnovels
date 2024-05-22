@@ -1,43 +1,8 @@
+let splittedUrl = window.location.href.split("/")
+let slug = splittedUrl[splittedUrl.length - 2]
+console.log("WORKING STATIC SCRIPT", slug)
 
-let url = window.location.search
-console.log("!!!!!!!!CHAPTER READ", url)
-let currLocation = window.location.href
-const searchParm = new URLSearchParams(url)
-let newSlug = searchParm.get("slug")
-console.log("NEW___SLUG", window.location.href, window.location.href.includes("?"))
 
-const newUrl = window.location.search;
-const regex = /[\?&]slug=([^&#]+)/;
-const match = newUrl.match(regex);
-const slug = match && match[1];
-console.log("SLUUUGGG", slug)
-
-console.log("SLJUGGGGG", slug); // Output: "the-first-heir"
-
-const getChapterContent = async () => {
-    const url = 'http://localhost:8888/.netlify/functions/getsinglechapter';
-    const requestBody = {
-        slug: slug,
-        chapternumber: "1"
-    };
-
-    const options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json' // Specify the content type as JSON
-        },
-        body: JSON.stringify(requestBody) // Convert the request body to JSON
-    };
-
-    const response = await fetch(url, options)
-    let result = await response.json()
-    let name = document.getElementById('bookname');
-    name.innerText = result?.bookname
-    const chapterContentParagraph = document.getElementById('chaptercontent');
-    chapterContentParagraph.innerText = result.chaptercontent;
-
-}
-getChapterContent()
 let indexes
 const getIndexes = async () => {
     try {
@@ -69,7 +34,7 @@ function indexPagination(id) {
 
     filteredIndexes.forEach((item) => {
         indexDiv += `<hr>
-                    <a href="#" class="block px-4 py-3 text-gray-800 hover:bg-gray-200" >Chapter Number ${item.chapternumber}</a>`
+                    <p  class="block px-4 py-3 text-gray-800 hover:bg-gray-200" onclick="openNewPage('${item.chapternumber}')" >Chapter Number ${item.chapternumber}</p>`
     })
     document.getElementById("indexes").innerHTML = indexDiv
     console.log("INDEX", selectedPage)
@@ -77,7 +42,7 @@ function indexPagination(id) {
 
 async function getCurrentBook() {
     try {
-        const data = await fetch("../.netlify/functions/getSingleBook?slug=no-1-supreme-warrior")
+        const data = await fetch(`../.netlify/functions/getSingleBook?slug=${slug}`)
         let result = await data.json()
         let response = result?.book
         document.getElementById("cover-img").src = response?.coverimage
@@ -89,9 +54,9 @@ async function getCurrentBook() {
 }
 getCurrentBook()
 
-console.log("slugs", slug);
-document.getElementById("cover-img").src = url.slice(1, url.length)
-document.getElementById("cover-img2").src = url.slice(1, url.length)
+// console.log("slugs", slug);
+// document.getElementById("cover-img").src = url.slice(1, url.length)
+// document.getElementById("cover-img2").src = url.slice(1, url.length)
 // console.log(url.slice(1, url.length))
 function toggleDropdown(id) {
     let contentIndex = document.getElementById("myDropdown")
@@ -111,4 +76,15 @@ function toggleDropdown(id) {
 function handleClose(id) {
     let dropdown = document.getElementById(id);
     dropdown.classList.toggle("hidden");
+}
+
+
+function openNewPage(chNumber) {
+    console.log("NEXT CHAPTER")
+    if (chNumber > 20) {
+        window.location.href = `/read-bookpage?slug=${slug}&chapter=${chNumber}`
+
+    } else {
+        window.location.href = `chapter-${chNumber}`
+    }
 }
