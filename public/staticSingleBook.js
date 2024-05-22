@@ -36,8 +36,83 @@ async function getReviews() {
     })
     reviewDiv.innerHTML = newDiv
 }
+
+
 getReviews()
 
-function getIndexes(slug) {
-    console.log("INDEXXXEEESSS", slug)
+async function handleTableContent(slug) {
+    let currentUrl = new URLSearchParams(window.location.search)
+    let newUrl = currentUrl.get("book")
+    console.log(newUrl, "newUrl");
+    const response = await fetch(`http://localhost:8888/.netlify/functions/chapterindex?slug=${newUrl}`)
+    let result = await response.json();
+    console.log(result, "result");
+    let tableId = document.getElementById("about")
+    let contentId = document.getElementById("tableOfContent")
+    tableId.style.display = "none";
+    contentId.style.display = "block"
+
 }
+
+
+// Your data
+const data = [
+    {chapternumber: 1, slug: 'billionaire-god-of-war'},
+    {chapternumber: 2, slug: 'billionaire-god-of-war'},
+    {chapternumber: 3, slug: 'billionaire-god-of-war'},
+    {chapternumber: 4, slug: 'billionaire-god-of-war'},
+    {chapternumber: 5, slug: 'billionaire-god-of-war'},
+    {chapternumber: 6, slug: 'billionaire-god-of-war'},
+    {chapternumber: 7, slug: 'billionaire-god-of-war'},
+    {chapternumber: 8, slug: 'billionaire-god-of-war'},
+    {chapternumber: 9, slug: 'billionaire-god-of-war'}
+];
+
+// Pagination variables
+let currentPage = 1;
+const itemsPerPage = 2;
+
+// Function to render items
+function renderItems() {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const itemsToDisplay = data.slice(startIndex, endIndex);
+
+    const container = document.getElementById('pagination');
+    container.innerHTML = '';
+
+    itemsToDisplay.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.textContent = `Chapter ${item.chapternumber}: ${item.slug}`;
+        container.appendChild(itemElement);
+    });
+
+    // updateButtons();
+}
+
+// Function to update button states
+function updateButtons() {
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+
+    prevButton.disabled = currentPage === 1;
+    nextButton.disabled = currentPage === Math.ceil(data.length / itemsPerPage);
+}
+
+// Event listeners for buttons
+document.getElementById('prev-button').addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
+        renderItems();
+    }
+});
+
+document.getElementById('next-button').addEventListener('click', () => {
+    if (currentPage < Math.ceil(data.length / itemsPerPage)) {
+        currentPage++;
+        renderItems();
+    }
+});
+
+// Initial render
+renderItems();

@@ -72,7 +72,7 @@
     <!-- Book name & image -->
     <div class="w-full lg:w-[85%] mx-auto shadow-xl rounded-2xl">
         <div class=" flex flex-col items-center justify-around lg:justify-between px-3 md:p-12 mx-auto mt-5 md:mt-0">
-            <div class="w-full flex items-center justify-around lg:justify-between ">
+            <div class="w-full flex items-center justify-around lg:justify- ">
                 <img src="./assets/Images/cover.png" class="rounded-md h-28  md:h-64 md:mr-0 mr-5 animate-pulse"
                     id="cover-img">
                 <div class="flex flex-col md:space-y-5 top-0">
@@ -122,8 +122,11 @@
                         <button onclick="readBookPage()"
                             class="md:px-7 md:py-3 px-3 py-2 flex items-center justify-center rounded-full bg-gray-900 text-xs font-bold text-white">READ
                             NOW</button>
-                        <div class="bg-[#EBEBEB] h-6 w-6 md:h-10 md:w-10 rounded-full flex items-center justify-center">
+                        <!-- <div class="bg-[#EBEBEB] h-6 w-6 md:h-10 md:w-10 rounded-full flex items-center justify-center">
                             <i class="fa-regular fa-heart text-xs md:w-5 mx-auto items-center"></i>
+                        </div> -->
+                        <div class="bg-[#EBEBEB] h-6 w-6 md:h-10 md:w-10 rounded-full flex items-center justify-center">
+                            <i class="fa-regular fa-heart text-xs md:text-base"></i>
                         </div>
                     </div>
                 </div>
@@ -152,159 +155,249 @@
                 </div>
             </div>
         </div>
-        <div class="flex ml-5 mt-3 md:mt-0 md:ml-20 mb-5">
-            <b>
+        <div class="flex ml-5 mt-3 md:mt-0 md:ml-20 mb-5 cursor-pointer">
+            <b onclick="handleData()">
                 ABOUT
             </b>
-            <p class="ml-5">
+            <p class="ml-5" onclick="handleTableContent()">
                 TABLE OF CONTENT
             </p>
         </div>
     </div>
-    <!-- Description -->
-
-    <div class="w-[85%] my-12">
-        <b class="text-2xl">
-            Description
-        </b>
-        <p class="my-4" id="description">
-            Gerald was a poor college student with no money. Suddenly a phone call from his sister changed everything...
-            Was he really the richest and most powerful person in the city?
-        </p>
-    </div>
-    <!-- Recommended Reads -->
-    <div class="w-[85%] mb-20">
-        <b class="text-2xl">
-            Recommended Reads
-        </b>
-
-    </div>
-    <!-- Reviews -->
-    <div class="w-full md:w-[85%] mb-8">
-        <b class="text-2xl hidden md:block">
-            Reviews
-        </b>
-        <hr class="mt-6 text-black">
-        <div class="flex flex-col  md:flex md:flex-row ">
-            <div class="flex flex-col items-center space-y-4 w-full md:w-[50%] py-10">
-                <b class="text-xl">
-                    Rate This Novel
+    <div class="w-[85%]">
+        <!-- about start-->
+        <div id="about">
+            <!-- Description -->
+            <div class=" my-12">
+                <b class="text-2xl">
+                    Description
                 </b>
-                <div class="bg-[#EBEBEB] inline-block px-4 py-3 rounded-full">
-                    <div class="flex items-center space-x-2 md:space-x-3">
-                        <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
-                        <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
-                        <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
-                        <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
-                        <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
+                <p class="my-4" id="description">
+                    Gerald was a poor college student with no money. Suddenly a phone call from his sister changed
+                    everything...
+                    Was he really the richest and most powerful person in the city?
+                </p>
+            </div>
+            <!-- Recommended Reads -->
+            <div class=" mb-20">
+                <b class="text-2xl">
+                    Recommended Reads
+                </b>
+
+            </div>
+            <!-- Reviews -->
+            <div class="w-full md:w-[85%] mb-8">
+                <b class="text-2xl hidden md:block">
+                    Reviews
+                </b>
+                <hr class="mt-6 text-black">
+                <div class="flex flex-col  md:flex md:flex-row ">
+                    <div class="flex flex-col items-center space-y-4 w-full md:w-[50%] py-10">
+                        <b class="text-xl">
+                            Rate This Novel
+                        </b>
+                        <div class="bg-[#EBEBEB] inline-block px-4 py-3 rounded-full">
+                            <div class="flex items-center space-x-2 md:space-x-3">
+                                <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
+                                <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
+                                <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
+                                <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
+                                <img src="./assets/star.png" alt="" srcset="" class="w-6 h-6 md:h-9 md:w-9">
+
+                            </div>
+                        </div>
+                        <b>
+                            4 Reviews (2.8)
+                        </b>
+                    </div>
+                    <div class="border-l h-[245px] hidden md:block">
 
                     </div>
+                    <div class="flex flex-col w-full md:w-[50%] py-10">
+                        <div class="flex justify-center md:justify-start px-5">
+                            <textarea class="bg-[#EBEBEB] resize-none p-4 rounded-xl outline-none focus:ring-0"
+                                cols="70" placeholder="Leave a review with a comment..."></textarea>
+                        </div>
+                        <p class="text-red-500 mt-2 ml-8 md:ml-10">
+                            Sign in to leave a comment
+                        </p>
+                        <button
+                            class="border-none outline-none bg-transparent mt-9 flex justify-start ml-8 md:ml-10">Sign
+                            In</button>
+                    </div>
                 </div>
-                <b>
-                    4 Reviews (2.8)
-                </b>
-            </div>
-            <div class="border-l h-[245px] hidden md:block">
+                <hr>
 
-            </div>
-            <div class="flex flex-col w-full md:w-[50%] py-10">
-                <div class="flex justify-center md:justify-start px-5">
-                    <textarea class="bg-[#EBEBEB] resize-none p-4 rounded-xl outline-none focus:ring-0" cols="70"
-                        placeholder="Leave a review with a comment..."></textarea>
+                <!-- comments -->
+                <b class="text-2xl px-4  block md:hidden">
+                    Reviews
+                </b>
+                <!-- COMMENTS LIST -->
+                <div class="w-full flex flex-col ">
+
+                    <div class="px-5 md:px-0">
+                        <div class="my-6 flex items-center space-x-6 ">
+                            <img src="./assets/Images/dp-placeholder.jpg" alt="" srcset=""
+                                class="h-10 w-10 rounded-full">
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2">
+                                    <p>
+                                        Demonic Aussie#1828
+                                    </p>
+                                    <img src="./assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                                </div>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16">
+                            late 90's exclusive manly power story.
+                        </p>
+                        <p class="ml-16 my-5">
+                            a year ago
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="px-5 md:px-0">
+                        <div class="my-6 flex items-center space-x-6">
+                            <img src="./assets/Images/dp-placeholder.jpg" alt="" srcset=""
+                                class="h-10 w-10 rounded-full">
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2">
+                                    <p>
+                                        Demonic Aussie#1828
+                                    </p>
+                                    <img src="./assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                                </div>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16">
+                            late 90's exclusive manly power story.
+                        </p>
+                        <p class="ml-16 my-5">
+                            a year ago
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="px-5 md:px-0">
+                        <div class="my-6 flex items-center space-x-6">
+                            <img src="./assets/Images/dp-placeholder.jpg" alt="" srcset=""
+                                class="h-10 w-10 rounded-full">
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2">
+                                    <p>
+                                        Demonic Aussie#1828
+                                    </p>
+                                    <img src="./assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                                </div>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i>
+                            </div>
+                        </div>
+                        <p class="ml-16">
+                            late 90's exclusive manly power story.
+                        </p>
+                        <p class="ml-16 my-5">
+                            a year ago
+                        </p>
+                    </div>
                 </div>
-                <p class="text-red-500 mt-2 ml-8 md:ml-10">
-                    Sign in to leave a comment
-                </p>
-                <button class="border-none outline-none bg-transparent mt-9 flex justify-start ml-8 md:ml-10">Sign
-                    In</button>
+
+                <hr class="mb-16">
             </div>
         </div>
-        <hr>
+        <!-- about finish -->
+        <!-- table of content start -->
+        <div id="tableOfContent" style="display: none;">
+            <div class="container mx-auto p-4">
+                <!-- <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-xl font-bold">Latest Release: <a href="#" class="text-blue-600">Chapter 2492</a></h1>
+                    <input type="text" placeholder="search a title or number..." class="border border-gray-300 p-2 rounded">
+                </div> -->
+                <div class="flex justify-between mt-10 mb-5">
 
-        <!-- comments -->
-        <b class="text-2xl px-4  block md:hidden">
-            Reviews
-        </b>
-        <!-- COMMENTS LIST -->
-        <div class="w-full flex flex-col ">
+                    <div class="flex items-center space-x-3">
+                        <p>
+                            Latest Release:
+                        </p>
+                        <p class="text-blue-500">
+                            Chapter 2492
+                        </p>
+                        <p>
+                            a year ago
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-5">
+                        <div>
+                            <input type="text" class="bg-[#EBEBEB] rounded-full w-96 py-3 px-4 outline-none"
+                                placeholder="search a title or number..">
+                        </div>
+                        <div>
+                            <i class="fa fa-filter"></i>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="px-5 md:px-0">
-                <div class="my-6 flex items-center space-x-6 ">
-                    <img src="./assets/Images/dp-placeholder.jpg" alt="" srcset="" class="h-10 w-10 rounded-full">
-                    <div class="mt-3">
-                        <div class="flex items-center space-x-2">
-                            <p>
-                                Demonic Aussie#1828
-                            </p>
-                            <img src="./assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                <hr class="bg-black text-black mt-5 mb-10 border-2">
+
+
+                <div class="grid grid-cols-2 md:grid-cols-2 gap-y-4 gap-x-14" id="pagination">
+                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
+                        <p>
+                            1
+                        </p>
+                        <div>
+
+                            <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
+                            <span class="text-gray-500">a year ago</span>
                         </div>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
                     </div>
-                </div>
-                <p class="ml-16">
-                    late 90's exclusive manly power story.
-                </p>
-                <p class="ml-16 my-5">
-                    a year ago
-                </p>
-            </div>
-            <hr>
-            <div class="px-5 md:px-0">
-                <div class="my-6 flex items-center space-x-6">
-                    <img src="./assets/Images/dp-placeholder.jpg" alt="" srcset="" class="h-10 w-10 rounded-full">
-                    <div class="mt-3">
-                        <div class="flex items-center space-x-2">
-                            <p>
-                                Demonic Aussie#1828
-                            </p>
-                            <img src="./assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
+                        <p>
+                            2
+                        </p>
+                        <div>
+
+                            <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
+                            <span class="text-gray-500">a year ago</span>
                         </div>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-gray-300"></i>
                     </div>
-                </div>
-                <p class="ml-16">
-                    late 90's exclusive manly power story.
-                </p>
-                <p class="ml-16 my-5">
-                    a year ago
-                </p>
-            </div>
-            <hr>
-            <div class="px-5 md:px-0">
-                <div class="my-6 flex items-center space-x-6">
-                    <img src="./assets/Images/dp-placeholder.jpg" alt="" srcset="" class="h-10 w-10 rounded-full">
-                    <div class="mt-3">
-                        <div class="flex items-center space-x-2">
-                            <p>
-                                Demonic Aussie#1828
-                            </p>
-                            <img src="./assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
+                        <p>
+                            3
+                        </p>
+                        <div>
+
+                            <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
+                            <span class="text-gray-500">a year ago</span>
                         </div>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
-                        <i class="fa-solid fa-star text-[#FD8B2A]"></i>
                     </div>
+                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
+                        <p>
+                            4
+                        </p>
+                        <div>
+
+                            <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
+                            <span class="text-gray-500">a year ago</span>
+                        </div>
+                    </div>
+
                 </div>
-                <p class="ml-16">
-                    late 90's exclusive manly power story.
-                </p>
-                <p class="ml-16 my-5">
-                    a year ago
-                </p>
             </div>
         </div>
-
-        <hr class="mb-16">
+        <!-- table of content finish -->
     </div>
 
     <!-- Footer -->
@@ -423,6 +516,20 @@
         function readBookPage() {
             window.location = `${parmValue}/chapter-3`
         }
+
+        function handleData() {
+            let tableId = document.getElementById("about")
+            let contentId = document.getElementById("tableOfContent")
+            tableId.style.display = "block";
+            contentId.style.display = "none"
+
+        }
+       
+
+
+    </script>
+    <script src="./staticSingleBook.js">
+
     </script>
 </body>
 
