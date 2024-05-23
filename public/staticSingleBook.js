@@ -51,43 +51,59 @@ async function handleTableContent(slug) {
     let contentId = document.getElementById("tableOfContent")
     tableId.style.display = "none";
     contentId.style.display = "block"
+    renderItems(result.chapterIndex);
+
 
 }
 
 
 // Your data
-const data = [
-    {chapternumber: 1, slug: 'billionaire-god-of-war'},
-    {chapternumber: 2, slug: 'billionaire-god-of-war'},
-    {chapternumber: 3, slug: 'billionaire-god-of-war'},
-    {chapternumber: 4, slug: 'billionaire-god-of-war'},
-    {chapternumber: 5, slug: 'billionaire-god-of-war'},
-    {chapternumber: 6, slug: 'billionaire-god-of-war'},
-    {chapternumber: 7, slug: 'billionaire-god-of-war'},
-    {chapternumber: 8, slug: 'billionaire-god-of-war'},
-    {chapternumber: 9, slug: 'billionaire-god-of-war'}
-];
+// const data = [
+//     { chapternumber: 1, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 2, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 3, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 4, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 5, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 6, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 7, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 8, slug: 'billionaire-god-of-war' },
+//     { chapternumber: 9, slug: 'billionaire-god-of-war' }
+// ];
 
 // Pagination variables
 let currentPage = 1;
-const itemsPerPage = 2;
+const itemsPerPage = 20;
 
 // Function to render items
-function renderItems() {
+let data
+function renderItems(indexes) {
+    if (!data) {
+        data = indexes
+    }
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const itemsToDisplay = data.slice(startIndex, endIndex);
 
     const container = document.getElementById('pagination');
-    container.innerHTML = '';
-
-    itemsToDisplay.forEach(item => {
+    let newDiv = '';
+    console.log("ITMTODISPLAy", itemsToDisplay)
+    itemsToDisplay.forEach((item, index) => {
         const itemElement = document.createElement('div');
-        itemElement.textContent = `Chapter ${item.chapternumber}: ${item.slug}`;
-        container.appendChild(itemElement);
-    });
+        newDiv += `<div class="bg-white  rounded border-b-2 flex justify-start gap-10">
+        <p class=" mt-1 md:text-lg font-medium ">
+            ${index}
+        </p>
+        <div>
 
-    // updateButtons();
+            <a href="#" class="block md:text-lg font-medium mb-2">Chapter ${item.chapternumber}</a>
+            <span class="text-gray-500">a year ago</span>
+        </div>
+    </div>`;
+
+    });
+    container.innerHTML = newDiv;
+
+    updateButtons();
 }
 
 // Function to update button states
@@ -115,4 +131,3 @@ document.getElementById('next-button').addEventListener('click', () => {
 });
 
 // Initial render
-renderItems();
