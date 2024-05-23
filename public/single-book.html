@@ -325,7 +325,7 @@
                     <h1 class="text-xl font-bold">Latest Release: <a href="#" class="text-blue-600">Chapter 2492</a></h1>
                     <input type="text" placeholder="search a title or number..." class="border border-gray-300 p-2 rounded">
                 </div> -->
-                <div class="flex justify-between mt-10 mb-5">
+                <div class="flex flex-col md:flex-row w-11/12 justify-between mt-10 mb-5">
 
                     <div class="flex items-center space-x-3">
                         <p>
@@ -338,9 +338,9 @@
                             a year ago
                         </p>
                     </div>
-                    <div class="flex items-center space-x-5">
+                    <div class="flex items-center  space-x-5 ">
                         <div>
-                            <input type="text" class="bg-[#EBEBEB] rounded-full w-96 py-3 px-4 outline-none"
+                            <input type="text" class="bg-[#EBEBEB] rounded-full w-44 md:w-96 py-3 px-4 outline-none"
                                 placeholder="search a title or number..">
                         </div>
                         <div>
@@ -352,8 +352,8 @@
                 <hr class="bg-black text-black mt-5 mb-10 border-2">
 
 
-                <div class="grid grid-cols-2 md:grid-cols-2 gap-y-4 gap-x-14" id="pagination">
-                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
+                <div class="w-full grid grid-cols-2  md:grid-cols-3 gap-y-4 " id="pagination">
+                    <!-- <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
                         <p>
                             1
                         </p>
@@ -362,39 +362,13 @@
                             <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
                             <span class="text-gray-500">a year ago</span>
                         </div>
-                    </div>
-                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
-                        <p>
-                            2
-                        </p>
-                        <div>
+                    </div> -->
 
-                            <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
-                            <span class="text-gray-500">a year ago</span>
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
-                        <p>
-                            3
-                        </p>
-                        <div>
-
-                            <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
-                            <span class="text-gray-500">a year ago</span>
-                        </div>
-                    </div>
-                    <div class="bg-white p-4 rounded border-b-2 flex space-x-16">
-                        <p>
-                            4
-                        </p>
-                        <div>
-
-                            <a href="#" class="block text-lg font-semibold mb-2">Chapter 1</a>
-                            <span class="text-gray-500">a year ago</span>
-                        </div>
-                    </div>
 
                 </div>
+                <p class="bg-red-500 h-6 w-6" id="prev-button"> back</p>
+                <p class="bg-red-500 h-6 w-6" id="next-button"> next</p>
+
             </div>
         </div>
         <!-- table of content finish -->
@@ -524,7 +498,7 @@
             contentId.style.display = "none"
 
         }
-       
+
 
 
     </script>
