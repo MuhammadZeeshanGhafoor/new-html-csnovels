@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="./output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+<!-- <link rel="stylesheet" href="./styles.css" ></link> -->
+<link rel="shortcut icon" href="./assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<title>Document</title>
+</head>
+
+<body class=" w-full flex flex-col items-center font-montessart">
+    <!-- Top NavBar -->
+    <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+        <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+            <img src="./assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+            <div class="w-7/12">
+                <input type="text"
+                    class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                    placeholder="Search..." />
+                <img src="./assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+            </div>
+            <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                <p class=" text-3xl">
+                    Z
+                </p>
+            </div>
+        </div>
+        <ul class="w-full flex justify-between p-1 overflow-hidden">
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                id="navbar">Category</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+        </ul>
+    </div>
+
+    <!-- DESKTOP NAVBAR -->
+    <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+        <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+            <img src="./assets/logo-dark.png" alt="logo_mobile" class=" h-10">
+            <div class="w-4/12">
+                <input type="text"
+                    class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                    placeholder="Search..." />
+                <img src="./assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+            </div>
+            <div class="w-2/12 flex items-center justify-between font-light">
+                <p id="increment">Subscribe</p>
+                <p>Discord</p>
+                <img src="./assets//menu.png" class="w-8 cursor-pointer" />
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="w-full bg-[#F3F3F3]">
+        <div class="flex justify-between mx-28 mt-20 items-center -mb-5">
+            <div class="flex items-center space-x-5">
+                <div
+                    class="bg-blue-600 rounded-full h-36 w-36 text-white font-bold mx-auto flex items-center justify-center">
+                    <p class="font-bold text-2xl ">
+                        U
+                    </p>
+                </div>
+
+                <div>
+                    <p class="text-xl font-bold">
+                        umar <span class="text-[#C3D1D9] text-xs">Umar Hussain</span>
+                    </p>
+                    <p>
+                        denos52064@nweal.com
+                    </p>
+                    <p class="text-[#C3D1D9]">
+                        ID: 663ea
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p class="text-[#C3D1D9]">
+                    MEMBER SINCE 05/11/2024
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center space-x-20 font-semibold text-lg my-2">
+        <p>
+            Dashboard
+        </p>
+        <p>
+            Favorites
+        </p>
+        <p>
+            Bookmarks
+        </p>
+        <p>
+            Billing
+        </p>
+        <p>
+            Settings
+        </p>
+    </div>
+
+    <div>
+        <p class="font-bold text-3xl text-center mt-16 mb-5">
+            Free Book of The Week
+        </p>
+    </div>
+    <div class="w-4/5 mx-auto">
+        <div class="border-[8px] border-[#35E296] rounded-3xl">
+            <div class="mx-auto bg-[#F5F5F5] w-56 h-20 p-5 flex items-center font-bold space-x-2 my-7">
+                <p class="bg-[#FD8C2A] text-white px-2 py-2 rounded">
+                    00
+                </p>
+                <p>
+                    D
+                </p>
+                <p class="bg-[#FD8C2A] text-white px-2 py-2 rounded">
+                    00
+                </p>
+                <p>
+                    H
+                </p>
+                <p class="bg-[#FD8C2A] text-white px-2 py-2 rounded">
+                    00
+                </p>
+                <p>
+                    H
+                </p>
+
+            </div>
+            <div class="flex justify-center items-center space-x-4">
+                <div>
+                    <img src="./assets/Images/the-invisible-rich-man.jpg" class="rounded-md" alt="" height="260px"
+                        width="187px">
+                </div>
+                <div>
+                    <div>
+                        <p class="font-bold text-2xl text-wrap">
+                            Book Title Goes Here On Even Two Lines Test Test T...
+                        </p>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-3">
+                            <img src="./assets/star.png" alt="" class="h-7 w-7">
+                            <p>
+                                Urban
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Completed
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or
+                        a typeface without relying on meaningful content. Lore...
+                    </p>
+                    
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
