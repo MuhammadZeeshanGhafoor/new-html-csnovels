@@ -18,6 +18,7 @@ exports.handler = async (event, context) => {
             password,
         });
 
+        console.log(user, session, error);
         if (error) {
             return {
                 statusCode: 400,
@@ -25,12 +26,12 @@ exports.handler = async (event, context) => {
             };
         }
 
-        // Generate a JWT token
-        const token = jwt.sign({ userId: user.id }, jwtSecret, { expiresIn: '1h' });
+
+        // const token = jwt.sign({ userId: user.id }, jwtSecret, { expiresIn: '1h' });
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ token, user }),
+            body: JSON.stringify({ user }),
         };
     } catch (error) {
         return {

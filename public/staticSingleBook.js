@@ -1,6 +1,7 @@
 const currUrl = window.location.href
 const splittedUrl = currUrl.split("/")
-const slug = splittedUrl[splittedUrl.length - 1]
+const slug = splittedUrl[splittedUrl.length - 1].split(".").join("")
+// console.log("SLUGG", slug.split(".").join(""))
 async function getReviews() {
     let newDiv = ""
     const reviewDiv = document.getElementById("comment-section")
@@ -11,6 +12,7 @@ async function getReviews() {
     review.forEach(item => {
         const filledStars = '<i class="fa-solid fa-star text-[#FD8B2A]"></i>'.repeat(item.rating);
         // Calculate empty stars
+        const formattedDate = new Date(item.created_at).toLocaleDateString();
         const emptyStars = '<i class="fa-regular fa-star text-gray-400"></i>'.repeat(5 - item.rating);
         newDiv += `<div class="px-5 md:px-0">
         <div class="my-6 flex items-center space-x-6 ">
@@ -18,7 +20,7 @@ async function getReviews() {
             <div class="mt-3">
                 <div class="flex items-center space-x-2">
                     <p>
-                        ${item.name}
+                        ${item.name}+232
                     </p>
                     <img src="../assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
                 </div>
@@ -30,7 +32,7 @@ async function getReviews() {
             ${item.review}
         </p>
         <p class="ml-16 my-5">
-            ${item.created_at}
+            ${formattedDate}
         </p>
     </div>`
     })
@@ -39,19 +41,29 @@ async function getReviews() {
 
 
 getReviews()
-
+let newUrl;
 async function handleTableContent(slug) {
     let currentUrl = new URLSearchParams(window.location.search)
-    let newUrl = currentUrl.get("book")
+    newUrl = currentUrl.get("book")
     console.log(newUrl, "newUrl");
+    if (!newUrl) {
+        const currUrl = window.location.href
+        const splittedUrl = currUrl.split("/")
+        newUrl = splittedUrl[splittedUrl.length - 1].split(".").join("")
+
+    }
+    console.log("NEW URLLL", newUrl)
     const response = await fetch(`http://localhost:8888/.netlify/functions/chapterindex?slug=${newUrl}`)
     let result = await response.json();
     console.log(result, "result");
     let tableId = document.getElementById("about")
-    let contentId = document.getElementById("tableOfContent")
-    tableId.style.display = "none";
-    contentId.style.display = "block"
+    let contentId = document.getElementById("pagination-main")
+    tableId.classList.add("hidden")
+    contentId.classList.remove("hidden")
+
+    contentId.classList.add("flex")
     renderItems(result.chapterIndex);
+    console.log("REUSSLLLTT", result.chapterIndex)
 
 
 }
@@ -89,13 +101,14 @@ function renderItems(indexes) {
     console.log("ITMTODISPLAy", itemsToDisplay)
     itemsToDisplay.forEach((item, index) => {
         const itemElement = document.createElement('div');
-        newDiv += `<div class="bg-white  rounded border-b-2 flex justify-start gap-10">
+        const formattedDate = new Date(item.created_at).toLocaleDateString();
+        newDiv += `<div class="bg-white  rounded border-b-2 flex justify-start gap-10" onclick="redirectChapter('${item.chapternumber}')">
         <p class=" mt-1 md:text-lg font-medium ">
-            ${index}
+            ${item.chapternumber}
         </p>
         <div>
 
-            <a href="#" class="block md:text-lg font-medium mb-2">Chapter ${item.chapternumber}</a>
+            <p class="block md:text-lg font-medium mb-2">Chapter ${item.chapternumber}</p>
             <span class="text-gray-500">a year ago</span>
         </div>
     </div>`;
@@ -130,4 +143,41 @@ document.getElementById('next-button').addEventListener('click', () => {
     }
 });
 
+
+function redirectChapter(chNumber) {
+
+    let a = window.location.href;
+    let slug = a.split('/')[a.split('/').length - 1]
+    console.log(slug)
+    if (chNumber > 5) {
+        window.location.href = `/read-bookpage?slug=${slug}&chapter=${chNumber}`
+
+    } else {
+        window.location.href = `/${slug}/chapter-${chNumber}`
+    }
+    // console.log("first", slug, chNumber, a)
+}
+
 // Initial render
+
+
+function handleData() {
+    let tableId = document.getElementById("about")
+    let contentId = document.getElementById("pagination-main")
+    tableId.classList.remove("hidden")
+    contentId.classList.add("hidden")
+}
+
+function toggleProfile(id) {
+    let profile = document.getElementById(id)
+    profile.classList.toggle('hidden')
+
+}
+
+function readBookPage() {
+    let url = window.location.href
+    let slug = url.split("/")[url.split("/").length - 1];
+    console.log(slug)
+    window.location.href = `/${slug}/chapter-1`
+
+}

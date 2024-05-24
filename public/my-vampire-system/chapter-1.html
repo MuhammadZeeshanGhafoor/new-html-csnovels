@@ -1,0 +1,342 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Your chapter description here">
+                <title>My Vampire System - Chapter 1</title>
+                <!-- Include CSS files -->
+
+                
+                <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="../output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+<link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+                <!-- Include JavaScript files -->
+            </head>
+            <body class="w-full flex flex-col items-center font-montessart">
+                <!-- Top NavBar -->
+                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+                        <div class="w-7/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+                        </div>
+                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                            <p class="text-3xl">
+                                Z
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="w-full flex justify-between p-1 overflow-hidden">
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                            id="navbar">Category</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+                    </ul>
+                </div>
+            
+                <!-- DESKTOP NAVBAR -->
+                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
+                        <div class="w-4/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+                        </div>
+                        <div class="w-2/12 flex items-center justify-between font-light">
+                            <p id="increment">Subscribe</p>
+                            <p>Discord</p>
+                            <img src="../assets//menu.png" class="w-8" />
+                        </div>
+                    </div>
+                </div> -->
+            
+                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
+                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
+                    <b>
+                        My Vampire System / Chapter 1 
+                    </b>
+                </div>
+            
+                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
+            
+                    <div class="md:w-3/4 mx-auto bg-white">
+                       
+
+                        
+         
+                        <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
+                        
+                        <div class="border border-gray-200 " id="cover-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/cs-novels.appspot.com/o/covers%2Fmy-vampire-system.jpg?alt=media&token=9c2b45e9-18ef-4f35-a584-dd07a6b052a6" alt="My Vampire System Cover"
+                                    class="md:w-52 md:h-72 p-1" id="cover-img">
+                                </div>
+                            <b id="bookname">
+                                My Vampire System
+                            </b>
+                            <p>
+                            © CSNovels
+                            </p>
+                            
+                                </div>
+                                <div class="relative">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/cs-novels.appspot.com/o/covers%2Fmy-vampire-system.jpg?alt=media&token=9c2b45e9-18ef-4f35-a584-dd07a6b052a6"
+                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
+                                alt="My Vampire System Cover" id="cover-img">
+                                <hr class="bg-black md:px-16 px-2">
+                                </div>
+            
+                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
+                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
+                            <b class="md:   text-xl">
+                                1
+                            </b>
+                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
+                        </div>
+    
+                        
+
+
+                        <div class="md:px-16 px-6">
+                            <p id="chaptercontent">
+                                <p>"Don't die by falling over Quinn! "A boy shouted down the hallway.
+
+Quin carried on walking down the school corridor. Harassment had become a daily occurrence for him but it still bothered him just as much every day and he couldn't help himself but retaliate.
+
+Quinn stopped and pushed his glasses back up as they had slipped down from his face. He needed a new pair and just from looking at them, you could tell they were heavily worn. The sides were covered with tape and they didn't even fit straight on his face.
+
+Quinn then turned around and immediately gave the middle finger.
+
+"I bet you don't even know how many fingers I'm holding up!"
+
+The boy clenched his fist and started running towards Quinn.
+
+"You level 1 piece of crap! When are you going to learn that you don't belong in this world?"
+
+The boy then placed both of his hands together and a green ball of light started to form. When he was only a few meters away from Quinn, the boy threw his hands forward and the green light shot out from the palm of his hands.
+
+Quinn had nowhere to go and the beam of light was too fast for him to dodge. All he could do was grit his teeth and bear the pain. As the light hit Quinn, his body was lifted into the air and sent flying backwards into the corridor wall.
+
+"What's going on?" One of the students nearby said. "Are they fighting on the last day of school?"
+
+A crowd had immediately formed outside as people were interested in what the commotion was about. One of the female students ran over to the damaged part of the wall to check on the student's safety.
+
+The dust started to settle and Quinn's slightly curly black hair was coming into view. When eventually the dust all cleared up and the female saw who it was, she immediately backed away and continued her business as if nothing happened.
+
+When the female student had returned to her friends, Quinn could see that they were laughing at her.
+
+"I can't believe you tried to help him."
+
+"I didn't see who it was." The girl retorted with flushed cheeks.
+
+After that, Quinn stood up and picked his glasses up off the floor. Once again one of the sides had fallen off.
+
+"Dam it. Not again..."
+
+It was the last day of school for Quinn and he was hoping just once someone wouldn't try anything with him. Quinn was sick and tired of it and he wasn't the type to ignore it either. He had seen people who had chosen to keep their head down and tolerate the harassment and their treatment was far worse than what he got.
+
+Quinn didn't bother to stay at school like the rest of the students. As he walked past, he saw people talking to each other. Some were laughing while some had tears thinking it was the last time they would ever see each other again but Quinn wasn't a part of any of that and he didn't want to be.
+
+When he finally arrived home, Quinn immediately got to work. Quinn lived in a single bedroom apartment that had just enough space to fit a single bed and desk. There was also a TV that was part of the wall but Quinn would only use it as background noise and didn't actually watch anything.
+
+The apartment was provided to him by the government since he had no living relatives and was still only 16. On top of his bed was a single suit case that had all his belongings neatly packed.
+
+When Quinn entered his room, he immediately pulled his drawer open which contained a book inside. It was a large thick book that weighed about half a kilo. The front of the book was black in colour and in the centre, it had a ring with lines going off in all different directions.
+
+"Let's try again today." Quinn said as he placed the book on the desk.
+
+He then immediately went to his bag to pull out a little test tube which had a clear liquid inside.
+
+"Test 112, Hydrochloric acid. Let's see how it goes." Quinn then started to slowly pour the liquid out of the test tube and onto the book.
+
+"So far no reaction." Quinn then continued to pour the whole test tube onto the book but still there was no reaction.
+
+Quinn carefully examined the book to see if there was any damage done but the book looked the same as always.
+
+"Another failure. Why won't you open? Why did mum and dad even have this thing?"
+
+One hundred twelve times. This was the number of different ways that Quinn had tried to open the book. Not only would the book not open, but it seemed like it wasn't able to be damaged either. Quin had tried burning the book, cutting the book, melting the book...but nothing had worked.
+
+Quinn then went to lie on his bed and turned on the TV for some background noise. He never really paid attention to what was on but the sound of other voices made him feel less lonely.
+
+The TV was currently tuned into the news station.
+
+"The peace treaty with the Dalki race has lasted for five years now but officials say that tension is rising once again and we must prepare for another war…."
+
+The mention of war had always been shown on the TV nonstop since that day. Thirty years ago, the human race received a visit from the so-called Dalki. They looked like humans except for their dragon-like tail and scale-like skin.
+
+They immediately demanded that the Human race hand over their resources and wanted to use them as slaves. Of course, the humans decided to fight back but they quickly found out that their modern technology was useless against them. Bullets couldn't penetrate their skin and as for tanks, well Dalki had airships.
+
+Every man and woman was told to fight for their planet and that included Quinn's parents. The war went on for years and Quinn grew up not knowing what his parents looked like.
+
+When the humans were on the brink of defeat, a select few came forward. These people had special abilities. They began sharing their knowledge of how they obtained such power in hopes of turning the tide in the war and it worked. Even so, the Dalki were still strong and a seemingly endless stalemate lead to the peace treaty signing five years ago.
+
+Of course, human greed got the better of humanity and instead of sharing these powers with everyone, the higher ranked governmental officials decided to keep them for themselves. Only those with money were able to learn the more powerful abilities while everyone else was left with scraps.
+
+Quinn was given nothing when his parents died. The government agreed to pay for his living accommodation while he was still in school but that was it. When his parents died at the age of ten, an agent appeared at his doorstep and handed him a book. He was told this was the only thing his parents possessed which they passed down when they died.
+
+"Why is the world so unfair?"
+
+Quinn got out of his bed and started walking over to his desk. He picked up his glasses that were still slightly broken and decided he needed to fix them. He noticed that one of the lenses was slightly out of place and tried to punch it back into its frame.
+
+"Come on, just get in!" He shouted as he pushed down hard.
+
+The lens suddenly smashed into pieces and one of the shards of glass created a deep gash in his thumb.
+
+"Why does the world hate me."
+
+Quinn immediately started to clean up the little pieces of glass and noticed a piece had landed on top of his book. As Quinn removed the piece of glass, a drop of blood from his thumb landed in the centre of the book.
+
+The ring around the centre of the book started to glow and suddenly the book started to lift itself into the air.
+
+"What the hell is happening!"
+
+The book started to shine brightly and shake uncontrollably. It finally opened up and page after page was being turned. Quinn couldn't take his eyes off the shining book as if he was in a deep trance. The words written in the book weren't in any language he had seen before but for some reason, he felt like he could understand it.
+
+When the book finally turned its last page, it started to disappear as if it was slowly turning to dust. At the same time, Quinn's vision was starting to fade. His body felt weak and his eyes slowly shut.
+
+But just before he passed out, there was a single message that he heard.
+
+
+
+Unable to maintain consciousness long enough to hear the final words, Quinn passed out.</p> <br>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
+                                <i class="fa-solid fa-arrow-left text-white " ></i>
+                            </div>
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
+                                <i class="fa-solid fa-arrow-right text-white "></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div
+            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
+            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
+            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
+                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
+                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
+                        <b>
+                            Table of Contents
+                        </b>
+                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
+                    </div>
+                    <p class="text-[#83848F] my-2 pl-3">
+                        Volume 1
+                    </p>
+                </div>
+                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                </div>
+                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
+                    id="index-pagination">
+                    <p>
+                        1-600
+                    </p>
+
+                </div>
+            </div>
+            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
+            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
+                id="closeIcon">
+                <div class=" w-96  p-2 rounded-t-xl">
+                    <div class="flex justify-end ">
+                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+                    </div>
+                    <b class="text-lg px-6 py-3 font-bold">
+                        Display Options
+                    </b>
+                    <p class="px-6 py-2 font-bold">
+                        Background
+                    </p>
+                    <div class="flex space-x-3 px-6 cursor-pointer">
+                        <div class="bg-white h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+
+                        </div>
+                    </div>
+                    <p class="px-6 py-2 font-bold">
+                        Font
+                    </p>
+                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Nunito Sans
+                            </p>
+                        </div>
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Merriweather
+                            </p>
+                        </div>
+                    </div>
+                    <p class="px-6 py-2">
+                        Size
+                    </p>
+                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
+                        <p class="cursor-pointer">
+                            A+
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        </p>
+
+                        <p>
+                            14
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        <p class="cursor-pointer">
+                            A-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+    <script src="../staticScript.js"></script>
+
+            </body>
+            </html>
+            
+            

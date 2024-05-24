@@ -1,0 +1,243 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Your chapter description here">
+                <title>My Billionaire Mom - Chapter 1</title>
+                <!-- Include CSS files -->
+
+                
+                <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="../output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+<link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+                <!-- Include JavaScript files -->
+            </head>
+            <body class="w-full flex flex-col items-center font-montessart">
+                <!-- Top NavBar -->
+                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+                        <div class="w-7/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+                        </div>
+                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                            <p class="text-3xl">
+                                Z
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="w-full flex justify-between p-1 overflow-hidden">
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                            id="navbar">Category</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+                    </ul>
+                </div>
+            
+                <!-- DESKTOP NAVBAR -->
+                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
+                        <div class="w-4/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+                        </div>
+                        <div class="w-2/12 flex items-center justify-between font-light">
+                            <p id="increment">Subscribe</p>
+                            <p>Discord</p>
+                            <img src="../assets//menu.png" class="w-8" />
+                        </div>
+                    </div>
+                </div> -->
+            
+                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
+                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
+                    <b>
+                        My Billionaire Mom / Chapter 1 
+                    </b>
+                </div>
+            
+                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
+            
+                    <div class="md:w-3/4 mx-auto bg-white">
+                       
+
+                        
+         
+                        <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
+                        
+                        <div class="border border-gray-200 " id="cover-img">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/cs-novels.appspot.com/o/covers%2Fmy-billionaire-mom.jpg?alt=media&token=2d110abc-b8a5-4718-a2d2-aabbe203ef23" alt="My Billionaire Mom Cover"
+                                    class="md:w-52 md:h-72 p-1" id="cover-img">
+                                </div>
+                            <b id="bookname">
+                                My Billionaire Mom
+                            </b>
+                            <p>
+                            © CSNovels
+                            </p>
+                            
+                                </div>
+                                <div class="relative">
+                                <img src="https://firebasestorage.googleapis.com/v0/b/cs-novels.appspot.com/o/covers%2Fmy-billionaire-mom.jpg?alt=media&token=2d110abc-b8a5-4718-a2d2-aabbe203ef23"
+                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
+                                alt="My Billionaire Mom Cover" id="cover-img">
+                                <hr class="bg-black md:px-16 px-2">
+                                </div>
+            
+                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
+                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
+                            <b class="md:   text-xl">
+                                1
+                            </b>
+                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
+                        </div>
+    
+                        
+
+
+                        <div class="md:px-16 px-6">
+                            <p id="chaptercontent">
+                                <p>“Get up!" A cold voice rang in Chuck Cannon’s ear. The next second, the quilt on him was completely lifted.</p> <br><p>Chuck rubbed his eyes and looked at the woman. He sighed and felt a little uncomfortable.</p> <br><p>The beautiful woman in front of him was Yvette Jordan, who was four or five years older than Chuck. She was adopted by Chuck’s grandfather and was groomed to be his bride since young. But since his grandfather’s death, her attitude towards Chuck has become more and more terrible.</p> <br><p>“You useless piece of trash, your face even pisses me off!" Yvette’s beautiful face was full of disgust.</p> <br><p>“…." Chuck frowned and decided not to take Yvette’s words to heart.</p> <br><p>“Let me tell you, I have done my best to support you. If you don’t behave yourself, I will chase you out of this house.”</p> <br><p>Chuck put on his clothes and clenched his fists and said “But you are my wifey!"</p> <br><p>“No, I’m not. It was your grandfather who forced me to marry you. Did he ever ask me if I agreed? How could I marry a good-for-nothing like you!"</p> <br><p>Chuck put on his clothes and stood in front of Yvette and said  “Wifey…”</p> <br><p>“Don’t call me wifey. I am warning you for the last time. The money that you use to eat and drink is mine. If you dare to call me wifey, I’ll let you die on the streets!” Yvette snorted coldly and looked at Chuck with disdain. “But I’m sure that a trash like you won’t be able to survive on the streets for long.”</p> <br><p>Since his grandpa died, such humiliation was no longer strange to Chuck. His fragile self-esteem has almost been crushed by Yvette. Sometimes Chuck doubted that he was really a piece of trash.</p> <br><p>“Um, wife… Yvette, I don’t have any money.” Chuck took a deep breath. He was just a freshman this year and Yvette was not only a university lecturer, she owned a company. She was a rich person.</p> <br><p>“Look at yourself, you look like a beggar. It’s disgusting!" Yvette looked at Chuck irritatingly. Then she took out 200 dollars from her bag and threw it on the ground. Then she turned around and left.</p> <br><p>Looking at the money on the ground, Chuck clenched his fists. In the end, he didn’t pick up the money on the ground. He walked out of the house with his remaining self-esteem.</p> <br><p>Yvette’s BMW drove out of the garage as Chuck stood by the roadside and watched. He was in the same university as Yvette, so they were heading in the same direction. However, Yvette’s car did not stop but drove past Chuck.</p> <br><p>“Get out of here and take the bus. A piece of trash like you doesn’t deserve a ride in my car.” After saying that, Yvette stepped on the accelerator and left.</p> <br><p>Chuck gritted his teeth and looked at the BMW that had disappeared at the end of the road. His eyes were slightly red and he thought “Yvette, you have gone too far.”</p> <br><p>He was penniless now. His lunch money these days was borrowed from his classmates and today was the day to return the money. Unfortunately, the two hundred dollars was too “Burdensome” and he couldn’t pick it up.</p> <br><p>When he arrived at school, his worst fears came true. As soon as he walked to the school gate, Chuck happened to meet a student who lent money to him.</p> <br><p>Lara Jean was buying milk tea outside the school gate. When she saw Chuck, who was in a state of loss, she reached out and said, “Chuck, it is time to pay back my money, isn’t it?"</p> <br><p>Chuck wanted to bury himself out of shame. He scratched his hair and said with embarrassment, “Well, give me one more day, I’ll do part-time work. I’ll pay you back the money by tomorrow!"</p> <br><p>“No, how long have you been delaying! You have to return the money to me today!" Lara said coldly and there was no room for negotiation in her tone.</p> <br><p>Chuck sighed and said “But I don’t have any money now.”</p> <br><p>“You don’t have money? Don’t you have parents to ask for it? Are you an orphan?"</p> <br><p>“You!" Chuck clenched his fists tightly. For as long as he could remember, he had been living with his grandfather. However, being called an orphan by Lara made him feel even more uncomfortable.</p> <br><p>“You’re really an orphan? Well, I’ll give you an extension until this afternoon, but you have to pay me four hundred. If you don’t pay me back, I’ll ask my boyfriend to bring someone to deal with you!” Lara warned and left.</p> <br><p>Chuck stood still in his tracks. He was extremely sad. He had enough of such humiliation.
+Just as Chuck was thinking about what part-time job he was going to do, his phone rang. Chuck looked at the caller ID and saw that it turned out to be a foreign number. He was afraid that it was probably a swindler.</p> <br><p>However, when he thought of the online recruitment of mercenaries in Syria which was quite popular recently, offering 8,000 dollars a day, he became interested. Although he knew it could be a scam, if it was true, he would definitely go to Syria without hesitation.</p> <br><p>“Hello!” Chuck greeted.</p> <br><p>Unexpectedly, a flurry of words in Mandarin from the other end of the phone was heard saying, “Chucky, I am your mother!"</p> <br><p>Chuck was shocked. He first felt that he had been made fun of by others, but then he felt extremely sad. How could he have a mother?</p> <br><p>“Chucky, don’t blame me. I had no choice but to go abroad these years, but now I can finally return home. I will try my best to make up for the lost time with you. I will transfer five million dollars and you can use it first. If it is all spent, call me.”</p> <br><p>The strange conversation ended in a weird atmosphere. As soon as the call ended, a message arrived, “Your account with the ending number 0123 has been credited with 5,000,000 dollars and the current balance is 5,000,000.83 dollars.”</p> <br><p>Chuck was dumbfounded. “His mother, whom he had never seen before, actually gave him five million dollars?" </p> <br><p>He looked at the text message and counted the zeros, again and again, repeatedly confirming it more than a dozen times and then went to the ATM to check if it was correct. He was ecstatic! That was five million!</p> <br><p>What more, it was his mysterious mother who casually gave him pocket money. Even Yvette who was busy with her business had less than one million dollars including her car and her savings!</p> <br><p>Chuck giggled and walked to the campus.</p> <br><p>At this time, Yvette, who was going to the public building for class, said with disgust after seeing Chuck, “Why aren’t you in class but instead laughing here stupidly?"</p> <br><p>“I am not going to class anymore.” Chuck stood where he was and watched Yvette quietly.</p> <br><p>Yvette felt a little strange. She seemed to see a confident look in Chuck’s eyes. Isn’t he still the useless piece of trash? How dare he argue with her? Yvette was angry. “How dare you talk back to me? If you have the guts, don’t come to my house today.”</p> <br><p>Chuck was also tired of being treated coldly by Yvette. He said disdainfully, “I am not going back, I’ll sleep elsewhere.”</p> <br><p>“Is this a joke? Now that I have five million dollars, I don’t need to look at Yvette’s unhappy face anymore”, Chuck thought to himself.</p> <br><p>“You! Great! I’d like to see how brave you are. From now on, if you dare to enter my house, I’ll break your legs!"</p> <br><p>Chuck ignored Yvette and directly turned his back and left the school.</p> <br><p>Yvette stomped her feet angrily, but she couldn’t do anything about it, so she turned around and went to class.</p> <br><p>Chuck, who had left school, took a taxi to the real estate agency in the city center. With this sum of money, the first thing Chuck wanted to do was to have his own house.</p> <br><p>After pushing the door open and entering, the real estate agency employees did not pay attention to Chuck, who was dressed ordinarily. This kind of person was either looking for a part-time job, begging for food, or the type who was not interested in buying anything but just trying to enjoy the air-conditioned room. Later, when the manager of the store came out of the office, one of those lazy employees hurried up and asked, “Sir, what do you want?"</p> <br><p>“I want to buy a house”</p> <br><p>“To buy a house?" Natalie Xavier’s big eyes narrowed. She stared at Chuck carefully for a long time. She had been a real estate agent for so long, but she had rarely misjudged someone. There may be one in a thousand customers who would buy a house at less than 20 years old like Chuck, but all of them wore branded suits and drove high-end sports cars.</p> <br><p>“Sir, for your information, the cheapest house in the city is around 12,000 per square meter”. Are you sure you want to buy it? Natalie didn’t want to waste time on this kind of person, so her tone became impatient.</p> <br>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
+                                <i class="fa-solid fa-arrow-left text-white " ></i>
+                            </div>
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
+                                <i class="fa-solid fa-arrow-right text-white "></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div
+            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
+            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
+            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
+                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
+                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
+                        <b>
+                            Table of Contents
+                        </b>
+                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
+                    </div>
+                    <p class="text-[#83848F] my-2 pl-3">
+                        Volume 1
+                    </p>
+                </div>
+                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                </div>
+                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
+                    id="index-pagination">
+                    <p>
+                        1-600
+                    </p>
+
+                </div>
+            </div>
+            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
+            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
+                id="closeIcon">
+                <div class=" w-96  p-2 rounded-t-xl">
+                    <div class="flex justify-end ">
+                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+                    </div>
+                    <b class="text-lg px-6 py-3 font-bold">
+                        Display Options
+                    </b>
+                    <p class="px-6 py-2 font-bold">
+                        Background
+                    </p>
+                    <div class="flex space-x-3 px-6 cursor-pointer">
+                        <div class="bg-white h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+
+                        </div>
+                    </div>
+                    <p class="px-6 py-2 font-bold">
+                        Font
+                    </p>
+                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Nunito Sans
+                            </p>
+                        </div>
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Merriweather
+                            </p>
+                        </div>
+                    </div>
+                    <p class="px-6 py-2">
+                        Size
+                    </p>
+                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
+                        <p class="cursor-pointer">
+                            A+
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        </p>
+
+                        <p>
+                            14
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        <p class="cursor-pointer">
+                            A-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+    <script src="../staticScript.js"></script>
+
+            </body>
+            </html>
+            
+            

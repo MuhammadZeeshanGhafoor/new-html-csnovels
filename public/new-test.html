@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./output.css">
+</link>
+<title>Document</title>
+
+</head>
+
+<body class="w-full flex flex-col items-center m-0 p-0">
+    <!-- Add the rest of your HTML structure here -->
+    <div class="w-full lg:w-[85%] mx-auto shadow-xl rounded-2xl">
+        <div class="flex flex-col items-center justify-around lg:justify-between px-3 md:p-12 mx-auto mt-5 md:mt-0">
+            <div class="w-full flex items-center justify-around lg:justify-between ">
+                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/rebirth-of-a-genius.jpg"
+                    alt="Rebirth Of A Genius cover image" class="rounded-md h-28 md:h-64 md:mr-0 mr-5 " id="cover-img">
+                <div class="flex flex-col md:space-y-5 top-0">
+                    <p class="md:text-2xl font-semibold w-48 md:w-full" id="title">Rebirth Of A Genius</p>
+                    <div
+                        class="bg-[#EBEBEB] hidden md:flex items-center justify-between mt-3 lg:mt-0 lg:px-10 lg:py-4 px-4 py-2 rounded-full">
+                        <div class="flex items-center space-x-3 justify-center">
+                            <img src="../assets/Images/Categories Icon.svg" alt="Category icon"
+                                class="h-3 w-3 lg:h-5 lg:w-5">
+                            <p
+                                class="text-left text-nowrap overflow-hidden text-ellipsis text-xs lg:text-base xl:text-lg lg:w-full">
+                                Action</p>
+                        </div>
+                        <div class="flex items-center space-x-3 justify-center px-10">
+                            <i class="fa-solid fa-clock text-xs lg:text-lg "></i>
+                            <p
+                                class="text-left text-nowrap overflow-hidden text-ellipsis text-xs lg:text-base xl:text-lg lg:w-full">
+                                Last Updated: 4/4/2024</p>
+                            <img src="../assets/question-icon.png" alt="Update info icon" class="h-3 w-3 lg:h-5 lg:w-5">
+                        </div>
+                        <div class="flex items-center space-x-3 justify-center">
+                            <img src="../assets/book-icon-mobile.png" alt="Chapter count icon"
+                                class="h-3 w-3 lg:h-5 lg:w-5">
+                            <p class="text-left text-nowrap overflow-hidden text-ellipsis text-xs lg:text-base xl:text-lg lg:w-full chapters-count"
+                                id="chapter">2160 Chapters</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2 md:space-x-5">
+                        <div class="flex items-center md:space-x-2" id="main-rating-star">
+
+                            <i class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                class="fa-regular fa-star text-gray-400"></i>
+                        </div>
+                        <p class="font-bold text-lg" id="rating">4.3</p>
+                        <p class="text-xs text-[#BEC0C1]">4 RATINGS
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 my-3 md:my-0" id="readBook">
+                        <button onclick="readBookPage()"
+                            class="md:px-7 md:py-3 px-3 py-2 flex items-center justify-center rounded-full bg-gray-900 text-xs font-bold text-white">READ
+                            NOW</button>
+                        <div class="bg-[#EBEBEB] h-6 w-6 md:h-10 md:w-10 rounded-full flex items-center justify-center">
+                            <i class="fa-regular fa-heart text-xs md:w-5 mx-auto items-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-[#EBEBEB] w-full flex items-center justify-between px-3 py-2 md:px-10 md:py-4 rounded-full md:hidden">
+                <div class="flex items-start md:space-x-3 space-x-1 justify-center">
+                    <img src="../assets/Images/Categories Icon.svg" alt="Category icon" class="h-3 w-3 md:h-5 md:w-5">
+                    <p class="text-xs md:text-lg text-left text-nowrap overflow-hidden text-ellipsis w-12 md:w-full">
+                        Action</p>
+                </div>
+                <div class="flex items-center md:space-x-3 space-x-1 justify-center md:px-10">
+                    <i class="fa-solid fa-clock text-xs md:text-lg "></i>
+                    <p class="md:text-lg text-left text-nowrap overflow-hidden text-ellipsis text-xs w-16 md:w-full">
+                        Last Updated: 4/4/2024</p>
+                    <img src="../assets/question-icon.png" alt="Update info icon" class="h-2 w-2 md:h-5 md:w-5">
+                </div>
+                <div class="flex items-center md:space-x-3 space-x-1 justify-center">
+                    <img src="../assets/book-icon-mobile.png" alt="Chapter count icon" class="h-2 w-2 md:h-5 md:w-5">
+                    <p class="text-xs md:text-lg text-left text-nowrap overflow-hidden text-ellipsis chapters-count"
+                        id="chapters">2160 Chapters</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col item-center justify-center" id="table-content">
+            <div class="flex ml-5 mt-3 md:mt-0 md:ml-20 mb-5">
+                <b onclick="handleData()">ABOUT</b>
+                <p class="ml-5" onclick="handleTableContent()">TABLE OF CONTENT</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-[85%] my-12">
+        <div id="about" style="display: none;">
+            <div>
+                <b class="text-2xl">Description</b>
+                <p class="my-4" id="description">In the 21st century, Earth witnessed the birth of a prodigious genius
+                    who mastered a myriad of arts and sciences, ranging from medicine and engineering to mathematics,
+                    microbiology, weapon design, environmental control, music, painting, dance, and martial arts. His
+                    unparalleled creativity and countless inventions earned him the title of the "Greatest Creator," as
+                    he devoted his life to helping mankind. However, when his loved one fell victim to a political
+                    conspiracy, and the governments he served turned a blind eye to the perpetrators due to their wealth
+                    and power, the "Greatest Creator" became the "Greatest Destroyer." He sought revenge, but at the
+                    cost of his own life, before realizing his full potential. But what if he were given a second chance
+                    in a different world, with all the knowledge and experience he had gained? A world where a new kind
+                    of energy could enable humans to reach the heavens? A world where he could create without the
+                    constraints of modern Earth's technology? Follow the journey of Sam as he embarks on a new life,
+                    FALSE from the limitations of his past, in a world full of possibilities.</p>
+            </div>
+            <div class="w-[85%] mb-20">
+                <b class="text-2xl">Recommended Reads</b>
+            </div>
+            <div class="w-full md:w-[85%] mb-8">
+                <b class="text-2xl hidden md:block">
+                    Reviews
+                </b>
+                <hr class="mt-6 text-black">
+                <div class="flex flex-col  md:flex md:flex-row ">
+                    <div class="flex flex-col items-center space-y-4 w-full md:w-[50%] py-10">
+                        <b class="text-xl">
+                            Rate This Novel
+                        </b>
+                        <div class="bg-[#EBEBEB] inline-block px-4 py-3 rounded-full">
+                            <div class="flex items-center space-x-2 md:space-x-3" id="main-rating-star">
+                                <img src="../assets/star.png" alt="rebirth-of-a-genius" srcset=""
+                                    class="w-6 h-6 md:h-9 md:w-9">
+
+
+                            </div>
+                        </div>
+                        <b id="total-rating">
+                            4 RATINGS
+                        </b>
+                    </div>
+                    <div class="border-l h-[245px] hidden md:block">
+
+                    </div>
+                    <div class="flex flex-col w-full md:w-[50%] py-10">
+                        <div class="flex justify-center md:justify-start px-5">
+                            <textarea class="bg-[#EBEBEB] resize-none p-4 rounded-xl outline-none focus:ring-0"
+                                cols="70" placeholder="Leave a review with a comment..."></textarea>
+                        </div>
+                        <p class="text-red-500 mt-2 ml-8 md:ml-10" id="alert">
+                            // Sign in to leave a comment
+                        </p>
+                        <button class="border-none outline-none bg-transparent mt-9 flex justify-start ml-8 md:ml-10"
+                            id="comment-button" onclick="commentBook('rebirth-of-a-genius')">Submit</button>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- comments -->
+                <b class="text-2xl px-4  block md:hidden">
+                    Reviews
+                </b>
+                <!-- COMMENTS LIST -->
+                <div class="w-full flex flex-col " id="comment-section">
+                    <div class="px-5 md:px-0">
+                        <div class="my-6 flex items-center space-x-6 ">
+                            <img src="../assets/Images/dp-placeholder.jpg" alt="" srcset=""
+                                class="h-10 w-10 rounded-full">
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2">
+                                    <p>
+                                        eja carganilla+232
+                                    </p>
+                                    <img src="../assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                                </div>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i>
+
+                            </div>
+                        </div>
+                        <p class="ml-16">
+                            nice
+                        </p>
+                        <p class="ml-16 my-5">
+                            3/18/2024
+                        </p>
+                    </div>
+                    <div class="px-5 md:px-0">
+                        <div class="my-6 flex items-center space-x-6 ">
+                            <img src="../assets/Images/dp-placeholder.jpg" alt="" srcset=""
+                                class="h-10 w-10 rounded-full">
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2">
+                                    <p>
+                                        Pa Ti Ou+232
+                                    </p>
+                                    <img src="../assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                                </div>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i>
+
+                            </div>
+                        </div>
+                        <p class="ml-16">
+
+                        </p>
+                        <p class="ml-16 my-5">
+                            3/17/2024
+                        </p>
+                    </div>
+                    <div class="px-5 md:px-0">
+                        <div class="my-6 flex items-center space-x-6 ">
+                            <img src="../assets/Images/dp-placeholder.jpg" alt="" srcset=""
+                                class="h-10 w-10 rounded-full">
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2">
+                                    <p>
+                                        Mirran+232
+                                    </p>
+                                    <img src="../assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                                </div>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i>
+
+                            </div>
+                        </div>
+                        <p class="ml-16">
+
+                        </p>
+                        <p class="ml-16 my-5">
+                            4/6/2024
+                        </p>
+                    </div>
+                    <div class="px-5 md:px-0">
+                        <div class="my-6 flex items-center space-x-6 ">
+                            <img src="../assets/Images/dp-placeholder.jpg" alt="" srcset=""
+                                class="h-10 w-10 rounded-full">
+                            <div class="mt-3">
+                                <div class="flex items-center space-x-2">
+                                    <p>
+                                        Jmorrison151+232
+                                    </p>
+                                    <img src="../assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
+                                </div>
+                                <i class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-solid fa-star text-[#FD8B2A]"></i><i
+                                    class="fa-regular fa-star text-gray-400"></i><i
+                                    class="fa-regular fa-star text-gray-400"></i><i
+                                    class="fa-regular fa-star text-gray-400"></i>
+
+                            </div>
+                        </div>
+                        <p class="ml-16">
+                            No enough updates and alot of fill in the blank words.
+                        </p>
+                        <p class="ml-16 my-5">
+                            5/8/2024
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="mb-16">
+            </div>
+
+
+
+            <!-- table of content start -->
+            <div id="tableOfContent" style="display: block;">
+                <div class="container mx-auto p-4">
+                    <!-- <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-xl font-bold">Latest Release: <a href="#" class="text-blue-600">Chapter 2492</a></h1>
+                    <input type="text" placeholder="search a title or number..." class="border border-gray-300 p-2 rounded">
+                </div> -->
+                    <div class="flex flex-col md:flex-row w-11/12 justify-between mt-10 mb-5">
+
+                        <div class="flex items-center space-x-3">
+                            <p>
+                                Latest Release:
+                            </p>
+                            <p class="text-blue-500">
+                                Chapter 2492
+                            </p>
+                            <p>
+                                a year ago
+                            </p>
+                        </div>
+                        <div class="flex items-center  space-x-5 ">
+                            <div>
+                                <input type="text" class="bg-[#EBEBEB] rounded-full w-44 md:w-96 py-3 px-4 outline-none"
+                                    placeholder="search a title or number..">
+                            </div>
+                            <div>
+                                <i class="fa fa-filter"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="bg-black text-black mt-5 mb-10 border-2">
+
+
+                    <div class="w-full grid grid-cols-2  md:grid-cols-3 gap-y-4 " id="pagination">
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('1')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                1
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 1</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('2')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                2
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 2</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('3')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                3
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 3</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('4')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                4
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 4</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('5')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                5
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 5</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('6')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                6
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 6</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('7')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                7
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 7</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('8')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                8
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 8</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('9')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                9
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 9</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('10')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                10
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 10</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('11')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                11
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 11</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('12')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                12
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 12</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('13')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                13
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 13</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('14')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                14
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 14</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('15')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                15
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 15</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('16')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                16
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 16</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('17')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                17
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 17</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('18')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                18
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 18</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('19')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                19
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 19</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                        <div class="bg-white  rounded border-b-2 flex justify-start gap-10"
+                            onclick="redirectChapter('20')">
+                            <p class=" mt-1 md:text-lg font-medium ">
+                                20
+                            </p>
+                            <div>
+
+                                <p class="block md:text-lg font-medium mb-2">Chapter 20</p>
+                                <span class="text-gray-500">a year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-around m-10">
+                        <span class="text-gray-600 h-6 w-6 cursor-pointer flex items-center text-2xl "
+                            id="prev-button"><i class="fa-solid fa-chevron-left"></i> previous</span>
+                        <span class="text-gray-600 h-6 w-6 cursor-pointer flex items-center text-2xl " id="next-button">
+                            next
+                            <i class="fa-solid fa-chevron-right"></i> </span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- table of content finish -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="bg-[#121111] w-full rounded-t-3xl md:rounded-t-none">
+        <div class="w-4/5 md:mt-20 mt-10 mb-8  md:mb-12 text-[#949494] mx-auto">
+            <div class="md:flex md:justify-between items-center md:text-xl">
+                <b class="text-5xl font-extrabold text-white flex justify-center mx-auto md:block md:mx-0">
+                    <span class="text-[#F9C559]">CS</span>novels
+                </b>
+                <b class="hidden md:block">
+                    CATEGORIES
+                </b>
+                <b class="hidden md:block">
+                    POPULAR
+                </b>
+                <b class="hidden md:block">
+                    CONTACT
+                </b>
+                <div class="md:hidden flex justify-center mx-auto space-x-3 my-5 items-center text-sm">
+                    <p>
+                        CATEGORIES
+                    </p>
+                    <p>
+                        CONTACT
+                    </p>
+                </div>
+            </div>
+            <div class="flex md:justify-between justify-center items-center md:-ml-16">
+                <div>
+                    <div class="flex items-center justify-center my-4 md:my-7 md:mr-10 space-x-3">
+                        <i class="fa-brands fa-facebook text-3xl"></i>
+                        <i class="fa-brands fa-discord text-3xl"></i>
+                    </div>
+                    <div class=" flex flex-col justify-center mx-auto text-center">
+                        <p class="text-base md:text-lg mb-3 md:mb-0">
+                            Copyright © 2021 CSnovels.com
+                        </p>
+                        <p class="text-xs md:text-lg">
+                            PRIVACY POLICY • TERMS OF SERVICE
+                        </p>
+                    </div>
+                </div>
+                <div class="font-bold hidden md:block -ml-10">
+                    <p>
+                        Urban
+                    </p>
+                    <p>
+                        Eastern
+                    </p>
+                    <p>
+                        Sci-Fi
+                    </p>
+                    <p>
+                        Romance
+                    </p>
+                </div>
+                <div class="font-extrabold text-xs hidden md:block text-[#121111]">
+                    <p>
+                        Contact Us
+                    </p>
+                    <p>
+                        Support
+                    </p>
+                    <p>
+                        Discard
+                    </p>
+                </div>
+                <div class="font-bold hidden md:block text-sm">
+                    <p>
+                        Contact Us
+                    </p>
+                    <p>
+                        Support
+                    </p>
+                    <p>
+                        Discard
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleData() {
+            let tableId = document.getElementById("about")
+            let contentId = document.getElementById("tableOfContent")
+            tableId.style.display = "block";
+            contentId.style.display = "none"
+
+        }
+    </script>
+    <script src="./staticSingleBook.js"></script>
+
+
+</body>

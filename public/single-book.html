@@ -73,8 +73,8 @@
     <div class="w-full lg:w-[85%] mx-auto shadow-xl rounded-2xl">
         <div class=" flex flex-col items-center justify-around lg:justify-between px-3 md:p-12 mx-auto mt-5 md:mt-0">
             <div class="w-full flex items-center justify-around lg:justify- ">
-                <img src="./assets/Images/cover.png" class="rounded-md h-28  md:h-64 md:mr-0 mr-5 animate-pulse mb-5 md:mb-0"
-                    id="cover-img">
+                <img src="./assets/Images/cover.png"
+                    class="rounded-md h-28  md:h-64 md:mr-0 mr-5 animate-pulse mb-5 md:mb-0" id="cover-img">
                 <div class="flex flex-col md:space-y-5 top-0">
                     <p class=" md:text-2xl font-semibold w-48 md:w-full" id="title">The Invisible Rich Man</p>
                     <div
@@ -366,8 +366,13 @@
 
 
                 </div>
-                <p class="bg-red-500 h-6 w-6" id="prev-button"> back</p>
-                <p class="bg-red-500 h-6 w-6" id="next-button"> next</p>
+                <div class="flex items-center justify-around m-10">
+                    <span class="text-gray-600 h-6 w-6 cursor-pointer flex items-center text-2xl " id="prev-button"><i
+                            class="fa-solid fa-chevron-left"></i> previous</span>
+                    <span class="text-gray-600 h-6 w-6 cursor-pointer flex items-center text-2xl " id="next-button">
+                        next
+                        <i class="fa-solid fa-chevron-right"></i> </span>
+                </div>
 
             </div>
         </div>
@@ -503,7 +508,6 @@
 
     </script>
     <script src="./staticSingleBook.js">
-
     </script>
 </body>
 

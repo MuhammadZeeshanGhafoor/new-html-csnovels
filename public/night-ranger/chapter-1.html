@@ -1,0 +1,447 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Your chapter description here">
+                <title>Night Ranger - Chapter 1</title>
+                <!-- Include CSS files -->
+
+                
+                <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="../output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+<link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+                <!-- Include JavaScript files -->
+            </head>
+            <body class="w-full flex flex-col items-center font-montessart">
+                <!-- Top NavBar -->
+                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+                        <div class="w-7/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+                        </div>
+                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                            <p class="text-3xl">
+                                Z
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="w-full flex justify-between p-1 overflow-hidden">
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                            id="navbar">Category</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+                    </ul>
+                </div>
+            
+                <!-- DESKTOP NAVBAR -->
+                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
+                        <div class="w-4/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+                        </div>
+                        <div class="w-2/12 flex items-center justify-between font-light">
+                            <p id="increment">Subscribe</p>
+                            <p>Discord</p>
+                            <img src="../assets//menu.png" class="w-8" />
+                        </div>
+                    </div>
+                </div> -->
+            
+                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
+                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
+                    <b>
+                        Night Ranger / Chapter 1 
+                    </b>
+                </div>
+            
+                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
+            
+                    <div class="md:w-3/4 mx-auto bg-white">
+                       
+
+                        
+         
+                        <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
+                        
+                        <div class="border border-gray-200 " id="cover-img">
+                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/night-ranger.jpg" alt="Night Ranger Cover"
+                                    class="md:w-52 md:h-72 p-1" id="cover-img">
+                                </div>
+                            <b id="bookname">
+                                Night Ranger
+                            </b>
+                            <p>
+                            © CSNovels
+                            </p>
+                            
+                                </div>
+                                <div class="relative">
+                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/night-ranger.jpg"
+                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
+                                alt="Night Ranger Cover" id="cover-img">
+                                <hr class="bg-black md:px-16 px-2">
+                                </div>
+            
+                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
+                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
+                            <b class="md:   text-xl">
+                                1
+                            </b>
+                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
+                        </div>
+    
+                        
+
+
+                        <div class="md:px-16 px-6">
+                            <p id="chaptercontent">
+                                <p>Chapter 1: Newborn Ranger (1)
+
+The third day after crossing over.
+
+Marvin stood by the window, watching the people coming and going on the street during the evening. There was a curvy woman throwing flirtatious glances at him from the adjacent alley.
+
+This was Fierce Horse Inn’s best room; from here you could see the iconic landmark of River Shore City, the Silver Hourglass, which was the Silver Church's headquarters.
+
+Not far away, a youth was secretly stealing a rich man’s purse, his movements very nimble. He had at least three levels in the Thief class.
+
+Everything was the same as the real world.
+
+The only thing different was Marvin himself.
+
+"Stats window," he said in his mind. A series of information appeared before his eyes.
+
+Name: Marvin
+
+Race: Human/?
+
+Attributes:
+
+Strength – 11
+
+Dexterity – 16
+
+Constitution – 9
+
+Intelligence – 14
+
+Wisdom – 14
+
+Charisma – 13(+1)
+
+Class: Noble Rank 3 (150/200)
+
+Adventurer Class: None
+
+Health Points: 10/26 (Fever)
+
+[Weakness Penalty: Attributes Reduction - 70%]
+
+Exp (Experience Points): 40 (Noble) [Unused]
+
+SP (Skill Points): None
+
+AP (Ability Points): None
+
+Class Skills:
+
+– Noble (Baron):
+
+Dignity – 25
+
+Management – 31
+
+Perception – 16
+
+Diplomacy – 19
+
+Accounting – 28
+
+Horsemanship – 30
+
+...
+
+Aside from these pieces of information, which were the same as in the video games from his previous life, the world Marvin had woken up in was no different from a real world.
+
+He was quite bewildered, but after three days of asking around and adapting, he mainly confirmed three things:
+
+First, he had crossed over to another world and arrived in the game he had been infatuated with back on Earth, "Feinan Continent".
+
+Second, besides not knowing why he could see the same interface from the game, this was a real world! Every person was a living being and on top of that, he was well acquainted with some of them.
+
+Third, he was in trouble, very big trouble.
+
+If his memory wasn’t wrong, he must have arrived on the eve of the "Great Calamity." Very soon, the peaceful world in front of him would be subjected to earth-shattering changes. The history of Feinan’s Wizards’ Reign of the Fourth Era was about to end. All the gods would work together to destroy the Universe Magic Pool and would take advantage of this fertile land.
+
+As for that thing…
+
+"The Fourth Fate Tablet. Oh god…" Marvin massaged his temples, trying to organize his thoughts.
+
+In fact, for the moment this wasn’t the biggest issue. The Great Calamity would only happen in half a year, followed by an era of chaos, but he still had time.
+
+As a Legend level player who was very familiar with this world’s situation, even though half a year was somewhat tight, it was still enough for him to gain enough power to defend himself.
+
+The most important issue was his immediate situation.
+
+His high fever coupled with his own terrible physique meant that he could die at any moment just because he had caught a common cold.
+
+This made Marvin speechless. While spending the past three days assimilating the fourteen year old youth’s memories, Marvin had sadly found out that his body wasn’t his only problem; he was in dire straits as he had recently lost his land. A month ago, a group of gnolls attacked his territory and occupied his castle and his mines, leaving him no choice but to rely on the River Shore City Lord; he hoped that the City Lord would send him troops to clean up the pack of gnolls.
+
+While fleeing his territory for River Shore City, the pitiful kid caught a cold and ultimately died, granting Marvin his opportunity to transmigrate. Whether or not it was a coincidence, the youth whose memories he fused with was also named Marvin.
+
+The birth of a new soul was very painful. Marvin had used a lot of effort to persuade the host's soul remnant to let go, and it came at a cost. He had to promise to protect what that the pitiful youth wanted to protect:
+
+His territory, his younger brother, and a woman.
+
+This was what he cherished the most and protected with his life. The two memories fused together, including their feelings. Even if Marvin wanted to break his promise, he probably wouldn’t be able to.
+
+So although the Great Calamity was quite dreadful, for Marvin the first priority was to regain his territory within a month.
+
+Otherwise, the youth’s soul remnant would curse him, and his already awful good-for-nothing attributes would be weakened even more. This was something Marvin would be very reluctant to see.
+
+It should be known that back in the game, when his Thief had finally advanced to [Ruler of The Night], his base attributes combined exceeded 100!
+
+His dexterity was well over 20!
+
+This meant that when he was a level 1 Thief, he had an extra dexterity passive, [Anti-Gravity Steps].
+
+[Anti-Gravity Steps]: Special skill reward due to Dexterity exceeding one’s limit. For a short duration, you can walk on an upright wall while ignoring gravity. Cannot be more than 6 meters.
+
+It was this overpowered dexterity passive that made him the [Ruler of the Night]. At the time of Marvin’s transmigration, there were a total of 11 players in the game who had successfully become gods, and Marvin was one of them.
+
+But now, this body...
+
+Marvin couldn’t bear to look at it. Forget about gnolls; a mere goblin could probably kill him in a one on one, right?
+
+How could he not have a single fighting class? He was simply a good for nothing rich pampered brat. He would open his arms to be clothed, and open his mouth to be fed. Besides Diplomacy and Horsemanship being slightly useful, the rest of his skills had nothing to do with the adventurer path!
+
+However, Marvin was relieved that the brat hadn’t randomly picked a class. If by any chance he had crossed over and found himself with a trashy wizard build, it would have been even worse.
+
+Particularly because the Universe Magic Pool would be destroyed in half a year. Apart from the legendary ones, every wizard would drop one rank (5 levels). The rule of the wizards in Feinan would be over. The rest of the classes would begin to rise, all kinds of Gods would spread their own religion and bit by bit, their religions would become widespread. The fires of war would be lit and every living being would suffer.
+
+And the wizards would be the most pitiful group. They lost their qualifications before the war even started.
+
+...
+
+"Knock, knock, knock!"
+
+"Come in." Marvin walked back to his bed.
+
+A young lady with brown hair entered. She seemed to be around twenty years old. She appeared somewhat tired, and her cleanly washed leather armor had some fresh blade cuts. Her ears were somewhat pointy, but not enough to suggest that she was a pure elf.
+
+This was Marvin’s butler and bodyguard, and the only person who had stayed by his side so far. He still remembered that night where the fire burned the barn down. It was this woman who, without a thought for her personal safety, pulled him out of the fire and slaughtered their way out, saving his life from the hands of the gnolls. She had walked from White River Valley to River Shore City, almost 5 kilometers, while carrying him.
+
+Her name was Anna and she was a half-elf. Limited by his abilities, Marvin couldn’t see her attributes. However, based on these three days of observation, Anna should have a rank 1 adventurer class with 4 or 5 levels. She was probably either a Fighter or a Ranger, mostly likely the former. At least in his memories, Anna rarely used a bow and arrow, traps and the like.
+
+Her weapon was a sword, and like her leather armor, it was in poor shape because there had been no maintenance for a long time.
+
+"Master, I went to the City Hall today and asked but the officials still gave me the same answer…"
+
+Anna set her sword down to the side, her pretty face still looking a little tired. "But fortunately, I earned 20 silvers today. At least we won’t have to worry about next week’s rent. And you can get soup at night."
+
+"Big Sis Anna, how much do we have?" Marvin suddenly asked.
+
+Anna’s face showed a hint of surprise. Since Marvin woke up from his serious fever, this was the first time he spoke with her.
+
+She didn’t ponder and quickly answered, "29 silvers."
+
+"29 silvers aren’t enough," Marvin muttered while frowning. "Did my mother leave the jewelry box?"
+
+Anna was startled at first before becoming angry. "Master Marvin?! Do you want to sell your mother’s relics?!"
+
+Marvin nodded, his eyes very calm. "I remember a necklace being inside; it should be worth some money."
+
+Anna was looking at Marvin in disbelief, her eyes showing her disappointment. "Don’t tell me that you want to go to the casino?"
+
+Marvin froze for a moment, as he hadn’t expected Anna to misunderstand him. He searched his again memories and found out that when the original owner of the body had first arrived in River Shore City, he had some money on him, but a malicious "friend" tricked him into going to the casino.
+
+The outcome was naturally losing a lot of money. Ever since then, his health which had slightly improved began to slowly take a turn for the worse as the sickness began to grow stronger.
+
+Obviously, that so-called friend was a shill for the casino. He was specialized in tricking people like Marvin who had little money and no powerful backer.
+
+"I can’t give it to you Master Marvin. If you need money, I’ll earn it," Anna said stubbornly. "But I won’t allow you mess around. You should know that Young Master Wayne already owes the wizard alliance two months of tuition. If we don’t continue to pay the tuition, he will be forced to drop out from the Magore."
+
+"We don’t have much money left and we can’t afford to squander it again!"
+
+Marvin couldn’t help but chuckle, saying softly, "Big Sister Anna, I asked you for the necklace not for gambling, but to use it to cure my body."
+
+"Cure?" Anna stared blankly for a moment.
+
+"My bodily health hasn’t improved all this time and I can’t keep going like this. I know of a priest of the Silver God. As long as we pay him, he will cast a low level [Remove Disease] and [Cure Light Wounds] on me. That way, my body will heal back to normal," Marvin explained. "I can’t remain a weak noble."
+
+"I need to train and fight so that I can retake our territory. I also want to protect a few cherished people."
+
+He stood up from the bed, changed his clothes and looked a little more spirited.
+
+"Trust me, Big Sis Anna." He looked at the half-elf butler.
+
+Anna gritted her teeth, but in the end took the jewelry box from the bottom of the luggage. As expected, there was a pearl necklace inside.
+
+"I’ll go with you, to stop you from being tricked again…"
+
+"No need." Marvin took the jewelry box, with a somewhat serious expression.
+
+"Anna, you have been busy the whole day so you should have some rest. I might not come back tonight. You have to be careful. I heard two hooligans in the alley today who seemed to be talking about you."
+
+"I don’t think they have good intentions. Even though you are a rank 1 adventurer, some gangs are very powerful. We still have to be careful."
+
+Up until Marvin left the room, Anna was still sitting there, staring blankly.
+
+Oddly, today’s Marvin seemed a bit different. Very different from the kind and weak youth from the past. He even looked somewhat… domineering, just like his father. The kind of dignity unique to nobles.
+
+And outside the door, Marvin was looking at the system log, and he could only shake his head.
+
+"I feel a bit guilty using a skill on Anna… Whatever, it’ll be the last time I guess."
+
+[Log]:
+
+[Dignity (25) cast…]
+
+[Wisdom check...]
+
+[Skill successfully activated…]
+</p> <br>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
+                                <i class="fa-solid fa-arrow-left text-white " ></i>
+                            </div>
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
+                                <i class="fa-solid fa-arrow-right text-white "></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div
+            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
+            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
+            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
+                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
+                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
+                        <b>
+                            Table of Contents
+                        </b>
+                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
+                    </div>
+                    <p class="text-[#83848F] my-2 pl-3">
+                        Volume 1
+                    </p>
+                </div>
+                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                </div>
+                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
+                    id="index-pagination">
+                    <p>
+                        1-600
+                    </p>
+
+                </div>
+            </div>
+            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
+            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
+                id="closeIcon">
+                <div class=" w-96  p-2 rounded-t-xl">
+                    <div class="flex justify-end ">
+                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+                    </div>
+                    <b class="text-lg px-6 py-3 font-bold">
+                        Display Options
+                    </b>
+                    <p class="px-6 py-2 font-bold">
+                        Background
+                    </p>
+                    <div class="flex space-x-3 px-6 cursor-pointer">
+                        <div class="bg-white h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+
+                        </div>
+                    </div>
+                    <p class="px-6 py-2 font-bold">
+                        Font
+                    </p>
+                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Nunito Sans
+                            </p>
+                        </div>
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Merriweather
+                            </p>
+                        </div>
+                    </div>
+                    <p class="px-6 py-2">
+                        Size
+                    </p>
+                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
+                        <p class="cursor-pointer">
+                            A+
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        </p>
+
+                        <p>
+                            14
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        <p class="cursor-pointer">
+                            A-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+    <script src="../staticScript.js"></script>
+
+            </body>
+            </html>
+            
+            

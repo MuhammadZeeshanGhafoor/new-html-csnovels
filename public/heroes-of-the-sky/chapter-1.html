@@ -1,0 +1,404 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Your chapter description here">
+                <title>Heroes of the Sky - Chapter 1</title>
+                <!-- Include CSS files -->
+
+                
+                <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="../output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+<link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+                <!-- Include JavaScript files -->
+            </head>
+            <body class="w-full flex flex-col items-center font-montessart">
+                <!-- Top NavBar -->
+                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+                        <div class="w-7/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+                        </div>
+                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                            <p class="text-3xl">
+                                Z
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="w-full flex justify-between p-1 overflow-hidden">
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                            id="navbar">Category</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+                    </ul>
+                </div>
+            
+                <!-- DESKTOP NAVBAR -->
+                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
+                        <div class="w-4/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+                        </div>
+                        <div class="w-2/12 flex items-center justify-between font-light">
+                            <p id="increment">Subscribe</p>
+                            <p>Discord</p>
+                            <img src="../assets//menu.png" class="w-8" />
+                        </div>
+                    </div>
+                </div> -->
+            
+                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
+                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
+                    <b>
+                        Heroes of the Sky / Chapter 1 
+                    </b>
+                </div>
+            
+                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
+            
+                    <div class="md:w-3/4 mx-auto bg-white">
+                       
+
+                        
+         
+                        <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
+                        
+                        <div class="border border-gray-200 " id="cover-img">
+                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/heroes-of-the-sky.png?t=2024-01-31T04%3A15%3A41.926Z" alt="Heroes of the Sky Cover"
+                                    class="md:w-52 md:h-72 p-1" id="cover-img">
+                                </div>
+                            <b id="bookname">
+                                Heroes of the Sky
+                            </b>
+                            <p>
+                            © CSNovels
+                            </p>
+                            
+                                </div>
+                                <div class="relative">
+                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/heroes-of-the-sky.png?t=2024-01-31T04%3A15%3A41.926Z"
+                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
+                                alt="Heroes of the Sky Cover" id="cover-img">
+                                <hr class="bg-black md:px-16 px-2">
+                                </div>
+            
+                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
+                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
+                            <b class="md:   text-xl">
+                                1
+                            </b>
+                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
+                        </div>
+    
+                        
+
+
+                        <div class="md:px-16 px-6">
+                            <p id="chaptercontent">
+                                <p>In the chaotic darkness, the young Milo Parker awoke and started wiping off the sweat on his forehead. Then he looked towards the boy of around 14 who was standing at the door.
+
+“Donti, did anything happen?” Milo asked.
+
+Addressed as Donti, the boy’s full name was Donti Schultz.
+
+From his appearance, Donti looked like a very harmless and innocent person. However, he was holding a bone knife in his hands and standing guard at the door. It was deep into the night at the moment, but he did not close his eyes even though he looked very sleepy, as he had to keep watch through the night.
+
+Donti shook his head and said, “No, everything is fine. Hmm, what exactly is this sickness you’re experiencing in your head? Even the town’s doctor can’t diagnose what’s wrong with you?”
+
+“You don’t have to worry about such things. What I’m experiencing is not a sickness.” Milo said firmly, “It’ll be dawn soon, and I’ll be going out to hunt. You should sleep for a while so that you can get up in time for school.”
+
+“Okay...” Donti nodded, glum. “But what’s the point of studying in a wasteland like this…”
+
+“It will be useful for you in the future,” Milo said in an irrefutable tone.
+
+“I want to go out to hunt too.” Donti pouted.
+
+“Who’s going to keep watch at night if something happens to you? Me, who’s unconscious?” Milo stood up and prepared to go fetch water from the town center as it was less dangerous to do so after dawn broke.
+
+During the night, it was a lawless land out there.
+
+***
+
+Dark clouds were building up without rest in the cloudy sky. A drop of acid rain eventually fell from above. It got blown about by the strong winds and finally landed in front of Milo.
+
+Milo was lying on the ground in the wilderness. He frowned and felt that he was a little unlucky today as the acid rain arrived before his prey appeared.
+
+Someone mentioned that he must be careful of the beasts while moving around in this wasteland. But he felt that the person left everything else unspoken, because many things could still kill a person out in this wasteland.
+
+One of them was the acid rain.
+
+However, Milo still did not make a move. If he couldn’t catch some game today, he and Donti would starve to death before they could die from the disease caused by the acid rain.
+
+Milo’s eyes popped when he heard a bird’s wings flapping. However, the rhythm of his breathing did not change.
+
+Milo had used a tree branch to prop up a black cauldron and scattered some black bread crumbs underneath it a short distance ahead of himself.
+
+That large bird landed beside the cauldron and looked around sharply with an alert gaze. The size of the bird was not that much smaller than the cauldron, in fact.
+
+As it stood in the same spot preening its feathers, Milo did not make a move and continued waiting.
+
+The bird finally seemed to let its guard down as it started sneaking towards the cauldron as a thief would. However, when it entered into the boundary under the cauldron and was about to lower its head to peck on the bread crumbs, Milo pulled hard on the rope in his hand.
+
+Right after, the young man jumped up and rushed towards the cauldron like an unbridled wild donkey. Before the large bird could flip the cauldron over, he mustered all of his strength and used his body to pin down the cauldron!
+
+Phew!
+
+Milo heaved a sigh of relief as he had waited an entire night just to catch this sparrow. Fortunately, his efforts had not gone to waste today, especially since such good opportunities were hard to come by.
+
+Clattering came from inside the cauldron as the struggling sparrow battered its tough wings against it. At this moment, the short melody of the clock striking the hour rang from the refugee stronghold.
+
+Milo turned around and looked at the town. He wondered when he could finally bring Donti to live inside the stronghold.
+
+To Milo, the people living in the stronghold were fortunate because they did not have to face the dangers of the wastelands. However, not just anyone could enter that place as they wished.
+
+Right at this moment, the activity in the cauldron quieted by a lot.
+
+He let out a sigh and checked if the ragged cloth was wrapped firmly around his hand. Then Milo slowly lifted the cauldron up to create a tiny opening and put his hand in. He attempted to grab hold of the large sparrow by its legs!
+
+However, life was not always that smooth sailing. Milo yelped right after putting his hand under the cauldron.
+
+Milo pulled out his hand and had a look at his palm. The web between his thumb and forefinger was bleeding, as not even the ragged cloth could protect it against the sparrow’s sharp beak.
+
+Seeing this, he got angry. He removed his ragged jacket and wrapped it around his hand. Then he thrust his hand under the cauldron again and grabbed the sparrow by its neck this time.
+
+He took the sparrow out from under the cauldron and tucked it in his arm. With a strong twist of his hand, the sparrow’s neck broke and it went limp.
+
+At this moment, Milo felt a pinch in his heart because the large sparrow’s claws had punched several holes into his jacket.
+
+Suddenly, his mind went blank, and Milo fell to his knees. It was as if a massive copper bell had been struck inside his head. Then he descended into a chaotic darkness.
+
+Oh no! 
+
+In the past, this sickness only occurred at midnight, but now it came earlier?
+
+This was not the first time his sickness had “acted up”. Almost all the people in town knew there was something wrong with his head, and his pain would flare up at random times.
+
+Only Milo knew that it was not pain but a state of confusion that he was experiencing.
+
+Wait a minute...
+
+This time, it was different from the past. The black mist in his mind had dispersed and revealed a “palace” beyond it!
+
+Milo’s eyes flew open, and he stood up.
+
+He looked at himself in disbelief. “I came to this quickly?”
+
+He originally had a chance to get a closer look at the palace’s appearance, but he knew better. There was no difference between remaining unconscious and dying out here in the wilderness. Right now, he had to rush back to the town that was situated outside of Stronghold 113 before the heavens opened up with the acid rain!
+
+Milo tied the sparrow’s legs together and slung it over his shoulder. Then he lifted the big cauldron and inverted it onto his head before running away.
+
+Pitter-patter...
+
+Raindrops started falling on the cauldron.
+
+The cauldron had turned into his umbrella.
+
+Before he could run far, however, the silhouette of a person holding a bone knife stood in his way. “Give your catch to me...”
+
+But before the person could finish his sentence, he saw a big cauldron swinging in closer and closer, until it smacked into his face!
+
+“Damn!” The robber fell backwards.
+
+He had not expected Milo’s attack to be that swift!
+
+And it was so forceful too!
+
+Then he saw Milo lower the pot before swinging it back up and placing it over his head to use as an umbrella, all in a single, continuous motion.
+
+The robber had not even fallen to the ground, yet Milo was already running off into the distance!
+
+The robber laid on the ground facing the sky as the acid rain came down. It was a little painful and stung his face. There was something about this that he could not understand.
+
+In most situations, shouldn’t there be some interaction between them?
+
+Just how many times had this young man encountered a similar situation to react so instinctively?
+
+Something was not right!
+
+He could hear that young man’s footsteps approaching again!
+
+The robber hurriedly sat up and turned around to look. He discovered that the young man was coming back to him!
+
+Milo had not planned to return, but he distinctly heard a voice reverberate from the palace in his mind.
+
+Quest! Gift your catch to someone else!
+
+“Who said that?” Milo turned around and walked back to the robber with some uncertainty.
+
+Seeing this, the robber said in panic, “Let’s talk this over…. Hey, that’s not right, I’m the victim here….”
+
+Milo sized up the robber. He noticed that there were no others nearby.
+
+“You want this sparrow?” Milo asked.
+
+The robber’s eyes lit up. “Yes! I do!”
+
+“Here, take it...” Milo stuffed the sparrow into the man’s arms without explaining himself.
+
+That unfamiliar yet neutral voice intoned again.
+
+Quest complete. Awarded! Basic Skill Duplication Scroll. You may use it to learn another person’s skills!
+
+Milo was stunned, because he could feel a leather parchment appear within his mind!
+
+A Skill Duplication Scroll that he could use to copy another’s skills?
+
+Like hunting? 
+
+Survival? 
+
+Or some other skill?
+
+The robber hugged the large sparrow tightly in his arms and began to express his gratitude. “You’re a good person...”
+
+Before he could finish speaking, he saw Milo grab the sparrow back before leaving again.
+
+The robber was confused.
+
+He stared at Milo’s receding figure as he scurried away.
+
+What the f*ck is this guy! What is he after?!</p> <br>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
+                                <i class="fa-solid fa-arrow-left text-white " ></i>
+                            </div>
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
+                                <i class="fa-solid fa-arrow-right text-white "></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div
+            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
+            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
+            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
+                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
+                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
+                        <b>
+                            Table of Contents
+                        </b>
+                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
+                    </div>
+                    <p class="text-[#83848F] my-2 pl-3">
+                        Volume 1
+                    </p>
+                </div>
+                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                </div>
+                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
+                    id="index-pagination">
+                    <p>
+                        1-600
+                    </p>
+
+                </div>
+            </div>
+            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
+            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
+                id="closeIcon">
+                <div class=" w-96  p-2 rounded-t-xl">
+                    <div class="flex justify-end ">
+                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+                    </div>
+                    <b class="text-lg px-6 py-3 font-bold">
+                        Display Options
+                    </b>
+                    <p class="px-6 py-2 font-bold">
+                        Background
+                    </p>
+                    <div class="flex space-x-3 px-6 cursor-pointer">
+                        <div class="bg-white h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+
+                        </div>
+                    </div>
+                    <p class="px-6 py-2 font-bold">
+                        Font
+                    </p>
+                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Nunito Sans
+                            </p>
+                        </div>
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Merriweather
+                            </p>
+                        </div>
+                    </div>
+                    <p class="px-6 py-2">
+                        Size
+                    </p>
+                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
+                        <p class="cursor-pointer">
+                            A+
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        </p>
+
+                        <p>
+                            14
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        <p class="cursor-pointer">
+                            A-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+    <script src="../staticScript.js"></script>
+
+            </body>
+            </html>
+            
+            

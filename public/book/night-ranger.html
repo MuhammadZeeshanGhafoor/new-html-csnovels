@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Ranger | CSnovels</title>
+    <meta name="description" content="Marvin learned that he was familiar with the world after reincarnating into a frail body and that this was the game he had played in his former life. And he only had 6 months until the Great Calamity!He would undoubtedly battle to preserve the world because he was once a good player...  It's time to make plans and get ready for what's to come. It's better to utilize your knowledge to your advantage than to battle the gods.Follow Marvin's exploration of this new world.Author: 深蓝椰子汁, Dark Blue Coconut Milk<p></p>">
+    <meta name="keywords" content="books, novels, Fantasy, Night Ranger">
+    <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body class="w-full flex flex-col items-center m-0 p-0">
+
+
+
+
+<div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+        <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+            <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+            <div class="w-7/12">
+                <input type="text"
+                    class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                    placeholder="Search..." />
+                <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+            </div>
+            <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                <p class=" text-3xl" id="username-sign">
+                    
+                </p>
+            </div>
+        </div>
+        <ul class="w-full flex justify-between p-1 overflow-hidden">
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                id="navbar">Category</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+        </ul>
+    </div>
+
+    <!-- DESKTOP NAVBAR -->
+    <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+        <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+            <img src="../assets/logo-dark.png" alt="logo_mobile" class=" h-10">
+            <div class="w-4/12">
+                <input type="text"
+                    class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                    placeholder="Search..." />
+                <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+            </div>
+            <div class="w-2/12 flex items-center justify-between font-light">
+                <p id="increment">Subscribe</p>
+                <p>Discord</p>
+                <img src="../assets//menu.png" class="w-8 cursor-pointer" onclick="toggleProfile('profile')" />
+            </div>
+            <div id="profile"
+                class="w-96 h-96 bg-[#333333] text-white rounded-xl shadow-xl top-16 right-32 absolute hidden">
+                <div class="mx-5 mt-8 mb-5">
+                    <div class="flex justify-start items-center space-x-3">
+                        <div class="flex justify-center items-center h-10 w-10 rounded-full bg-blue-500 ">
+                            <p class="  text-white font-bold text-center text-xl">
+                                U
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold" id="username">
+                                ABCD
+                            </p>
+                            <p id="email">
+                                abc@gmail.com
+                            </p>
+                            <i class="fa fa-star text-yellow-400 text-lg"></i>
+                        </div>
+                    </div>
+                    <div class="text-lg space-y-5 mt-5 font-semibold mx-1 ">
+                        <p class="cursor-pointer" onclick="()=>handleProfileClick('profile')">
+                            My Profile
+                        </p>
+                        <p class="cursor-pointer">
+                            Favorites
+                        </p>
+                        <p class="cursor-pointer">
+                            Bookmarks
+                        </p>
+                        <p class="cursor-pointer">
+                            Contact Support
+                        </p>
+                        <p class="cursor-pointer" id="sign-out">
+                            Sign Out
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Add the rest of your HTML structure here -->
+    <div class="w-full lg:w-[85%] mx-auto shadow-xl rounded-2xl">
+        <div class="flex flex-col items-center justify-around lg:justify-between px-3 md:p-12 mx-auto mt-5 md:mt-0">
+            <div class="w-full flex items-center justify-around lg:justify-between ">
+                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/night-ranger.jpg" alt="Night Ranger cover image"
+                    class="rounded-md h-28 md:h-64 md:mr-0 mr-5 " id="cover-img">
+                <div class="flex flex-col md:space-y-5 top-0">
+                    <p class="md:text-2xl font-semibold w-48 md:w-full" id="title">Night Ranger</p>
+                    <div
+                        class="bg-[#EBEBEB] hidden md:flex items-center justify-between mt-3 lg:mt-0 lg:px-10 lg:py-4 px-4 py-2 rounded-full">
+                        <div class="flex items-center space-x-3 justify-center">
+                            <img src="../assets/Images/Categories Icon.svg" alt="Category icon"
+                                class="h-3 w-3 lg:h-5 lg:w-5">
+                            <p
+                                class="text-left text-nowrap overflow-hidden text-ellipsis text-xs lg:text-base xl:text-lg lg:w-full">
+                                Fantasy</p>
+                        </div>
+                        <div class="flex items-center space-x-3 justify-center px-10">
+                            <i class="fa-solid fa-clock text-xs lg:text-lg "></i>
+                            <p
+                                class="text-left text-nowrap overflow-hidden text-ellipsis text-xs lg:text-base xl:text-lg lg:w-full">
+                                Last Updated: 2/7/2024</p>
+                            <img src="../assets/question-icon.png" alt="Update info icon" class="h-3 w-3 lg:h-5 lg:w-5">
+                        </div>
+                        <div class="flex items-center space-x-3 justify-center">
+                            <img src="../assets/book-icon-mobile.png" alt="Chapter count icon"
+                                class="h-3 w-3 lg:h-5 lg:w-5">
+                            <p class="text-left text-nowrap overflow-hidden text-ellipsis text-xs lg:text-base xl:text-lg lg:w-full chapters-count"
+                                id="chapter">735 Chapters</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2 md:space-x-5">
+                        <div class="flex items-center md:space-x-2" id="main-rating-star">
+
+                            <i class="fa-regular fa-star text-gray-400"></i><i class="fa-regular fa-star text-gray-400"></i><i class="fa-regular fa-star text-gray-400"></i><i class="fa-regular fa-star text-gray-400"></i><i class="fa-regular fa-star text-gray-400"></i>
+                        </div>
+                        <p class="font-bold text-lg" id="rating">0.0</p>
+                        <p class="text-xs text-[#BEC0C1]">0 RATING
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 my-3 md:my-0" id="readBook">
+                        <button onclick="readBookPage()"
+                            class="md:px-7 md:py-3 px-3 py-2 flex items-center justify-center rounded-full bg-gray-900 text-xs font-bold text-white">READ
+                            NOW</button>
+                        <div class="bg-[#EBEBEB] h-6 w-6 md:h-10 md:w-10 rounded-full flex items-center justify-center">
+                            <i class="fa-regular fa-heart text-xs md:w-5 mx-auto items-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="bg-[#EBEBEB] w-full flex items-center justify-between px-3 py-2 md:px-10 md:py-4 rounded-full md:hidden">
+                <div class="flex items-start md:space-x-3 space-x-1 justify-center">
+                    <img src="../assets/Images/Categories Icon.svg" alt="Category icon" class="h-3 w-3 md:h-5 md:w-5">
+                    <p class="text-xs md:text-lg text-left text-nowrap overflow-hidden text-ellipsis w-12 md:w-full">
+                        Fantasy</p>
+                </div>
+                <div class="flex items-center md:space-x-3 space-x-1 justify-center md:px-10">
+                    <i class="fa-solid fa-clock text-xs md:text-lg "></i>
+                    <p class="md:text-lg text-left text-nowrap overflow-hidden text-ellipsis text-xs w-16 md:w-full">
+                        Last Updated: 2/7/2024</p>
+                    <img src="../assets/question-icon.png" alt="Update info icon" class="h-2 w-2 md:h-5 md:w-5">
+                </div>
+                <div class="flex items-center md:space-x-3 space-x-1 justify-center">
+                    <img src="../assets/book-icon-mobile.png" alt="Chapter count icon" class="h-2 w-2 md:h-5 md:w-5">
+                    <p class="text-xs md:text-lg text-left text-nowrap overflow-hidden text-ellipsis chapters-count"
+                        id="chapters">735 Chapters</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col item-center justify-center" id="table-content">
+            <div class="flex ml-5 mt-3 md:mt-0 md:ml-20 mb-5">
+                <b onclick="handleData()">ABOUT</b>
+
+                <p class="ml-5" onclick="handleTableContent()">TABLE OF CONTENT</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-[85%] my-12">
+        <div id="about">
+            <div>
+                <b class="text-2xl">Description</b>
+                <p class="my-4" id="description">Marvin learned that he was familiar with the world after reincarnating into a frail body and that this was the game he had played in his former life. And he only had 6 months until the Great Calamity!He would undoubtedly battle to preserve the world because he was once a good player...  It's time to make plans and get ready for what's to come. It's better to utilize your knowledge to your advantage than to battle the gods.Follow Marvin's exploration of this new world.Author: 深蓝椰子汁, Dark Blue Coconut Milk<p></p></p>
+            </div>
+            <div class="w-[85%] mb-20">
+                <b class="text-2xl">Recommended Reads</b>
+            </div>
+            <div class="w-full md:w-[85%] mb-8">
+                <b class="text-2xl hidden md:block">
+                    Reviews
+                </b>
+                <hr class="mt-6 text-black">
+                <div class="flex flex-col  md:flex md:flex-row ">
+                    <div class="flex flex-col items-center space-y-4 w-full md:w-[50%] py-10">
+                        <b class="text-xl">
+                            Rate This Novel
+                        </b>
+                        <div class="bg-[#EBEBEB] inline-block px-4 py-3 rounded-full">
+                            <div class="flex items-center space-x-2 md:space-x-3" id="main-rating-star">
+                                <img src="../assets/star.png" alt="night-ranger" srcset=""
+                                    class="w-6 h-6 md:h-9 md:w-9">
+
+
+                            </div>
+                        </div>
+                        <b id="total-rating">
+                            0 RATING
+                        </b>
+                    </div>
+                    <div class="border-l h-[245px] hidden md:block">
+
+                    </div>
+                    <div class="flex flex-col w-full md:w-[50%] py-10">
+                        <div class="flex justify-center md:justify-start px-5">
+                            <textarea class="bg-[#EBEBEB] resize-none p-4 rounded-xl outline-none focus:ring-0"
+                                cols="70" placeholder="Leave a review with a comment..."></textarea>
+                        </div>
+                        <p class="text-red-500 mt-2 ml-8 md:ml-10" id="alert">
+                            // Sign in to leave a comment
+                        </p>
+                        <button class="border-none outline-none bg-transparent mt-9 flex justify-start ml-8 md:ml-10"
+                            id="comment-button" onclick="commentBook('night-ranger')">Submit</button>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- comments -->
+                <b class="text-2xl px-4  block md:hidden">
+                    Reviews
+                </b>
+                <!-- COMMENTS LIST -->
+                <div class="w-full flex flex-col " id="comment-section">
+
+
+
+                </div>
+
+                <hr class="mb-16">
+            </div>
+
+
+
+            <!-- table of content start -->
+            <div id="tableOfContent" style="display: none;">
+                <div class="container mx-auto p-4">
+                    <!-- <div class="flex justify-between items-center mb-4">
+                    <h1 class="text-xl font-bold">Latest Release: <a href="#" class="text-blue-600">735</a></h1>
+                    <input type="text" placeholder="search a title or number..." class="border border-gray-300 p-2 rounded">
+                </div> -->
+                    
+            <!-- table of content finish -->
+        </div>
+        </div>
+        </div>
+        <div class="w-full hidden  flex-col" id="pagination-main">
+        <div class="flex flex-col md:flex-row w-11/12 justify-between mt-10 mb-5">
+
+                        <div class="flex items-center space-x-3">
+                            <p>
+                                Latest Release:
+                            </p>
+                            <p class="text-blue-500">
+                                735
+                            </p>
+                            <p>
+                                2/7/2024
+                            </p>
+                        </div>
+                        <div class="flex items-center  space-x-5 ">
+                            <div>
+                                <input type="text" class="bg-[#EBEBEB] rounded-full w-44 md:w-96 py-3 px-4 outline-none"
+                                    placeholder="search a title or number..">
+                            </div>
+                            <div>
+                                <i class="fa fa-filter"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="bg-black text-black mt-5 mb-10 border-2">
+
+
+                    <div class="w-full grid grid-cols-2  md:grid-cols-3 gap-y-4 " id="pagination">
+
+
+
+                    </div>
+                    <div class="flex items-center justify-around m-10">
+                        <span class="text-gray-600 h-6 w-6 cursor-pointer flex items-center text-2xl "
+                            id="prev-button"><i class="fa-solid fa-chevron-left"></i> previous</span>
+                        <span class="text-gray-600 h-6 w-6 cursor-pointer flex items-center text-2xl " id="next-button">
+                            next
+                            <i class="fa-solid fa-chevron-right"></i> </span>
+                    </div>
+                </div>
+            </div>
+        <!-- Footer -->
+        <div class="bg-[#121111] w-full rounded-t-3xl md:rounded-t-none">
+            <div class="w-4/5 md:mt-20 mt-10 mb-8  md:mb-12 text-[#949494] mx-auto">
+                <div class="md:flex md:justify-between items-center md:text-xl">
+                    <b class="text-5xl font-extrabold text-white flex justify-center mx-auto md:block md:mx-0">
+                        <span class="text-[#F9C559]">CS</span>novels
+                    </b>
+                    <b class="hidden md:block">
+                        CATEGORIES
+                    </b>
+                    <b class="hidden md:block">
+                        POPULAR
+                    </b>
+                    <b class="hidden md:block">
+                        CONTACT
+                    </b>
+                    <div class="md:hidden flex justify-center mx-auto space-x-3 my-5 items-center text-sm">
+                        <p>
+                            CATEGORIES
+                        </p>
+                        <p>
+                            CONTACT
+                        </p>
+                    </div>
+                </div>
+                <div class="flex md:justify-between justify-center items-center md:-ml-16">
+                    <div>
+                        <div class="flex items-center justify-center my-4 md:my-7 md:mr-10 space-x-3">
+                            <i class="fa-brands fa-facebook text-3xl"></i>
+                            <i class="fa-brands fa-discord text-3xl"></i>
+                        </div>
+                        <div class=" flex flex-col justify-center mx-auto text-center">
+                            <p class="text-base md:text-lg mb-3 md:mb-0">
+                                Copyright © 2021 CSnovels.com
+                            </p>
+                            <p class="text-xs md:text-lg">
+                                PRIVACY POLICY • TERMS OF SERVICE
+                            </p>
+                        </div>
+                    </div>
+                    <div class="font-bold hidden md:block -ml-10">
+                        <p>
+                            Urban
+                        </p>
+                        <p>
+                            Eastern
+                        </p>
+                        <p>
+                            Sci-Fi
+                        </p>
+                        <p>
+                            Romance
+                        </p>
+                    </div>
+                    <div class="font-extrabold text-xs hidden md:block text-[#121111]">
+                        <p>
+                            Contact Us
+                        </p>
+                        <p>
+                            Support
+                        </p>
+                        <p>
+                            Discard
+                        </p>
+                    </div>
+                    <div class="font-bold hidden md:block text-sm">
+                        <p>
+                            Contact Us
+                        </p>
+                        <p>
+                            Support
+                        </p>
+                        <p>
+                            Discard
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../staticSingleBook.js"></script>
+</body>
+
+</html>
+    

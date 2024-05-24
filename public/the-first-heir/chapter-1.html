@@ -1,0 +1,394 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Your chapter description here">
+                <title>The First Heir - Chapter 1</title>
+                <!-- Include CSS files -->
+
+                
+                <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="../output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+<link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+                <!-- Include JavaScript files -->
+            </head>
+            <body class="w-full flex flex-col items-center font-montessart">
+                <!-- Top NavBar -->
+                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+                        <div class="w-7/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+                        </div>
+                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                            <p class="text-3xl">
+                                Z
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="w-full flex justify-between p-1 overflow-hidden">
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                            id="navbar">Category</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+                    </ul>
+                </div>
+            
+                <!-- DESKTOP NAVBAR -->
+                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
+                        <div class="w-4/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+                        </div>
+                        <div class="w-2/12 flex items-center justify-between font-light">
+                            <p id="increment">Subscribe</p>
+                            <p>Discord</p>
+                            <img src="../assets//menu.png" class="w-8" />
+                        </div>
+                    </div>
+                </div> -->
+            
+                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
+                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
+                    <b>
+                        The First Heir / Chapter 1 
+                    </b>
+                </div>
+            
+                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
+            
+                    <div class="md:w-3/4 mx-auto bg-white">
+                       
+
+                        
+         
+                        <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
+                        
+                        <div class="border border-gray-200 " id="cover-img">
+                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/the-first-heir.jpg" alt="The First Heir Cover"
+                                    class="md:w-52 md:h-72 p-1" id="cover-img">
+                                </div>
+                            <b id="bookname">
+                                The First Heir
+                            </b>
+                            <p>
+                            © CSNovels
+                            </p>
+                            
+                                </div>
+                                <div class="relative">
+                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/the-first-heir.jpg"
+                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
+                                alt="The First Heir Cover" id="cover-img">
+                                <hr class="bg-black md:px-16 px-2">
+                                </div>
+            
+                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
+                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
+                            <b class="md:   text-xl">
+                                1
+                            </b>
+                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
+                        </div>
+    
+                        
+
+
+                        <div class="md:px-16 px-6">
+                            <p id="chaptercontent">
+                                <p>At Riverdale Public Hospital.
+ 
+“Excuse me, make way!” Philip Clarke was carrying an unconscious little girl as he rushed into the hospital, yelling madly, “Doctor! Doctor! Quick, save my little girl!”
+ 
+The nurses and doctor who had rushed out quickly took the child from Philip’s arms, and entered the emergency room.
+ 
+“Oh, you can’t go in!” A nurse in an azure-colored uniform with a face mask stopped Philip from entering into the emergency room.
+ 
+Just then, the rapid sounds of high heels clicking against the ceramic tiles could be heard from the back, squeezing his heart with every click.
+ 
+“Philip Clarke!” roared a woman’s voice.
+ 
+‘Slap!’
+ 
+A crisp slap came in firm contact with Philip’s cheek. Before him, stood Wynn Johnston with an enraged expression as tears pooled in her beautiful eyes. “If anything happens to my daughter, I will never forgive you!” Her tone was cold and laced with full fury.
+ 
+This scene frightened quite a few patients and their family members in the hospital.
+ 
+Philip hung his head low in shame without attempting any explanation.
+ 
+“Hmph!” Wynn snorted coldly. The dissatisfaction and contempt in her eyes were visible.
+ 
+Philip stood aside with his head down in silence like a kid who was caught misbehaving. He stole a few glances at the woman standing a few meters away from him, the woman he used to call his wife. The woman with whom he had already signed the divorce papers could officially be separated from him at any time.
+ 
+Wynn Johnston was gorgeous. Her features were defined, her figure tall and slim. She was well-mannered and educated, once the prettiest girl in their university. She had unexpectedly fallen in love with Philip, abruptly gotten married, and given birth to his daughter, Mila Clarke.
+ 
+However, life after marriage was not as ideal. Philip’s career did not go well, and his business ended up failing. His daughter even had congenital heart disease, which drained all of their savings, and now he had to make a living by doing food delivery services.
+ 
+On the other hand, Wynn was a deputy general manager of a marketing department in a public-listed company. One of her parents was a section chief, the other a retired teacher.
+ 
+It was safe to say that Philip did not have much status in the Johnston family, and for the past two years, he was almost non-existent. And because of Philip, Wynn had fallen out with her family that her parents were not willing to provide them any support.Both the elders had told them solemnly that they would assist in their granddaughter’s treatment funds only if Philip and Wynn divorced. After the divorce, the child would belong to the Johnston family.
+ 
+This matter had dragged on for a year.
+ 
+The emergency room’s door was pushed open, and Philip saw his daughter being pushed out. He wanted to rush over, but Wynn had already gotten there first. He stopped in his tracks and watched his adorable little girl from afar.
+ 
+Little Mila was wearing a respirator, but her big eyes were bright like obsidian gems. She reached out with her tiny pale hand and mumbled, “Papa…”
+ 
+Philip went over to hold his daughter’s cold hand while gently brushing away the wisps of hair from her forehead, smiling as he said, “Papa’s here.”
+ 
+“Mama, please don’t fight with Papa. It’s Mila’s fault;I wanted Papa to take me to the amusement park.” Little Mila, who was only three-years-old, was speaking feebly for her father.
+ 
+Wynn smiled and answered, “Okay, Mama will listen to you and not argue with Papa.”
+ 
+“Philip Clarke, pay the hospitalization fee.” A cold voice interrupted Philip’s conversation with his daughter.
+ 
+Philip glanced at Wynn, but she only shot him an icy glare before accompanying their daughter into the ward.
+ 
+Upon reaching the inpatient payment department, Philip took out his debit card.
+ 
+“I’m sorry, but your card has declined,” said the nurse coldly as she swept him a look.
+ 
+Oh, it’s Philip Clarke, she thought. The penniless man who keeps getting his wife to foot the medical bills. He could have asked for help from his parents-in-law, but he hasn’t. What an egoistic man, rubbish!“It’s declined?” Philip was exasperated. He grimaced and humbled himself, bowing slightly to ask, “Nurse, can you give me a few days?”
+ 
+The nurse shot him a cold look with mockery in her eyes and replied, “If you don’t have any money, ask your wife! After all, you’re just a kept man.”
+ 
+“You!” Philip’s expression darkened.
+ 
+The nurse merely crossed her arms and scoffed. “You have until tomorrow. If you can’t pay up, then proceed with discharge.” After that, she turned around to ignore him. Saying another word to him made her feel disgusted.
+ 
+How could she bully someone just because they’re poor? Philip clenched his fists tightly in a fury, feeling bitter.
+ 
+The moment he turned around, he saw Wynn standing behind him radiating a cold aura, hatred was apparent in her frosty expression.
+ 
+“Wynnie, don’t worry, I’ll go and gather some funds now.” Philip forced a smile.
+ 
+However, both their savings were already dried up.
+ 
+Tears poured down from Wynn’s eyes as her hands balled into fists. “Philip Clarke, if you’re still a man, go and beg my parents!”
+ 
+“I…” Philip froze. His words were stuck in his throat.
+ 
+“Hah!” Wynn scoffed as she wiped her tears. “I knew it. You never change. Is your pride more important than Mila?” She had seen through to his thoughts. Wynn then turned around with her back facing him.
+ 
+Philip let out a helpless sigh and then received a notification about a delivery on his phone. He rushed to the ward, had a quick chat with his daughter before leaving.
+ 
+Before he left, Wynn reminded him, “Philip Clarke, it’s my father’s birthday this weekend. If you don’t want to divorce, then go and beg my parents.”
+ 
+She left him with no choice. Philip knew that this was the last shred of Wynn’s patience for him.
+ 
+Just as he was about to leave the hospital, an arrogant male voice called out to him, “Wow, isn’t this Philip Clarke? Where are you rushing off to?”
+ 
+Philip looked up to see a handsome man standing in front of him. The man was wearing a full suit with a fruit basket and a Peppa Pig doll in his hand.
+ 
+“Juan Parker! Why are you here?” Philip’s face immediately darkened.
+ 
+Juan Parker was his best buddy at university. But ever since Philip and Wynn got married, they became enemies because Juan, too, was in love with Wynn.
+ 
+“I asked him to come.” Wynn suddenly appeared and walked past Philip. With an apologetic smile, she said to Juan, “Brother Juan, I’m so sorry to trouble you again.”
+ 
+Upon seeing Wynn, the mocking expression on Juan’s face turned into a generous smile as he said, “It’s okay, I’m Mila’s uncle after all. This is for Mila. I’ll go and pay the bills now.” Juan then shot Philip a smug look with apparent disdain in his eyes.
+ 
+The knuckles on Philip’s fists turned white. He asked Wynn coldly, “Why did you loan money from him?”
+ 
+“Do you have any? Or do you want Mila to be kicked out of the hospital tomorrow?” Wynn glared icily at Philip before turning away to follow after Juan, chattering happily with him as they went.
+ 
+Philip’s eyes were about to pop from their sockets out of anger at this scene. He felt his ego being dealt a heavy blow. Money, money, money! It’s all about money with them!
+ 
+Philip stood at the entrance of the hospital for the longest time before heaving a sigh. He looked up at the blue sky and then dug out his cellphone to make a call. “Howie, where are you? Let’s meet up.”
+ 
+Inside a rented house, Philip and Howard Lowe sat across from each other. Howard was a slightly tanned and skinny man. He handed a debit card to Philip and said, “There’s sixty thousand here. Take it for now.”
+ 
+Philip’s hand was trembling as he took the card. “Howie, thank you. Thank you!”
+ 
+“What’s there to thank? We’re brothers, after all.” Howard laughed.
+ 
+“I object!”
+ 
+There was a loud bang, and the door of the rented house was suddenly pushed open. A tall woman rushed in furiously. “Howard Lowe, that’s the bride price you were supposed to give my family. Why are you giving it to him?”
+ 
+This woman was Howard’s girlfriend, Ruby Ford. Her looks were a seven out of ten, and she had a proud personality. She was a bit of a snob. “Ruru, Mila has been hospitalized, so I’m only lending this to Philip for an emergency.” Howard went over to pull at Ruby’s arm as he explained.
+ 
+Ruby swung his hand away and sneered at Philip. “Hah! Philip, how many times have you borrowed money from our Howard now? If you’re going to be shameless, why should I indulge you?”
+ 
+“Ruby!” Howard’s voice deepened as he tugged her sleeve.
+ 
+Ruby would not back down. She pointed at Howard’s nose and blamed him. “Mr. Lowe, if you’re going to loan him the money, I’m breaking up with you! You can forget about our wedding!”
+ 
+Seeing as they were about to get into a fight, Philip put the card down onto the table, stood up, and nodded apologetically. “I’m sorry. Uhm… Howie, I’ll see you guys at your wedding ceremony then. I’ll take my leave now.”
+ 
+“Goodbye!” Ruby said coldly. Without waiting for Howard to chase after him, Philip had already run out of the rented house.
+ 
+As soon as the door closed behind him, Ruby and Howard’s arguing voices sounded behind the door.
+ 
+Philip squatted down with his phone in one hand and a cigarette in another, lost in thoughts along the streets. Being poor is a sin, and you really can’t move forward without money.
+ 
+After making up his mind, Philip finally called a number he had not dialed in seven years.
+ 
+The call soon got through.
+ 
+“Hello, Young Master? Young Master, is that you? You’ve finally called me.” The voice on the other end sounded thrilled. There were hints of age and even sniffles.
+ 
+Philip sighed helplessly and said, “George, I need money. Can you transfer me a hundred thousand?”
+ 
+“Oh, Young Master, please don’t say that. I would even transfer you a billion if you wanted.” The older man on the phone was still excited, but soon, he sounded troubled. “But Young Master, according to your agreement with the master, if you want to use the finances and connections of the family, you’d have to come back and inherit the family business. Could you come over to the company, and we’ll discuss this?”
+ 
+Philip pondered it for a moment before answering, “Alright, I’ll make a trip over.”
+ 
+“Great! Young Master, I’ll send someone to pick you up!” Old George said enthusiastically.
+ 
+“That’s okay, I can go over myself.” Philip said before asking, “Oh yes, which company?”
+ 
+“Apex Group. I’ll be waiting for you at the director’s office,” said George.
+ 
+After hanging up, Philip stared at the stream of people passing by in front of him.
+ 
+Okay, I’ll be frank and say that I, Philip Clarke, was born with a silver spoon! My family has assets worldwide, and my family owns seventy percent of the businesses in the world. I’ve been trying to avoid the inheritance these past seven years, so I ran away, hoping that I could experience a normal life. But today, reality has forced me to compromise. If I don’t work hard enough, and don't have any money, I would have to go back and inherit that massive fortune.
+ 
+Philip soon arrived at the Apex Group building in his scooter. It was a tall building of about three hundred meters. The company itself was ranked at number seven on the Fortune Global 500 list! But then again, all the companies in the Fortune Global 500 either belonged to the Clarke family or had a piece of share owned by them.
+ 
+Upon entering the lobby, Philip was stopped by a female voice. “Hey, hey, hey, you there! Who said you could just barge in? Get out, out! Delivery men aren’t allowed inside! Call and get someone to come downstairs to meet you!” A pretty girl in black uniform blocked Philip’s path and started scolding him. She had a mature appearance and a dignified aura.
+ 
+“What are you staring at? How disgusting, you rogue! Hurry up and get out!” Lily Simmons shot a hateful glare at Philip, thinking that she had seen enough delivery men in her life.</p> <br>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
+                                <i class="fa-solid fa-arrow-left text-white " ></i>
+                            </div>
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
+                                <i class="fa-solid fa-arrow-right text-white "></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div
+            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
+            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
+            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
+                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
+                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
+                        <b>
+                            Table of Contents
+                        </b>
+                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
+                    </div>
+                    <p class="text-[#83848F] my-2 pl-3">
+                        Volume 1
+                    </p>
+                </div>
+                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                </div>
+                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
+                    id="index-pagination">
+                    <p>
+                        1-600
+                    </p>
+
+                </div>
+            </div>
+            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
+            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
+                id="closeIcon">
+                <div class=" w-96  p-2 rounded-t-xl">
+                    <div class="flex justify-end ">
+                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+                    </div>
+                    <b class="text-lg px-6 py-3 font-bold">
+                        Display Options
+                    </b>
+                    <p class="px-6 py-2 font-bold">
+                        Background
+                    </p>
+                    <div class="flex space-x-3 px-6 cursor-pointer">
+                        <div class="bg-white h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+
+                        </div>
+                    </div>
+                    <p class="px-6 py-2 font-bold">
+                        Font
+                    </p>
+                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Nunito Sans
+                            </p>
+                        </div>
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Merriweather
+                            </p>
+                        </div>
+                    </div>
+                    <p class="px-6 py-2">
+                        Size
+                    </p>
+                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
+                        <p class="cursor-pointer">
+                            A+
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        </p>
+
+                        <p>
+                            14
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        <p class="cursor-pointer">
+                            A-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+    <script src="../staticScript.js"></script>
+
+            </body>
+            </html>
+            
+            

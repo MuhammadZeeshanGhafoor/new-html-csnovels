@@ -19,36 +19,45 @@
 <title>Document</title>
 
 <body>
+    <div id="toast-container"
+        class="hidden transition-effect absolute left-[40%]  top-2 w-32 h-20 rounded-md bg-slate-300 ">
+        text
+    </div>
     <div>
         <div class="flex justify-around">
             <div class="w-[50%] bg-[#FAFBFC]">
                 <img src="./assets/Images/login.32e3bd42.png" alt="image" style="width: 600px; height: 600px;">
             </div>
             <div class="w-[50%] flex flex-col mx-auto items-center">
-                <b class="text-5xl font-extrabold text-blue-900 flex justify-center mx-auto md:block md:mx- mt-10 mb-20">
+                <b
+                    class="text-5xl font-extrabold text-blue-900 flex justify-center mx-auto md:block md:mx- mt-10 mb-20">
                     <span class="text-[#F9C559]">CS</span>novels
                 </b>
                 <b class="text-[#F7943A] text-start -ml-36 text-lg mt-4 mb-7">
                     Login to access your account
                 </b>
                 <div class="mb-3">
+                    <p class="text-center text-sm " id="alert-text"></p>
                     <p class="mb-2">
                         EMAIL / PHONE
                     </p>
-                    <input type="email" name="email" id="email" class="outline-none w-96 border-2 border-[#BFC7DA] py-3 px-5 rounded-lg">
+                    <input type="email" name="email" id="email"
+                        class="outline-none w-96 border-2 border-[#BFC7DA] py-3 px-5 rounded-lg" placeholder="email...">
                 </div>
                 <div class="mb-2">
                     <p class="mb-2">
                         PASSWORD
                     </p>
-                    <input type="email" name="email" id="email" class="outline-none w-96 border-2 border-[#BFC7DA] py-3 px-5 rounded-lg">
+                    <input type="password" name="password" id="password"
+                        class="outline-none w-96 border-2 border-[#BFC7DA] py-3 px-5 rounded-lg"
+                        placeholder="password...">
                 </div>
                 <b class="text-[#F7943A] text-lg -mr-56 mb-3">
                     Forgot Password?
                 </b>
                 <div>
-                    <button
-                     class="outline-none w-96 border-2 border-[#040220] py-3 px-5 rounded-lg bg-[#040220] text-white font-bold mb-3">Login</button>
+                    <button onclick="signIn()"
+                        class="outline-none w-96 border-2 border-[#040220] py-3 px-5 rounded-lg bg-[#040220] text-white font-bold mb-3">Login</button>
                     <p>
                         Don’t have an account? <b class="text-[#F7943A]">
                             Register
@@ -59,6 +68,7 @@
             </div>
         </div>
     </div>
+    <script src="./login.js"></script>
 </body>
 
 </html>

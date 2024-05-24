@@ -1,0 +1,324 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Your chapter description here">
+                <title>Heroes of the Sky - Chapter 5</title>
+                <!-- Include CSS files -->
+
+                
+                <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="../output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+<link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+                <!-- Include JavaScript files -->
+            </head>
+            <body class="w-full flex flex-col items-center font-montessart">
+                <!-- Top NavBar -->
+                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+                        <div class="w-7/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+                        </div>
+                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                            <p class="text-3xl">
+                                Z
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="w-full flex justify-between p-1 overflow-hidden">
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                            id="navbar">Category</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+                    </ul>
+                </div>
+            
+                <!-- DESKTOP NAVBAR -->
+                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
+                        <div class="w-4/12">
+                            <input type="text"
+                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                                placeholder="Search..." />
+                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+                        </div>
+                        <div class="w-2/12 flex items-center justify-between font-light">
+                            <p id="increment">Subscribe</p>
+                            <p>Discord</p>
+                            <img src="../assets//menu.png" class="w-8" />
+                        </div>
+                    </div>
+                </div> -->
+            
+                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
+                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
+                    <b>
+                        Heroes of the Sky / Chapter 5 
+                    </b>
+                </div>
+            
+                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
+            
+                    <div class="md:w-3/4 mx-auto bg-white">
+                       
+
+                        
+                        
+
+
+                        <div class="md:px-16 px-6">
+                            <p id="chaptercontent">
+                                <p>“As pets? They’re not buying them to eat?” Milo was puzzled. “What a waste! All of the meat on this is great!”
+
+“You won’t understand the world that the rich live in.” Old Bane laughed and said, “I heard that rich people used to keep eagles as pets a few hundred years ago. But haven’t the eagles gotten too big and dangerous now? So the next best thing is the sparrows. Just look at how menacing this sparrow looks. It’s exactly what the rich like.”
+
+Milo thought about it for a while. So while there were still a lot of people who didn’t have enough to eat, some people had started keeping sparrows as pets.
+
+“But I’ll have to sell it for a higher price if they want it alive.” Milo said, “When this bird is still alive, it can even kill people if you aren’t careful! It’s too dangerous!”
+
+All of a sudden, Milo thought that if the refugees outside the stronghold were contaminated, wouldn’t the sparrows be contaminated as well?
+
+Or did the people in the stronghold only need these refugees to work for them?
+
+And the walls, did they naturally divide them into a hierarchy?
+
+“You can only get rich by taking risks.” Old Bane smiled and said, “Since you can wait an entire night hunting, you’re no ordinary person. If you make an effort to catch a live sparrow, you can probably afford to stop working for the next six months. Besides, haven’t you thought about making some money so that you can get a wife?”
+
+“Get a wife? My ass!” Milo said petulantly.
+
+Old Bane purposely said in a mysterious tone, “Old Saul, who lives next door, has a daughter who’s studying at the same school as your little brother, Donti. She’s a really decent girl….”
+
+“Based on what you said, wouldn’t it be better if I just sold this sparrow to Old Saul directly? Would I still need your introduction then?” Milo turned his head to Donti and asked, “Is Old Saul’s daughter your classmate?”
+
+“Yes...” Donti nodded. “She’s quite big...”
+
+“Shoo, go play over there,” Old Bane snapped. “Pretend I didn’t say anything since you’re mistaking my kindness for ill intent!”
+
+Seeing that he almost got caught between Milo and Donti’s bantering, Old Bane decisively stopped them by changing the topic. “Remember, the next time you catch a live sparrow, you must bring it to me.”
+
+“Sure!” Milo nodded.
+
+Although catching it alive was dangerous, it was not impossible.
+
+He looked around the grocery store and asked, “How much are you selling the cotton-padded jacket for?”
+
+“The jackets are new arrivals, and they cost 500 perak apiece! You should know that I bought them for 490 perak each. I’m not looking to profit from selling these cotton-padded jackets at all.” Old Bane said, “One less death is one life saved, after all...”
+
+“How kind of you,” praised Milo nonchalantly. “I’ll buy one. Check and see what size Donti should wear.”
+
+“Bro, buy one for yourself too,” Donti quickly said.
+
+“Don’t interrupt when adults are talking.” Milo frowned. “I’m not cold...”
+
+Money was a good thing. The organizations that controlled the strongholds issued money to ensure the distribution of goods and materials. Although it was convenient, without it, nothing could be done.
+
+The winter here was freezing, but he had to put some money aside in case of emergencies. As there was still over a month left until winter, Milo thought that it would not be too late to buy another cotton-padded jacket by then if he could catch another sparrow. More importantly, it was time for Donti to pay for his monthly tuition.
+
+Milo glanced around the grocery store again, his gaze arresting at the counter behind Old Bane. “How much are you selling the antibiotics and anti-inflammatory drugs for?”
+
+“You want to buy medicine?” Only then did Old Bane notice the bloodstained bandage wrapped around Milo’s hand. “You’re injured? You really must buy some medicine then. If not, you could get an infection and die!”
+
+“I’m asking you how much it is!” Milo said impatiently.
+
+“210 perak each.” Old Bane said, “Antibiotics must be taken for three days straight. I’ll sell you three pills for 620 perak and give you an application of iodopovidone 1 for free. I only have 10 pills left in stock here.”
+
+Milo thought for a while before saying, “How about rounding it down…”
+
+“If by rounding down, you mean removing the zero, shut it,” Old Bane snapped.
+
+Milo smacked his lips and reluctantly looked away. “Forget it, I’m not buying them. Inflammation is uncommon during winter.”
+
+He turned around and led Donti to school.
+
+When they passed by the grain store, Milo went in and bought a long loaf of black bread. The black bread was mixed with something that would make their throats uncomfortable when swallowed.
+
+Donti said as he chewed on the black bread, “Bro, why don’t you also pay for the tuition and come to school since you want to attend classes so much.”
+
+“I still have to go out to hunt.” Milo said, “About what Old Bane said earlier, there are quite a few well-to-do girls in your school, right? You had better not fall in love at such an early age.”
+
+“I heard that people in the past used to get married when they were around 13 to 14 years old,” Donti retorted.
+
+Although he had never given such matters any thought before, he found it fun and enjoyable to bicker with Milo.
+
+Finding joy amid hardship was probably one of the greatest skills that humans had.
+
+Milo feigned a slap upside Donti’s head. “How can we compare what people did in the past? You’re still young. The women you get into a relationship with now will end up becoming someone else’s wife in the future.”
+
+Milo marveled at the thought. “A relationship with someone else’s wife sounds quite exciting for some reason….”
+
+“Bro, what are you talking about? Why can’t I understand?” said Donti while blinking.
+
+“Get lost! Stop acting innocent with me,” Milo said peeved.
+
+***
+
+The school was the cleanest and tidiest place in the entire town. It was also the only residence that had its own individual yard.
+
+Walking in from the outside, properly spaced crops grown in the yard could be seen, scallions, garlic sprouts, potatoes, cabbages, and many others.
+
+Milo felt that a place like a school should have bamboo trees growing around it instead. But then again, with food not easily accessible these days, it was quite fortunate to have a place to grow these vegetables. As such, Milo’s wish was for Donti to become a teacher when he grew up.
+
+It was not because he had a lot of respect for teachers, but that he felt that being a teacher was safe. They also had the privilege of having their own yard to grow some vegetables in. Furthermore, no one would ever steal their crops.
+
+It was such a wonderful thing.
+
+Generally speaking, Milo’s wishes had always been very “simple”.
+
+Donti took his tuition money and went to class.
+
+Milo squatted on top of the wall and listened to what was being taught inside the classroom. As he could not afford to pay the tuition, he had to eavesdrop like this.
+
+The teacher would sometimes tell the students stories about how glorious human civilization was in the past. Frankly, however, the teacher had not witnessed such a time either. Whatever he was telling them now were details passed on by word of mouth, so the truth had probably been distorted already.
+
+Although it was not very reliable, Milo was still fascinated by it.
+
+At times, Milo would ask Donti questions about information he didn’t understand or hear. This greatly troubled Donti because if he could not answer him, it would show that he did not pay attention during the lessons. Hence, whenever Milo was present to attend the lessons, Donti would be exceptionally attentive during class.
+
+For some reason, Donti had to admit that his brother looked rather charming when he was seriously learning. It was no wonder Milo would throw herself at him.
+
+The teacher was holding a book in the classroom as he stared with melancholic eyes at some of the sleeping students. Then he looked at Milo, who was on top of the wall outside the window.
+
+He said to Donti, “When you get back today, tell your brother that he can come into the yard and listen to my lessons in the future.”
+
+“Alright!” Donti smiled happily.</p> <br>
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('4')">
+                                <i class="fa-solid fa-arrow-left text-white " ></i>
+                            </div>
+                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('6')">
+                                <i class="fa-solid fa-arrow-right text-white "></i>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div
+            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
+            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
+            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
+                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
+                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
+                        <b>
+                            Table of Contents
+                        </b>
+                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
+                    </div>
+                    <p class="text-[#83848F] my-2 pl-3">
+                        Volume 1
+                    </p>
+                </div>
+                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
+                    <hr>
+                </div>
+                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
+                    id="index-pagination">
+                    <p>
+                        1-600
+                    </p>
+
+                </div>
+            </div>
+            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
+            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
+                id="closeIcon">
+                <div class=" w-96  p-2 rounded-t-xl">
+                    <div class="flex justify-end ">
+                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+                    </div>
+                    <b class="text-lg px-6 py-3 font-bold">
+                        Display Options
+                    </b>
+                    <p class="px-6 py-2 font-bold">
+                        Background
+                    </p>
+                    <div class="flex space-x-3 px-6 cursor-pointer">
+                        <div class="bg-white h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+
+                        </div>
+                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+
+                        </div>
+                    </div>
+                    <p class="px-6 py-2 font-bold">
+                        Font
+                    </p>
+                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Nunito Sans
+                            </p>
+                        </div>
+                        <div>
+                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
+                                Merriweather
+                            </p>
+                        </div>
+                    </div>
+                    <p class="px-6 py-2">
+                        Size
+                    </p>
+                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
+                        <p class="cursor-pointer">
+                            A+
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        </p>
+
+                        <p>
+                            14
+                        </p>
+                        <p class="border-l h-7 border-white ">
+
+                        <p class="cursor-pointer">
+                            A-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+    <script src="../staticScript.js"></script>
+
+            </body>
+            </html>
+            
+            
