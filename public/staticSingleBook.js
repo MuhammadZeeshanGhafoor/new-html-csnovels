@@ -5,7 +5,7 @@ const slug = splittedUrl[splittedUrl.length - 1].split(".").join("")
 async function getReviews() {
     let newDiv = ""
     const reviewDiv = document.getElementById("comment-section")
-    const response = await fetch(`http://localhost:8888/.netlify/functions/getreviews?slug=${slug}`)
+    const response = await fetch(`../.netlify/functions/getreviews?slug=${slug}`)
     let reviewsRes = await response.json()
     console.log("REVIEWS", reviewsRes)
     let review = reviewsRes.book
@@ -53,7 +53,7 @@ async function handleTableContent(slug) {
 
     }
     console.log("NEW URLLL", newUrl)
-    const response = await fetch(`http://localhost:8888/.netlify/functions/chapterindex?slug=${newUrl}`)
+    const response = await fetch(`../.netlify/functions/chapterindex?slug=${newUrl}`)
     let result = await response.json();
     console.log(result, "result");
     let tableId = document.getElementById("about")

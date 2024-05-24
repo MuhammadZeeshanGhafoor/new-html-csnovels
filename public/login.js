@@ -15,7 +15,7 @@ async function signIn() {
                     password,
                 }),
             }
-            const response = await fetch("http://localhost:8888/.netlify/functions/signin", options)
+            const response = await fetch("../.netlify/functions/signin", options)
             console.log("RRRR", response)
             const result = await response.json()
             console.log(result)

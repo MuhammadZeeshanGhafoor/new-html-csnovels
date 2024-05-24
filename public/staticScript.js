@@ -6,7 +6,7 @@ console.log("WORKING STATIC SCRIPT", slug)
 let indexes
 const getIndexes = async () => {
     try {
-        const response = await fetch(`http://localhost:8888/.netlify/functions/chapterindex?slug=${slug}`)
+        const response = await fetch(`../.netlify/functions/chapterindex?slug=${slug}`)
         const result = await response.json()
         indexes = result
         console.log(result, "abcRess");

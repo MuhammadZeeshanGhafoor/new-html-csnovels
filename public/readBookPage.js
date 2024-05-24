@@ -10,7 +10,7 @@ console.log("NEW___SLUG", chapterNumber, "CHAPTER", slug)
 
 
 const getChapterContent = async () => {
-    const url = 'http://localhost:8888/.netlify/functions/getsinglechapter';
+    const url = '../.netlify/functions/getsinglechapter';
     const requestBody = {
         slug: slug,
         chapternumber: chapterNumber
@@ -38,7 +38,7 @@ getChapterContent()
 let indexes
 const getIndexes = async () => {
     try {
-        const response = await fetch(`http://localhost:8888/.netlify/functions/chapterindex?slug=${slug}`)
+        const response = await fetch(`../.netlify/functions/chapterindex?slug=${slug}`)
         const result = await response.json()
         indexes = result
         console.log(result, "abcRess");
