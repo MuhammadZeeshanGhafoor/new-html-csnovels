@@ -44,9 +44,9 @@ const handler = async (event) => {
             throw new Error(error.message);
         }
 
-        reviewsCache = data;
+        // reviewsCache = data;
 
-        const book = reviewsCache.find((item) => item.slug === slug);
+        const book = data.filter((item) => item.slug === slug);
 
         return {
             statusCode: 200,

@@ -20,7 +20,7 @@ async function getReviews() {
             <div class="mt-3">
                 <div class="flex items-center space-x-2">
                     <p>
-                        ${item.name}+232
+                        ${item.name}
                     </p>
                     <img src="../assets/Images/message.png" alt="" class="h-5 w-5 mt-1">
                 </div>
@@ -180,4 +180,43 @@ function readBookPage() {
     console.log(slug)
     window.location.href = `/${slug}/chapter-1`
 
+}
+
+async function commentBook (slug) {
+    const user = localStorage.getItem('user')
+    let comment = document.getElementsByTagName('textarea')[0]
+    let pastuser = JSON.parse(user)
+    if (!user) {
+        let alertText = document.createElement('p')
+        let navigate = document.createElement('a')
+        navigate.textContent = 'Login Page'
+        navigate.href = '/login.html'
+        comment.parentElement.style.flexDirection = 'column'
+        alertText.style.color = 'red'
+        alertText.style.fontSize = '10px'
+        alertText.textContent = 'Sign in to leave a commment'
+        comment.parentNode.appendChild(alertText)
+        comment.parentNode.appendChild(navigate)
+        
+    } else {
+        const options = {
+            method : 'POST',
+            headers : {'content-type': 'application/json'},
+            body: JSON.stringify({
+                review : comment.value,
+                name: 'anonymous',
+                userid: pastuser.id,
+                rating: 5,
+                slug : slug
+            })
+            
+        }
+        const response  = await fetch('../.netlify/functions/postreview', options)
+        let result = await response.json()
+        console.log("Result" ,result);
+
+    }
+    console.log("User" , pastuser.id); 
+    let text = comment.value
+    console.log( "comment" ,text);
 }

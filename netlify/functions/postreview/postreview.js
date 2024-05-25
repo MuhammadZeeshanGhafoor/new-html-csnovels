@@ -6,6 +6,7 @@ const supabaseKey = process.env.ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 exports.handler = async (event, context) => {
+    console.log("EventB" , event.body);
     if (event.httpMethod !== 'POST') {
         return {
             statusCode: 405,
