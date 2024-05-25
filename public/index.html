@@ -128,29 +128,27 @@
                         </div>
 
                         <div>
-                            <p class="font-bold">
-                                ABCD
-                            </p>
-                            <p>
+
+                            <p id="userMail">
                                 abc@gmail.com
                             </p>
                             <i class="fa fa-star text-yellow-400 text-lg"></i>
                         </div>
                     </div>
                     <div class="text-lg space-y-5 mt-5 font-semibold mx-1 ">
-                        <p class="cursor-pointer" onclick="()=>handleProfileClick('profile')">
+                        <p class="cursor-pointer" onclick="handleProfileClick()">
                             My Profile
                         </p>
-                        <p class="cursor-pointer">
+                        <p class="cursor-pointer" onclick="handleProfileClick()">
                             Favorites
                         </p>
-                        <p class="cursor-pointer">
+                        <p class="cursor-pointer" onclick="handleProfileClick()">
                             Bookmarks
                         </p>
-                        <p class="cursor-pointer">
+                        <p class="cursor-pointer" onclick="handleProfileClick()">
                             Contact Support
                         </p>
-                        <p class="cursor-pointer">
+                        <p class="cursor-pointer" onclick="handleProfileClick()">
                             Sign Out
                         </p>
                     </div>
@@ -748,7 +746,7 @@
             console.log(obj)
         }
         function handleProfileClick() {
-            window.location.href = 'profile';
+            window.location.href = '/profile';
         }
         console.log("working")
 
@@ -757,6 +755,17 @@
             profile.classList.toggle('hidden')
 
         }
+
+        function displayEmail() {
+            const data = localStorage.getItem('user');
+            if (data) {
+                const user = JSON.parse(data);
+                const userEmail = user.email;
+                document.getElementById('userMail').textContent = userEmail;
+            }
+        }
+
+        window.onload = displayEmail
     </script>
     <script type="module" src="./index.js"></script>
     <script src="./mainScript.js"></script>
