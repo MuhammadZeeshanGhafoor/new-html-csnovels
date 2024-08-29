@@ -111,7 +111,8 @@ updateUi()
 
 async function getFavorites() {
 
-
+    let user = localStorage.getItem('user')
+    let parsedUser = JSON.parse(user)
 
     let headersList = {
         "Accept": "*/*",
@@ -119,7 +120,7 @@ async function getFavorites() {
         "Content-Type": "application/json"
     }
 
-    let bodyContent = JSON.stringify({ "email": "joe60@temp.com", "slug": "lord-of-mysteries" });
+    let bodyContent = JSON.stringify({ "email": parsedUser?.email, "slug": slug });
 
     let response = await fetch("../.netlify/functions/getfavorites", {
         method: "POST",
