@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,183 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Great Marshal/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 5 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Great Marshal / Chapter 5 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 5</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daniel was startled, not understanding why the Hinton family had overreacted.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“You passed out, Daniel. You don’t even know what’s going on. You must be mistaken,” Hannah started.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“He’s just a useless, poor bastard. How could he have saved your life? Don’t be humble, director. We all know the truth. It was Jackson who asked you for this favor to save Daniel, isn’t it?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The director frowned. “As I said, I did nothing. It was all my master’s doing. Besides, who’s Jackson? He didn’t call me either. Oh, right, my phone rang twice just now, but the line cut off before I could answer. I’m not sure if it was him.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Suddenly realizing something, Lacey hurriedly called Jackson and turned on the speakerphone.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Jackson, did you manage to get in touch with the director?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I did,” Jackson replied. “But he’s on a business trip and won’t be able to make it back in time. I’ll contact another doctor for you,”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“You liar!” Lacey yelled. “You’re a big fat liar! The director is standing right in front of me now!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Jackson felt a little embarrassed. “Is it? Maybe | didn’t communicate well with him.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Piss off!” Lacey shouted. “You can’t fool me! You scum! Don’t bother contacting me in the future.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“F**k you!” Jackson’s fury sprang to life. “How dare you scold me?!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I’m warning you, we’re getting married on the first next month no matter what. If you have the guts to walk away, I’ll destroy the Hinton family. Also, stay away from that uncivilized man who you met today, or I’ll send someone to kill him.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Веер!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lacey hung up.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">There was a dead silence after that.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The dust had now settled that Jackson, whom they placed their hopes on, didn’t take Daniel’s life into his heart.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But it was Zeke, whom they spurn and reviled, who had turned the tide.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The Hinton family were overwhelmed with mixed emotions.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Master, I bet you’re hungry,” Daniel had yet to figure out that the young man before him was Zeke Williams.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Shut up!” Hannah shouted. “He has no right to be your master.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“You’re just a woman. What do you know?” Daniel chided. “I would have died today if it wasn’t for him.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Open your damned eyes, you fool. He’s Zeke Williams. The one who caused your heart disease to relapse.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daniel was astonished. He looked like he was about to have another heart attack again.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Master is actually the despicable ‘future son-in-law’?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Why is this melodrama happening to me?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The atmosphere turned awkward.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Even the director felt embarrassed for Daniel. “Uh… Haha, what a surprise. I didn’t know that Master is your son-in-law. You must have secretly learned medicine skills from him. I think you deserve to be the Head of Department with your capabilities. Get ready to step in.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At that, the director turned around and walked away, not planning to meddle in their family affairs.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daniel was wild with joy.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He didn’t expect to be Head of Department so easily.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But at the thought that he got this position because of Zeke, he really couldn’t celebrate his victory in triumph.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After all, Jackson was the ideal son-in-law in his heart.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily and Madeleine were walking toward them from afar.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Now that Hinton is at a critical stage, I don’t believe the Hinton family will not concede,” Madeleine said.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hmph! I want the Hinton family to get on their knees and beg me like a dog,” Emily replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Especially Zeke Williams, I want to rip his face apart.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Her face was still aching from that slap just now.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But when they approached the Hinton family, they were instantly stunned.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daniel had actually recovered, and his face was ruddy, not like he had just come back from the land of the dead.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“What… What just happened?” The pair of mother and daughter felt extremely lost as their plan for revenge went down the drain.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They sighed, readying themselves to leave.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Stand there,” Zeke said coldly. “Who gave you permission to leave?”.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily shot daggers at him. “Shut up. You don’t get to talk here.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Oh really?” Zeke sneered. “Then I supposed the new Head, Dr. Hinton, has the right to speak.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Dr. Hinton, your subordinate is really unprofessional to refuse saving life because of a personal grudge. They even asked for a medical fee of three hundred thousand in public. What are you doing with such a subordinate? To harm society?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daniel was momentarily confused.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He didn’t know what the pair of mother and daughter had previously done.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hannah was the first to react. This is a good time for us to take revenge!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Daniel,” she shouted. “Fire her now!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I knelt and bowed to her before this, but she refused to save you. She even asked us for three hundred thousand. I’m so pissed!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daniel’s anger flared up. “What?! Get the hell out of this hospital, Madeleine. You don’t deserve to be a doctor.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Haha, I think you have not only a heart disease but also a brain disease,” Madeleine said contemptuously.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Everyone knows that I have the best hope of becoming the Head of Department. As for you, don’t even think about it. You want to fire me? In your dreams! Just you wait. When I become the Head, you’ll be the first-“</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Before she could finish, her phone and Daniel’s phone rang at the same time.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Madeleine instinctively took out her phone and glanced at it. Her face paled while her hands and feet shivered.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The director had personally sent a notice in their group chat. Daniel Hinton holds the position of Head of Department.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“No way. How is this possible?!” Madeleine roared hysterically. “I clearly deserve to be Head of Department the most!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hinton, you must have bribed the director! Did you? You scumbag! Just you wait. Your reputation will soon fall apart.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Oh please,” Daniel snorted. “I disdain to do that kind of thing. On the contrary, some people were dishonest. I bet you bribed the leaders, huh?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Bullshit!” Madeleine retorted. “If you didn’t bribe the director, why would he appoint you as the Head?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Well, all thanks to you,” Hannah chimed in before Daniel could speak.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Thank you for giving Zeke away. His outstanding medical skills saved Daniel. He has even accepted the director as his apprentice. Let alone the Head of Department. If Daniel wants to be the assistant director, the director has to grant him that position out of respect for Zeke. Who said my daughter picked up a jilted trash? My daughter has found a treasure! It’s a pity someone didn’t recognize this treasure!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">W-What?!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily and Madeleine looked at Zeke.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This trash who can’t even fork out three hundred thousand has accepted the director as his apprentice?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Why didn’t I realize his capability before?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hold up. If I didn’t ask for another three hundred thousand at the wedding, the Head of Department position would have been mine!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Did I give away this opportunity myself?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Madeleine instantly regretted her actions.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">She shouldn’t have asked for another dowry of three hundred thousand. What she had lost now was a far cry from three hundred thousand.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily, who had been silent, suddenly spoke up.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('4')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('6')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Daniel was startled, not understanding why the Hinton family had overreacted.</p> <br><p>“You passed out, Daniel. You don’t even know what’s going on. You must be mistaken,” Hannah started.</p> <br><p>“He’s just a useless, poor bastard. How could he have saved your life? Don’t be humble, director. We all know the truth. It was Jackson who asked you for this favor to save Daniel, isn’t it?”</p> <br><p>The director frowned. “As I said, I did nothing. It was all my master’s doing. Besides, who’s Jackson? He didn’t call me either. Oh, right, my phone rang twice just now, but the line cut off before I could answer. I’m not sure if it was him.”</p> <br><p>Suddenly realizing something, Lacey hurriedly called Jackson and turned on the speakerphone.</p> <br><p>“Jackson, did you manage to get in touch with the director?”</p> <br><p>“I did,” Jackson replied. “But he’s on a business trip and won’t be able to make it back in time. I’ll contact another doctor for you,”</p> <br><p>“You liar!” Lacey yelled. “You’re a big fat liar! The director is standing right in front of me now!”</p> <br><p>Jackson felt a little embarrassed. “Is it? Maybe | didn’t communicate well with him.”</p> <br><p>“Piss off!” Lacey shouted. “You can’t fool me! You scum! Don’t bother contacting me in the future.”</p> <br><p>“F**k you!” Jackson’s fury sprang to life. “How dare you scold me?!”</p> <br><p>“I’m warning you, we’re getting married on the first next month no matter what. If you have the guts to walk away, I’ll destroy the Hinton family. Also, stay away from that uncivilized man who you met today, or I’ll send someone to kill him.”</p> <br><p>Веер!</p> <br><p>Lacey hung up.</p> <br><p>There was a dead silence after that.</p> <br><p>The dust had now settled that Jackson, whom they placed their hopes on, didn’t take Daniel’s life into his heart.</p> <br><p>But it was Zeke, whom they spurn and reviled, who had turned the tide.</p> <br><p>The Hinton family were overwhelmed with mixed emotions.</p> <br><p>“Master, I bet you’re hungry,” Daniel had yet to figure out that the young man before him was Zeke Williams.</p> <br><p>“Shut up!” Hannah shouted. “He has no right to be your master.”</p> <br><p>“You’re just a woman. What do you know?” Daniel chided. “I would have died today if it wasn’t for him.”</p> <br><p>“Open your damned eyes, you fool. He’s Zeke Williams. The one who caused your heart disease to relapse.”</p> <br><p>Daniel was astonished. He looked like he was about to have another heart attack again.</p> <br><p>Master is actually the despicable ‘future son-in-law’?</p> <br><p>Why is this melodrama happening to me?</p> <br><p>The atmosphere turned awkward.</p> <br><p>Even the director felt embarrassed for Daniel. “Uh… Haha, what a surprise. I didn’t know that Master is your son-in-law. You must have secretly learned medicine skills from him. I think you deserve to be the Head of Department with your capabilities. Get ready to step in.”</p> <br><p>At that, the director turned around and walked away, not planning to meddle in their family affairs.</p> <br><p>Daniel was wild with joy.</p> <br><p>He didn’t expect to be Head of Department so easily.</p> <br><p>But at the thought that he got this position because of Zeke, he really couldn’t celebrate his victory in triumph.</p> <br><p>After all, Jackson was the ideal son-in-law in his heart.</p> <br><p>Emily and Madeleine were walking toward them from afar.</p> <br><p>“Now that Hinton is at a critical stage, I don’t believe the Hinton family will not concede,” Madeleine said.</p> <br><p>“Hmph! I want the Hinton family to get on their knees and beg me like a dog,” Emily replied.</p> <br><p>“Especially Zeke Williams, I want to rip his face apart.”</p> <br><p>Her face was still aching from that slap just now.</p> <br><p>But when they approached the Hinton family, they were instantly stunned.</p> <br><p>Daniel had actually recovered, and his face was ruddy, not like he had just come back from the land of the dead.</p> <br><p>“What… What just happened?” The pair of mother and daughter felt extremely lost as their plan for revenge went down the drain.</p> <br><p>They sighed, readying themselves to leave.</p> <br><p>“Stand there,” Zeke said coldly. “Who gave you permission to leave?”.</p> <br><p>Emily shot daggers at him. “Shut up. You don’t get to talk here.”</p> <br><p>“Oh really?” Zeke sneered. “Then I supposed the new Head, Dr. Hinton, has the right to speak.”</p> <br><p>“Dr. Hinton, your subordinate is really unprofessional to refuse saving life because of a personal grudge. They even asked for a medical fee of three hundred thousand in public. What are you doing with such a subordinate? To harm society?”</p> <br><p>Daniel was momentarily confused.</p> <br><p>He didn’t know what the pair of mother and daughter had previously done.</p> <br><p>Hannah was the first to react. This is a good time for us to take revenge!</p> <br><p>“Daniel,” she shouted. “Fire her now!”</p> <br><p>“I knelt and bowed to her before this, but she refused to save you. She even asked us for three hundred thousand. I’m so pissed!”</p> <br><p>Daniel’s anger flared up. “What?! Get the hell out of this hospital, Madeleine. You don’t deserve to be a doctor.”</p> <br><p>“Haha, I think you have not only a heart disease but also a brain disease,” Madeleine said contemptuously.</p> <br><p>“Everyone knows that I have the best hope of becoming the Head of Department. As for you, don’t even think about it. You want to fire me? In your dreams! Just you wait. When I become the Head, you’ll be the first-“</p> <br><p>Before she could finish, her phone and Daniel’s phone rang at the same time.</p> <br><p>Madeleine instinctively took out her phone and glanced at it. Her face paled while her hands and feet shivered.</p> <br><p>The director had personally sent a notice in their group chat. Daniel Hinton holds the position of Head of Department.</p> <br><p>“No way. How is this possible?!” Madeleine roared hysterically. “I clearly deserve to be Head of Department the most!”</p> <br><p>“Hinton, you must have bribed the director! Did you? You scumbag! Just you wait. Your reputation will soon fall apart.”</p> <br><p>“Oh please,” Daniel snorted. “I disdain to do that kind of thing. On the contrary, some people were dishonest. I bet you bribed the leaders, huh?”</p> <br><p>“Bullshit!” Madeleine retorted. “If you didn’t bribe the director, why would he appoint you as the Head?”</p> <br><p>“Well, all thanks to you,” Hannah chimed in before Daniel could speak.</p> <br><p>“Thank you for giving Zeke away. His outstanding medical skills saved Daniel. He has even accepted the director as his apprentice. Let alone the Head of Department. If Daniel wants to be the assistant director, the director has to grant him that position out of respect for Zeke. Who said my daughter picked up a jilted trash? My daughter has found a treasure! It’s a pity someone didn’t recognize this treasure!”</p> <br><p>W-What?!</p> <br><p>Emily and Madeleine looked at Zeke.</p> <br><p>This trash who can’t even fork out three hundred thousand has accepted the director as his apprentice?</p> <br><p>Why didn’t I realize his capability before?</p> <br><p>Hold up. If I didn’t ask for another three hundred thousand at the wedding, the Head of Department position would have been mine!</p> <br><p>Did I give away this opportunity myself?</p> <br><p>Madeleine instantly regretted her actions.</p> <br><p>She shouldn’t have asked for another dowry of three hundred thousand. What she had lost now was a far cry from three hundred thousand.</p> <br><p>Emily, who had been silent, suddenly spoke up.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('4')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('6')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

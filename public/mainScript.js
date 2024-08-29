@@ -20,7 +20,7 @@ function renderBooks(books) {
     let completeDiv = '';
 
     books.forEach((item, index) => {
-        if (item.most_popular) {   
+        if (item.most_popular) {
             bookdivs += `
             <div class="flex flex-col items-start w-20 h-44 md:h-36  md:w-64 md:flex-row ">
             <img src=${item?.coverimage} class="rounded-md w-full md:w-2/5" onclick="openPage('${item?.slug}')">
@@ -94,12 +94,12 @@ function renderBooks(books) {
 
 async function fetchAndRenderBooks() {
     try {
-        const data = await fetchData("../.netlify/functions/hello-world");
-        renderBooks(data.book);
+        const data = await fetchData("../.netlify/functions/allbooks");
+        // renderBooks(data.book);
     } catch (error) {
 
         console.error("Failed to fetch and render books:", error);
     }
 }
 
-fetchAndRenderBooks();
+// fetchAndRenderBooks();

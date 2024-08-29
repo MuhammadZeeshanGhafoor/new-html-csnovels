@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,63 +30,23 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Supreme Magus/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 1 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Supreme Magus / Chapter 1 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
-                        
+            </div>
+            </header>
+            
          
                         <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
                         
@@ -100,142 +62,218 @@
                             </p>
                             
                                 </div>
-                                <div class="relative">
-                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/supreme-magus.jpg"
-                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
-                                alt="Supreme Magus Cover" id="cover-img">
-                                <hr class="bg-black md:px-16 px-2">
-                                </div>
-            
-                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
-                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
-                            <b class="md:   text-xl">
-                                1
-                            </b>
-                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
-                        </div>
-    
                         
+    
 
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
 
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Prologue
-No matter if you are a pessimist or an optimist, Derek Esposito's life wasn't a good one nor a bad one. It was just a mediocre insignificant existence.</p> <br><p>His father was a bipolar abusive man, capable of disappearing is his bedroom for days during the depressive phase. He would wake up only to eat, use the bathroom and the occasional "let's make your life miserable" fit of rage.</p> <br><p>During his euphoric phase, he would work like a madman, but not having any talent either as a businessman nor as social climber, he was unable to both being successful and establishing the right connections.</p> <br><p>In his natural state, whenever he decided to actually take his medications, he was just a coach potato that would stand up and go to work just to avoid the blame and spite from neighbours and peers.</p> <br><p>Whatever was his mental condition, he always was a perfect example of an abusive father.</p> <br><p>His sons were always a disgrace in his eyes.</p> <br><p>They never studied hard enough, never were disciplined enough, nor did show enough respect.</p> <br><p>And he was always there to remember them how wrong they were.</p> <br><p>He would yell at them for the slightest mistake, constantly reminding them that they were just parasites that leeched off his hard work.</p> <br><p>And when words weren't enough or when they did fail to meet his expectation with school grades or chores, there was no teacher like his leather belt.</p> <br><p>Hence, Derek and Carl had to quickly learn how to fend off for themselves, since their absent-minded mother practically forgot about them right after giving birth, dedicating her life in pursue of peace and quiet, staying as far as possible from her spouse tantrums.</p> <br><p>Derek was two years older, and desperately tried to take care of his little brother, but to no avail.</p> <br><p>They grew up watching and reading stories about heroes protecting the weak and upholding justice. But no hero ever appeared to save them.</p> <br><p>Every week they would be forced to go to church to worship a nondescript benevolent god and his son, the saviour of all mankind. But no matter how much they prayed or how good they were, no miracle occurred.</p> <br><p>So, they simply stopped believing in heroes and instead of wasting time with prayers they crammed.</p> <br><p>School was their only oasis, but that lasted only until the sixth grade.</p> <br><p>Once in middle school, it didn't even take a month before the bullying started.</p> <br><p>Their cheap clothes and gloomy disposition made them the easiest targets. They were so used being tossed around and insulted that they didn't even bother trying to fight back.</p> <br><p>For a long time, Derek had considered it the worst moment in his useless life. After a month, he knew he could not take any more of that, so he tried to make things better.</p> <br><p>He reported his father's abuses to the social services with an anonymous email, but being overworked and understaffed the social work assistant made a brief visit and never came back.</p> <br><p>Then he tried to end the bullying by reporting their aggressors to a teacher, which in turn washed her hands by reporting it to the principal. The principal did not want to meddle with what he deemed as childish pranks, so he called Derek's parents to inform them of the problem, hoping they would let it slide. And at least his wish came true.</p> <br><p>Derek, instead, took and extra beating for not being man enough to face his own problems.</p> <br><p>"Are you really that stupid to never learn anything from me? Never delegate, if you want something done right, do it yourself!"</p> <br><p>Derek had never felt so helpless and desperate, so that night he bawled his eyes out, until he fell asleep. That had been the last straw.</p> <br><p>The next day he felt different, clearheaded like never before. It was not the time for despair anymore, he needed a plan.</p> <br><p>It would take him years to realize that something inside him had died. He was no longer able to trust, hope or develop any sense of kinship. He was surrounded by enemies, and to survive Derek needed to be able to fight back.</p> <br><p>So, Derek asked his father to let him join a dojo and learn martial arts, and to his surprise he did not have to beg or even ask twice. His old man was glad that his wimpy and scrawny poor excuse of a child was finally interested in becoming a man. His only condition was that Derek was not allowed to quit for at least one year, otherwise he would have to pay for it.</p> <br><p>Not only Derek started practicing aikido almost daily, he would also wake up two hours earlier every single day to build muscles doing push ups, squats, sit ups and running until he was out of breath.</p> <br><p>In a few months he was finally able to do every day 100 push ups, sit ups and squats and run for at least 10 kilometres before going to school.</p> <br><p>Aikido soon revealed to be a perfect choice for his situation. At low level was mainly focused on self defence but there plenty of space for attacking and fighting dirty.</p> <br><p>By practicing martial arts, he finally discovered something he was good at. He was not particularly nimble, nor a fast learner. His hand to eye coordination was also average at best. His talent lied in the ability to spot the best time to hit a sensible spot during a block or a defensive manoeuvre.</p> <br><p>Even when the sensei was teaching sword or tanto arts, Derek was always able to grasp the killing moves at his first try, sometimes even before the sensei completed the practical demonstration.</p> <br><p>It was an exciting yet disappointing discovery since his only talent had no practical use. Even if aikido was a sport with tournaments instead of a discipline, hits to groin, eyes and trachea were universally forbidden.</p> <br><p>For months Derek kept training hard while keeping a low profile at school, planning his next move.</p> <br><p>At the end of the first semester, Derek stopped hiding from the bullies and started replying in kind to every single insult they threw at him, using the best quick-witted roast lines he had found online. Derek paid attention to never go to the bathroom or to remain alone for too long, always keeping and adult witness in line of sight.</p> <br><p>It did not even take a full day before his enemies were fuming and outraged. Only when the veins almost popped out their necks, he threw his bait.</p> <br><p>"I have enough of your sh*t, as*holes. Meet me in an hour behind the grocery shop between Lincoln and the 3rd. Or are you too scared?"</p> <br><p>"Since you seek death, I will happily grant your wish, you fag*ot. It will only be you and the three of us, alright?"</p> <br><p>Derek nodded without believing him in the least. And he was right.</p> <br><p>When they entered the back alley, they had brought along two more people.</p> <br><p>Derek was waiting for them, leaned against the wall at the end of the blind alley.</p> <br><p>"There you are. I was starting to think you would stand me up."</p> <br><p>They started laughing. "Sorry we were late. Hope you do not mind we taking some friends for the party."</p> <br><p>Derek shrugged, while grinning from ear to ear.</p> <br><p>"No problem. No matter how much, worthless trash is always trash. I chose this alley because it's fully equipped with enough dumpsters to accommodate all of your friends."</p> <br><p>The last line hit a nerve so they charged at him blindly.</p> <br><p>"Gang up on him, guys! Do not let him escape! Let's how him who is the trash."</p> <br><p>And so, they fell into his trap. Derek had come here preparing the terrain, and choosing the best spot the fight. A blind alley to not make them escape, the end of the alley so they would not notice the trip wire due to the dim light.</p> <br><p>The first two fell down hard on the concrete, and those behind them were so worried about not trampling on their friends that never saw the steel pipe coming.</p> <br><p>They did come in numbers, Derek had come fully armed. Using the pipe as a sword he quickly hit them respectively on the head, the side of the knee, in the groin. Only then he started hitting the two that were trying to get back on their feet.</p> <br><p>While they were moaning and sobbing on the ground, he used a small knife to cut the trip wire, then he started beating them again and again with the metal pipe giving a special attention to the nether regions.</p> <br><p>Deeply inside he knew what he was doing was wrong, but he could not care less. If the world was built to be unfair, the only possible course of action was to make it unfair at his advantage.</p> <br><p>So, he took out the taser that he borrowed from his father and tased them until unconscious. Then he stripped them completely and took multiple photos of each one of them and even filmed them after arranging them so that they would seem to be spooning to each other. Then he splashed them with a bucket of cold water and sealed the deal.</p> <br><p>"Sorry to ruin your Brokeback Mountain moment girls, but I need your attention for a minute."</p> <br><p>When the bullies woke up, they were still in so much pain they could barely notice that they were naked and embracing each other. Retorting to Derek while he had still a firm grip on the steel pipe was out of question, so they kept quiet and listened.</p> <br><p>"I have made quite a scrapbook of you, even a short movie, uploaded it on my computer and even into the cloud. And it would be terrible if someone, I do not know, like me, for example would upload them on all the biggest image hosting sites. You know how they say, internet never forgets."</p> <br><p>The bullies started crying and begging.</p> <br><p>"Imagine how terrible would it be! Whenever someone would Boogle your names, be it your grandma, your girlfriends or even the colleges you were willing to apply to, the first thing to appear would be those photos!"</p> <br><p>"Dude, no!" "Please, I do not even know you. I was just making a favour to a friend!" "It was only a joke, please forgive me!"</p> <br><p>The choir of begging gave him the goose bumps. Derek wanted to puke at their hypocrisy.</p> <br><p>"I do not care for your pathetic excuses! From this day onward, you will leave me alone. And you better pray that nothing happens to me, because the cloud is set so that if I do not enter the password every day, it will upload them everywhere."</p> <br><p>Without waiting for their reply, he turned back and walked away.</p> <br><p>"Almost forgetting, I randomly threw your clothes in the dumpsters, can't remember which is which. If you don't want to go home in your birthday suit, you better start digging. So long, suckers!"</p> <br><p>Derek returned home euphoric, almost singing. He had never felt so proud of himself and had the completely undeserved confidence that he would never think about those b*stards ever again.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 1</h1>
                     </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Prologue</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">No matter if you are a pessimist or an optimist, Derek Esposito's life wasn't a good one nor a bad one. It was just a mediocre insignificant existence.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His father was a bipolar abusive man, capable of disappearing is his bedroom for days during the depressive phase. He would wake up only to eat, use the bathroom and the occasional "let's make your life miserable" fit of rage.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">During his euphoric phase, he would work like a madman, but not having any talent either as a businessman nor as social climber, he was unable to both being successful and establishing the right connections.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In his natural state, whenever he decided to actually take his medications, he was just a coach potato that would stand up and go to work just to avoid the blame and spite from neighbours and peers.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Whatever was his mental condition, he always was a perfect example of an abusive father.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His sons were always a disgrace in his eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They never studied hard enough, never were disciplined enough, nor did show enough respect.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And he was always there to remember them how wrong they were.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He would yell at them for the slightest mistake, constantly reminding them that they were just parasites that leeched off his hard work.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And when words weren't enough or when they did fail to meet his expectation with school grades or chores, there was no teacher like his leather belt.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hence, Derek and Carl had to quickly learn how to fend off for themselves, since their absent-minded mother practically forgot about them right after giving birth, dedicating her life in pursue of peace and quiet, staying as far as possible from her spouse tantrums.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek was two years older, and desperately tried to take care of his little brother, but to no avail.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They grew up watching and reading stories about heroes protecting the weak and upholding justice. But no hero ever appeared to save them.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Every week they would be forced to go to church to worship a nondescript benevolent god and his son, the saviour of all mankind. But no matter how much they prayed or how good they were, no miracle occurred.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, they simply stopped believing in heroes and instead of wasting time with prayers they crammed.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">School was their only oasis, but that lasted only until the sixth grade.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Once in middle school, it didn't even take a month before the bullying started.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Their cheap clothes and gloomy disposition made them the easiest targets. They were so used being tossed around and insulted that they didn't even bother trying to fight back.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">For a long time, Derek had considered it the worst moment in his useless life. After a month, he knew he could not take any more of that, so he tried to make things better.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He reported his father's abuses to the social services with an anonymous email, but being overworked and understaffed the social work assistant made a brief visit and never came back.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Then he tried to end the bullying by reporting their aggressors to a teacher, which in turn washed her hands by reporting it to the principal. The principal did not want to meddle with what he deemed as childish pranks, so he called Derek's parents to inform them of the problem, hoping they would let it slide. And at least his wish came true.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek, instead, took and extra beating for not being man enough to face his own problems.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Are you really that stupid to never learn anything from me? Never delegate, if you want something done right, do it yourself!"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek had never felt so helpless and desperate, so that night he bawled his eyes out, until he fell asleep. That had been the last straw.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The next day he felt different, clearheaded like never before. It was not the time for despair anymore, he needed a plan.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It would take him years to realize that something inside him had died. He was no longer able to trust, hope or develop any sense of kinship. He was surrounded by enemies, and to survive Derek needed to be able to fight back.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, Derek asked his father to let him join a dojo and learn martial arts, and to his surprise he did not have to beg or even ask twice. His old man was glad that his wimpy and scrawny poor excuse of a child was finally interested in becoming a man. His only condition was that Derek was not allowed to quit for at least one year, otherwise he would have to pay for it.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Not only Derek started practicing aikido almost daily, he would also wake up two hours earlier every single day to build muscles doing push ups, squats, sit ups and running until he was out of breath.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In a few months he was finally able to do every day 100 push ups, sit ups and squats and run for at least 10 kilometres before going to school.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Aikido soon revealed to be a perfect choice for his situation. At low level was mainly focused on self defence but there plenty of space for attacking and fighting dirty.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">By practicing martial arts, he finally discovered something he was good at. He was not particularly nimble, nor a fast learner. His hand to eye coordination was also average at best. His talent lied in the ability to spot the best time to hit a sensible spot during a block or a defensive manoeuvre.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Even when the sensei was teaching sword or tanto arts, Derek was always able to grasp the killing moves at his first try, sometimes even before the sensei completed the practical demonstration.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was an exciting yet disappointing discovery since his only talent had no practical use. Even if aikido was a sport with tournaments instead of a discipline, hits to groin, eyes and trachea were universally forbidden.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">For months Derek kept training hard while keeping a low profile at school, planning his next move.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At the end of the first semester, Derek stopped hiding from the bullies and started replying in kind to every single insult they threw at him, using the best quick-witted roast lines he had found online. Derek paid attention to never go to the bathroom or to remain alone for too long, always keeping and adult witness in line of sight.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It did not even take a full day before his enemies were fuming and outraged. Only when the veins almost popped out their necks, he threw his bait.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I have enough of your sh*t, as*holes. Meet me in an hour behind the grocery shop between Lincoln and the 3rd. Or are you too scared?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Since you seek death, I will happily grant your wish, you fag*ot. It will only be you and the three of us, alright?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek nodded without believing him in the least. And he was right.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When they entered the back alley, they had brought along two more people.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek was waiting for them, leaned against the wall at the end of the blind alley.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"There you are. I was starting to think you would stand me up."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They started laughing. "Sorry we were late. Hope you do not mind we taking some friends for the party."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek shrugged, while grinning from ear to ear.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"No problem. No matter how much, worthless trash is always trash. I chose this alley because it's fully equipped with enough dumpsters to accommodate all of your friends."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The last line hit a nerve so they charged at him blindly.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Gang up on him, guys! Do not let him escape! Let's how him who is the trash."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And so, they fell into his trap. Derek had come here preparing the terrain, and choosing the best spot the fight. A blind alley to not make them escape, the end of the alley so they would not notice the trip wire due to the dim light.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The first two fell down hard on the concrete, and those behind them were so worried about not trampling on their friends that never saw the steel pipe coming.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They did come in numbers, Derek had come fully armed. Using the pipe as a sword he quickly hit them respectively on the head, the side of the knee, in the groin. Only then he started hitting the two that were trying to get back on their feet.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">While they were moaning and sobbing on the ground, he used a small knife to cut the trip wire, then he started beating them again and again with the metal pipe giving a special attention to the nether regions.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Deeply inside he knew what he was doing was wrong, but he could not care less. If the world was built to be unfair, the only possible course of action was to make it unfair at his advantage.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, he took out the taser that he borrowed from his father and tased them until unconscious. Then he stripped them completely and took multiple photos of each one of them and even filmed them after arranging them so that they would seem to be spooning to each other. Then he splashed them with a bucket of cold water and sealed the deal.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Sorry to ruin your Brokeback Mountain moment girls, but I need your attention for a minute."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When the bullies woke up, they were still in so much pain they could barely notice that they were naked and embracing each other. Retorting to Derek while he had still a firm grip on the steel pipe was out of question, so they kept quiet and listened.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I have made quite a scrapbook of you, even a short movie, uploaded it on my computer and even into the cloud. And it would be terrible if someone, I do not know, like me, for example would upload them on all the biggest image hosting sites. You know how they say, internet never forgets."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The bullies started crying and begging.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Imagine how terrible would it be! Whenever someone would Boogle your names, be it your grandma, your girlfriends or even the colleges you were willing to apply to, the first thing to appear would be those photos!"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Dude, no!" "Please, I do not even know you. I was just making a favour to a friend!" "It was only a joke, please forgive me!"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The choir of begging gave him the goose bumps. Derek wanted to puke at their hypocrisy.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I do not care for your pathetic excuses! From this day onward, you will leave me alone. And you better pray that nothing happens to me, because the cloud is set so that if I do not enter the password every day, it will upload them everywhere."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Without waiting for their reply, he turned back and walked away.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Almost forgetting, I randomly threw your clothes in the dumpsters, can't remember which is which. If you don't want to go home in your birthday suit, you better start digging. So long, suckers!"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek returned home euphoric, almost singing. He had never felt so proud of himself and had the completely undeserved confidence that he would never think about those b*stards ever again.</p>
 
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('0')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('2')"
+                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

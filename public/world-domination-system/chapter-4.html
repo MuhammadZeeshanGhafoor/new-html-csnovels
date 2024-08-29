@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,184 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">World Domination System/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 4 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        World Domination System / Chapter 4 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 4</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The System</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As he opened the door and went in, he saw a woman look up with teary eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This was his mother. She seemed to be middle-aged although she was only 36 years old this year. Women in Lanthanor usually married much earlier than back on earth. At that time, theirs had been a flourishing family with his father in an important post. The military was very well looked after by the government, with monthly rations for food and a designated villa to live in.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">With all these conditions, the Anivron family did not hesitate to have a child.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His father had been born to a middling cloth merchant. He had joined the army at the young age of 16 and had worked his way up the ranks with grit and determination. This resulted in him becoming a squad leader at the relatively young age of 25 while also garnering the admiration of many higher-ups.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His father fell in love with his mother at first sight at a family gathering. Although she had only been 18 at the time, the families did not hesitate to make the marriage happen. Such an age difference was actually quite common here.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Then, disaster struck. Daneel was around 3 years old when his father was thrown out of the army. Even their families were targeted and they were warned that they could either move to the slums or be thrown out of the city.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">With no other option, the Anivron family had built this shack with the last of the savings that had not been confiscated and had lived here ever since. Thus, he only had vague memories of the rest of his family who maintained their distance except for a few close friends.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Daneel! Where were you?! You made me and your father so worried!", his mother gasped out amid sobs after running up to him and hugging him. Noticing the injuries that were all around his body, she carefully started checking everywhere to make sure that there weren't any life-threatening ones.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Maria was her name. Hearing the commotion, a man with a circular mark branded on his forehead looked up from the bed.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A broad smile came upon his face on seeing that his son was back. This family would be shattered if anything happened to their only son. He was their pride, their hope, and their heart.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His father was called Robert. The mark on his face was the brand given to all those disgraced and thrown from the army. Seeing the mark, no one in their fair mind would even donate a few coins, let alone give a job.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I'm fine, mom. I got attacked by some brats who thought I had money on me. They left after ganging up on me and seeing that I had nothing but these clothes. I just washed my face in a fountain before hurrying back.", he lied. There was no way he could tell anyone about the system yet.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Thankfully, this wasn't the first time this had happened. Thus, his mother simply sighed and walked to a cupboard to get the cheap recovery solution that healed scrapes like these in a few days.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Seeing the state his parents were in, Daneel felt indignant. An honest soldier's family was reduced to this state due to the ego of someone with authority. His mother who was only 36 looked at least 50. The manual labor day after day had taken a toll on her, making her once glowing skin now look dull and rough. Even her face which had once been filled with vitality now held many marks and lines of age which appeared well before their time.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Unlike the previous Daneel who felt resigned to their fate, he wanted to take revenge. He wanted to set right all the wrongs that had been done to his family.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But first, he needed to understand what the system was. Drinking regular water had somehow healed his body and pulled him back from death. The HUD which he had hastened to deactivate after reaching the fountain was even more magical in its own right.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The system would be his weapon with which he would fight back. Hence, not a single soul except him needed to know about it. He knew how zealous the technology wing was under the new king and did not want to be experimented on like a guinea pig.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Although his father gave him a disapproving look not believing the story, Daneel could only climb into his bed after shooting him an apologetic smile. He had told his mother that he was tired and that he had already eaten some bread donated by a passerby. Thus, she let him go to sleep after applying the ointment all over his injuries.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">There were no rooms in the house, with only curtains visible which partitioned the small 70 sq. m room into a living cum cooking/dining area and 2 bedrooms with one smaller than the other. The smaller one was Daneel's.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was finally time to see what this system really was.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As Daneel closed his eyes, he prepared a list of questions to ask. The pesky system did not even give him this chance.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Host status observed to be suitable. Introduction commencing.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Welcome to the World Domination System! Beggar or prince, merchant or soldier-regardless of your starting point, with the system's help, your hard work can make you an unparalleled King under the heavens! Your path to Domination begins!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Introduction completed. Host may now ask any queries he has.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daneel was dumbstruck for a moment and couldn't speak. Hearing that the introduction was beginning, he expected a full explanation which would clear all of his doubts. Instead, all he got was another empty explanation which told him nothing new.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"How did you get into my head?", he asked, deciding to start with the most pressing questions.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Information locked. Please advance to the requisite level to unlock this information.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Who made you?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Information locked. Please advance to the requisite level to unlock this information.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Did the scientists on earth somehow put you in me?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Information locked. Please advance to the requisite level to unlock this information.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">...</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daneel was starting to get angry. He first calmed himself down and started to ask questions which might be answerable.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"What is Ether? How did it heal my body?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Ether is a wondrous material generated by this world. It is one of the materials that contains the quintessential Energy which enables those in this world to advance on the path to power. In a concentrated form, it also has incredible healing properties which the system can harness. The system has the ability to detect such materials. At the present level of the system, only Ether can be detected. Please upgrade the system to unlock more functions. Unlock cost: 10,000 Exp Points.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This was a start. Even Daneel had heard of Ether but he had just wanted to make sure.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"What else can you do?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[The system can currently perform the following tasks:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ether Detection</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Host Status Analysis</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Deployment of Auxiliary Tools</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Mission Control</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Please upgrade the system to unlock more options. Unlock cost: 10,000 Exp Points.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The damn system constantly kept asking him to upgrade it. To Daneel, It sounded like the irritating friend who constantly coaxed you to buy him something.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Opting to ignore it, he asked, "How do you earn Exp Points? And what is the level progression?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Exp points are earned when certain hidden goals are achieved or when missions are accomplished. Level progression is the progression of the host towards the next level of power.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daneel had guessed as much.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"What are the power levels?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[System is not aware of the power levels in this world.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">New Mission: Provide information regarding the world</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Mission Progress: 0%</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Mission Description: The system has already analyzed all the information currently known to the host. New information is needed in order to build the database. Host is required to find and interact with any and all materials that will aid in this task.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Mission Rewards: 10 Exp Points. A new function will be unlocked.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Mission Failure Penalty: None</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Does host choose to accept the mission?]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A simple question had resulted in a mission being given. It seemed that even idly ruminating and asking questions could trigger events like these from the system.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('3')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('5')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>The System
-As he opened the door and went in, he saw a woman look up with teary eyes.</p> <br><p>This was his mother. She seemed to be middle-aged although she was only 36 years old this year. Women in Lanthanor usually married much earlier than back on earth. At that time, theirs had been a flourishing family with his father in an important post. The military was very well looked after by the government, with monthly rations for food and a designated villa to live in.</p> <br><p>With all these conditions, the Anivron family did not hesitate to have a child.</p> <br><p>His father had been born to a middling cloth merchant. He had joined the army at the young age of 16 and had worked his way up the ranks with grit and determination. This resulted in him becoming a squad leader at the relatively young age of 25 while also garnering the admiration of many higher-ups.</p> <br><p>His father fell in love with his mother at first sight at a family gathering. Although she had only been 18 at the time, the families did not hesitate to make the marriage happen. Such an age difference was actually quite common here.</p> <br><p>Then, disaster struck. Daneel was around 3 years old when his father was thrown out of the army. Even their families were targeted and they were warned that they could either move to the slums or be thrown out of the city.</p> <br><p>With no other option, the Anivron family had built this shack with the last of the savings that had not been confiscated and had lived here ever since. Thus, he only had vague memories of the rest of his family who maintained their distance except for a few close friends.</p> <br><p>"Daneel! Where were you?! You made me and your father so worried!", his mother gasped out amid sobs after running up to him and hugging him. Noticing the injuries that were all around his body, she carefully started checking everywhere to make sure that there weren't any life-threatening ones.</p> <br><p>Maria was her name. Hearing the commotion, a man with a circular mark branded on his forehead looked up from the bed.</p> <br><p>A broad smile came upon his face on seeing that his son was back. This family would be shattered if anything happened to their only son. He was their pride, their hope, and their heart.</p> <br><p>His father was called Robert. The mark on his face was the brand given to all those disgraced and thrown from the army. Seeing the mark, no one in their fair mind would even donate a few coins, let alone give a job.</p> <br><p>"I'm fine, mom. I got attacked by some brats who thought I had money on me. They left after ganging up on me and seeing that I had nothing but these clothes. I just washed my face in a fountain before hurrying back.", he lied. There was no way he could tell anyone about the system yet.</p> <br><p>Thankfully, this wasn't the first time this had happened. Thus, his mother simply sighed and walked to a cupboard to get the cheap recovery solution that healed scrapes like these in a few days.</p> <br><p>Seeing the state his parents were in, Daneel felt indignant. An honest soldier's family was reduced to this state due to the ego of someone with authority. His mother who was only 36 looked at least 50. The manual labor day after day had taken a toll on her, making her once glowing skin now look dull and rough. Even her face which had once been filled with vitality now held many marks and lines of age which appeared well before their time.</p> <br><p>Unlike the previous Daneel who felt resigned to their fate, he wanted to take revenge. He wanted to set right all the wrongs that had been done to his family.</p> <br><p>But first, he needed to understand what the system was. Drinking regular water had somehow healed his body and pulled him back from death. The HUD which he had hastened to deactivate after reaching the fountain was even more magical in its own right.</p> <br><p>The system would be his weapon with which he would fight back. Hence, not a single soul except him needed to know about it. He knew how zealous the technology wing was under the new king and did not want to be experimented on like a guinea pig.</p> <br><p>Although his father gave him a disapproving look not believing the story, Daneel could only climb into his bed after shooting him an apologetic smile. He had told his mother that he was tired and that he had already eaten some bread donated by a passerby. Thus, she let him go to sleep after applying the ointment all over his injuries.</p> <br><p>There were no rooms in the house, with only curtains visible which partitioned the small 70 sq. m room into a living cum cooking/dining area and 2 bedrooms with one smaller than the other. The smaller one was Daneel's.</p> <br><p>It was finally time to see what this system really was.</p> <br><p>As Daneel closed his eyes, he prepared a list of questions to ask. The pesky system did not even give him this chance.</p> <br><p>[Host status observed to be suitable. Introduction commencing.</p> <br><p>Welcome to the World Domination System! Beggar or prince, merchant or soldier-regardless of your starting point, with the system's help, your hard work can make you an unparalleled King under the heavens! Your path to Domination begins!</p> <br><p>Introduction completed. Host may now ask any queries he has.]</p> <br><p>Daneel was dumbstruck for a moment and couldn't speak. Hearing that the introduction was beginning, he expected a full explanation which would clear all of his doubts. Instead, all he got was another empty explanation which told him nothing new.</p> <br><p>"How did you get into my head?", he asked, deciding to start with the most pressing questions.</p> <br><p>[Information locked. Please advance to the requisite level to unlock this information.]</p> <br><p>"Who made you?"</p> <br><p>[Information locked. Please advance to the requisite level to unlock this information.]</p> <br><p>"Did the scientists on earth somehow put you in me?"</p> <br><p>[Information locked. Please advance to the requisite level to unlock this information.]</p> <br><p>...</p> <br><p>Daneel was starting to get angry. He first calmed himself down and started to ask questions which might be answerable.</p> <br><p>"What is Ether? How did it heal my body?"</p> <br><p>[Ether is a wondrous material generated by this world. It is one of the materials that contains the quintessential Energy which enables those in this world to advance on the path to power. In a concentrated form, it also has incredible healing properties which the system can harness. The system has the ability to detect such materials. At the present level of the system, only Ether can be detected. Please upgrade the system to unlock more functions. Unlock cost: 10,000 Exp Points.]</p> <br><p>This was a start. Even Daneel had heard of Ether but he had just wanted to make sure.</p> <br><p>"What else can you do?"</p> <br><p>[The system can currently perform the following tasks:</p> <br><p>Ether Detection</p> <br><p>Host Status Analysis</p> <br><p>Deployment of Auxiliary Tools</p> <br><p>Mission Control</p> <br><p>Please upgrade the system to unlock more options. Unlock cost: 10,000 Exp Points.]</p> <br><p>The damn system constantly kept asking him to upgrade it. To Daneel, It sounded like the irritating friend who constantly coaxed you to buy him something.</p> <br><p>Opting to ignore it, he asked, "How do you earn Exp Points? And what is the level progression?"</p> <br><p>[Exp points are earned when certain hidden goals are achieved or when missions are accomplished. Level progression is the progression of the host towards the next level of power.]</p> <br><p>Daneel had guessed as much.</p> <br><p>"What are the power levels?"</p> <br><p>[System is not aware of the power levels in this world.</p> <br><p>New Mission: Provide information regarding the world</p> <br><p>Mission Progress: 0%</p> <br><p>Mission Description: The system has already analyzed all the information currently known to the host. New information is needed in order to build the database. Host is required to find and interact with any and all materials that will aid in this task.</p> <br><p>Mission Rewards: 10 Exp Points. A new function will be unlocked.</p> <br><p>Mission Failure Penalty: None</p> <br><p>Does host choose to accept the mission?]</p> <br><p>A simple question had resulted in a mission being given. It seemed that even idly ruminating and asking questions could trigger events like these from the system.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('3')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('5')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

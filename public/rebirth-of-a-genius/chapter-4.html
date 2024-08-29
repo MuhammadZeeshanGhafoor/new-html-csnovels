@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,219 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Rebirth of a Genius/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 4 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Rebirth of a Genius / Chapter 4 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 4</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam slowly started going through his memories to see what those cultivation techniques are. As soon as he started concentrating on the memory his conscious suddenly drifted into an unknown world where a book is floating in front of his eyes. When he slowly touched the book, it transformed into a beam of light and entered the space between his brows. Then he acquired some previously unknown knowledge.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The information is mainly regarding his spiritual core and body constitution. From this information he came to know that his spiritual core is not useless like the inspectors said. It is just somewhat unique. Basically, after cultivation stage is Initiation stage which consists of further 3 sub-stages. These sub levels are respectively known as initial, middle, late stages. Each of these three sub-stages are divided into further three levels, which are indicated by numbers. Therefore, the initiation stage has a total of nine levels. The initiation stage is common for both Warrior and Mage. In the first three levels of the initiation stage the cultivators don't have to follow any cultivation technique. All they have to do is to collect as much spiritual energy as possible. But after the third stage initiation is completed the every one has to practice a form of cultivation technique in order to open the acupoints until they reach the ninth level and breakthrough to the next stage which is called novice stage. The youth who can cultivate up to ninth level before 16 years of age will be sent to an academy in the city to further cultivate. Sam initially easily cultivated until third stage but his pure transparent core is not reacting with any type of cultivation techniques. At first everyone thought that it is just a defective even until now even Sam had thought so too. But, now Sam understood that the previous thinking is wrong. The core is completely unique. According to the newly acquired information from the weird book every core has different properties and abilities. For example, not every fire core will have same abilities. Some fire cores will provide highly concentrated but smooth flames but some others may produce raging and explosive flames. It can simply be called nature of the core. Similarly, Sam's core also has a type of unique nature. The abilities are Observe, Absorb, Manipulate and Convert. These are the unique abilities of the core. And this core has two properties one is its large capacity to store spiritual energy and another one is it can accommodate any number of elemental properties. That means if other core can be considered as an already drawn painting then this transparent core is a blank canvas. What painting he want to portray, is all dependent on the Sam's choice. And coming to the constitution of his body its even more simple. He has none. No special properties. His body is almost identical to a normal modern earthly being. Without any properties of the people born in this world. The body a person born this world carry a trace of stagnant spiritual energy. The arrangement of this spiritual energy is mostly known as constitution which is highly suitable for warriors. But Sam's body has none. So, both his body and core are completely like a blank canvas and how to paint is up to Sam's decision. But how to paint is the main question. When Sam thought up to this point his conscious jolted and he found himself floating in that space again.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In front of him there were four books floating in the air. There are different titles written on the covers of the books. On the first book there is a title named 'Beastuary'. Second book is 'Bloodline Refinement and Evolution Technique', Third one is 'Myriad Beast Bloodline cultivation' and the last one is 'Divine soul spiritual sense Technique'. Sam slowly moved towards the 'Beastuary' and touched. It disappeared in the form of a beam of light just like the first book. Similarly, the same thing happened to other books. After that Sam opened his eyes in the real world and he laid down on the bed while thinking to himself.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'So, this is my situation. With the remaining spirit stones, I have I can cultivate up to the peak of initiation. But I have to completely keep it a secret. Comparing these cultivation techniques to the techniques given by authorities, the authorities' techniques are utter trash.'</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Going through the information obtained from the four books Sam realized something. The 'Beastuary' is nothing but a book of the knowledge regarding various beast. But information it contained is enormous, it contained the origins of the beasts, their habits, likes, dislikes, behavior, abilities and many other details. One could tame any beast if they can properly utilize this information. The second book 'Bloodline Refinement and Evolution' used to purify and upgrade the bloodline of the beasts. Every beast in the lower realms is a descendant of a beast of its superior being so there might be traces of bloodline in that superior being. The beast with these blood lines can be improved and evolved into those of the superior beings. The Divine soul spiritual sense technique is highly suitable for Sam. Because it enhances the observation ability of his spiritual core. Basically, with his spiritual core, Sam can observe the spiritual energy in his surroundings. With the help of this technique he can further differentiate every thing and range is also high. For, example Sam can even differentiate various gases in the air since every thing is made of spiritual energy. And if he has enough control, he can directly separate oxygen from the air. But first he has to have to obtain wing property to his core. With advancement of this technique the effective range will increase.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Last but not least, the 'Myriad beast bloodline cultivation technique'. This technique is the direct cultivation technique only suitable for his core. It is the technique with helps in accommodate the different elemental properties in his core. The 'Myriad beast bloodline cultivation technique' is uses the bloodline of the beasts. After cultivating up to the peak of initiation the cultivator has to select a beast and form a Bloodline contract with it. And both man and the beast will be linked and cultivate together and both of them will advance and breakthrough together by sharing spiritual energy of each other. 'Now I understand what the contract that Ling Tian mentioned. But I have to wait until I reach the peak of initiation. So, I have to check the initiation cultivation first.' Sam thought and again sat cross legged and dove into his memories. But what he seen there made him slightly puzzled. The 'Myriad beast bloodline cultivation technique' is Warrior-Mage technique. Basically, from the previous owner's memories Sam have an idea about the cultivation techniques. Most of the cultivation techniques doesn't need cultivator do anything other than meditating and circulation of the spiritual energy but this 'Myriad beast bloodline cultivation technique' completely destroyed his understanding. In this technique he not only has to meditate but he has to work out while circulating spiritual energy. From what Sam understood, from the technique he has to do exercise while opening the acupoints by circulating the spiritual energy. This will be difficult but the advantage the lack of constitution to become a warrior and make the body tough enough to endure the effect of Bloodline contract. Sam took the spirit stone from the pouch and started to fill his spiritual core. After sometime the spirit stones radiance by reduced by a large margin and Sam opened his eyes. When he saw the spirit stone is sufficient to cultivate from third level to fifth level but now the spirit stone is almost depleted. Sam could only smile wryly. Now Sam has to exercise physically while circulating the spiritual energy. Generally, a cultivator opens acupoints step by step in various body parts one by one for example from 3rd to 4th stage acupoints in hands, from 5th to 6th stage acupoints in legs, 7th stage for torso, 8th stage for chest and finally the acupoints in head. But the 'Myriad beast bloodline cultivation technique' is completely different. All the points will be opened at same time that is the main reason Sam was left puzzled. But he just left it for another time. Now Sam has to think about the exercise he has to do.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'Maybe I can try 'that' training routine.' Sam thought as he felt a little nostalgic. One has to know in his previous life Sam is a super soldier. His training is the most brutal in the world since he has to get results in a short span of time due to his other professions. That is one of the reasons Sam was popular in the Military since, no one other than himself was able to survive the training for a single day. 'Okay then, let's proceed with that.' Sam thought and went outside and started running in the streets. Every person on the street is looking at him as if they were looking at a cray person. But he didn't care and just went along with his run. After running for about an hour Sam went into his house and directly entered his backyard. There he started his exercises until it is noon. After that Sam entered his room and started preparing his lunch on a coal stove. 'I should find some body- weights; normal workout is not efficient.' Sam thought.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Later that evening Sam went to Michael's house. *knock* *knock* Sam knocked the door.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After a few moments Michael opened the door and greeted Sam.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hey Sam, come in."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hi uncle, I need your help with something." Sam said as he entered the door.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"What do you need? If it is something, I can do I will definitely help you." Michael said as he gestured Sam to sit in a chair.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I have some drawings here and I need these things made with heaviest metal available to you." Sam passed down some papers after he sat in the chair.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Michael took the papers and started going through the sketches. "It can be done in two days kid but why do you need these for?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I have some use for them uncle. How much does it cost?" Sam asked.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Don't bring up the money kid. Its not much. I have a lot of scraps to cover them since they are not that complex."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"How can that be okay uncle?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Its settled Sam. Don't talk about money." Michael insisted.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After some casual chat Sam left to his home but was stopped by someone.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('3')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('5')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Sam slowly started going through his memories to see what those cultivation techniques are. As soon as he started concentrating on the memory his conscious suddenly drifted into an unknown world where a book is floating in front of his eyes. When he slowly touched the book, it transformed into a beam of light and entered the space between his brows. Then he acquired some previously unknown knowledge.
-
-The information is mainly regarding his spiritual core and body constitution. From this information he came to know that his spiritual core is not useless like the inspectors said. It is just somewhat unique. Basically, after cultivation stage is Initiation stage which consists of further 3 sub-stages. These sub levels are respectively known as initial, middle, late stages. Each of these three sub-stages are divided into further three levels, which are indicated by numbers. Therefore, the initiation stage has a total of nine levels. The initiation stage is common for both Warrior and Mage. In the first three levels of the initiation stage the cultivators don't have to follow any cultivation technique. All they have to do is to collect as much spiritual energy as possible. But after the third stage initiation is completed the every one has to practice a form of cultivation technique in order to open the acupoints until they reach the ninth level and breakthrough to the next stage which is called novice stage. The youth who can cultivate up to ninth level before 16 years of age will be sent to an academy in the city to further cultivate. Sam initially easily cultivated until third stage but his pure transparent core is not reacting with any type of cultivation techniques. At first everyone thought that it is just a defective even until now even Sam had thought so too. But, now Sam understood that the previous thinking is wrong. The core is completely unique. According to the newly acquired information from the weird book every core has different properties and abilities. For example, not every fire core will have same abilities. Some fire cores will provide highly concentrated but smooth flames but some others may produce raging and explosive flames. It can simply be called nature of the core. Similarly, Sam's core also has a type of unique nature. The abilities are Observe, Absorb, Manipulate and Convert. These are the unique abilities of the core. And this core has two properties one is its large capacity to store spiritual energy and another one is it can accommodate any number of elemental properties. That means if other core can be considered as an already drawn painting then this transparent core is a blank canvas. What painting he want to portray, is all dependent on the Sam's choice. And coming to the constitution of his body its even more simple. He has none. No special properties. His body is almost identical to a normal modern earthly being. Without any properties of the people born in this world. The body a person born this world carry a trace of stagnant spiritual energy. The arrangement of this spiritual energy is mostly known as constitution which is highly suitable for warriors. But Sam's body has none. So, both his body and core are completely like a blank canvas and how to paint is up to Sam's decision. But how to paint is the main question. When Sam thought up to this point his conscious jolted and he found himself floating in that space again.
-
-In front of him there were four books floating in the air. There are different titles written on the covers of the books. On the first book there is a title named 'Beastuary'. Second book is 'Bloodline Refinement and Evolution Technique', Third one is 'Myriad Beast Bloodline cultivation' and the last one is 'Divine soul spiritual sense Technique'. Sam slowly moved towards the 'Beastuary' and touched. It disappeared in the form of a beam of light just like the first book. Similarly, the same thing happened to other books. After that Sam opened his eyes in the real world and he laid down on the bed while thinking to himself.
-
-'So, this is my situation. With the remaining spirit stones, I have I can cultivate up to the peak of initiation. But I have to completely keep it a secret. Comparing these cultivation techniques to the techniques given by authorities, the authorities' techniques are utter trash.'
-
-Going through the information obtained from the four books Sam realized something. The 'Beastuary' is nothing but a book of the knowledge regarding various beast. But information it contained is enormous, it contained the origins of the beasts, their habits, likes, dislikes, behavior, abilities and many other details. One could tame any beast if they can properly utilize this information. The second book 'Bloodline Refinement and Evolution' used to purify and upgrade the bloodline of the beasts. Every beast in the lower realms is a descendant of a beast of its superior being so there might be traces of bloodline in that superior being. The beast with these blood lines can be improved and evolved into those of the superior beings. The Divine soul spiritual sense technique is highly suitable for Sam. Because it enhances the observation ability of his spiritual core. Basically, with his spiritual core, Sam can observe the spiritual energy in his surroundings. With the help of this technique he can further differentiate every thing and range is also high. For, example Sam can even differentiate various gases in the air since every thing is made of spiritual energy. And if he has enough control, he can directly separate oxygen from the air. But first he has to have to obtain wing property to his core. With advancement of this technique the effective range will increase.
-
-Last but not least, the 'Myriad beast bloodline cultivation technique'. This technique is the direct cultivation technique only suitable for his core. It is the technique with helps in accommodate the different elemental properties in his core. The 'Myriad beast bloodline cultivation technique' is uses the bloodline of the beasts. After cultivating up to the peak of initiation the cultivator has to select a beast and form a Bloodline contract with it. And both man and the beast will be linked and cultivate together and both of them will advance and breakthrough together by sharing spiritual energy of each other. 'Now I understand what the contract that Ling Tian mentioned. But I have to wait until I reach the peak of initiation. So, I have to check the initiation cultivation first.' Sam thought and again sat cross legged and dove into his memories. But what he seen there made him slightly puzzled. The 'Myriad beast bloodline cultivation technique' is Warrior-Mage technique. Basically, from the previous owner's memories Sam have an idea about the cultivation techniques. Most of the cultivation techniques doesn't need cultivator do anything other than meditating and circulation of the spiritual energy but this 'Myriad beast bloodline cultivation technique' completely destroyed his understanding. In this technique he not only has to meditate but he has to work out while circulating spiritual energy. From what Sam understood, from the technique he has to do exercise while opening the acupoints by circulating the spiritual energy. This will be difficult but the advantage the lack of constitution to become a warrior and make the body tough enough to endure the effect of Bloodline contract. Sam took the spirit stone from the pouch and started to fill his spiritual core. After sometime the spirit stones radiance by reduced by a large margin and Sam opened his eyes. When he saw the spirit stone is sufficient to cultivate from third level to fifth level but now the spirit stone is almost depleted. Sam could only smile wryly. Now Sam has to exercise physically while circulating the spiritual energy. Generally, a cultivator opens acupoints step by step in various body parts one by one for example from 3rd to 4th stage acupoints in hands, from 5th to 6th stage acupoints in legs, 7th stage for torso, 8th stage for chest and finally the acupoints in head. But the 'Myriad beast bloodline cultivation technique' is completely different. All the points will be opened at same time that is the main reason Sam was left puzzled. But he just left it for another time. Now Sam has to think about the exercise he has to do.
-
-'Maybe I can try 'that' training routine.' Sam thought as he felt a little nostalgic. One has to know in his previous life Sam is a super soldier. His training is the most brutal in the world since he has to get results in a short span of time due to his other professions. That is one of the reasons Sam was popular in the Military since, no one other than himself was able to survive the training for a single day. 'Okay then, let's proceed with that.' Sam thought and went outside and started running in the streets. Every person on the street is looking at him as if they were looking at a cray person. But he didn't care and just went along with his run. After running for about an hour Sam went into his house and directly entered his backyard. There he started his exercises until it is noon. After that Sam entered his room and started preparing his lunch on a coal stove. 'I should find some body- weights; normal workout is not efficient.' Sam thought.
-
-Later that evening Sam went to Michael's house. *knock* *knock* Sam knocked the door.
-
-After a few moments Michael opened the door and greeted Sam.
-
-"Hey Sam, come in."
-
-"Hi uncle, I need your help with something." Sam said as he entered the door.
-
-"What do you need? If it is something, I can do I will definitely help you." Michael said as he gestured Sam to sit in a chair.
-
-"I have some drawings here and I need these things made with heaviest metal available to you." Sam passed down some papers after he sat in the chair.
-
-Michael took the papers and started going through the sketches. "It can be done in two days kid but why do you need these for?"
-
-"I have some use for them uncle. How much does it cost?" Sam asked.
-
-"Don't bring up the money kid. Its not much. I have a lot of scraps to cover them since they are not that complex."
-
-"How can that be okay uncle?"
-
-"Its settled Sam. Don't talk about money." Michael insisted.
-
-After some casual chat Sam left to his home but was stopped by someone.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('3')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('5')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,63 +30,23 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">The Invisible Rich Man/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 1 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        The Invisible Rich Man / Chapter 1 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
-                        
+            </div>
+            </header>
+            
          
                         <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
                         
@@ -100,143 +62,218 @@
                             </p>
                             
                                 </div>
-                                <div class="relative">
-                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/the-invisible-rich-man.jpg"
-                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
-                                alt="The Invisible Rich Man Cover" id="cover-img">
-                                <hr class="bg-black md:px-16 px-2">
-                                </div>
-            
-                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
-                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
-                            <b class="md:   text-xl">
-                                1
-                            </b>
-                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
-                        </div>
-    
                         
+    
 
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
 
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>It was nine o’clock at night at the male dormitory building in the university campus.
-“Gerald, please go down to dormitory 101 on the first floor and bring my laptop up for me!”
-A guy with blonde hair from the dormitory next door opened Gerald’s dormitory room door directly before he dropped one dollar on the floor, then turned around and walked away.</p> <br><p>“By the way, please get me a bottle of mineral water from the supermarket downstairs too!”</p> <br><p>The blond-haired student turned around before he dropped another three dollars on the floor—two dollars for the bottled mineral water and another dollar for running the errand for him.</p> <br><p>“Hey, Blondie! Why are the people in your dormitory always asking Gerald to run errands for you? Why are you guys being such bullies?”</p> <br><p>The people in Gerald’s dormitory asked in a cold manner because they could no longer stand it.</p> <br><p>“Hahaha! Gerald lives in your dormitory and you don’t understand him yet? If you give him a dollar, he’d even eat shit if you asked him to!” Blondie replied sarcastically. Then, he laughed before he left the dormitory.</p> <br><p>Gerald’s face flushed red with embarrassment as he turned a deaf ear to what the guy with blond hair said. After that, he bent down to pick up the few dollars on the ground before he thought to himself, ‘This way, I’ll make two dollars and that’s enough for me to buy three steamed buns and a bag of pickles! I won’t have to go hungry anymore.’</p> <br><p>“Gerald...don’t go! If you don’t have enough money, we’ll lend you some and you won’t even need to pay us back!”</p> <br><p>The head of the dormitory could not stop himself from sympathizing with Gerald.</p> <br><p>Gerald shook his head before he smiled and said, “Thanks, but it’s okay…”</p> <br><p>After speaking, Gerald turned around to walk out of the dormitory. At this time, all the boys looked at Gerald’s back as they shook their heads in pity.</p> <br><p>In fact, Gerald did not want to run errands for others and he wanted to enjoy his university life too.</p> <br><p>It would be great if he could just continue studying in university without having to worry about anything.</p> <br><p>However, he was really very poor!</p> <br><p>Although the other boys in his dormitory treated him very well, he did not want them to pity him. Otherwise, Gerald was afraid that they would eventually get sick of him.</p> <br><p>Apart from his dormitory roommates, Gerald had no other friends in university.</p> <br><p>“Gerald, I heard Blondie saying that you were heading downstairs, right?”</p> <br><p>At this time, a very well-dressed boy exited from the dormitory next door.</p> <br><p>His name was Danny Xanders and he was the head of Blondie’s dormitory. He was every female students’ idol because he wasn’t only rich but he was also very handsome.</p> <br><p>However, he had always looked down on Gerald because he felt that Gerald was an embarrassment.</p> <br><p>Gerald could not understand why Danny would talk to him.</p> <br><p>Gerald simply nodded and said, “Yes, I’m heading downstairs.”</p> <br><p>Danny smiled before he passed Gerald a box full of items.</p> <br><p>“One of my friends will be waiting at the east grove today. Please pass him this box. Here’s ten dollars for you.”</p> <br><p>Danny was a playboy and everyone knew about how he’d often ask different girls to meet up with him at the grove.</p> <br><p>Danny also had many friends who would do the same thing.</p> <br><p>However, Gerald did not think too much about it as he was already used to running errands for others.</p> <br><p>He simply took the box and the ten dollars before he walked downstairs. As soon as he turned around, he seemed to hear Danny’s faint laughter in the background…</p> <br><p>Gerald went downstairs to pick up the laptop and buy the bottle of mineral water before he decided to drop the box of items off for Danny.</p> <br><p>The small grove outside the university was a very famous place for couples to have their secret rendezvous at night.</p> <br><p>After that, Gerald arrived at the place that Danny had mentioned to him.</p> <br><p>He could immediately see a man and a woman sitting in the woods, talking and laughing together.</p> <br><p>However, Gerald was shocked when he saw the man and woman’s faces under the moonlight.</p> <br><p>He was stunned.</p> <br><p>It was Xavia!</p> <br><p>Gerald’s eyes reddened immediately and the items he was holding fell to the ground.</p> <br><p>Xavia was Gerald’s ex-girlfriend and it had only been three days since they had both broken up. Of course, it was Xavia who wanted to end the relationship.</p> <br><p>When they were breaking up, Xavia had told him she wanted some time alone to herself. However, it had only been three days and she was already spending time with another man at the grove!</p> <br><p>Both of them also noticed Gerald’s presence immediately and the expression on their faces changed abruptly.</p> <br><p>“Gerald…why are you here? You, you…don’t get me wrong. I’m here with Yuri because…”</p> <br><p>Xavia started to panic immediately, feeling very embarrassed at this time. She quickly lowered her head, not knowing how to face Gerald.</p> <br><p>The boy named Yuri Lowell, who was a second-generation rich kid, glanced at the box of items that Gerald dropped to the ground before he laughed out loud.</p> <br><p>“Damn it! Danny really knows how to make a fool out of people. I asked him to send me this box of items and I really didn’t expect him to send you here to run his errands instead. This is exciting. This is really too exciting!”</p> <br><p>Gerald knew that Yuri, who was a second-generation rich kid, was Danny’s close friend. His family owned several restaurants and he usually drove a BMW 3 series car to school.</p> <br><p>Gerald could only clench his fists tightly together after listening to Yuri’s words.</p> <br><p>It turned out that Danny had intentionally done this.</p> <br><p>Moreover, Gerald believed that Danny actually played a role in his break up with Xavia. Otherwise, why would Xavia be with Yuri just a few days after their break up?</p> <br><p>“Xavia, I know that you dislike me but you don’t have to get together with this kind of person after our break up. Do you know how many girlfriends he has changed before this?” Gerald yelled out loud.</p> <br><p>He loved this girl very much. He really loved her.</p> <br><p>Xavia felt very anxious and annoyed when she heard Gerald’s words. “Gerald, who do you think you are? Who gave you the right to teach me how I should be acting and what I should be doing? I’ve already broken up with you and I can choose to be with whoever I want to be with!”</p> <br><p>“Also…” Xavia was furious at this time. After that, she stared at Gerald before she said, “Did you come here to disgust me on purpose? Get lost!”</p> <br><p>Slap!</p> <br><p>After she was done speaking, Xavia stepped forward and gave Gerald a tight slap across his face.</p> <br><p>Yuri laughed even more heartily at this time. “Xavia, why are you chasing him away? You should just let him stay and watch us!”</p> <br><p>Xavia blushed immediately. “Yuri, I’ve already lost all interest after seeing this guy over here! Maybe next time…”</p> <br><p>After that, Xavia broke free from Yuri’s grasp.</p> <br><p>Gerald did not know how he walked away from the grove and his mind was completely blank at that moment.</p> <br><p>Everything came down to money. Gerald was in this state because he had no money!</p> <br><p>“Hahaha…”</p> <br><p>After returning to his dormitory, Gerald was greeted by the laughter of his classmates in the corridor.</p> <br><p>Danny was holding his belly as he laughed out loud.</p> <br><p>He had obviously told all of their classmates about this matter.</p> <br><p>“Gerald, what did you see when you were delivering the items earlier?” Blondie asked him with a smile on his face.</p> <br><p>“Damn it! Xavia really has the most perfect figure,” Danny said as he grinned.</p> <br><p>Gerald clenched his fists tightly together and his eyes were flushed red at this time. He really wanted to kill Danny! He wanted to perish together with Danny.</p> <br><p>“Why? Why are you doing this to me?” Gerald hissed angrily.</p> <br><p>Danny laughed before he replied, “Hey, look here. I’m not scared of you at all.”</p> <br><p>“Among all the poor people in our class, you’re the one I look down on the most! Xavia is such a beautiful woman and it’s such a waste for her to be in a relationship with someone like you! It’d be better for my brother to enjoy and play around with her for a few days at least…”</p> <br><p>“By the way, Gerald, did you know that Yuri managed to pick Xavia up after texting her for less than half an hour while you had to chase after her for more than a year before she finally agreed to be your girlfriend?”</p> <br><p>Everyone was laughing at this time and no one cared about Gerald’s dignity at all.</p> <br><p>“I did it for you!”</p> <br><p>Gerald rushed towards Danny immediately.</p> <br><p>As a result, he ended up getting beaten up by Danny’s buddies instead.</p> <br><p>In the end, Gerald’s roommates came to his rescue and they brought him back to their own dormitory.</p> <br><p>Gerald covered his face with his quilt as he continued sobbing as he laid in bed.</p> <br><p>‘Why? Why must they bully me and trample on my dignity? Why?’</p> <br><p>‘Do I not have any feelings just because I’m poor? Am I not a person in their eyes?’</p> <br><p>Gerald continued struggling internally and he could not stop the tears from flowing down his cheeks. He could not forget the scene that he had just witnessed tonight.</p> <br><p>He did not know how long he huddled up under the covers, crying before he finally fell asleep.</p> <br><p>Perhaps it was because it was such a dark and silent night, Gerald slept very peacefully that night.</p> <br><p>When he woke up the next morning, there was no one in the dormitory. Gerald knew that the head of the dormitory must not have wanted to wake him up as he probably felt it would be better for Gerald to stay in the dormitory instead of going to the classroom after the previous night’s events!</p> <br><p>When Gerald picked up his cell phone, he discovered that he had received many text messages and missed calls.</p> <br><p>To Gerald’s surprise, they were all foreign numbers.</p> <br><p>Gerald also received a text message stating that someone had transferred money into his bank account!</p> <br><p>“[Daxtonville Bank] Nineteen years. The balance of your account ending in 107 is USD 1,500,000.00.”</p> <br><p>Gerald was stunned when he looked at the series of numbers.</p> <br><p>One million five hundred thousand dollars?</p> <br><p>Who would transfer one and a half million dollars to him?</p> <br><p>Gerald hurriedly called the bank to confirm the transfer and he was even more confused after receiving confirmation from the bank.</p> <br><p>At this time, his cell phone started ringing again. It was another phone call from an international phone number and Gerald answered the call immediately.</p> <br><p>“Gerald, have you received the money that I transferred to you? I’m your elder sister!” A familiar voice sounded over the other end of the line.</p> <br><p>“Sister! What the hell is going on? Aren’t you and our parents working hard to make money abroad? Where did you get so much money?”</p> <br><p>Gerald was completely in shock.</p> <br><p>“Erm, our father was intending to hide the truth from you for another two years but I can’t bring myself to do so because I know you’re constantly getting bullied in school. Therefore, I planned to tell you the news in advance. Our family is actually really wealthy. The Crawford family has a huge business industry throughout the world. Do you know that eighty percent of the gold mines, minerals, and petroleum in Africa actually belongs to our family?”</p> <br><p>“This is not inclusive of all the other industries in Daxtonville and abroad.”</p> <br><p>What!</p> <br><p>Gerald gulped immediately. If this one and a half million wasn’t already in his hands, he wouldn’t have believed this at all.</p> <br><p>He really thought that his sister was merely making fun of him!</p> <br><p>“I know you find it really hard to believe me, Gerald, but you have to learn to accept the truth slowly. In the beginning, I was also raised in a poor environment but after some time, I’ve gradually gotten familiar with living the lifestyle of a wealthy person. By the way, I’ve sent something over to you by courier and it should arrive by this morning. You no longer have to worry about money in the future.”</p> <br><p>“I don’t know how much anything costs in Daxtonville nowadays but you shouldn’t worry, just use the one and a half million dollars for the time being. I’ll call you again next month!”</p> <br><p>After hanging up the phone, Gerald was still in disbelief.</p> <br><p>He had always lived as a poor person throughout his entire life.</p> <br><p>But…</p> <br><p>He was actually a second-generation rich kid?</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 1</h1>
                     </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was nine o’clock at night at the male dormitory building in the university campus.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Gerald, please go down to dormitory 101 on the first floor and bring my laptop up for me!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A guy with blonde hair from the dormitory next door opened Gerald’s dormitory room door directly before he dropped one dollar on the floor, then turned around and walked away.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“By the way, please get me a bottle of mineral water from the supermarket downstairs too!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The blond-haired student turned around before he dropped another three dollars on the floor—two dollars for the bottled mineral water and another dollar for running the errand for him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hey, Blondie! Why are the people in your dormitory always asking Gerald to run errands for you? Why are you guys being such bullies?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The people in Gerald’s dormitory asked in a cold manner because they could no longer stand it.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hahaha! Gerald lives in your dormitory and you don’t understand him yet? If you give him a dollar, he’d even eat shit if you asked him to!” Blondie replied sarcastically. Then, he laughed before he left the dormitory.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald’s face flushed red with embarrassment as he turned a deaf ear to what the guy with blond hair said. After that, he bent down to pick up the few dollars on the ground before he thought to himself, ‘This way, I’ll make two dollars and that’s enough for me to buy three steamed buns and a bag of pickles! I won’t have to go hungry anymore.’</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Gerald...don’t go! If you don’t have enough money, we’ll lend you some and you won’t even need to pay us back!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The head of the dormitory could not stop himself from sympathizing with Gerald.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald shook his head before he smiled and said, “Thanks, but it’s okay…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After speaking, Gerald turned around to walk out of the dormitory. At this time, all the boys looked at Gerald’s back as they shook their heads in pity.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In fact, Gerald did not want to run errands for others and he wanted to enjoy his university life too.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It would be great if he could just continue studying in university without having to worry about anything.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, he was really very poor!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Although the other boys in his dormitory treated him very well, he did not want them to pity him. Otherwise, Gerald was afraid that they would eventually get sick of him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Apart from his dormitory roommates, Gerald had no other friends in university.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Gerald, I heard Blondie saying that you were heading downstairs, right?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At this time, a very well-dressed boy exited from the dormitory next door.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His name was Danny Xanders and he was the head of Blondie’s dormitory. He was every female students’ idol because he wasn’t only rich but he was also very handsome.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, he had always looked down on Gerald because he felt that Gerald was an embarrassment.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald could not understand why Danny would talk to him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald simply nodded and said, “Yes, I’m heading downstairs.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Danny smiled before he passed Gerald a box full of items.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“One of my friends will be waiting at the east grove today. Please pass him this box. Here’s ten dollars for you.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Danny was a playboy and everyone knew about how he’d often ask different girls to meet up with him at the grove.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Danny also had many friends who would do the same thing.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, Gerald did not think too much about it as he was already used to running errands for others.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He simply took the box and the ten dollars before he walked downstairs. As soon as he turned around, he seemed to hear Danny’s faint laughter in the background…</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald went downstairs to pick up the laptop and buy the bottle of mineral water before he decided to drop the box of items off for Danny.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The small grove outside the university was a very famous place for couples to have their secret rendezvous at night.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After that, Gerald arrived at the place that Danny had mentioned to him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He could immediately see a man and a woman sitting in the woods, talking and laughing together.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, Gerald was shocked when he saw the man and woman’s faces under the moonlight.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was stunned.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was Xavia!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald’s eyes reddened immediately and the items he was holding fell to the ground.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Xavia was Gerald’s ex-girlfriend and it had only been three days since they had both broken up. Of course, it was Xavia who wanted to end the relationship.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When they were breaking up, Xavia had told him she wanted some time alone to herself. However, it had only been three days and she was already spending time with another man at the grove!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Both of them also noticed Gerald’s presence immediately and the expression on their faces changed abruptly.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Gerald…why are you here? You, you…don’t get me wrong. I’m here with Yuri because…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Xavia started to panic immediately, feeling very embarrassed at this time. She quickly lowered her head, not knowing how to face Gerald.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The boy named Yuri Lowell, who was a second-generation rich kid, glanced at the box of items that Gerald dropped to the ground before he laughed out loud.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Damn it! Danny really knows how to make a fool out of people. I asked him to send me this box of items and I really didn’t expect him to send you here to run his errands instead. This is exciting. This is really too exciting!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald knew that Yuri, who was a second-generation rich kid, was Danny’s close friend. His family owned several restaurants and he usually drove a BMW 3 series car to school.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald could only clench his fists tightly together after listening to Yuri’s words.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It turned out that Danny had intentionally done this.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Moreover, Gerald believed that Danny actually played a role in his break up with Xavia. Otherwise, why would Xavia be with Yuri just a few days after their break up?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Xavia, I know that you dislike me but you don’t have to get together with this kind of person after our break up. Do you know how many girlfriends he has changed before this?” Gerald yelled out loud.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He loved this girl very much. He really loved her.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Xavia felt very anxious and annoyed when she heard Gerald’s words. “Gerald, who do you think you are? Who gave you the right to teach me how I should be acting and what I should be doing? I’ve already broken up with you and I can choose to be with whoever I want to be with!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Also…” Xavia was furious at this time. After that, she stared at Gerald before she said, “Did you come here to disgust me on purpose? Get lost!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Slap!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After she was done speaking, Xavia stepped forward and gave Gerald a tight slap across his face.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Yuri laughed even more heartily at this time. “Xavia, why are you chasing him away? You should just let him stay and watch us!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Xavia blushed immediately. “Yuri, I’ve already lost all interest after seeing this guy over here! Maybe next time…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After that, Xavia broke free from Yuri’s grasp.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald did not know how he walked away from the grove and his mind was completely blank at that moment.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Everything came down to money. Gerald was in this state because he had no money!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hahaha…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After returning to his dormitory, Gerald was greeted by the laughter of his classmates in the corridor.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Danny was holding his belly as he laughed out loud.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He had obviously told all of their classmates about this matter.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Gerald, what did you see when you were delivering the items earlier?” Blondie asked him with a smile on his face.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Damn it! Xavia really has the most perfect figure,” Danny said as he grinned.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald clenched his fists tightly together and his eyes were flushed red at this time. He really wanted to kill Danny! He wanted to perish together with Danny.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Why? Why are you doing this to me?” Gerald hissed angrily.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Danny laughed before he replied, “Hey, look here. I’m not scared of you at all.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Among all the poor people in our class, you’re the one I look down on the most! Xavia is such a beautiful woman and it’s such a waste for her to be in a relationship with someone like you! It’d be better for my brother to enjoy and play around with her for a few days at least…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“By the way, Gerald, did you know that Yuri managed to pick Xavia up after texting her for less than half an hour while you had to chase after her for more than a year before she finally agreed to be your girlfriend?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Everyone was laughing at this time and no one cared about Gerald’s dignity at all.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I did it for you!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald rushed towards Danny immediately.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As a result, he ended up getting beaten up by Danny’s buddies instead.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In the end, Gerald’s roommates came to his rescue and they brought him back to their own dormitory.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald covered his face with his quilt as he continued sobbing as he laid in bed.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">‘Why? Why must they bully me and trample on my dignity? Why?’</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">‘Do I not have any feelings just because I’m poor? Am I not a person in their eyes?’</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald continued struggling internally and he could not stop the tears from flowing down his cheeks. He could not forget the scene that he had just witnessed tonight.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He did not know how long he huddled up under the covers, crying before he finally fell asleep.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Perhaps it was because it was such a dark and silent night, Gerald slept very peacefully that night.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When he woke up the next morning, there was no one in the dormitory. Gerald knew that the head of the dormitory must not have wanted to wake him up as he probably felt it would be better for Gerald to stay in the dormitory instead of going to the classroom after the previous night’s events!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When Gerald picked up his cell phone, he discovered that he had received many text messages and missed calls.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">To Gerald’s surprise, they were all foreign numbers.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald also received a text message stating that someone had transferred money into his bank account!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“[Daxtonville Bank] Nineteen years. The balance of your account ending in 107 is USD 1,500,000.00.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald was stunned when he looked at the series of numbers.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">One million five hundred thousand dollars?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Who would transfer one and a half million dollars to him?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald hurriedly called the bank to confirm the transfer and he was even more confused after receiving confirmation from the bank.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At this time, his cell phone started ringing again. It was another phone call from an international phone number and Gerald answered the call immediately.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Gerald, have you received the money that I transferred to you? I’m your elder sister!” A familiar voice sounded over the other end of the line.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Sister! What the hell is going on? Aren’t you and our parents working hard to make money abroad? Where did you get so much money?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald was completely in shock.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Erm, our father was intending to hide the truth from you for another two years but I can’t bring myself to do so because I know you’re constantly getting bullied in school. Therefore, I planned to tell you the news in advance. Our family is actually really wealthy. The Crawford family has a huge business industry throughout the world. Do you know that eighty percent of the gold mines, minerals, and petroleum in Africa actually belongs to our family?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“This is not inclusive of all the other industries in Daxtonville and abroad.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">What!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gerald gulped immediately. If this one and a half million wasn’t already in his hands, he wouldn’t have believed this at all.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He really thought that his sister was merely making fun of him!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I know you find it really hard to believe me, Gerald, but you have to learn to accept the truth slowly. In the beginning, I was also raised in a poor environment but after some time, I’ve gradually gotten familiar with living the lifestyle of a wealthy person. By the way, I’ve sent something over to you by courier and it should arrive by this morning. You no longer have to worry about money in the future.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I don’t know how much anything costs in Daxtonville nowadays but you shouldn’t worry, just use the one and a half million dollars for the time being. I’ll call you again next month!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After hanging up the phone, Gerald was still in disbelief.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He had always lived as a poor person throughout his entire life.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But…</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was actually a second-generation rich kid?</p>
 
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('0')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('2')"
+                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

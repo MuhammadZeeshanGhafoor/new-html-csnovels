@@ -28,29 +28,40 @@ const getChapterContent = async () => {
     let result = await response.json()
     let name = document.getElementById('bookname');
     let number = document.getElementById('chapter-num')
+    let number1 = document.getElementById('chapter-num-1')
+
     name.innerText = result?.bookname
     number.innerText = `Chapter - ${result?.chapternumber}`
+    number1.innerText = `Chapter - ${result?.chapternumber}`
+
     const chapterContentParagraph = document.getElementById('chaptercontent');
+    document.getElementById('loading').classList.add("hidden");
     chapterContentParagraph.innerText = result.chaptercontent;
 
 }
 getChapterContent()
 let indexes
 const getIndexes = async () => {
+    console.log("FETCHING INDEXES")
     try {
         const response = await fetch(`../.netlify/functions/chapterindex?slug=${slug}`)
         const result = await response.json()
-        indexes = result
+        let genHtml = ''
+        // indexes = result
         console.log(result, "abcRess");
-        let paginationNumber = result.chapterIndex.length / 5
-        console.log("LENGTH", typeof paginationNumber)
-        let paginationDiv = document.getElementById("index-pagination")
-        let paginations = ""
-        for (let i = 0; i < 6; i++) {
-            paginations += `<p onclick="indexPagination('${i}')">  ${Math.trunc(paginationNumber) * i} - ${Math.trunc(paginationNumber) * (i + 1)}</p>`
+        if (response.status === 200) {
+            result.chapterIndex.forEach((item) => {
+                genHtml += `<li>
+                                <a href="/reading-page?slug=${slug}&chapter=${item?.chapternumber}"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+            ${item?.chapternumber}</a>
+                            </li>`
+            })
         }
-        paginationDiv.innerHTML = paginations
-        indexPagination(0)
+        // indexPagination(0)
+        document.getElementById("number-of-chapters").innerHTML = `${result.chapterIndex.length}`
+        let chapterList = document.getElementById('read-chapter-list')
+        chapterList.innerHTML = genHtml
 
     } catch (error) {
         console.log("ERROR FETCHING INDEXES", error)
@@ -84,7 +95,7 @@ async function getCurrentBook() {
         console.log("ERROR IN REQ", error)
     }
 }
-getCurrentBook()
+// getCurrentBook()
 
 console.log("slugs", slug);
 document.getElementById("cover-img").src = url.slice(1, url.length)
@@ -111,29 +122,31 @@ function handleClose(id) {
 }
 
 function openNewPage(chNumber) {
-    console.log("NEXT CHAPTER", chNumber)
+    console.log("NEXT CHAPTER Dynamic", chNumber)
 
     if (chNumber > 5) {
 
-        window.location.href = `/read-bookpage?slug=${slug}&chapter=${chNumber}`
+        window.location.href = `/reading-page?slug=${slug}&chapter=${chNumber}`
 
     } else {
         window.location.href = `/${slug}/chapter-${chNumber}`
     }
 }
 
-function nextCh() {
+function readNextChapter() {
+
     let currentCh = Number(chapterNumber)
     if (currentCh > 4) {
-        window.location.href = `/read-bookpage?slug=${slug}&chapter=${currentCh + 1}`
+        window.location.href = `/reading-page?slug=${slug}&chapter=${currentCh + 1}`
     } else {
         window.location.href = `/${slug}/chapter-${currentCh + 1}`
 
     }
 }
 function previousCh() {
+
     if (chapterNumber > 5) {
-        window.location.href = `/read-bookpage?slug=${slug}&chapter=${chapterNumber - 1}`
+        window.location.href = `/reading-page?slug=${slug}&chapter=${chapterNumber - 1}`
 
     } else {
         window.location.href = `/${slug}/chapter-${chapterNumber - 1}`

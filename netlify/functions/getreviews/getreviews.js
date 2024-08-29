@@ -11,47 +11,38 @@ const headers = {
     'Access-Control-Allow-Headers': 'Content-Type, Authorization', // Allow certain headers
 };
 
-let reviewsCache = [];
+
 
 const handler = async (event) => {
     if (event.httpMethod === 'OPTIONS') {
         return {
             statusCode: 200,
             headers,
-            body: 'Preflight OK', // Respond to preflight
+            body: 'Preflight OK',
         };
     }
 
     const slug = event.queryStringParameters.slug;
 
     try {
-        if (reviewsCache.length > 0) {
-            console.log("Using cached reviews");
-            const book = reviewsCache.filter((item) => item.slug === slug);
 
-            return {
-                statusCode: 200,
-                headers,
-                body: JSON.stringify({ message: "from cache", book: book }),
-            };
-        }
 
         const { data, error } = await supabaseCli
             .from('reviews')
-            .select("*");
+            .select("*")
+            .eq("slug", slug);
 
         if (error) {
             throw new Error(error.message);
         }
 
-        // reviewsCache = data;
 
-        const book = data.filter((item) => item.slug === slug);
+
 
         return {
             statusCode: 200,
             headers,
-            body: JSON.stringify({ message: "newly fetched", book: book, date: new Date() }),
+            body: JSON.stringify({ message: "newly fetched", book: data }),
         };
 
     } catch (error) {

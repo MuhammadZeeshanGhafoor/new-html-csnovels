@@ -1,242 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-            <!DOCTYPE html>
-            <html lang="en">
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <meta name="description" content="Your chapter description here">
-                <title>Great Marshal - Chapter 1</title>
-                <!-- Include CSS files -->
-
-                
-                <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
-
-<link href="../output.css" rel="stylesheet">
-<!-- Include Redux library via CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
-
-<link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your chapter description here">
+    <title>Great Marshal - Chapter 1</title>
+    <!-- Include CSS files -->
 
 
-                <!-- Include JavaScript files -->
-            </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
-                    </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Great Marshal / Chapter 1 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+    <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
-                        
-         
-                        <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
-                        
-                        <div class="border border-gray-200 " id="cover-img">
-                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/great-marshal.jpg" alt="Great Marshal Cover"
-                                    class="md:w-52 md:h-72 p-1" id="cover-img">
-                                </div>
-                            <b id="bookname">
-                                Great Marshal
-                            </b>
-                            <p>
-                            © CSNovels
-                            </p>
-                            
-                                </div>
-                                <div class="relative">
-                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/great-marshal.jpg"
-                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
-                                alt="Great Marshal Cover" id="cover-img">
-                                <hr class="bg-black md:px-16 px-2">
-                                </div>
-            
-                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
-                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
-                            <b class="md:   text-xl">
-                                1
-                            </b>
-                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
-                        </div>
-    
-                        
+    <link href="../output.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Include Redux library via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+
+    <link rel="shortcut icon" href="../assets/Site Favicon.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
 
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Oakheart International Airport, which had always been hustling and bustling, had no signs of tourists at all today. The entire place was so silent that one could hear a pin drop.</p> <br><p>Only thousands of men dressed in camouflage uniforms were present with loaded weapons, waiting in anticipation.</p> <br><p>“Zone one, clear!”</p> <br><p>“Zone two, clear!”</p> <br><p>The colonel, Lone Wolf, who carried two stripes and three stars on his shoulders, let out a long sigh of relief after hearing the report.</p> <br><p>“The coast is clear. You may alight now, Great Marshal.”</p> <br><p>Zeke extinguished the cigar in his hand before he slowly walked out of the private jet.</p> <br><p>He was decked out in a fur coat that rustled in the cold wind. His expression was bland but instilled fear in others, nonetheless.</p> <br><p>He exuded an aura like that of a monarch overlooking the world, which made people hold their breaths.</p> <br><p>Thousands of soldiers shifted their gaze to him uniformly, their eyes brimming with admiration.</p> <br><p>He was a living legend and their faith.</p> <br><p>“Welcome back, Great Marshal!” Lone Wolf hurriedly greeted.</p> <br><p>Zeke nodded indifferently.</p> <br><p>“Great Marshal,” Lone Wolf continued gingerly, “Your family has sent some people to meet you. They are waiting in the lounge.”</p> <br><p>“They seem desperate for you to return to the family.”</p> <br><p>Zeke stood rooted to the ground as he looked toward the lounge.</p> <br><p>There was indeed a row of people in suits, anxiously awaiting his return.</p> <br><p>As their eyes met, the people inside shuddered and couldn’t help but kneel on the ground with pleading eyes.</p> <br><p>It would be a major shock to anyone who saw this scene.</p> <br><p>Did the dignified and influential Williams family of Atheville just get down on their knees?</p> <br><p>Zeke snorted, his mind wandering.</p> <br><p>He, the original young master of the Williams family in Atheville, had been forced by the head of the Williams family to take his twin brother’s place in jail fifteen years ago.</p> <br><p>No one had spoken up for him in the family, including his parents.</p> <br><p>He was released from prison five years later.</p> <br><p>And in just a few years, he became a marshal with unparalleled power and the world’s number one God of War.</p> <br><p>In the past, when he had experienced the cruelty of life, the Williams family had shown him no concern at all.</p> <br><p>But now that he was rich and powerful, they finally remembered him.</p> <br><p>How ridiculous!</p> <br><p>A sense of self-deprecation flashed across Zeke’s face as he responded coldly, “Tell them the moment the Williams family made me go to jail on behalf of my brother fifteen years ago, Zeke Williams died. The Zeke Williams right now has nothing to do with the Williams family of Atheville. Don’t disturb me again or they’ll see torrents of blood before their eyes! Take care of it, Lone Wolf. Don’t interfere with my wedding reception.”</p> <br><p>Lone Wolf nodded hastily. “Yes, sir!”</p> <br><p>Zeke walked up to the wedding car on the side.</p> <br><p>He stroked the jade pendant hanging on his chest. His anger then vanished, tamped down by an obvious act of will.</p> <br><p>He couldn’t help but think about the origin of that jade pendant</p> <br><p>Ten years ago, when he had finished serving his time in prison, no one from the Williams family had come to pick him up; no one even sent their regards.</p> <br><p>They had completely forgotten about him.</p> <br><p>He was penniless and living on the streets. Starving and dying from the cold, he wanted to end his life there and then.</p> <br><p>But at that critical moment, a little girl passing by had given him a cotton-padded coat and a jade pendant</p> <br><p>“This cotton-padded coat will keep you warm from the cold, and this jade pendant will bring you good luck. As long as you’re alive, there is hope.”</p> <br><p>She rekindled that spark of hope in Zeke who, in turn, affirmed his determination to make a name for himself.</p> <br><p>So he dusted himself down and embarked on the journey of becoming a soldier.</p> <br><p>There were countless times when he was on the brink of death with no hope of survival whatsoever. Whenever he was in jeopardy, that beautiful and kind silhouette would flash across his mind.</p> <br><p>She was Zeke’s conviction to live and motivation to keep striving.</p> <br><p>After serving in the military for only five years, he had become the marshal of the armed forces.</p> <br><p>In the midst of a national crisis, Zeke had been entrusted with a mission to lead thousands of troops and make a clean sweep across the borders of nine countries. He also had to force them into signing the Nine Nations Treaty of Alliance.</p> <br><p>For five years, Zeke had not been allowed to make a comeback. He was prohibited from using his wealth and power in exchange for fair competition for Eurasia enterprises in those nine countries.</p> <br><p>Since then, the Great Marshal had disappeared.</p> <br><p>Only the ordinary man, Zeke Williams, returned to Oakheart City. Thereafter, he found the girl, Emily Clemons, who gave him the jade pendant back then and courted her madly.</p> <br><p>After five years of dedication, it finally came to fruition.</p> <br><p>Today was the day he was going to marry Emily.</p> <br><p>And the day when the Nine Nations Treaty of Alliance expired.</p> <br><p>Yesterday, for the first time in five years, he left Oakheart City to go to the United Nations to terminate the Nine Nations Treaty of Alliance, and today he rushed back to attend the wedding.</p> <br><p>After tonight, his power and wealth would be automatically reinstated.</p> <br><p>“Great Marshal,” Lone Wolf called, handing him a list. “Your Grand Comeback Ceremony is scheduled in three days. Here’s the invitation list. Please have a look.”</p> <br><p>Zeke glanced at the list and said, “Send three invitation cards to my fiancée, Emily. I want her to know that in three days, her husband will be the powerful Great Marshal who overturns the world. Not just some man on the street!”</p> <br><p>One hour later, the wedding hall was bustling with noise and excitement.</p> <br><p>The guests were discussing what had just happened.</p> <br><p>A moment ago, a team of fully armed troops had sent three invitation cards to the Clemons family.</p> <br><p>It was not an ordinary invitation card, but an invitation from the Great Marshal, the legendary God of War, to his Grand Comeback Ceremony.</p> <br><p>The entire world knew who the Great Marshal was. He was rich and powerful; the idol of many boys and girls.</p> <br><p>Those eligible to attend his Grand Comeback Ceremony were either the officialdom tycoons or the consortium tycoons.</p> <br><p>However, there was only one slot for ordinary people!</p> <br><p>And it went to the Clemons family!</p> <br><p>It was the ultimate honour one could ever receive!</p> <br><p>The Clemons family was destined to have their own Cinderella story, going from rags to riches!</p> <br><p>The crowd was overwhelmed with envy and jealousy.</p> <br><p>Of course, they were even more envious of the bridegroom today, Zeke Williams.</p> <br><p>How lucky was he to be able to marry Emily at this time!</p> <br><p>In the boudoir, Emily’s mother, Madeleine Clemons, was weeping with joy as she held onto the three invitation cards.</p> <br><p>“Our family has finally succeeded, Emily.”</p> <br><p>“After we attend the ceremony in three days, our status in Oakheart City will definitely rise.”</p> <br><p>“By then, there will be countless rich and powerful people who will suck up to us. Our family will likely become part of the upper-class society!”</p> <br><p>Emily was full of pride. “Yeah, mom. This is really beyond my expectations.”</p> <br><p>“Emily,” Madeleine suddenly said, her voice stern. “Our family is about to climb up the social ladders, and it’s a bit too easy for that poor boy, Zeke, to marry you with just a dowry of three hundred thousand. Don’t you think? How about this? We’ll ask for another three hundred thousand, and if he can’t give us that, he doesn’t deserve to marry you!”</p> <br><p>Emily nodded, “Whatever you say, Mom. I’ll listen to you.”</p> <br><p>In no time, Zeke arrived.</p> <br><p>With hopes and fears written on his face, he walked into the boudoir with flowers in his hand.</p> <br><p>“Emily, I’m here to marry you.”</p> <br><p>However, the atmosphere in the boudoir was relatively cold.</p> <br><p>Zeke felt a little embarrassed when Emily didn’t accept the flowers he had brought.</p> <br><p>“Zeke,” Emily’s mother, Madeleine, started. “If you want to marry my daughter today, you have to give us a dowry of another three hundred thousand.”</p> <br><p>Zeke frowned. “Haven’t I already given you a dowry of three hundred thousand? Why do you want another three hundred thousand?”</p> <br><p>Truth be told, a few hundred thousand meant nothing to him.</p> <br><p>As long as she wanted it, he could grant her the greatest wealth she could ever imagine.</p> <br><p>However, his wealth wouldn’t be reinstated until after midnight. He really couldn’t get three hundred thousand at that moment.</p> <br><p>“I’m sure you’ve heard that our family has received an invitation from the Great Marshal,” Madeleine began.</p> <br><p>“Our family is about to climb up the social ladders and become a noble family. Wouldn’t it be disgraceful to my family if word gets out that you became my son-in-law with just a dowry of three hundred thousand?”</p> <br><p>Zeke was speechless.</p> <br><p>You think I’m disgraceful just because you received an invitation from the Great Marshal?</p> <br><p>But I’m that Great Marshal!</p> <br><p>He looked at Emily. “Emily, what’s your take on this?”</p> <br><p>“I think my mom is right,” Emily replied.</p> <br><p>“Once we attend the Grand Comeback Ceremony, there will definitely be a myriad of rich people proposing to me. Forget about three hundred thousand. I’m sure they can even afford three million. We’re already going easy on you by only asking for three hundred thousand.”</p> <br><p>Zeke sighed. “How about this? Let’s just get married first and not keep the guests waiting. After that, I can give you thirty million, let alone three hundred thousand.”</p> <br><p>Emily rolled her eyes peevishly.</p> <br><p>“Who are you trying to fool? Isn’t that just an empty promise? Get the money quickly and borrow it if you have no money. Otherwise, we are not getting married today.”</p> <br><p>Zeke felt helpless. When he was about to tell them he was the Great Marshal, the bridesmaid, Lacey Hinton, couldn’t stand it anymore.</p> <br><p>“Emi, I think it’s best if you get married first. The guests are waiting outside. If you’re going to haggle over the betrothal gifts and make a scene now, Zeke will only become a laughingstock. How can he raise his head in front of his relatives and friends in the future? They will make fun of him for a lifetime.”</p> <br><p>Zeke glanced at Lacey gratefully.</p> <br><p>Although she was just a bridesmaid and only wearing light makeup, she was superior to Emily, in terms of both look and figure.</p> <br><p>Zeke was very fond of her because she had helped him pursue Emily before this.</p> <br><p>But unexpectedly, Emily had a fallout with Lacey.</p> <br><p>She was jealous of Lacey’s good looks and had been using her. Their friendship was completely superficial.</p> <br><p>“How could you stab me in the back, Lacey? Do you even treat me as a friend? It’s fine that you’re speaking up for Zeke, but you didn’t even get me any gifts on my wedding day. Oh yeah, I forgot. You gifted me a jade pendant ten years ago. A poor sister like you isn’t worthy of being my friend now. Take your stupid jade pendant and leave.”</p> <br><p>Emily removed the pendant and threw it to Lacey.</p> <br><p>Bang!</p> <br><p>Zeke stared at that jade pendant, his brain was rumbling. </p> <br><p>What?</p> <br><p>Lacey is the owner of that jade pendant?</p> <br><p>It wasn’t Emily who had helped me back then, but Lacey?</p> <br><p>I’ve fallen in love with the wrong woman for five years!</p> <br><p>And for the past five years, I’ve even witnessed Emily bully my lifesaver!</p> <br><p>God is playing games with me!</p> <br><p>When Zeke regained his composure, Lacey was battered out of her senses and heading out the door.</p> <br><p>After being humiliated and chased out by Emily in public, her mood wasn’t any better than Zeke’s.</p> <br><p>“Lacey, wait,” Zeke stopped her abruptly.</p> <br><p>“Let her go, you asshole,” Emily exploded. “If you dare stop her again, you get out too!”</p> <br><p>“You’re asking me to get out?” Zeke sneered. “Oh, you’ll regret this.”</p> <br><p>“Regret? You will be the one who’ll regret,” Emily retorted.</p> <br><p>“Once I attend the Great Marshal’s Grand Comeback Ceremony, there will be countless rich men pursuing me. By then, you will not even be qualified to kneel and lick my boots!”</p> <br><p>She had thought Zeke would butter her up when she took out the Grand Comeback Ceremony invitation card.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
+    <!-- Include JavaScript files -->
+</head>
 
+<body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+    <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+        <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Great Marshal/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 1 </p>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+        </div>
+    </header>
+
+
+    <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
+
+        <div class="border border-gray-200 " id="cover-img">
+            <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/great-marshal.jpg"
+                alt="Great Marshal Cover" class="md:w-52 md:h-72 p-1" id="cover-img">
+        </div>
+        <b id="bookname">
+            Great Marshal
+        </b>
+        <p>
+            © CSNovels
+        </p>
+
+    </div>
+
+
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4">
+                <div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 1</h1>
+                </div>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Oakheart
+                    International Airport, which had always been hustling and bustling, had no signs of tourists at all
+                    today. The entire place was so silent that one could hear a pin drop.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Only
+                    thousands of men dressed in camouflage uniforms were present with loaded weapons, waiting in
+                    anticipation.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Zone one,
+                    clear!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Zone two,
+                    clear!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The
+                    colonel, Lone Wolf, who carried two stripes and three stars on his shoulders, let out a long sigh of
+                    relief after hearing the report.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“The coast
+                    is clear. You may alight now, Great Marshal.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke
+                    extinguished the cigar in his hand before he slowly walked out of the private jet.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was
+                    decked out in a fur coat that rustled in the cold wind. His expression was bland but instilled fear
+                    in others, nonetheless.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He exuded
+                    an aura like that of a monarch overlooking the world, which made people hold their breaths.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Thousands
+                    of soldiers shifted their gaze to him uniformly, their eyes brimming with admiration.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was a
+                    living legend and their faith.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Welcome
+                    back, Great Marshal!” Lone Wolf hurriedly greeted.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke nodded
+                    indifferently.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Great
+                    Marshal,” Lone Wolf continued gingerly, “Your family has sent some people to meet you. They are
+                    waiting in the lounge.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“They seem
+                    desperate for you to return to the family.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke stood
+                    rooted to the ground as he looked toward the lounge.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">There was
+                    indeed a row of people in suits, anxiously awaiting his return.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As their
+                    eyes met, the people inside shuddered and couldn’t help but kneel on the ground with pleading eyes.
+                </p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It would be
+                    a major shock to anyone who saw this scene.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Did the
+                    dignified and influential Williams family of Atheville just get down on their knees?</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke
+                    snorted, his mind wandering.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He, the
+                    original young master of the Williams family in Atheville, had been forced by the head of the
+                    Williams family to take his twin brother’s place in jail fifteen years ago.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">No one had
+                    spoken up for him in the family, including his parents.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was
+                    released from prison five years later.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And in just
+                    a few years, he became a marshal with unparalleled power and the world’s number one God of War.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In the
+                    past, when he had experienced the cruelty of life, the Williams family had shown him no concern at
+                    all.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But now
+                    that he was rich and powerful, they finally remembered him.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">How
+                    ridiculous!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A sense of
+                    self-deprecation flashed across Zeke’s face as he responded coldly, “Tell them the moment the
+                    Williams family made me go to jail on behalf of my brother fifteen years ago, Zeke Williams died.
+                    The Zeke Williams right now has nothing to do with the Williams family of Atheville. Don’t disturb
+                    me again or they’ll see torrents of blood before their eyes! Take care of it, Lone Wolf. Don’t
+                    interfere with my wedding reception.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lone Wolf
+                    nodded hastily. “Yes, sir!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke walked
+                    up to the wedding car on the side.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He stroked
+                    the jade pendant hanging on his chest. His anger then vanished, tamped down by an obvious act of
+                    will.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He couldn’t
+                    help but think about the origin of that jade pendant</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ten years
+                    ago, when he had finished serving his time in prison, no one from the Williams family had come to
+                    pick him up; no one even sent their regards.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They had
+                    completely forgotten about him.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was
+                    penniless and living on the streets. Starving and dying from the cold, he wanted to end his life
+                    there and then.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But at that
+                    critical moment, a little girl passing by had given him a cotton-padded coat and a jade pendant</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“This
+                    cotton-padded coat will keep you warm from the cold, and this jade pendant will bring you good luck.
+                    As long as you’re alive, there is hope.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">She
+                    rekindled that spark of hope in Zeke who, in turn, affirmed his determination to make a name for
+                    himself.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So he
+                    dusted himself down and embarked on the journey of becoming a soldier.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">There were
+                    countless times when he was on the brink of death with no hope of survival whatsoever. Whenever he
+                    was in jeopardy, that beautiful and kind silhouette would flash across his mind.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">She was
+                    Zeke’s conviction to live and motivation to keep striving.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After
+                    serving in the military for only five years, he had become the marshal of the armed forces.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In the
+                    midst of a national crisis, Zeke had been entrusted with a mission to lead thousands of troops and
+                    make a clean sweep across the borders of nine countries. He also had to force them into signing the
+                    Nine Nations Treaty of Alliance.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">For five
+                    years, Zeke had not been allowed to make a comeback. He was prohibited from using his wealth and
+                    power in exchange for fair competition for Eurasia enterprises in those nine countries.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Since then,
+                    the Great Marshal had disappeared.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Only the
+                    ordinary man, Zeke Williams, returned to Oakheart City. Thereafter, he found the girl, Emily
+                    Clemons, who gave him the jade pendant back then and courted her madly.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After five
+                    years of dedication, it finally came to fruition.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Today was
+                    the day he was going to marry Emily.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And the day
+                    when the Nine Nations Treaty of Alliance expired.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Yesterday,
+                    for the first time in five years, he left Oakheart City to go to the United Nations to terminate the
+                    Nine Nations Treaty of Alliance, and today he rushed back to attend the wedding.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After
+                    tonight, his power and wealth would be automatically reinstated.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Great
+                    Marshal,” Lone Wolf called, handing him a list. “Your Grand Comeback Ceremony is scheduled in three
+                    days. Here’s the invitation list. Please have a look.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke
+                    glanced at the list and said, “Send three invitation cards to my fiancée, Emily. I want her to know
+                    that in three days, her husband will be the powerful Great Marshal who overturns the world. Not just
+                    some man on the street!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">One hour
+                    later, the wedding hall was bustling with noise and excitement.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The guests
+                    were discussing what had just happened.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A moment
+                    ago, a team of fully armed troops had sent three invitation cards to the Clemons family.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was not
+                    an ordinary invitation card, but an invitation from the Great Marshal, the legendary God of War, to
+                    his Grand Comeback Ceremony.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The entire
+                    world knew who the Great Marshal was. He was rich and powerful; the idol of many boys and girls.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Those
+                    eligible to attend his Grand Comeback Ceremony were either the officialdom tycoons or the consortium
+                    tycoons.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However,
+                    there was only one slot for ordinary people!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And it went
+                    to the Clemons family!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was the
+                    ultimate honour one could ever receive!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The Clemons
+                    family was destined to have their own Cinderella story, going from rags to riches!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The crowd
+                    was overwhelmed with envy and jealousy.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Of course,
+                    they were even more envious of the bridegroom today, Zeke Williams.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">How lucky
+                    was he to be able to marry Emily at this time!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In the
+                    boudoir, Emily’s mother, Madeleine Clemons, was weeping with joy as she held onto the three
+                    invitation cards.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Our family
+                    has finally succeeded, Emily.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“After we
+                    attend the ceremony in three days, our status in Oakheart City will definitely rise.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“By then,
+                    there will be countless rich and powerful people who will suck up to us. Our family will likely
+                    become part of the upper-class society!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily was
+                    full of pride. “Yeah, mom. This is really beyond my expectations.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Emily,”
+                    Madeleine suddenly said, her voice stern. “Our family is about to climb up the social ladders, and
+                    it’s a bit too easy for that poor boy, Zeke, to marry you with just a dowry of three hundred
+                    thousand. Don’t you think? How about this? We’ll ask for another three hundred thousand, and if he
+                    can’t give us that, he doesn’t deserve to marry you!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily
+                    nodded, “Whatever you say, Mom. I’ll listen to you.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In no time,
+                    Zeke arrived.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">With hopes
+                    and fears written on his face, he walked into the boudoir with flowers in his hand.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Emily, I’m
+                    here to marry you.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However,
+                    the atmosphere in the boudoir was relatively cold.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke felt a
+                    little embarrassed when Emily didn’t accept the flowers he had brought.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Zeke,”
+                    Emily’s mother, Madeleine, started. “If you want to marry my daughter today, you have to give us a
+                    dowry of another three hundred thousand.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke
+                    frowned. “Haven’t I already given you a dowry of three hundred thousand? Why do you want another
+                    three hundred thousand?”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Truth be
+                    told, a few hundred thousand meant nothing to him.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As long as
+                    she wanted it, he could grant her the greatest wealth she could ever imagine.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However,
+                    his wealth wouldn’t be reinstated until after midnight. He really couldn’t get three hundred
+                    thousand at that moment.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I’m sure
+                    you’ve heard that our family has received an invitation from the Great Marshal,” Madeleine began.
+                </p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Our family
+                    is about to climb up the social ladders and become a noble family. Wouldn’t it be disgraceful to my
+                    family if word gets out that you became my son-in-law with just a dowry of three hundred thousand?”
+                </p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke was
+                    speechless.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">You think
+                    I’m disgraceful just because you received an invitation from the Great Marshal?</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But I’m
+                    that Great Marshal!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He looked
+                    at Emily. “Emily, what’s your take on this?”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I think my
+                    mom is right,” Emily replied.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Once we
+                    attend the Grand Comeback Ceremony, there will definitely be a myriad of rich people proposing to
+                    me. Forget about three hundred thousand. I’m sure they can even afford three million. We’re already
+                    going easy on you by only asking for three hundred thousand.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke
+                    sighed. “How about this? Let’s just get married first and not keep the guests waiting. After that, I
+                    can give you thirty million, let alone three hundred thousand.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily
+                    rolled her eyes peevishly.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Who are
+                    you trying to fool? Isn’t that just an empty promise? Get the money quickly and borrow it if you
+                    have no money. Otherwise, we are not getting married today.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke felt
+                    helpless. When he was about to tell them he was the Great Marshal, the bridesmaid, Lacey Hinton,
+                    couldn’t stand it anymore.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Emi, I
+                    think it’s best if you get married first. The guests are waiting outside. If you’re going to haggle
+                    over the betrothal gifts and make a scene now, Zeke will only become a laughingstock. How can he
+                    raise his head in front of his relatives and friends in the future? They will make fun of him for a
+                    lifetime.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke
+                    glanced at Lacey gratefully.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Although
+                    she was just a bridesmaid and only wearing light makeup, she was superior to Emily, in terms of both
+                    look and figure.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke was
+                    very fond of her because she had helped him pursue Emily before this.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But
+                    unexpectedly, Emily had a fallout with Lacey.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">She was
+                    jealous of Lacey’s good looks and had been using her. Their friendship was completely superficial.
+                </p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“How could
+                    you stab me in the back, Lacey? Do you even treat me as a friend? It’s fine that you’re speaking up
+                    for Zeke, but you didn’t even get me any gifts on my wedding day. Oh yeah, I forgot. You gifted me a
+                    jade pendant ten years ago. A poor sister like you isn’t worthy of being my friend now. Take your
+                    stupid jade pendant and leave.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Emily
+                    removed the pendant and threw it to Lacey.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Bang!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Zeke stared
+                    at that jade pendant, his brain was rumbling. </p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">What?</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lacey is
+                    the owner of that jade pendant?</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It wasn’t
+                    Emily who had helped me back then, but Lacey?</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I’ve fallen
+                    in love with the wrong woman for five years!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And for the
+                    past five years, I’ve even witnessed Emily bully my lifesaver!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">God is
+                    playing games with me!</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When Zeke
+                    regained his composure, Lacey was battered out of her senses and heading out the door.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After being
+                    humiliated and chased out by Emily in public, her mood wasn’t any better than Zeke’s.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Lacey,
+                    wait,” Zeke stopped her abruptly.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Let her
+                    go, you asshole,” Emily exploded. “If you dare stop her again, you get out too!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“You’re
+                    asking me to get out?” Zeke sneered. “Oh, you’ll regret this.”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Regret?
+                    You will be the one who’ll regret,” Emily retorted.</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Once I
+                    attend the Great Marshal’s Grand Comeback Ceremony, there will be countless rich men pursuing me. By
+                    then, you will not even be qualified to kneel and lick my boots!”</p>
+                <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">She had
+                    thought Zeke would butter her up when she took out the Grand Comeback Ceremony invitation card.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('0')">
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('2')">
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500
+                                Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
-    <script src="../staticScript.js"></script>
+    </section>
 
-            </body>
-            </html>
-            
-            
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
+
+</body>
+
+</html>

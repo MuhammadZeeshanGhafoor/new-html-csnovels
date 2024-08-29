@@ -27,7 +27,7 @@ exports.handler = async (event, context) => {
             if (error) {
                 return {
                     statusCode: 400,
-                    body: JSON.stringify({ error: error.message, status: 400 }),
+                    body: JSON.stringify({ error: error, message: error.message, status: 400 }),
                 };
             }
 
@@ -41,13 +41,13 @@ exports.handler = async (event, context) => {
         } catch (error) {
             return {
                 statusCode: 500,
-                body: JSON.stringify({ error: error.message, status: 500 }),
+                body: JSON.stringify({ error: error, message: error.message, status: 500 }),
             };
         }
     } else {
         return {
             statusCode: 401,
-            body: JSON.stringify({ error: "Email or password missing", status: 401 })
+            body: JSON.stringify({ error: "Email or password missing", message: "Email or password missing", status: 401 })
         }
     }
 };

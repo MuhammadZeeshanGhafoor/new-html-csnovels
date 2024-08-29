@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./book-search.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+
+
+    <title>Signup - CS Novels </title>
+</head>
+
+<body class="font-NotoSansJP bg-[#F6F6F6]">
+    <header class="bg-white py-5">
+        <nav class="w-full mx-auto max-w-[1360px] px-4">
+            <div class="flex items-center 2xl:gap-[160px] md:gap-10 gap-0 justify-between">
+
+                <div class="flex">
+                    <a href="/" class="-m-1.5 p-1.5">
+                        <img class="w-[140px] md:block hidden" src="./assets/images/csnovels-logo.png" alt="logo">
+                        <img class="min-w-[40px] block md:hidden" src="./assets/images/mob-logo.png" alt="logo">
+                    </a>
+                </div>
+                <form class="block lg:hidden max-w-[220px]">
+                    <div class="flex w-full relative">
+                        <input type="text" placeholder="Search"
+                            class="rounded-full text-xs focus:outline-none focus:ring-0 w-full max-w-[314px] border-0 bg-gray-3 h-12 pl-4 pr-12 placeholder:text-gray-4">
+                        <svg width="24" class="absolute right-4  top-1/2 -translate-y-1/2" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 3.75C6.99594 3.75 3.75 6.99594 3.75 11C3.75 15.0041 6.99594 18.25 11 18.25C15.0041 18.25 18.25 15.0041 18.25 11C18.25 6.99594 15.0041 3.75 11 3.75ZM2.25 11C2.25 6.16751 6.16751 2.25 11 2.25C15.8325 2.25 19.75 6.16751 19.75 11C19.75 15.8325 15.8325 19.75 11 19.75C6.16751 19.75 2.25 15.8325 2.25 11Z"
+                                fill="#777980" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.1201 16.1201C16.413 15.8272 16.8878 15.8272 17.1807 16.1201L21.5307 20.4701C21.8236 20.763 21.8236 21.2378 21.5307 21.5307C21.2378 21.8236 20.763 21.8236 20.4701 21.5307L16.1201 17.1807C15.8272 16.8878 15.8272 16.413 16.1201 16.1201Z"
+                                fill="#909090" />
+                        </svg>
+
+                    </div>
+                </form>
+                <div class=" lg:hidden">
+                    <button type="button" onclick="navStatus('open')"
+                        class="open-nav-menu inline-flex items-center justify-center rounded-md text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden bg-white h-screen w-4/5 lg:h-auto lg:flex lg:gap-x-12 menu-dropdown z-40 lg:static top-0 absolute lg:mt-0 lg:w-auto left-0 p-5 lg:p-0 animationRight"
+                    id="navigation">
+                    <div class="w-full flex items-center justify-between pb-5 lg:hidden">
+                        <a href="/">
+                            <img src="./assets/images/csnovels-logo.png" class="max-w-[140px] " alt="logo">
+                        </a>
+
+                        <button class="close-nav-menu" onclick="navStatus('close')">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0003 17.3147C10.7443 17.3147 10.4883 17.2168 10.2933 17.0218L6.29325 13.0218C5.90225 12.6308 5.90225 11.9987 6.29325 11.6077L10.2933 7.6077C10.6842 7.2167 11.3163 7.2167 11.7073 7.6077C12.0983 7.9987 12.0983 8.63077 11.7073 9.02177L8.41434 12.3147L11.7073 15.6077C12.0983 15.9987 12.0983 16.6308 11.7073 17.0218C11.5123 17.2168 11.2563 17.3147 11.0003 17.3147Z"
+                                    fill="#4A4C56" />
+                                <path opacity="0.4"
+                                    d="M17.0003 17.3147C16.7443 17.3147 16.4883 17.2168 16.2933 17.0218L12.2932 13.0218C11.9022 12.6308 11.9022 11.9987 12.2932 11.6077L16.2933 7.6077C16.6842 7.2167 17.3163 7.2167 17.7073 7.6077C18.0983 7.9987 18.0983 8.63077 17.7073 9.02177L14.4143 12.3147L17.7073 15.6077C18.0983 15.9987 18.0983 16.6308 17.7073 17.0218C17.5123 17.2168 17.2563 17.3147 17.0003 17.3147Z"
+                                    fill="#4A4C56" />
+                            </svg>
+
+                        </button>
+                    </div>
+                    <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-4 gap-2 mt-8 lg:mt-0">
+                        <li>
+                            <a href="/"
+                                class="text-base block transition-all duration-300 hover:text-yellow-1 text-gray-2 px-1.5 lg:py-3 py-2 font-NotoSansJP">Home</a>
+                        </li>
+                        <li>
+
+                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                                class="flex transition-all duration-300 hover:text-yellow-1 font-NotoSansJP items-center gap-2.5 text-base text-gray-2 px-1.5 lg:py-3 py-2"
+                                type="button">
+                                Category
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.8833 1.5L6.54167 6.7C6.46393 6.79678 6.37073 6.87376 6.26764 6.92634C6.16455 6.97893 6.05368 7.00603 5.94167 7.00603C5.82965 7.00603 5.71878 6.97893 5.61569 6.92634C5.5126 6.87376 5.4194 6.79678 5.34167 6.7L1 1.5"
+                                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+                            <div id="dropdown"
+                                class="z-10 font-NotoSansJP hidden bg-white lg:absolute translate-y-0 relative divide-y divide-gray-100 rounded-lg lg:shadow w-full lg:w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDefaultButton">
+                                    <li>
+                                        <a href="/profile?tab=dashboard"
+                                            class="block px-4 py-2  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="/profile?tab=setting"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="/profile?tab=earning"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="signOut()"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                            out</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="block">
+                            <a href="https://discord.gg/HwMzcdJ"
+                                class="text-base block transition-all w-full duration-300 hover:text-yellow-1 text-gray-2 px-1.5 lg:py-3 py-2 font-NotoSansJP">Community</a>
+                        </li>
+                    </ul>
+
+                    <div class="lg:hidden flex gap-3 flex-col mt-[90px]">
+                        <a href="/login"
+                            class="text-base text-center border border-gray-8 rounded-full text-gray-2 text-nowrap px-8 py-3 font-NotoSansJP">Log
+                            In </a>
+                        <a href="/signup"
+                            class="text-base text-gray-2 text-nowrap px-8 py-3 transition-all duration-300 hover:bg-yellow-500 bg-yellow-1 rounded-full font-NotoSansJP flex items-center justify-center">Sign
+                            Up </a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex lg:justify-end">
+                    <form>
+                        <div class="flex w-full relative">
+                            <input type="text" placeholder="Search"
+                                class="rounded-full focus:outline-none focus:ring-0 w-full max-w-[314px] border-0 bg-gray-3 h-12 pl-7 pr-14 placeholder:text-gray-4">
+                            <svg width="24" class="absolute right-6 top-1/2 -translate-y-1/2" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11 3.75C6.99594 3.75 3.75 6.99594 3.75 11C3.75 15.0041 6.99594 18.25 11 18.25C15.0041 18.25 18.25 15.0041 18.25 11C18.25 6.99594 15.0041 3.75 11 3.75ZM2.25 11C2.25 6.16751 6.16751 2.25 11 2.25C15.8325 2.25 19.75 6.16751 19.75 11C19.75 15.8325 15.8325 19.75 11 19.75C6.16751 19.75 2.25 15.8325 2.25 11Z"
+                                    fill="#777980" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.1201 16.1201C16.413 15.8272 16.8878 15.8272 17.1807 16.1201L21.5307 20.4701C21.8236 20.763 21.8236 21.2378 21.5307 21.5307C21.2378 21.8236 20.763 21.8236 20.4701 21.5307L16.1201 17.1807C15.8272 16.8878 15.8272 16.413 16.1201 16.1201Z"
+                                    fill="#909090" />
+                            </svg>
+
+                        </div>
+                    </form>
+                    <a href="/login" id="login-button"
+                        class="text-base text-gray-2 text-nowrap px-8 py-3 font-NotoSansJP">Log In </a>
+                    <a href="/signup" id="signup-button"
+                        class="text-base text-gray-2 text-nowrap px-8 py-2.5 transition-all duration-300 hover:bg-yellow-500 bg-yellow-1 rounded-full font-NotoSansJP flex items-center justify-center">Sign
+                        Up </a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <section
+        class="w-full lg:min-h-[320px] min-h-[250px] bg-[url(/assets/images/urban-img.png)] brightness-125 bg-cover "
+        id="banner-img">
+        <div class="absolute backdrop-blur-sm left-0 top-0 w-full h-full bg-[#00000058] "></div>
+        <div class="w-full mx-auto lg:max-w-[1360px] px-5 relative">
+
+            <div class="w-full lg:flex justify-between mt-1 gap-[34px]   ">
+                <div class=" w-full flex items-center h-full  justify-center">
+                    <h1 class="text-[55px] font-bold text-[#FEC343] mb-1 mt-20 uppercase " id="type">URBAN</h1>
+                    <p class="text-sm lg:text-lg text-white font-NotoSansJP mt-24" id="description">Enjoy the Urban
+                        Story.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="w-full -mt-5 rounded-xl  absolute   p-5 mb-28 bg-[#f8f7f7]">
+        <p>All Books in <span class="font-semibold text-[#FEC343] uppercase" id="type-name"></span> Category</p>
+        <div class="swiper collection-swiper ">
+
+            <div class="swiper-wrapper w-full md:grid lg:grid-cols-6 md:grid-cols-3 flex items-center md:gap-6 mb-32"
+                id="book-list">
+                <div class="w-full h-full ">
+
+                    <img src="./assets/loading.png" class=" ml-[110px] mt-32 lg:ml-[640px] animate-spin w-14" />
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="lg:hidden w-full bg-gray-9 lg:pt-[110px] pt-14 mt-52 bg-[#171616] text-gray-300 z-40">
+        <div class="w-full mx-auto max-w-[1360px] px-4">
+            <div class="w-full flex lg:gap-[51px] gap-8 lg:pb-16 pb-6 lg:flex-row flex-col">
+                <div class="w-full max-w-[420px] pr-6">
+                    <a href="/">
+                        <img src="./assets/images/footer-logo.svg" class="lg:max-w-[200px] max-w-[134px]"
+                            alt="footer-logo">
+                    </a>
+                    <p class="lg:text-lg text-base text-gray-8 my-4 font-NotoSansJP">Csnovels is Digital eBooks
+                        <br> are Available For Everyone.Enjoy the convenience of reading anytime, anywhere
+                    </p>
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a href="#">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.7301 0.160156C7.85267 0.160156 0.65625 7.35657 0.65625 16.234C0.65625 25.1115 7.85267 32.3079 16.7301 32.3079C25.6076 32.3079 32.804 25.1115 32.804 16.234C32.804 7.35657 25.6076 0.160156 16.7301 0.160156ZM20.5376 11.2679H18.1215C17.8352 11.2679 17.5171 11.6446 17.5171 12.1453V13.8899H20.5393L20.0822 16.378H17.5171V24.8892H14.6657V16.378H12.0788V13.8899H14.6657V12.4265C14.6657 10.3269 16.1223 8.62072 18.1215 8.62072H20.5376V11.2679Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.166992" y="0.708984" width="32.1478" height="32.1478" rx="16.0739"
+                                        fill="white" />
+                                    <path
+                                        d="M21.4407 8.74609H24.2136L18.1557 15.5548L25.2823 24.82H19.7014L15.3309 19.2007L10.33 24.82H7.55547L14.035 17.5373L7.19922 8.74609H12.9201L16.8707 13.8823L21.4391 8.74609H21.4407ZM20.4676 23.1879H22.004L12.0861 10.2925H10.4373L20.4676 23.1879Z"
+                                        fill="#0F172A" />
+                                </svg>
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.6462 0.708984C7.76868 0.708984 0.572266 7.9054 0.572266 16.7829C0.572266 25.6604 7.76868 32.8568 16.6462 32.8568C25.5236 32.8568 32.72 25.6604 32.72 16.7829C32.72 7.9054 25.5236 0.708984 16.6462 0.708984ZM12.7114 23.4452H9.45644V12.9703H12.7114V23.4452ZM11.0638 11.6844C10.0358 11.6844 9.37105 10.9561 9.37105 10.0553C9.37105 9.13605 10.0559 8.42947 11.1057 8.42947C12.1555 8.42947 12.7985 9.13605 12.8186 10.0553C12.8186 10.9561 12.1555 11.6844 11.0638 11.6844ZM24.5994 23.4452H21.3444V17.6401C21.3444 16.2889 20.8722 15.3714 19.6952 15.3714C18.796 15.3714 18.2619 15.9926 18.0258 16.5903C17.9388 16.803 17.917 17.1044 17.917 17.4041V23.4435H14.6604V16.3107C14.6604 15.003 14.6185 13.9097 14.575 12.9687H17.403L17.552 14.4237H17.6173C18.0459 13.7406 19.0957 12.7326 20.8522 12.7326C22.9937 12.7326 24.5994 14.1675 24.5994 17.2517V23.4452Z"
+                                        fill="white" />
+                                </svg>
+
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="grid md:grid-cols-3 grid-cols-2 gap-11 lg:gap-0 lg:w-3/4 w-full">
+                    <div class="">
+                        <div class="lg:mb-8 mb-4">
+                            <h3 class=" font-NotoSansJP lg:text-base text-lg text-white font-bold mb-3">Quick links</h3>
+                            <div class="border-b-2 border-yellow-1 w-12"></div>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="/book-search?by=type&type=urban"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Urban</a>
+                            </li>
+                            <li><a href="/book-search?by=type&type=scifi"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Sci-Fi</a>
+                            </li>
+                            <li><a href="/book-search?by=type&type=fantasy"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Fantasy</a>
+                            </li>
+                            <li><a href="/book-search?by=type&type=romance"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Romance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="lg:mb-8 mb-4">
+                            <h3 class=" font-NotoSansJP lg:text-base text-lg text-white font-bold mb-3">Recourses</h3>
+                            <div class="border-b-2 border-yellow-1 w-12"></div>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.csnovels.flutter&pcampaignid=web_share"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Download
+                                    app</a></li>
+                            <li><a href="/book-search?by=type&type=all"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Book
+                                    Details </a></li>
+                            <li><a href="#"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Reading
+                                    Book</a></li>
+                            <li><a href="#"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Subscriotion</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="min-w-[260px]">
+                        <div class="lg:mb-8 mb-4">
+                            <h3 class=" font-NotoSansJP lg:text-base text-lg text-white font-bold mb-3">Get in touch
+                            </h3>
+                            <div class="border-b-2 border-yellow-1 w-12"></div>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <p class="text-gray-8 flex gap-2.5  lg:text-lg text-base font-NotoSansJP">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C9.81276 2.00258 7.71584 2.8726 6.16923 4.41922C4.62261 5.96584 3.75259 8.06276 3.75001 10.25C3.74739 12.0374 4.33124 13.7763 5.41201 15.2C5.41201 15.2 5.63701 15.4963 5.67376 15.539L12 23L18.3293 15.5353C18.3623 15.4955 18.588 15.2 18.588 15.2L18.5888 15.1978C19.669 13.7747 20.2526 12.0366 20.25 10.25C20.2474 8.06276 19.3774 5.96584 17.8308 4.41922C16.2842 2.8726 14.1873 2.00258 12 2ZM12 13.25C11.4067 13.25 10.8266 13.0741 10.3333 12.7444C9.83995 12.4148 9.45543 11.9462 9.22837 11.3981C9.00131 10.8499 8.9419 10.2467 9.05765 9.66473C9.17341 9.08279 9.45913 8.54824 9.87869 8.12868C10.2982 7.70912 10.8328 7.4234 11.4147 7.30764C11.9967 7.19189 12.5999 7.2513 13.1481 7.47836C13.6962 7.70542 14.1648 8.08994 14.4944 8.58329C14.8241 9.07664 15 9.65666 15 10.25C14.999 11.0453 14.6826 11.8078 14.1202 12.3702C13.5578 12.9326 12.7954 13.249 12 13.25Z"
+                                            fill="white" />
+                                    </svg>
+                                    Hauptstraesse 25
+                                    8840 Einsiedeln
+                                    Schwwiz
+                                </p>
+                            </li>
+                            <li><a href="mailto:info@Csnovels.com"
+                                    class="text-gray-8 flex gap-2.5 items-center lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 8.6691V17.25C1.5 18.9069 2.84315 20.25 4.5 20.25H19.5C21.1569 20.25 22.5 18.9069 22.5 17.25V8.6691L13.5723 14.1631C12.6081 14.7564 11.3919 14.7564 10.4277 14.1631L1.5 8.6691Z"
+                                            fill="white" />
+                                        <path
+                                            d="M22.5 6.90783V6.75C22.5 5.09315 21.1569 3.75 19.5 3.75H4.5C2.84315 3.75 1.5 5.09315 1.5 6.75V6.90783L11.2139 12.8856C11.696 13.1823 12.304 13.1823 12.7861 12.8856L22.5 6.90783Z"
+                                            fill="white" />
+                                    </svg>
+
+                                    info@Csnovels.com
+                                </a>
+                            </li>
+
+                            <li><a href="tel:+91 729 096-3676"
+                                    class="text-gray-8 flex items-center gap-2.5 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.9 16.2556C19.5333 16.2556 18.2111 16.0333 16.9778 15.6333C16.7846 15.5678 16.5768 15.5581 16.3783 15.6053C16.1798 15.6524 15.9987 15.7546 15.8556 15.9L14.1111 18.0889C10.9667 16.5889 8.02222 13.7556 6.45556 10.5L8.62222 8.65556C8.92222 8.34444 9.01111 7.91111 8.88889 7.52222C8.47778 6.28889 8.26667 4.96667 8.26667 3.6C8.26667 3 7.76667 2.5 7.16667 2.5H3.32222C2.72222 2.5 2 2.76667 2 3.6C2 13.9222 10.5889 22.5 20.9 22.5C21.6889 22.5 22 21.8 22 21.1889V17.3556C22 16.7556 21.5 16.2556 20.9 16.2556Z"
+                                            fill="white" />
+                                    </svg>
+
+                                    +91 729 096-3676
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6 border-t-[0.5px] border-gray-10">
+                <p class="text-center lg:text-base text-sm font-NotoSansJP text-white">Copyright © 2024 Csnovels. All
+                    rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        let phrases = [
+            { name: "urban", description: "Enjoy the Urban Story." },
+            { name: "scifi", description: "Explore the Sci-Fi" },
+            { name: "fantasy", description: "Read the Fantasy Story." },
+            { name: "all", description: "Enjoy Our All Story." }
+        ]
+        async function getBooks() {
+            let searchParam = new URLSearchParams(window.location.search);
+            let seachBy = searchParam.get("by")
+
+            let category = searchParam.get("type")
+            let imgUrl = searchParam.get("url")
+            if (imgUrl) {
+                let bannerSec = document.getElementById("banner-img")
+                bannerSec.classList.remove("bg-[url(/assets/images/urban-img.png)]")
+                bannerSec.classList.add(`bg-[url(/assets/images/${imgUrl}.png)]`)
+            }
+
+            console.log(seachBy, category);
+
+            document.getElementById("type").innerHTML = category
+            document.getElementById("type-name").innerHTML = category
+
+
+            let phrase = phrases.find((item) => item.name == category)
+            console.log(phrase)
+            document.getElementById("description").innerHTML = phrase.description;
+
+            const response = await fetch("../.netlify/functions/allbooks");
+            const result = await response.json();
+            let books
+            if (category == "fantasy") {
+                books = result.book.filter((item) => item.category.toLowerCase() == "fantasy")
+            } else
+                if (category == "urban") {
+                    books = result.book.filter((item) => item.category.toLowerCase() == "martial arts" || "war")
+                } else if (category == "scifi") {
+
+                    books = result.book.filter((item) => item.category.toLowerCase() == "modern life")
+
+                } else {
+                    books = result.book
+                }
+
+            console.log("BOOKKSSS", books)
+            if (response.status == 200) {
+                let listDiv = document.getElementById("book-list");
+                let list = ''
+                books.forEach((item) => {
+                    list += `<a href="/book/${item?.slug}" class="swiper-slide w-full bg-white rounded-[10px] p-2">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <div
+                            class="absolute bg-[#0000007e] w-[62px] pt-1.5 pb-2 px-2 right-0 bottom-0 flex items-center gap-1 text-white text-sm">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_51_2196)">
+                                    <path
+                                        d="M9.67252 2.29308C9.54618 2.03707 9.28545 1.875 8.99997 1.875C8.71449 1.875 8.45376 2.03707 8.32742 2.29308L6.43056 6.13653L2.18905 6.75286C1.90653 6.79391 1.67182 6.99179 1.5836 7.2633C1.49539 7.53481 1.56896 7.83286 1.77339 8.03213L4.84257 11.0238L4.11804 15.2482C4.06978 15.5296 4.18544 15.814 4.4164 15.9818C4.64736 16.1496 4.95356 16.1717 5.20625 16.0388L8.99997 14.0444L12.7937 16.0388C13.0464 16.1717 13.3526 16.1496 13.5835 15.9818C13.8145 15.814 13.9302 15.5296 13.8819 15.2482L13.1574 11.0238L16.2265 8.03213C16.431 7.83286 16.5046 7.53481 16.4163 7.2633C16.3281 6.99179 16.0934 6.79391 15.8109 6.75286L11.5694 6.13653L9.67252 2.29308Z"
+                                        fill="#FAAD14"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_51_2196">
+                                        <rect width="15" height="15" fill="white" transform="translate(1.5 1.5)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="text-sm font-bold font-NotoSansJP">${item?.avgrating.toFixed(1)}</p>
+                        </div>
+                        <img src="${item?.coverimage}" class="rounded-lg md:h-[240px] w-full bg-cover"
+                            alt="no-img">
+                    </div>
+                    <h2
+                        class="md:text-lg text-sm font-bold md:mt-4 mt-2 md:mb-2 mb-1 text-gray-2 text-ellipsis overflow-hidden max-w-full text-nowrap">
+                        ${item?.title}
+                        </h2>
+                    <p class="md:text-sm text-xs text-gray-6 mb-2 text-ellipsis text-nowrap overflow-hidden">${item?.description} </p>
+                    <div class="flex items-center justify-between md:pb-2 mt-1">
+                        <div class="flex items-center gap-1 py-1 md:mt-2">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_51_1450)">
+                                    <path
+                                        d="M15.205 4.26758C15.4431 4.60686 15.4967 4.99079 15.3657 5.41936L12.9104 13.5086C12.7973 13.8896 12.5696 14.2095 12.2273 14.4685C11.8851 14.7274 11.5205 14.8569 11.1336 14.8569H2.89249C2.43416 14.8569 1.9922 14.6976 1.5666 14.3792C1.14101 14.0607 0.844874 13.6694 0.678207 13.2051C0.53535 12.8063 0.529398 12.4283 0.66035 12.0711C0.66035 12.0473 0.669279 11.967 0.687136 11.8301C0.704993 11.6932 0.716898 11.5831 0.72285 11.4997C0.728803 11.4521 0.719874 11.3881 0.696065 11.3078C0.672255 11.2274 0.663327 11.1694 0.669279 11.1336C0.681184 11.0682 0.704993 11.0057 0.740708 10.9461C0.776422 10.8866 0.825529 10.8167 0.888029 10.7363C0.950529 10.656 0.999636 10.586 1.03535 10.5265C1.17226 10.3003 1.30618 10.028 1.43714 9.70954C1.56809 9.39109 1.65737 9.11877 1.70499 8.89258C1.72285 8.83305 1.72434 8.74377 1.70946 8.62472C1.69458 8.50567 1.69309 8.42234 1.70499 8.37472C1.72285 8.30925 1.77345 8.22591 1.85678 8.12472C1.94011 8.02353 1.99071 7.95508 2.00856 7.91936C2.13356 7.70508 2.25856 7.43127 2.38356 7.09794C2.50856 6.7646 2.58297 6.49675 2.60678 6.29436C2.61273 6.24079 2.60529 6.14555 2.58446 6.00865C2.56362 5.87175 2.56511 5.78841 2.58892 5.75865C2.61273 5.68127 2.67821 5.5905 2.78535 5.48633C2.89249 5.38216 2.95797 5.3152 2.98178 5.28544C3.09487 5.13067 3.22136 4.87919 3.36124 4.53097C3.50112 4.18276 3.58297 3.89555 3.60678 3.66936C3.61273 3.62174 3.6038 3.54585 3.57999 3.44169C3.55618 3.33752 3.55023 3.25865 3.56214 3.20508C3.57404 3.15746 3.60083 3.10389 3.64249 3.04436C3.68416 2.98484 3.73773 2.91639 3.80321 2.83901C3.86868 2.76163 3.91928 2.69913 3.95499 2.65151C4.00261 2.58008 4.05172 2.4893 4.10231 2.37919C4.15291 2.26907 4.19755 2.1649 4.23624 2.06669C4.27493 1.96847 4.32255 1.86133 4.3791 1.74526C4.43565 1.62919 4.49368 1.53395 4.55321 1.45954C4.61273 1.38514 4.6916 1.3152 4.78981 1.24972C4.88803 1.18424 4.99517 1.15002 5.11124 1.14704C5.22731 1.14407 5.36868 1.16044 5.53535 1.19615L5.52642 1.22294C5.75261 1.16936 5.9044 1.14258 5.98178 1.14258H12.7764C13.2169 1.14258 13.5562 1.30924 13.7943 1.64258C14.0324 1.97591 14.0859 2.36282 13.955 2.80329L11.5086 10.8926C11.2943 11.6009 11.0815 12.0578 10.8702 12.2631C10.6589 12.4685 10.2764 12.5711 9.72285 12.5711H1.96392C1.80321 12.5711 1.69011 12.6158 1.62464 12.7051C1.55916 12.8003 1.55618 12.9283 1.61571 13.089C1.75856 13.5057 2.18714 13.714 2.90142 13.714H11.1425C11.3151 13.714 11.4818 13.6679 11.6425 13.5756C11.8032 13.4834 11.9074 13.3598 11.955 13.2051L14.6336 4.39258C14.6752 4.26163 14.6901 4.09198 14.6782 3.88365C14.9044 3.97294 15.08 4.10091 15.205 4.26758ZM5.70499 4.28544C5.68118 4.36282 5.68714 4.42978 5.72285 4.48633C5.75856 4.54288 5.81809 4.57115 5.90142 4.57115H11.33C11.4074 4.57115 11.4833 4.54288 11.5577 4.48633C11.6321 4.42978 11.6812 4.36282 11.705 4.28544L11.8925 3.71401C11.9163 3.63663 11.9104 3.56966 11.8746 3.51311C11.8389 3.45657 11.7794 3.42829 11.6961 3.42829H6.26749C6.19011 3.42829 6.11422 3.45657 6.03981 3.51311C5.96541 3.56966 5.9163 3.63663 5.89249 3.71401L5.70499 4.28544ZM4.96392 6.57115C4.94011 6.64853 4.94606 6.7155 4.98178 6.77204C5.01749 6.82859 5.07702 6.85686 5.16035 6.85686H10.5889C10.6663 6.85686 10.7422 6.82859 10.8166 6.77204C10.891 6.7155 10.9401 6.64853 10.9639 6.57115L11.1514 5.99972C11.1752 5.92234 11.1693 5.85538 11.1336 5.79883C11.0979 5.74228 11.0383 5.71401 10.955 5.71401H5.52642C5.44904 5.71401 5.37315 5.74228 5.29874 5.79883C5.22434 5.85538 5.17523 5.92234 5.15142 5.99972L4.96392 6.57115Z"
+                                        fill="#4A4C56"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_51_1450">
+                                        <rect width="16" height="16" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="md:text-xs text-[10px] text-gray-6">${item?.chaptercount}</p>
+
+                        </div>
+                        <button>
+                            <svg width="18" height="16" viewBox="0 0 18 16" class="text-transparent fav-icon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.2501 8.47706L9.00009 14.6671L2.75009 8.47706C2.33784 8.0759 2.01312 7.59374 1.79638 7.06092C1.57963 6.52811 1.47556 5.95618 1.4907 5.38117C1.50585 4.80615 1.63989 4.2405 1.88439 3.71984C2.12888 3.19917 2.47853 2.73477 2.91133 2.35587C3.34412 1.97698 3.85068 1.6918 4.3991 1.51829C4.94752 1.34479 5.52593 1.28671 6.09789 1.34773C6.66986 1.40874 7.223 1.58752 7.72248 1.87281C8.22196 2.1581 8.65696 2.54372 9.00009 3.00539C9.3447 2.54708 9.7802 2.16483 10.2793 1.88256C10.7785 1.6003 11.3305 1.4241 11.9009 1.36499C12.4712 1.30588 13.0477 1.36514 13.5941 1.53905C14.1405 1.71296 14.6451 1.99779 15.0764 2.37569C15.5077 2.7536 15.8563 3.21646 16.1004 3.7353C16.3446 4.25414 16.479 4.81779 16.4953 5.39098C16.5117 5.96417 16.4095 6.53455 16.1952 7.06643C15.9809 7.59831 15.6592 8.08024 15.2501 8.48206"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                </path>
+                            </svg>
+
+                        </button>
+                    </div>
+                </a>`
+
+                })
+                listDiv.innerHTML = list
+            }
+
+        }
+        getBooks()
+        function navStatus(status) {
+            console.log(status, "navmmm")
+            let nav = document.getElementById("navigation")
+            if (status == "close") {
+
+                nav.classList.add("hidden")
+            } else {
+
+                nav.classList.remove("hidden")
+
+                nav.classList.add("block")
+
+
+            }
+        }
+
+
+
+
+        var swiper1 = Swiper;
+        var init = false;
+        function swiperMode() {
+            let mobile = window.matchMedia("(min-width: 320px) and (max-width: 768px)");
+
+            if (window.innerWidth <= 768) {
+                if (!init) {
+                    init = true;
+                    swiper1 = new Swiper(".myswiper", {
+                        slidesPerView: 1.5,
+                        centeredSlides: true,
+                        initialSlide: 1,
+                        spaceBetween: 16,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+
+                    });
+                }
+            } else if (init) {
+                swiper1.destroy();
+                init = false;
+            }
+        }
+
+        swiperMode();
+        window.addEventListener("resize", function () {
+            swiperMode();
+        });
+
+
+        var swiper2 = Swiper;
+        var init = false;
+        function swiperMode2() {
+            let mobile = window.matchMedia("(min-width: 320px) and (max-width: 768px)");
+
+            if (window.innerWidth <= 768) {
+                if (!init) {
+                    init = true;
+                    swiper2 = new Swiper(".collection-swiper", {
+                        slidesPerView: 2.5,
+                        spaceBetween: 16,
+
+
+                    });
+                }
+            } else if (init) {
+                swiper2.destroy();
+                init = false;
+            }
+        }
+
+        swiperMode2();
+        window.addEventListener("resize", function () {
+            swiperMode2();
+        });
+
+        function checkUser() {
+            console.log("WORKING CHECK USER")
+            let user = localStorage.getItem("user")
+
+            if (user) {
+                let loginButton = document.getElementById("login-button")
+                let signupButton = document.getElementById("signup-button")
+
+                const parsedUser = JSON.parse(user);
+                loginButton.href = "#"
+                loginButton.innerHTML = "Logout"
+
+                signupButton.className = ""
+                signupButton.className = "w-12 h-12 bg-yellow-1 rounded-full cursor-pointer flex items-center justify-center"
+
+
+                signupButton.href = "/profile"
+                if (parsedUser?.photo_url) {
+                    signupButton.innerHTML = `<img src="${parsedUser?.photo_url}"
+            class="rounded-full cursor-pointer border-2 border-yellow-500 " />`
+                } else if (parsedUser?.name) {
+                    signupButton.innerHTML = `<p class="text-2xl font-bold text-white uppercase">${parsedUser?.name[0]}</p>`
+                } else {
+                    signupButton.innerHTML = `<p class="text-2xl font-bold text-white uppercase">U</p>`
+
+                }
+
+                signupButton.onclick = () => {
+                    window.location.href = "/profile"
+                }
+
+
+                loginButton.onclick = () => {
+                    localStorage.clear()
+                    window.location.reload()
+                }
+
+
+            }
+        }
+        checkUser()
+    </script>
+
+
+
+
+
+</body>
+
+</html>

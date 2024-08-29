@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,63 +30,23 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">World Domination System/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 1 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        World Domination System / Chapter 1 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
-                        
+            </div>
+            </header>
+            
          
                         <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
                         
@@ -100,142 +62,218 @@
                             </p>
                             
                                 </div>
-                                <div class="relative">
-                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/world-domination-system.jpg"
-                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
-                                alt="World Domination System Cover" id="cover-img">
-                                <hr class="bg-black md:px-16 px-2">
-                                </div>
-            
-                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
-                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
-                            <b class="md:   text-xl">
-                                1
-                            </b>
-                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
-                        </div>
-    
                         
+    
 
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
 
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Daneel
-Power Levels for Body Refiners/Fighters:</p> <br><p>Human Level 1 to 9</p> <br><p>Warrior Level 1 to 9</p> <br><p>Rumored Champion Level</p> <br><p>Rumored Hero Level</p> <br><p>Power Levels for Mages:</p> <br><p>Human Mage Level 1 to 9</p> <br><p>Warrior Mage Level 1 to 9</p> <br><p>-The number 9 holds a special significance in the world that the kingdom is situated in. Each stage of Human, Warrior and the rumored Champion and Hero contain 9 levels.</p> <br><p>-Body refiners or mages in levels 1-3 are called by the additional name tag "Neophyte"/ "Amateur", levels 4-6 "Eminent" and levels 7-9 "Exalted". For example, a Human-8 level body refiner would be referred to as an Exalted Human.</p> <br><p>-Body refinement only requires resources like Ether. Development as a Mage requires both resources and talent in comprehending the elements or natural phenomena.</p> <br><p>-The factor which decides the effectiveness of body refinement training using resources is the potential of the body. Higher potential will result in higher gain in power from a smaller amount of resources. Whereas if one has very low potential, a large amount of resources are needed to progress in levels or stages.</p> <br><p>-Mages can cover up the weakness of having a weak potential by having a strong comprehension ability.</p> <br><p>-Fighting ability of a body refiner is decided by his/her skill in learning and applying fighting techniques. In a famous example quoted in the book "What is power?", a Neophyte/Amateur Human-1 disciple defeated an Eminent Human-6 combatant using superior skill and technique.</p> <br><p>-There is even more of a disparity between body refiners and mages. A single skilled Neophyte/ Amateur Human Mage can even defeat tens of Eminent Human Fighters with the right fighting style. This is balanced by the extreme rarity of Mages. Only 1 in a 1000 people have the minimum talent required to become a mage. One needs to be born with a specific body type, known as being in possession of a "Mageroot", to even try to train as a mage.</p> <br><p>ABBREVIATIONS:</p> <br><p>PAM: Phenomena Analysis Module</p> <br><p>SAT: System Absorption Technique</p> <br><p>CT: Combat Techniques</p> <br><p>NMAL: National Magic Academy of Lanthanor</p> <br><p>ETC: Energised Training Chamber</p> <br><p>…</p> <br><p>Although he had been assured that the machine's purpose was just to read his brainwaves, Daneel's life passed through his mind in an instant as he felt himself being strapped tightly onto the chair.</p> <br><p>Left at the steps of an orphanage when he was just a month old, Daneel had the stamp 'orphan' branded on him from a young age.</p> <br><p>Thankfully, the orphanage was run by a kind old woman who took great care of the kids. Although they lived frugally, Daneel remembered his childhood as being mostly pleasant.</p> <br><p>Always showing remarkable results in studies, Daneel won scholarship after scholarship and entered college, looking forward to graduating and earning money to send back to the orphanage. He considered all of the children in the orphanage as his little brothers and sisters and wished for them to have a happy life.</p> <br><p>Disaster struck in the form of the son of a politician. One day, he had accidentally bumped into a guy who was avidly pursuing a girl. The guy had an opened bottle of water in his hands, which spilled onto his pants.</p> <br><p>Used to a frugal life, Daneel was a fragile boy. The bump had sent him careening onto the floor resulting in everyone looking at them to see what the commotion was.</p> <br><p>Seeing the water on the pants of the boy, a few people ended up laughing. The girl also smirked before leaving the guy who looked at Daneel with a murderous expression on his face.</p> <br><p>Since then, every day was hell for Daneel. Such a silly accident would have amounted to nothing if it were someone normal, but the guy in question was the son of a very rich and influential politician. Drunk with money and power, the guy wanted to make Daneel wish that he had never been born, and he did everything he could to make him feel so.</p> <br><p>Nameless people beat him up. His scholarship was canceled with no reasons given. He was evicted from the hostel and the shop where he had been working part-time kicked him out.</p> <br><p>Homeless and hungry, Daneel had to scavenge for food on the roads for the first time in his life.</p> <br><p>Mainly not wanting to disappoint the kind old lady and impose on the orphanage, Daneel had to live in the most disgusting conditions imaginable for several weeks.</p> <br><p>One day, he saw an advert calling any able volunteers for some 'harmless' scientific experiments. The payout was good and the company seemed legitimate.</p> <br><p>Looking forward to the first decent meal in weeks, Daneel stumbled into the advertised clinic, thin, with skin clinging to his bones which were visible due to the malnourishment.</p> <br><p>The staff were all very accommodating, giving him a full meal first and allowing him to bathe and shave.</p> <br><p>Overjoyed by the hospitality, Daneel decided to do everything in his power to pay them back.</p> <br><p>Later on, he was told what the experiment was. The clinic was recording brainwaves to make a database for a new biometric system. For this, they needed volunteers. Volunteers would simply be strapped to a chair and drugged asleep while a machine placed on the head would collect data.</p> <br><p>It seemed too good to be true. It was almost as if one was being paid to sleep.</p> <br><p>An ominous feeling washed over Daneel as he was strapped to the chair with electrodes connected to his head.</p> <br><p>Something was injected into his arm which made him very drowsy.</p> <br><p>The last moment before he fell asleep, a jolt of electricity was felt racing into his body from the electrodes on his head.</p> <br><p>The last thing he remembered before he lost consciousness was pain. Pain throughout his body, as if he had been set on fire and was being burnt alive.</p> <br><p>A robotic voice woke him up:</p> <br><p>[*Ding*</p> <br><p>World Domination System booting up.</p> <br><p>Current World: Unknown</p> <br><p>Host Status: Near-death</p> <br><p>Current Goal: Survive</p> <br><p>Overall Goal: Dominate and Conquer the world!]</p> <br><p>As he slowly regained consciousness, Daneel felt shooting pains throughout his body. After the robotic voice stopped, he felt a flood of memories gushing into him.</p> <br><p>He did not know what had happened after he had been strapped into the chair, but he suspected that he had mostly died due to some accident.</p> <br><p>Like in the many novels he had read online, he had reincarnated into another world.</p> <br><p>This was a world of magic and mythical beings. Elves, goblins, trolls, dwarves, dragons and many more races were known to exist although in places far away. Magic could be learnt by those who had the aptitude.</p> <br><p>Either by luck or fate, the person he had reincarnated into was also called Daneel. He had also died in a similar way, but much more directly and that too at the tender age of 12. He had stumbled into a silkpants prince and made water spill on the latter. On orders from the prince who glanced at him as if he were an ant, he was beaten to death by the prince's guards. The prince did not even bat an eyelid at the former Daneel's cries of mercy, just like someone who wouldn't care about the plight of an ant that they stepped on. The fact that he was just a small 12-year old kid only made it so that it required a lesser amount of kicks to result in him lying on the ground, losing his life.</p> <br><p>That explained the pain which was growing in intensity by the second.</p> <br><p>Daneel analyzed the rest of the memories. With a start, he realized that he actually had parents in this world. His father was a disgraced soldier who had been fired due to abandoning the army. This was the official story. The truth was that he had offended a foolish but influential commander who was just in the post due to his family's power. Although disobeying the orders had resulted in him saving 20 people from dying, the commander's ego was hurt and his father was declared as a traitor who ran away from his post.</p> <br><p>His mother now supported the family by doing odd jobs around the city. By washing clothes, cleaning bathrooms and sweeping floors she scavenged enough money for their small family to survive. He had no siblings.</p> <br><p>Checking his current condition, he realized that there was no way his family would be able to handle the medical costs.</p> <br><p>Daneel had always been a filial child. Since as long as he could remember, his days were occupied by mostly helping his mother with her chores. Rarely, he would spend some time exploring the city. It was in one such exploration that this incident had occurred. If he died now, his body would simply be discarded at night by the guards who patrolled the city.</p> <br><p>Such was the kingdom of Lanthanor. Most of the things he knew about the world were told by his parents as bedside tales.</p> <br><p>12,000 years ago, then-adventurer Lanthanore(pronounced Lanthanoray) led an expedition to slay a dragon which was terrorizing this land.</p> <br><p>After accomplishing such a noble feat, he had established the Kingdom of Lanthanor.</p> <br><p>With steady management and skillful trading, a small city of 5000 had developed into an enormous capital of 500,000. The kingdom itself had grown to accommodate millions of people, with walls being built on the borders to dissuade invasion.</p> <br><p>The capital was known by the same name. If seen from above, the kingdom's walls encompassed a circular area 120 km in radius, with the capital located almost at the dead center.</p> <br><p>Lanthanor was a predominantly human kingdom and its main occupation was farming.</p> <br><p>[Preliminary Data collected.</p> <br><p>Present Location: Lanthanor, outer city.</p> <br><p>Host Level: Human-0 Fighter, Human-0 Mage</p> <br><p>Host Potential: F-</p> <br><p>Host Condition: Critical</p> <br><p>New Mission: Drink water from fountain located exactly 617 meters north.</p> <br><p>Mission Reward: Recovery of Body</p> <br><p>Level Progression: 0%</p> <br><p>Do you choose to accept the mission? Failure will have critical consequence. Host has been warned.]</p> <br><p>The robotic voice sounded again in Daneel's head. The pain was almost getting overwhelming and he knew he would die if he continued lying there.</p> <br><p>Hearing that he could recover, Daneel decided to question who the hell it was in his mind later.</p> <br><p>"Yes", he gasped out loud, accepting his first mission.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 1</h1>
                     </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daneel</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Power Levels for Body Refiners/Fighters:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Human Level 1 to 9</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Warrior Level 1 to 9</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Rumored Champion Level</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Rumored Hero Level</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Power Levels for Mages:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Human Mage Level 1 to 9</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Warrior Mage Level 1 to 9</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">-The number 9 holds a special significance in the world that the kingdom is situated in. Each stage of Human, Warrior and the rumored Champion and Hero contain 9 levels.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">-Body refiners or mages in levels 1-3 are called by the additional name tag "Neophyte"/ "Amateur", levels 4-6 "Eminent" and levels 7-9 "Exalted". For example, a Human-8 level body refiner would be referred to as an Exalted Human.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">-Body refinement only requires resources like Ether. Development as a Mage requires both resources and talent in comprehending the elements or natural phenomena.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">-The factor which decides the effectiveness of body refinement training using resources is the potential of the body. Higher potential will result in higher gain in power from a smaller amount of resources. Whereas if one has very low potential, a large amount of resources are needed to progress in levels or stages.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">-Mages can cover up the weakness of having a weak potential by having a strong comprehension ability.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">-Fighting ability of a body refiner is decided by his/her skill in learning and applying fighting techniques. In a famous example quoted in the book "What is power?", a Neophyte/Amateur Human-1 disciple defeated an Eminent Human-6 combatant using superior skill and technique.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">-There is even more of a disparity between body refiners and mages. A single skilled Neophyte/ Amateur Human Mage can even defeat tens of Eminent Human Fighters with the right fighting style. This is balanced by the extreme rarity of Mages. Only 1 in a 1000 people have the minimum talent required to become a mage. One needs to be born with a specific body type, known as being in possession of a "Mageroot", to even try to train as a mage.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">ABBREVIATIONS:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">PAM: Phenomena Analysis Module</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">SAT: System Absorption Technique</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">CT: Combat Techniques</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">NMAL: National Magic Academy of Lanthanor</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">ETC: Energised Training Chamber</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">…</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Although he had been assured that the machine's purpose was just to read his brainwaves, Daneel's life passed through his mind in an instant as he felt himself being strapped tightly onto the chair.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Left at the steps of an orphanage when he was just a month old, Daneel had the stamp 'orphan' branded on him from a young age.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Thankfully, the orphanage was run by a kind old woman who took great care of the kids. Although they lived frugally, Daneel remembered his childhood as being mostly pleasant.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Always showing remarkable results in studies, Daneel won scholarship after scholarship and entered college, looking forward to graduating and earning money to send back to the orphanage. He considered all of the children in the orphanage as his little brothers and sisters and wished for them to have a happy life.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Disaster struck in the form of the son of a politician. One day, he had accidentally bumped into a guy who was avidly pursuing a girl. The guy had an opened bottle of water in his hands, which spilled onto his pants.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Used to a frugal life, Daneel was a fragile boy. The bump had sent him careening onto the floor resulting in everyone looking at them to see what the commotion was.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Seeing the water on the pants of the boy, a few people ended up laughing. The girl also smirked before leaving the guy who looked at Daneel with a murderous expression on his face.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Since then, every day was hell for Daneel. Such a silly accident would have amounted to nothing if it were someone normal, but the guy in question was the son of a very rich and influential politician. Drunk with money and power, the guy wanted to make Daneel wish that he had never been born, and he did everything he could to make him feel so.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Nameless people beat him up. His scholarship was canceled with no reasons given. He was evicted from the hostel and the shop where he had been working part-time kicked him out.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Homeless and hungry, Daneel had to scavenge for food on the roads for the first time in his life.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Mainly not wanting to disappoint the kind old lady and impose on the orphanage, Daneel had to live in the most disgusting conditions imaginable for several weeks.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">One day, he saw an advert calling any able volunteers for some 'harmless' scientific experiments. The payout was good and the company seemed legitimate.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Looking forward to the first decent meal in weeks, Daneel stumbled into the advertised clinic, thin, with skin clinging to his bones which were visible due to the malnourishment.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The staff were all very accommodating, giving him a full meal first and allowing him to bathe and shave.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Overjoyed by the hospitality, Daneel decided to do everything in his power to pay them back.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Later on, he was told what the experiment was. The clinic was recording brainwaves to make a database for a new biometric system. For this, they needed volunteers. Volunteers would simply be strapped to a chair and drugged asleep while a machine placed on the head would collect data.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It seemed too good to be true. It was almost as if one was being paid to sleep.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">An ominous feeling washed over Daneel as he was strapped to the chair with electrodes connected to his head.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Something was injected into his arm which made him very drowsy.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The last moment before he fell asleep, a jolt of electricity was felt racing into his body from the electrodes on his head.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The last thing he remembered before he lost consciousness was pain. Pain throughout his body, as if he had been set on fire and was being burnt alive.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A robotic voice woke him up:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[*Ding*</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">World Domination System booting up.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Current World: Unknown</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Host Status: Near-death</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Current Goal: Survive</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Overall Goal: Dominate and Conquer the world!]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As he slowly regained consciousness, Daneel felt shooting pains throughout his body. After the robotic voice stopped, he felt a flood of memories gushing into him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He did not know what had happened after he had been strapped into the chair, but he suspected that he had mostly died due to some accident.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Like in the many novels he had read online, he had reincarnated into another world.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This was a world of magic and mythical beings. Elves, goblins, trolls, dwarves, dragons and many more races were known to exist although in places far away. Magic could be learnt by those who had the aptitude.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Either by luck or fate, the person he had reincarnated into was also called Daneel. He had also died in a similar way, but much more directly and that too at the tender age of 12. He had stumbled into a silkpants prince and made water spill on the latter. On orders from the prince who glanced at him as if he were an ant, he was beaten to death by the prince's guards. The prince did not even bat an eyelid at the former Daneel's cries of mercy, just like someone who wouldn't care about the plight of an ant that they stepped on. The fact that he was just a small 12-year old kid only made it so that it required a lesser amount of kicks to result in him lying on the ground, losing his life.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">That explained the pain which was growing in intensity by the second.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daneel analyzed the rest of the memories. With a start, he realized that he actually had parents in this world. His father was a disgraced soldier who had been fired due to abandoning the army. This was the official story. The truth was that he had offended a foolish but influential commander who was just in the post due to his family's power. Although disobeying the orders had resulted in him saving 20 people from dying, the commander's ego was hurt and his father was declared as a traitor who ran away from his post.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His mother now supported the family by doing odd jobs around the city. By washing clothes, cleaning bathrooms and sweeping floors she scavenged enough money for their small family to survive. He had no siblings.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Checking his current condition, he realized that there was no way his family would be able to handle the medical costs.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Daneel had always been a filial child. Since as long as he could remember, his days were occupied by mostly helping his mother with her chores. Rarely, he would spend some time exploring the city. It was in one such exploration that this incident had occurred. If he died now, his body would simply be discarded at night by the guards who patrolled the city.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Such was the kingdom of Lanthanor. Most of the things he knew about the world were told by his parents as bedside tales.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">12,000 years ago, then-adventurer Lanthanore(pronounced Lanthanoray) led an expedition to slay a dragon which was terrorizing this land.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After accomplishing such a noble feat, he had established the Kingdom of Lanthanor.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">With steady management and skillful trading, a small city of 5000 had developed into an enormous capital of 500,000. The kingdom itself had grown to accommodate millions of people, with walls being built on the borders to dissuade invasion.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The capital was known by the same name. If seen from above, the kingdom's walls encompassed a circular area 120 km in radius, with the capital located almost at the dead center.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lanthanor was a predominantly human kingdom and its main occupation was farming.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Preliminary Data collected.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Present Location: Lanthanor, outer city.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Host Level: Human-0 Fighter, Human-0 Mage</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Host Potential: F-</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Host Condition: Critical</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">New Mission: Drink water from fountain located exactly 617 meters north.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Mission Reward: Recovery of Body</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Level Progression: 0%</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Do you choose to accept the mission? Failure will have critical consequence. Host has been warned.]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The robotic voice sounded again in Daneel's head. The pain was almost getting overwhelming and he knew he would die if he continued lying there.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hearing that he could recover, Daneel decided to question who the hell it was in his mind later.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Yes", he gasped out loud, accepting his first mission.</p>
 
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('0')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('2')"
+                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

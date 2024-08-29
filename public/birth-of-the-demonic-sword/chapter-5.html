@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,184 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Birth of the Demonic Sword/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 5 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Birth of the Demonic Sword / Chapter 5 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 5</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">- 05. Training</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Noah's life kept going. His black long hair kept growing so his mother would often comb them for him. Lily kept managing the first floor of the guests building, occasionally meeting Rhys deep in the night. She would often beg him to do more for his son, explaining Noah's interests in cultivation and martial arts but Rhys would always refuse, hiding behind the rules of the main family. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I can't do anything about him, Lily. The rules are fixed: his position allows him only to get access to the low-level techniques and that is only permitted if he shows some merits in the family guard and completes some mission. You can send him there and see how it goes." </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lily's face darkened hearing these words. Truth was that Noah wasn't spending his time in the library anymore since he had turned 8, he would rather go to the guards building doing chores in exchange for some combat tips. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">With the most pleading voice Lily could muster, she asked Rhys: </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Our son is smart, he has already figured out that he can not find anything relevant about cultivation in the library and shifted his attention to the guards hoping to obtain something valuable. He is only 10 now, he must be 13 to officially join the guards, but he has been doing chores for them for 2 years now only to get a better starting point! Can't you give him anything? You did that with your other two sons----" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">SMACK!!!!! </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A slap hit Lily's left cheek. She yelled lightly and then she recomposed herself in a half-kneeling position with her head lowered and a metallic taste enveloping her mouth. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Remember your position! Remember that it was me who allowed you to give birth to that bastard and that's only because you can ease the grief I feel for my dead wife. Don't you dare compare the son and daughter Rebecca gave me with the son of a lowly whore anymore. You should never forget that I'm the one allowing the two of you to live." </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Trembling a bit, Lily answered: </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I'm sorry my lord!" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And then she completely kneeled with her head touching the ground. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Tsk, you better stand up and make up for making me angry" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At the same time, in the guards building, a kid about 10-11 years old was carrying 2 large buckets of water to a group of guards sweating under the sun. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This kid was, of course, Noah doing chores for the guards. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Since he understood that he could not achieve anything reading books he started searching for other ways to come in possess of cultivation techniques. Apart from breaking in the inner building and steal the books, which was impossible, the only option he had was to enter the family guards and obtain enough merits to be granted access to the inner circle. His teacher scolded him for half a day before giving up on him and going back to the inner circle while his mother only hugged him and said: </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Be careful" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Even though Noah could see a trace of disappointment in Lily's eyes he could not help but follow his decision. He didn't want to give up and live another worthless and unappealing life now that he saw hope to be more than a normal man. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'Yet, she really loves me. After all this time she still keeps seeing that father of mine. It's probably for my sake that she endures his character.' </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lately, whenever he would go back to his quarters, he would find some new bruises on his mother body and yet, he never saw Lily without a smile when she looked at him. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'I guess I should try a little harder in this life. I don't think I can live happily if I don't do my best to take care of her.' </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A slight smile appeared on his face after this line of thought. Sadly, it was interrupted by a guard yelling to him: </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hey, whoreson, the fuck are you doing smiling like an idiot while still carrying our water?" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He snapped back to reality and hurried himself to the group of guards to deliver the buckets. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I'm sorry honorable sirs, I hope your training went well. Maybe you want to ease your mind ranting about how hard your workout is, which are the harder positions to maintain, how to--" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Shut your mouth, the last guy you scammed was sent by the captain to clear the latrines for three months. No one will tell you anything, yet if you like helping us in the usual way I bet that there will be more than one candidate" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The guard interrupted Noah's facade before it even started. He was right though, in the previous two years, Noah managed to obtain some techniques by faking innocence in front of some lonely and tired guard. He would usually choose the ones that seemed excluded or bullied so that he could start some kind of connection with his status as a bastard and then he would ask them to show their forms and techniques in order to be "impressed" and boost their morale. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In the last year though, the higher-ups of the guards building started to notice his true intentions and chose to punish the guards revealing important information. They didn't dare punish him since he was still a young kid and, even has a bastard, he had the blood of the main family in his veins. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As for the "usual way of helping", it basically consisted of the guards hitting Noah a couple of times till he was on the ground as a form of "combat training". </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It must be said that the combat training was still Noah's idea after he could not manage to scam any more guards. After all, in his previous life, he had basically no experience in fighting so it had to make up for that. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I guess there is no other option. Let's go for a round, should be fun." </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The group of guards cheered when they heard Noah's answer and started playing some hand games in order to decide who would have been the lucky one to teach that shameless kid a lesson. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In the meantime, Noah went to the training swords deposit to pick a short saber out of habit. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The guards building featured a large courtyard at the center in order to give the guards a spacious and private place to train. Noah only managed to get in thanks to his initial fake innocence and his diligence in doing their chores. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The deposit was on the side of the yard so after a couple of minutes he came back to the group of guards with a steel blunt short saber. The guards were, by then, used to this kid able to wield with quite dexterity the saber with his left hand. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"HAHAHA! Kid today is my turn, I'm still mad about the last time" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The guard standing at a distance from his group was 1.80 meters tall and had a burly musculature. He was bald and had a long curly beard, and hairy chest and bulging muscles. From his shirtless status, you could describe him as the archetype of the perfect soldier. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">" Oh come on Micky, it was just a sword form and not even that well done!" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hearing this, a tinge of anger rose in Micky as he started to get closer to Noah. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Using weapon won't be fair since you are still a kid, so I will limit myself to these arm guard. I know you are training the Ice-Fire revolving technique so don't expect me to go easy on you." </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Micky sprinted toward Noah while using his arms in a crossed guard to cover his head and chest. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Noah went in a position he learnt from a sword style and waited for the right opportunity, shifting his weight on his front leg, ready to sprint at any time. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When the guard was one meter and a half far from him, Noah sprinted lowering himself to dodge the guard's charge and hide from his line of sight. He was basically half the guard height after all. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">While he was sprinting he slashed his saber diagonally to the right leg of the guard. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">CLANG! </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The sound of metal against metal sounded as an arm guard appeared in the saber's trajectory. The guard anticipated his move. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Without waiting any further, the guard pushed himself toward Noah aiming to hit him with his already lowered shoulder. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Contrary to the expectations, Noah did not dodge but twisted his left wrist holding the saber in a strange manner. The saber disappeared for a second only to reappear on Micky's neck without him noticing anything. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'I finally did it in real combat, I guess it's time to lose' </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Thinking this, Noah let go of the saber and let the burly man hit him in the chest. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He flew for 2 meters before landing on the ground. Then he kneeled and coughed a bit of blood. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"You are lucky I went easy on you if I used my whole strength you would have been bedridden for at least 6 months." </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After that, Micky cheered, happy to have triumphed on a 10 years old kid. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"You are super-strong Micky, now I should go home and rest. Your mighty strength is hard to digest." </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Noah said getting up and hurrying towards his building. When he was on the exit he heard the group of guards laughing with an angry yell in the middle of the laughter that resembled his name... </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In a room in the guards building, two figures were staring at the courtyard across a window where the group of guards was mocking a bald one. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"So, what do you think of him?" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">One of the figures asked the other one </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"He clearly won the round but still faked his loss. He is conscious of his position in the family so he tries to lay low as much as possible, yet he can't give up to his search for power. He's surely a genius, the rumors were not fake. I didn't think that he would learn the snake-wrist technique in less than two years..."</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('4')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('6')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>- 05. Training
-Noah's life kept going. His black long hair kept growing so his mother would often comb them for him. Lily kept managing the first floor of the guests building, occasionally meeting Rhys deep in the night. She would often beg him to do more for his son, explaining Noah's interests in cultivation and martial arts but Rhys would always refuse, hiding behind the rules of the main family. </p> <br><p>"I can't do anything about him, Lily. The rules are fixed: his position allows him only to get access to the low-level techniques and that is only permitted if he shows some merits in the family guard and completes some mission. You can send him there and see how it goes." </p> <br><p>Lily's face darkened hearing these words. Truth was that Noah wasn't spending his time in the library anymore since he had turned 8, he would rather go to the guards building doing chores in exchange for some combat tips. </p> <br><p>With the most pleading voice Lily could muster, she asked Rhys: </p> <br><p>"Our son is smart, he has already figured out that he can not find anything relevant about cultivation in the library and shifted his attention to the guards hoping to obtain something valuable. He is only 10 now, he must be 13 to officially join the guards, but he has been doing chores for them for 2 years now only to get a better starting point! Can't you give him anything? You did that with your other two sons----" </p> <br><p>SMACK!!!!! </p> <br><p>A slap hit Lily's left cheek. She yelled lightly and then she recomposed herself in a half-kneeling position with her head lowered and a metallic taste enveloping her mouth. </p> <br><p>"Remember your position! Remember that it was me who allowed you to give birth to that bastard and that's only because you can ease the grief I feel for my dead wife. Don't you dare compare the son and daughter Rebecca gave me with the son of a lowly whore anymore. You should never forget that I'm the one allowing the two of you to live." </p> <br><p>Trembling a bit, Lily answered: </p> <br><p>"I'm sorry my lord!" </p> <br><p>And then she completely kneeled with her head touching the ground. </p> <br><p>"Tsk, you better stand up and make up for making me angry" </p> <br><p>. </p> <br><p>. </p> <br><p>. </p> <br><p>At the same time, in the guards building, a kid about 10-11 years old was carrying 2 large buckets of water to a group of guards sweating under the sun. </p> <br><p>This kid was, of course, Noah doing chores for the guards. </p> <br><p>Since he understood that he could not achieve anything reading books he started searching for other ways to come in possess of cultivation techniques. Apart from breaking in the inner building and steal the books, which was impossible, the only option he had was to enter the family guards and obtain enough merits to be granted access to the inner circle. His teacher scolded him for half a day before giving up on him and going back to the inner circle while his mother only hugged him and said: </p> <br><p>"Be careful" </p> <br><p>Even though Noah could see a trace of disappointment in Lily's eyes he could not help but follow his decision. He didn't want to give up and live another worthless and unappealing life now that he saw hope to be more than a normal man. </p> <br><p>'Yet, she really loves me. After all this time she still keeps seeing that father of mine. It's probably for my sake that she endures his character.' </p> <br><p>Lately, whenever he would go back to his quarters, he would find some new bruises on his mother body and yet, he never saw Lily without a smile when she looked at him. </p> <br><p>'I guess I should try a little harder in this life. I don't think I can live happily if I don't do my best to take care of her.' </p> <br><p>A slight smile appeared on his face after this line of thought. Sadly, it was interrupted by a guard yelling to him: </p> <br><p>"Hey, whoreson, the fuck are you doing smiling like an idiot while still carrying our water?" </p> <br><p>He snapped back to reality and hurried himself to the group of guards to deliver the buckets. </p> <br><p>"I'm sorry honorable sirs, I hope your training went well. Maybe you want to ease your mind ranting about how hard your workout is, which are the harder positions to maintain, how to--" </p> <br><p>"Shut your mouth, the last guy you scammed was sent by the captain to clear the latrines for three months. No one will tell you anything, yet if you like helping us in the usual way I bet that there will be more than one candidate" </p> <br><p>The guard interrupted Noah's facade before it even started. He was right though, in the previous two years, Noah managed to obtain some techniques by faking innocence in front of some lonely and tired guard. He would usually choose the ones that seemed excluded or bullied so that he could start some kind of connection with his status as a bastard and then he would ask them to show their forms and techniques in order to be "impressed" and boost their morale. </p> <br><p>In the last year though, the higher-ups of the guards building started to notice his true intentions and chose to punish the guards revealing important information. They didn't dare punish him since he was still a young kid and, even has a bastard, he had the blood of the main family in his veins. </p> <br><p>As for the "usual way of helping", it basically consisted of the guards hitting Noah a couple of times till he was on the ground as a form of "combat training". </p> <br><p>It must be said that the combat training was still Noah's idea after he could not manage to scam any more guards. After all, in his previous life, he had basically no experience in fighting so it had to make up for that. </p> <br><p>"I guess there is no other option. Let's go for a round, should be fun." </p> <br><p>The group of guards cheered when they heard Noah's answer and started playing some hand games in order to decide who would have been the lucky one to teach that shameless kid a lesson. </p> <br><p>In the meantime, Noah went to the training swords deposit to pick a short saber out of habit. </p> <br><p>The guards building featured a large courtyard at the center in order to give the guards a spacious and private place to train. Noah only managed to get in thanks to his initial fake innocence and his diligence in doing their chores. </p> <br><p>The deposit was on the side of the yard so after a couple of minutes he came back to the group of guards with a steel blunt short saber. The guards were, by then, used to this kid able to wield with quite dexterity the saber with his left hand. </p> <br><p>"HAHAHA! Kid today is my turn, I'm still mad about the last time" </p> <br><p>The guard standing at a distance from his group was 1.80 meters tall and had a burly musculature. He was bald and had a long curly beard, and hairy chest and bulging muscles. From his shirtless status, you could describe him as the archetype of the perfect soldier. </p> <br><p>" Oh come on Micky, it was just a sword form and not even that well done!" </p> <br><p>Hearing this, a tinge of anger rose in Micky as he started to get closer to Noah. </p> <br><p>"Using weapon won't be fair since you are still a kid, so I will limit myself to these arm guard. I know you are training the Ice-Fire revolving technique so don't expect me to go easy on you." </p> <br><p>Micky sprinted toward Noah while using his arms in a crossed guard to cover his head and chest. </p> <br><p>Noah went in a position he learnt from a sword style and waited for the right opportunity, shifting his weight on his front leg, ready to sprint at any time. </p> <br><p>When the guard was one meter and a half far from him, Noah sprinted lowering himself to dodge the guard's charge and hide from his line of sight. He was basically half the guard height after all. </p> <br><p>While he was sprinting he slashed his saber diagonally to the right leg of the guard. </p> <br><p>CLANG! </p> <br><p>The sound of metal against metal sounded as an arm guard appeared in the saber's trajectory. The guard anticipated his move. </p> <br><p>Without waiting any further, the guard pushed himself toward Noah aiming to hit him with his already lowered shoulder. </p> <br><p>Contrary to the expectations, Noah did not dodge but twisted his left wrist holding the saber in a strange manner. The saber disappeared for a second only to reappear on Micky's neck without him noticing anything. </p> <br><p>'I finally did it in real combat, I guess it's time to lose' </p> <br><p>Thinking this, Noah let go of the saber and let the burly man hit him in the chest. </p> <br><p>He flew for 2 meters before landing on the ground. Then he kneeled and coughed a bit of blood. </p> <br><p>"You are lucky I went easy on you if I used my whole strength you would have been bedridden for at least 6 months." </p> <br><p>After that, Micky cheered, happy to have triumphed on a 10 years old kid. </p> <br><p>"You are super-strong Micky, now I should go home and rest. Your mighty strength is hard to digest." </p> <br><p>Noah said getting up and hurrying towards his building. When he was on the exit he heard the group of guards laughing with an angry yell in the middle of the laughter that resembled his name... </p> <br><p>In a room in the guards building, two figures were staring at the courtyard across a window where the group of guards was mocking a bald one. </p> <br><p>"So, what do you think of him?" </p> <br><p>One of the figures asked the other one </p> <br><p>"He clearly won the round but still faked his loss. He is conscious of his position in the family so he tries to lay low as much as possible, yet he can't give up to his search for power. He's surely a genius, the rumors were not fake. I didn't think that he would learn the snake-wrist technique in less than two years..."</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('4')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('6')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

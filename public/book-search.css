@@ -1,0 +1,26 @@
+.animationRight {
+  animation: right-in 0.3s ease-in-out;
+}
+@keyframes right-in {
+  0% {
+    opacity: 0;
+    left: -20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0%;
+  }
+}
+.animationLeft {
+  animation: right-out 0.3s ease-in-out;
+}
+@keyframes right-out {
+  0% {
+    opacity: 1;
+    left: 0%;
+  }
+  100% {
+    opacity: 0;
+    left: -20%;
+  }
+}

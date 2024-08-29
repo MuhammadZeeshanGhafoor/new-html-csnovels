@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,184 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Supreme Magus/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 2 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Supreme Magus / Chapter 2 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 2</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Prologue 2</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The bullying ended, but his social life never stopped being miserable. How could he possibly make any friend with such a shameful private life?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He had to constantly hide the bruises with long sleeves and had run out of plausible excuses for his streak of black eyes months before. His classmates and professors simply pretended to not know and he just pretended to believe being that good of a liar.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was painful, but manageable. He still had his little brother to share that pain with. Carl was all he had, his family, friend and confident. He was Derek's whole word.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But when that age came, he started having crushes toward girls in his school, and those feelings weren't as easily suppressed. Once again, he felt utterly helpless.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He could not tell anyone about his problems, could not allow people to get close to him, otherwise he would have to think of an explanation for not being allowed to bring any friend home. Let alone a girl he liked.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek was tormented by cruel thoughts, often demanding the heavens why what others took for granted was but an impossible dream for him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Fueled by the hormonal storms Derek rage started growing relentlessly. He started having troubles sleeping at night, thinking about all those lovey-dovey couples out there.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek knew he was different from them. His crippling flaw wasn't being shy or having a bad case of acne. His problem couldn't be cured by any doctor, because it had a name and surname. Ezio Esposito, his trash bag of a father.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek started conceiving plan after plan to get rid of him, even if that meant killing him. At night he would device elaborate and meticulous plans that often involved prolonged torture, making Ezio suffer like Derek did for all those years.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But when morning came, he would always realize it was a dumb plan. More wishful thinking than anything else.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek lacked the means and the ruthlessness necessary for getting rid of Ezio. No matter how much he hated him, Ezio was still his father and he was just an angry teenager.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Kill Ezio? Sure. And what about then? Live a whole life ridden with guilt? Running away from home to avoid being the arrested? And with what money?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Killing Ezio would have meant abandoning Carl forever, and destroying any possible chance of being happy in the future.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, every morning Derek would swallow his plan along with the porridge and move on. His only real prospect was to cram as a madman, get a scholarship and get out of that hell as fast as possible.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Time flew, and in the blink of an eye is was the last summer before Derek's first year of high school. Despite the hot climate, his heart was cold as ice.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek had already hit his grow spurt. That combined with his martial arts and muscle training had given him a mean look.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ezio was aware of that, and being a coward had started to avoid beating Derek as much as possible making Carl the new favourite target.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek had already tried standing up for his brother, but the only result had been Ezio buying a nightstick from the local Army Surplus and getting beaten with it instead that with Ezio's bare hands.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He saved Carl from that by begging and crying, and only because the ruckus had alarmed their neighbours.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, whenever Ezio threw one of his tantrums, Derek could only watch his brother getting beaten, again and again.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Then, one morning Ezio received his first big commission in years. So, he wore his best suit despite the heat and had Derek preparing him the briefcase and the laptop.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ezio was in a real hurry, he could not afford his competitors to snatch this whale. It could have been his career making commission!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek rushed to the door, where Ezio was already waiting, and helped him adjust the laptop's satchel.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ezio ran to the elevator, pushing the button like a madman but the light remained red.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Cursing his damn condo, the building manager and his rotten luck Ezio made a rush to the stairs.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And that's when Derek noticed it. Turning his head to follow his father, Derek noticed that the light made odd reflections on the hallway's floor.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ezio had just passed in front of him when he realized that the janitor had just washed the stairs but forgot to put the wet floor sign.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It happened all in an instant. Ezio made a long heavy stride, all his weight down and forward and then his foot slipped.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek could have warned him, could have even extended an arm and prevented the fall. But instead he chose to remain still.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ezio tumbled down the stairs, bounced on the next alley and tumbled again crashing downstairs. His body was a broken mess, all his limbs bent in unnatural angles.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As any teenager, Derek had his smartphone at hand, so he started to make several photos to prove that the floor was wet and there was no warning sign.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His mind was already planning on hiring the best shark lawyer he could and sue the building managing firm responsible for his condo.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Only then he carefully walked down the stairs to confirm Ezio's death. He was there, incapable of making a moan or asking for help, but his eyes were fixated on Derek, begging for help.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek grinned to him and said: "Do you really think I am so stupid to never learn anything from you? As you more than once taught me, never delegate. If you want something done right, do it yourself. Your smartphone is in your pocket, take it out and call 911. I'm just a failure of a son, I do not want to mess this up for you, daddy."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ezio's eyes were full of shock and hate, but that lasted only a moment. His head went limp, his gaze blank.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A laughter fought to came out, but Derek suppressed it. Instead he started shouting for help putting on his best terrorized son impression.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As always, Derek's mother was too obsessed with her problems, her grief, her feelings to bother looking for the lawyer, leaving everything in Derek's hand, since Ezio was no more.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Three birds with one stone. After a careful research he contacted and hired the best shark lawyer they could afford, so that Derek would be his client instead of his mother.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He told him everything about his father's incident, the abuse, and the need to make so that the money would be split between the three of them, mother and sons.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Both Derek and Carl were very firm on that point, they wanted the lawyer to start the process to get emancipation. With the money from the compensation and the inheritance, they had enough to be self sufficient until Derek could provide for them both.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">What followed was the happiest period in their life. First, they obtained the inheritance, and shortly after they got emancipated and moved away from their mother's place.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Not even a month later, they received a very generous settling offer from the building manager. They used it to settle up and make proper plans for the future.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">During the following years, bullies were not a problem. Derek and Carl were now both martial artists and had each other's back. Finally they could experience having friends and girlfriends, their domestic nightmare finally over.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They suffered many disappointments though, since too many of those so-called friends turned out to be people that wanted to use their parent-free house as a party house.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Also they had an hard time figuring what being a normal teen was supposed to be. While their peers seemed only interested in having fun and skipping classes, they were focused on studying and saving as much as possible.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek and Carl would spend holydays and vacations doing part time jobs to slow down the thinning of their bank account. They were not poor, but not rich either.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">They knew they had to save as much as possible, in case rainy days would once more fall upon them. But all in all they had a good life.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek got a scholarship and obtained a bachelor degree in chemistry, soon followed by a master in biochemistry. Carl was doing well too, already got his engineering degree, ready to study for his master and already had a fiancé.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Despite being really happy for his little brother, that was really a painful thorn in Derek's side. He had always been the more socially inept between the two, and never managed to get into a stable relationship, not even in college.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek had no problem talking to girls, the problem always lied in him being picky and ended in his inability to trust. He had had many crushes, but never fell in love.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At the beginning he put the blame on his bad luck, always finding shallow or idiotic girls. After finding more than one good girl, he put the blame on his dark past.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But when confronted with Carl's happy relationship he could only blame himself. While Carl had suffered almost the same things, he got out much stronger and pure than Derek.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek was just too scared of being hurt again to let any relationship grow above a certain level, and that was an enemy that he could not just beat up.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek accepted the first decent paid job he got, working in the night shift of a big chemical company in the Q&amp;A department.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Carl had shared with him, as a graduation present, that he was willing to propose to his fiancé as soon as he got his master. Hence Derek needed money because he had only two years to save enough to give his little brother a decent wedding.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Derek did not like his current job, but it was a way to start his working career and filling his curriculum. Also it was well paid, and he resolved to use the company insurance to seek for psychological counseling.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He knew he had problems and wanted to work them out. Derek consulted several doctors before finding someone he was able to work with, and after several months he felt he was finally starting to make some progress.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But alas, such happiness was not bound to last.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('1')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('3')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Prologue 2
-The bullying ended, but his social life never stopped being miserable. How could he possibly make any friend with such a shameful private life?</p> <br><p>He had to constantly hide the bruises with long sleeves and had run out of plausible excuses for his streak of black eyes months before. His classmates and professors simply pretended to not know and he just pretended to believe being that good of a liar.</p> <br><p>It was painful, but manageable. He still had his little brother to share that pain with. Carl was all he had, his family, friend and confident. He was Derek's whole word.</p> <br><p>But when that age came, he started having crushes toward girls in his school, and those feelings weren't as easily suppressed. Once again, he felt utterly helpless.</p> <br><p>He could not tell anyone about his problems, could not allow people to get close to him, otherwise he would have to think of an explanation for not being allowed to bring any friend home. Let alone a girl he liked.</p> <br><p>Derek was tormented by cruel thoughts, often demanding the heavens why what others took for granted was but an impossible dream for him.</p> <br><p>Fueled by the hormonal storms Derek rage started growing relentlessly. He started having troubles sleeping at night, thinking about all those lovey-dovey couples out there.</p> <br><p>Derek knew he was different from them. His crippling flaw wasn't being shy or having a bad case of acne. His problem couldn't be cured by any doctor, because it had a name and surname. Ezio Esposito, his trash bag of a father.</p> <br><p>Derek started conceiving plan after plan to get rid of him, even if that meant killing him. At night he would device elaborate and meticulous plans that often involved prolonged torture, making Ezio suffer like Derek did for all those years.</p> <br><p>But when morning came, he would always realize it was a dumb plan. More wishful thinking than anything else.</p> <br><p>Derek lacked the means and the ruthlessness necessary for getting rid of Ezio. No matter how much he hated him, Ezio was still his father and he was just an angry teenager.</p> <br><p>Kill Ezio? Sure. And what about then? Live a whole life ridden with guilt? Running away from home to avoid being the arrested? And with what money?</p> <br><p>Killing Ezio would have meant abandoning Carl forever, and destroying any possible chance of being happy in the future.</p> <br><p>So, every morning Derek would swallow his plan along with the porridge and move on. His only real prospect was to cram as a madman, get a scholarship and get out of that hell as fast as possible.</p> <br><p>Time flew, and in the blink of an eye is was the last summer before Derek's first year of high school. Despite the hot climate, his heart was cold as ice.</p> <br><p>Derek had already hit his grow spurt. That combined with his martial arts and muscle training had given him a mean look.</p> <br><p>Ezio was aware of that, and being a coward had started to avoid beating Derek as much as possible making Carl the new favourite target.</p> <br><p>Derek had already tried standing up for his brother, but the only result had been Ezio buying a nightstick from the local Army Surplus and getting beaten with it instead that with Ezio's bare hands.</p> <br><p>He saved Carl from that by begging and crying, and only because the ruckus had alarmed their neighbours.</p> <br><p>So, whenever Ezio threw one of his tantrums, Derek could only watch his brother getting beaten, again and again.</p> <br><p>Then, one morning Ezio received his first big commission in years. So, he wore his best suit despite the heat and had Derek preparing him the briefcase and the laptop.</p> <br><p>Ezio was in a real hurry, he could not afford his competitors to snatch this whale. It could have been his career making commission!</p> <br><p>Derek rushed to the door, where Ezio was already waiting, and helped him adjust the laptop's satchel.</p> <br><p>Ezio ran to the elevator, pushing the button like a madman but the light remained red.</p> <br><p>Cursing his damn condo, the building manager and his rotten luck Ezio made a rush to the stairs.</p> <br><p>And that's when Derek noticed it. Turning his head to follow his father, Derek noticed that the light made odd reflections on the hallway's floor.</p> <br><p>Ezio had just passed in front of him when he realized that the janitor had just washed the stairs but forgot to put the wet floor sign.</p> <br><p>It happened all in an instant. Ezio made a long heavy stride, all his weight down and forward and then his foot slipped.</p> <br><p>Derek could have warned him, could have even extended an arm and prevented the fall. But instead he chose to remain still.</p> <br><p>Ezio tumbled down the stairs, bounced on the next alley and tumbled again crashing downstairs. His body was a broken mess, all his limbs bent in unnatural angles.</p> <br><p>As any teenager, Derek had his smartphone at hand, so he started to make several photos to prove that the floor was wet and there was no warning sign.</p> <br><p>His mind was already planning on hiring the best shark lawyer he could and sue the building managing firm responsible for his condo.</p> <br><p>Only then he carefully walked down the stairs to confirm Ezio's death. He was there, incapable of making a moan or asking for help, but his eyes were fixated on Derek, begging for help.</p> <br><p>Derek grinned to him and said: "Do you really think I am so stupid to never learn anything from you? As you more than once taught me, never delegate. If you want something done right, do it yourself. Your smartphone is in your pocket, take it out and call 911. I'm just a failure of a son, I do not want to mess this up for you, daddy."</p> <br><p>Ezio's eyes were full of shock and hate, but that lasted only a moment. His head went limp, his gaze blank.</p> <br><p>A laughter fought to came out, but Derek suppressed it. Instead he started shouting for help putting on his best terrorized son impression.</p> <br><p>As always, Derek's mother was too obsessed with her problems, her grief, her feelings to bother looking for the lawyer, leaving everything in Derek's hand, since Ezio was no more.</p> <br><p>Three birds with one stone. After a careful research he contacted and hired the best shark lawyer they could afford, so that Derek would be his client instead of his mother.</p> <br><p>He told him everything about his father's incident, the abuse, and the need to make so that the money would be split between the three of them, mother and sons.</p> <br><p>Both Derek and Carl were very firm on that point, they wanted the lawyer to start the process to get emancipation. With the money from the compensation and the inheritance, they had enough to be self sufficient until Derek could provide for them both.</p> <br><p>What followed was the happiest period in their life. First, they obtained the inheritance, and shortly after they got emancipated and moved away from their mother's place.</p> <br><p>Not even a month later, they received a very generous settling offer from the building manager. They used it to settle up and make proper plans for the future.</p> <br><p>During the following years, bullies were not a problem. Derek and Carl were now both martial artists and had each other's back. Finally they could experience having friends and girlfriends, their domestic nightmare finally over.</p> <br><p>They suffered many disappointments though, since too many of those so-called friends turned out to be people that wanted to use their parent-free house as a party house.</p> <br><p>Also they had an hard time figuring what being a normal teen was supposed to be. While their peers seemed only interested in having fun and skipping classes, they were focused on studying and saving as much as possible.</p> <br><p>Derek and Carl would spend holydays and vacations doing part time jobs to slow down the thinning of their bank account. They were not poor, but not rich either.</p> <br><p>They knew they had to save as much as possible, in case rainy days would once more fall upon them. But all in all they had a good life.</p> <br><p>Derek got a scholarship and obtained a bachelor degree in chemistry, soon followed by a master in biochemistry. Carl was doing well too, already got his engineering degree, ready to study for his master and already had a fiancé.</p> <br><p>Despite being really happy for his little brother, that was really a painful thorn in Derek's side. He had always been the more socially inept between the two, and never managed to get into a stable relationship, not even in college.</p> <br><p>Derek had no problem talking to girls, the problem always lied in him being picky and ended in his inability to trust. He had had many crushes, but never fell in love.</p> <br><p>At the beginning he put the blame on his bad luck, always finding shallow or idiotic girls. After finding more than one good girl, he put the blame on his dark past.</p> <br><p>But when confronted with Carl's happy relationship he could only blame himself. While Carl had suffered almost the same things, he got out much stronger and pure than Derek.</p> <br><p>Derek was just too scared of being hurt again to let any relationship grow above a certain level, and that was an enemy that he could not just beat up.</p> <br><p>Derek accepted the first decent paid job he got, working in the night shift of a big chemical company in the Q&amp;A department.</p> <br><p>Carl had shared with him, as a graduation present, that he was willing to propose to his fiancé as soon as he got his master. Hence Derek needed money because he had only two years to save enough to give his little brother a decent wedding.</p> <br><p>Derek did not like his current job, but it was a way to start his working career and filling his curriculum. Also it was well paid, and he resolved to use the company insurance to seek for psychological counseling.</p> <br><p>He knew he had problems and wanted to work them out. Derek consulted several doctors before finding someone he was able to work with, and after several months he felt he was finally starting to make some progress.</p> <br><p>But alas, such happiness was not bound to last.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('1')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('3')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,63 +30,23 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">The First Heir/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 1 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        The First Heir / Chapter 1 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
-                        
+            </div>
+            </header>
+            
          
                         <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
                         
@@ -100,293 +62,218 @@
                             </p>
                             
                                 </div>
-                                <div class="relative">
-                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/the-first-heir.jpg"
-                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
-                                alt="The First Heir Cover" id="cover-img">
-                                <hr class="bg-black md:px-16 px-2">
-                                </div>
-            
-                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
-                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
-                            <b class="md:   text-xl">
-                                1
-                            </b>
-                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
-                        </div>
-    
                         
+    
 
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
 
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>At Riverdale Public Hospital.
- 
-“Excuse me, make way!” Philip Clarke was carrying an unconscious little girl as he rushed into the hospital, yelling madly, “Doctor! Doctor! Quick, save my little girl!”
- 
-The nurses and doctor who had rushed out quickly took the child from Philip’s arms, and entered the emergency room.
- 
-“Oh, you can’t go in!” A nurse in an azure-colored uniform with a face mask stopped Philip from entering into the emergency room.
- 
-Just then, the rapid sounds of high heels clicking against the ceramic tiles could be heard from the back, squeezing his heart with every click.
- 
-“Philip Clarke!” roared a woman’s voice.
- 
-‘Slap!’
- 
-A crisp slap came in firm contact with Philip’s cheek. Before him, stood Wynn Johnston with an enraged expression as tears pooled in her beautiful eyes. “If anything happens to my daughter, I will never forgive you!” Her tone was cold and laced with full fury.
- 
-This scene frightened quite a few patients and their family members in the hospital.
- 
-Philip hung his head low in shame without attempting any explanation.
- 
-“Hmph!” Wynn snorted coldly. The dissatisfaction and contempt in her eyes were visible.
- 
-Philip stood aside with his head down in silence like a kid who was caught misbehaving. He stole a few glances at the woman standing a few meters away from him, the woman he used to call his wife. The woman with whom he had already signed the divorce papers could officially be separated from him at any time.
- 
-Wynn Johnston was gorgeous. Her features were defined, her figure tall and slim. She was well-mannered and educated, once the prettiest girl in their university. She had unexpectedly fallen in love with Philip, abruptly gotten married, and given birth to his daughter, Mila Clarke.
- 
-However, life after marriage was not as ideal. Philip’s career did not go well, and his business ended up failing. His daughter even had congenital heart disease, which drained all of their savings, and now he had to make a living by doing food delivery services.
- 
-On the other hand, Wynn was a deputy general manager of a marketing department in a public-listed company. One of her parents was a section chief, the other a retired teacher.
- 
-It was safe to say that Philip did not have much status in the Johnston family, and for the past two years, he was almost non-existent. And because of Philip, Wynn had fallen out with her family that her parents were not willing to provide them any support.Both the elders had told them solemnly that they would assist in their granddaughter’s treatment funds only if Philip and Wynn divorced. After the divorce, the child would belong to the Johnston family.
- 
-This matter had dragged on for a year.
- 
-The emergency room’s door was pushed open, and Philip saw his daughter being pushed out. He wanted to rush over, but Wynn had already gotten there first. He stopped in his tracks and watched his adorable little girl from afar.
- 
-Little Mila was wearing a respirator, but her big eyes were bright like obsidian gems. She reached out with her tiny pale hand and mumbled, “Papa…”
- 
-Philip went over to hold his daughter’s cold hand while gently brushing away the wisps of hair from her forehead, smiling as he said, “Papa’s here.”
- 
-“Mama, please don’t fight with Papa. It’s Mila’s fault;I wanted Papa to take me to the amusement park.” Little Mila, who was only three-years-old, was speaking feebly for her father.
- 
-Wynn smiled and answered, “Okay, Mama will listen to you and not argue with Papa.”
- 
-“Philip Clarke, pay the hospitalization fee.” A cold voice interrupted Philip’s conversation with his daughter.
- 
-Philip glanced at Wynn, but she only shot him an icy glare before accompanying their daughter into the ward.
- 
-Upon reaching the inpatient payment department, Philip took out his debit card.
- 
-“I’m sorry, but your card has declined,” said the nurse coldly as she swept him a look.
- 
-Oh, it’s Philip Clarke, she thought. The penniless man who keeps getting his wife to foot the medical bills. He could have asked for help from his parents-in-law, but he hasn’t. What an egoistic man, rubbish!“It’s declined?” Philip was exasperated. He grimaced and humbled himself, bowing slightly to ask, “Nurse, can you give me a few days?”
- 
-The nurse shot him a cold look with mockery in her eyes and replied, “If you don’t have any money, ask your wife! After all, you’re just a kept man.”
- 
-“You!” Philip’s expression darkened.
- 
-The nurse merely crossed her arms and scoffed. “You have until tomorrow. If you can’t pay up, then proceed with discharge.” After that, she turned around to ignore him. Saying another word to him made her feel disgusted.
- 
-How could she bully someone just because they’re poor? Philip clenched his fists tightly in a fury, feeling bitter.
- 
-The moment he turned around, he saw Wynn standing behind him radiating a cold aura, hatred was apparent in her frosty expression.
- 
-“Wynnie, don’t worry, I’ll go and gather some funds now.” Philip forced a smile.
- 
-However, both their savings were already dried up.
- 
-Tears poured down from Wynn’s eyes as her hands balled into fists. “Philip Clarke, if you’re still a man, go and beg my parents!”
- 
-“I…” Philip froze. His words were stuck in his throat.
- 
-“Hah!” Wynn scoffed as she wiped her tears. “I knew it. You never change. Is your pride more important than Mila?” She had seen through to his thoughts. Wynn then turned around with her back facing him.
- 
-Philip let out a helpless sigh and then received a notification about a delivery on his phone. He rushed to the ward, had a quick chat with his daughter before leaving.
- 
-Before he left, Wynn reminded him, “Philip Clarke, it’s my father’s birthday this weekend. If you don’t want to divorce, then go and beg my parents.”
- 
-She left him with no choice. Philip knew that this was the last shred of Wynn’s patience for him.
- 
-Just as he was about to leave the hospital, an arrogant male voice called out to him, “Wow, isn’t this Philip Clarke? Where are you rushing off to?”
- 
-Philip looked up to see a handsome man standing in front of him. The man was wearing a full suit with a fruit basket and a Peppa Pig doll in his hand.
- 
-“Juan Parker! Why are you here?” Philip’s face immediately darkened.
- 
-Juan Parker was his best buddy at university. But ever since Philip and Wynn got married, they became enemies because Juan, too, was in love with Wynn.
- 
-“I asked him to come.” Wynn suddenly appeared and walked past Philip. With an apologetic smile, she said to Juan, “Brother Juan, I’m so sorry to trouble you again.”
- 
-Upon seeing Wynn, the mocking expression on Juan’s face turned into a generous smile as he said, “It’s okay, I’m Mila’s uncle after all. This is for Mila. I’ll go and pay the bills now.” Juan then shot Philip a smug look with apparent disdain in his eyes.
- 
-The knuckles on Philip’s fists turned white. He asked Wynn coldly, “Why did you loan money from him?”
- 
-“Do you have any? Or do you want Mila to be kicked out of the hospital tomorrow?” Wynn glared icily at Philip before turning away to follow after Juan, chattering happily with him as they went.
- 
-Philip’s eyes were about to pop from their sockets out of anger at this scene. He felt his ego being dealt a heavy blow. Money, money, money! It’s all about money with them!
- 
-Philip stood at the entrance of the hospital for the longest time before heaving a sigh. He looked up at the blue sky and then dug out his cellphone to make a call. “Howie, where are you? Let’s meet up.”
- 
-Inside a rented house, Philip and Howard Lowe sat across from each other. Howard was a slightly tanned and skinny man. He handed a debit card to Philip and said, “There’s sixty thousand here. Take it for now.”
- 
-Philip’s hand was trembling as he took the card. “Howie, thank you. Thank you!”
- 
-“What’s there to thank? We’re brothers, after all.” Howard laughed.
- 
-“I object!”
- 
-There was a loud bang, and the door of the rented house was suddenly pushed open. A tall woman rushed in furiously. “Howard Lowe, that’s the bride price you were supposed to give my family. Why are you giving it to him?”
- 
-This woman was Howard’s girlfriend, Ruby Ford. Her looks were a seven out of ten, and she had a proud personality. She was a bit of a snob. “Ruru, Mila has been hospitalized, so I’m only lending this to Philip for an emergency.” Howard went over to pull at Ruby’s arm as he explained.
- 
-Ruby swung his hand away and sneered at Philip. “Hah! Philip, how many times have you borrowed money from our Howard now? If you’re going to be shameless, why should I indulge you?”
- 
-“Ruby!” Howard’s voice deepened as he tugged her sleeve.
- 
-Ruby would not back down. She pointed at Howard’s nose and blamed him. “Mr. Lowe, if you’re going to loan him the money, I’m breaking up with you! You can forget about our wedding!”
- 
-Seeing as they were about to get into a fight, Philip put the card down onto the table, stood up, and nodded apologetically. “I’m sorry. Uhm… Howie, I’ll see you guys at your wedding ceremony then. I’ll take my leave now.”
- 
-“Goodbye!” Ruby said coldly. Without waiting for Howard to chase after him, Philip had already run out of the rented house.
- 
-As soon as the door closed behind him, Ruby and Howard’s arguing voices sounded behind the door.
- 
-Philip squatted down with his phone in one hand and a cigarette in another, lost in thoughts along the streets. Being poor is a sin, and you really can’t move forward without money.
- 
-After making up his mind, Philip finally called a number he had not dialed in seven years.
- 
-The call soon got through.
- 
-“Hello, Young Master? Young Master, is that you? You’ve finally called me.” The voice on the other end sounded thrilled. There were hints of age and even sniffles.
- 
-Philip sighed helplessly and said, “George, I need money. Can you transfer me a hundred thousand?”
- 
-“Oh, Young Master, please don’t say that. I would even transfer you a billion if you wanted.” The older man on the phone was still excited, but soon, he sounded troubled. “But Young Master, according to your agreement with the master, if you want to use the finances and connections of the family, you’d have to come back and inherit the family business. Could you come over to the company, and we’ll discuss this?”
- 
-Philip pondered it for a moment before answering, “Alright, I’ll make a trip over.”
- 
-“Great! Young Master, I’ll send someone to pick you up!” Old George said enthusiastically.
- 
-“That’s okay, I can go over myself.” Philip said before asking, “Oh yes, which company?”
- 
-“Apex Group. I’ll be waiting for you at the director’s office,” said George.
- 
-After hanging up, Philip stared at the stream of people passing by in front of him.
- 
-Okay, I’ll be frank and say that I, Philip Clarke, was born with a silver spoon! My family has assets worldwide, and my family owns seventy percent of the businesses in the world. I’ve been trying to avoid the inheritance these past seven years, so I ran away, hoping that I could experience a normal life. But today, reality has forced me to compromise. If I don’t work hard enough, and don't have any money, I would have to go back and inherit that massive fortune.
- 
-Philip soon arrived at the Apex Group building in his scooter. It was a tall building of about three hundred meters. The company itself was ranked at number seven on the Fortune Global 500 list! But then again, all the companies in the Fortune Global 500 either belonged to the Clarke family or had a piece of share owned by them.
- 
-Upon entering the lobby, Philip was stopped by a female voice. “Hey, hey, hey, you there! Who said you could just barge in? Get out, out! Delivery men aren’t allowed inside! Call and get someone to come downstairs to meet you!” A pretty girl in black uniform blocked Philip’s path and started scolding him. She had a mature appearance and a dignified aura.
- 
-“What are you staring at? How disgusting, you rogue! Hurry up and get out!” Lily Simmons shot a hateful glare at Philip, thinking that she had seen enough delivery men in her life.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 1</h1>
                     </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At Riverdale Public Hospital.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Excuse me, make way!” Philip Clarke was carrying an unconscious little girl as he rushed into the hospital, yelling madly, “Doctor! Doctor! Quick, save my little girl!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The nurses and doctor who had rushed out quickly took the child from Philip’s arms, and entered the emergency room.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Oh, you can’t go in!” A nurse in an azure-colored uniform with a face mask stopped Philip from entering into the emergency room.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Just then, the rapid sounds of high heels clicking against the ceramic tiles could be heard from the back, squeezing his heart with every click.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Philip Clarke!” roared a woman’s voice.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">‘Slap!’</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A crisp slap came in firm contact with Philip’s cheek. Before him, stood Wynn Johnston with an enraged expression as tears pooled in her beautiful eyes. “If anything happens to my daughter, I will never forgive you!” Her tone was cold and laced with full fury.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This scene frightened quite a few patients and their family members in the hospital.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip hung his head low in shame without attempting any explanation.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hmph!” Wynn snorted coldly. The dissatisfaction and contempt in her eyes were visible.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip stood aside with his head down in silence like a kid who was caught misbehaving. He stole a few glances at the woman standing a few meters away from him, the woman he used to call his wife. The woman with whom he had already signed the divorce papers could officially be separated from him at any time.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Wynn Johnston was gorgeous. Her features were defined, her figure tall and slim. She was well-mannered and educated, once the prettiest girl in their university. She had unexpectedly fallen in love with Philip, abruptly gotten married, and given birth to his daughter, Mila Clarke.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, life after marriage was not as ideal. Philip’s career did not go well, and his business ended up failing. His daughter even had congenital heart disease, which drained all of their savings, and now he had to make a living by doing food delivery services.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">On the other hand, Wynn was a deputy general manager of a marketing department in a public-listed company. One of her parents was a section chief, the other a retired teacher.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was safe to say that Philip did not have much status in the Johnston family, and for the past two years, he was almost non-existent. And because of Philip, Wynn had fallen out with her family that her parents were not willing to provide them any support.Both the elders had told them solemnly that they would assist in their granddaughter’s treatment funds only if Philip and Wynn divorced. After the divorce, the child would belong to the Johnston family.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This matter had dragged on for a year.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The emergency room’s door was pushed open, and Philip saw his daughter being pushed out. He wanted to rush over, but Wynn had already gotten there first. He stopped in his tracks and watched his adorable little girl from afar.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Little Mila was wearing a respirator, but her big eyes were bright like obsidian gems. She reached out with her tiny pale hand and mumbled, “Papa…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip went over to hold his daughter’s cold hand while gently brushing away the wisps of hair from her forehead, smiling as he said, “Papa’s here.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Mama, please don’t fight with Papa. It’s Mila’s fault;I wanted Papa to take me to the amusement park.” Little Mila, who was only three-years-old, was speaking feebly for her father.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Wynn smiled and answered, “Okay, Mama will listen to you and not argue with Papa.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Philip Clarke, pay the hospitalization fee.” A cold voice interrupted Philip’s conversation with his daughter.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip glanced at Wynn, but she only shot him an icy glare before accompanying their daughter into the ward.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Upon reaching the inpatient payment department, Philip took out his debit card.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I’m sorry, but your card has declined,” said the nurse coldly as she swept him a look.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Oh, it’s Philip Clarke, she thought. The penniless man who keeps getting his wife to foot the medical bills. He could have asked for help from his parents-in-law, but he hasn’t. What an egoistic man, rubbish!“It’s declined?” Philip was exasperated. He grimaced and humbled himself, bowing slightly to ask, “Nurse, can you give me a few days?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The nurse shot him a cold look with mockery in her eyes and replied, “If you don’t have any money, ask your wife! After all, you’re just a kept man.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“You!” Philip’s expression darkened.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The nurse merely crossed her arms and scoffed. “You have until tomorrow. If you can’t pay up, then proceed with discharge.” After that, she turned around to ignore him. Saying another word to him made her feel disgusted.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">How could she bully someone just because they’re poor? Philip clenched his fists tightly in a fury, feeling bitter.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The moment he turned around, he saw Wynn standing behind him radiating a cold aura, hatred was apparent in her frosty expression.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Wynnie, don’t worry, I’ll go and gather some funds now.” Philip forced a smile.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, both their savings were already dried up.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Tears poured down from Wynn’s eyes as her hands balled into fists. “Philip Clarke, if you’re still a man, go and beg my parents!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I…” Philip froze. His words were stuck in his throat.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hah!” Wynn scoffed as she wiped her tears. “I knew it. You never change. Is your pride more important than Mila?” She had seen through to his thoughts. Wynn then turned around with her back facing him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip let out a helpless sigh and then received a notification about a delivery on his phone. He rushed to the ward, had a quick chat with his daughter before leaving.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Before he left, Wynn reminded him, “Philip Clarke, it’s my father’s birthday this weekend. If you don’t want to divorce, then go and beg my parents.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">She left him with no choice. Philip knew that this was the last shred of Wynn’s patience for him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Just as he was about to leave the hospital, an arrogant male voice called out to him, “Wow, isn’t this Philip Clarke? Where are you rushing off to?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip looked up to see a handsome man standing in front of him. The man was wearing a full suit with a fruit basket and a Peppa Pig doll in his hand.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Juan Parker! Why are you here?” Philip’s face immediately darkened.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Juan Parker was his best buddy at university. But ever since Philip and Wynn got married, they became enemies because Juan, too, was in love with Wynn.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I asked him to come.” Wynn suddenly appeared and walked past Philip. With an apologetic smile, she said to Juan, “Brother Juan, I’m so sorry to trouble you again.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Upon seeing Wynn, the mocking expression on Juan’s face turned into a generous smile as he said, “It’s okay, I’m Mila’s uncle after all. This is for Mila. I’ll go and pay the bills now.” Juan then shot Philip a smug look with apparent disdain in his eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The knuckles on Philip’s fists turned white. He asked Wynn coldly, “Why did you loan money from him?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Do you have any? Or do you want Mila to be kicked out of the hospital tomorrow?” Wynn glared icily at Philip before turning away to follow after Juan, chattering happily with him as they went.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip’s eyes were about to pop from their sockets out of anger at this scene. He felt his ego being dealt a heavy blow. Money, money, money! It’s all about money with them!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip stood at the entrance of the hospital for the longest time before heaving a sigh. He looked up at the blue sky and then dug out his cellphone to make a call. “Howie, where are you? Let’s meet up.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Inside a rented house, Philip and Howard Lowe sat across from each other. Howard was a slightly tanned and skinny man. He handed a debit card to Philip and said, “There’s sixty thousand here. Take it for now.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip’s hand was trembling as he took the card. “Howie, thank you. Thank you!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“What’s there to thank? We’re brothers, after all.” Howard laughed.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I object!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">There was a loud bang, and the door of the rented house was suddenly pushed open. A tall woman rushed in furiously. “Howard Lowe, that’s the bride price you were supposed to give my family. Why are you giving it to him?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This woman was Howard’s girlfriend, Ruby Ford. Her looks were a seven out of ten, and she had a proud personality. She was a bit of a snob. “Ruru, Mila has been hospitalized, so I’m only lending this to Philip for an emergency.” Howard went over to pull at Ruby’s arm as he explained.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ruby swung his hand away and sneered at Philip. “Hah! Philip, how many times have you borrowed money from our Howard now? If you’re going to be shameless, why should I indulge you?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Ruby!” Howard’s voice deepened as he tugged her sleeve.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ruby would not back down. She pointed at Howard’s nose and blamed him. “Mr. Lowe, if you’re going to loan him the money, I’m breaking up with you! You can forget about our wedding!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Seeing as they were about to get into a fight, Philip put the card down onto the table, stood up, and nodded apologetically. “I’m sorry. Uhm… Howie, I’ll see you guys at your wedding ceremony then. I’ll take my leave now.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Goodbye!” Ruby said coldly. Without waiting for Howard to chase after him, Philip had already run out of the rented house.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As soon as the door closed behind him, Ruby and Howard’s arguing voices sounded behind the door.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip squatted down with his phone in one hand and a cigarette in another, lost in thoughts along the streets. Being poor is a sin, and you really can’t move forward without money.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After making up his mind, Philip finally called a number he had not dialed in seven years.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The call soon got through.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Hello, Young Master? Young Master, is that you? You’ve finally called me.” The voice on the other end sounded thrilled. There were hints of age and even sniffles.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip sighed helplessly and said, “George, I need money. Can you transfer me a hundred thousand?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Oh, Young Master, please don’t say that. I would even transfer you a billion if you wanted.” The older man on the phone was still excited, but soon, he sounded troubled. “But Young Master, according to your agreement with the master, if you want to use the finances and connections of the family, you’d have to come back and inherit the family business. Could you come over to the company, and we’ll discuss this?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip pondered it for a moment before answering, “Alright, I’ll make a trip over.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Great! Young Master, I’ll send someone to pick you up!” Old George said enthusiastically.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“That’s okay, I can go over myself.” Philip said before asking, “Oh yes, which company?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Apex Group. I’ll be waiting for you at the director’s office,” said George.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After hanging up, Philip stared at the stream of people passing by in front of him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Okay, I’ll be frank and say that I, Philip Clarke, was born with a silver spoon! My family has assets worldwide, and my family owns seventy percent of the businesses in the world. I’ve been trying to avoid the inheritance these past seven years, so I ran away, hoping that I could experience a normal life. But today, reality has forced me to compromise. If I don’t work hard enough, and don't have any money, I would have to go back and inherit that massive fortune.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip soon arrived at the Apex Group building in his scooter. It was a tall building of about three hundred meters. The company itself was ranked at number seven on the Fortune Global 500 list! But then again, all the companies in the Fortune Global 500 either belonged to the Clarke family or had a piece of share owned by them.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Upon entering the lobby, Philip was stopped by a female voice. “Hey, hey, hey, you there! Who said you could just barge in? Get out, out! Delivery men aren’t allowed inside! Call and get someone to come downstairs to meet you!” A pretty girl in black uniform blocked Philip’s path and started scolding him. She had a mature appearance and a dignified aura.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“What are you staring at? How disgusting, you rogue! Hurry up and get out!” Lily Simmons shot a hateful glare at Philip, thinking that she had seen enough delivery men in her life.</p>
 
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('0')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('2')"
+                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

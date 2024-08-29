@@ -7,7 +7,7 @@ const supabaseCli = createClient(
 
 const handler = async (event) => {
     // Logging the incoming event
-    console.log(event);
+    // console.log(event);
 
     // Define CORS headers
     const headers = {
@@ -51,7 +51,7 @@ const handler = async (event) => {
 
             // Check for errors
             if (error) {
-                console.error('Error fetching chapters:', error.message);
+                // console.error('Error fetching chapters:', error.message);
                 return {
                     statusCode: 500,
                     headers,
@@ -72,7 +72,7 @@ const handler = async (event) => {
 
     } catch (error) {
         // Handle any unexpected errors
-        console.error('Internal server error:', error.message);
+        // console.error('Internal server error:', error.message);
         return {
             statusCode: 500,
             headers,

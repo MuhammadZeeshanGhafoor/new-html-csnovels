@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,261 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Rebirth of a Genius/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 3 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Rebirth of a Genius / Chapter 3 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 3</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">*chirp* *chirp* *chirp*</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sounds of birds chirping can be heard as dawn slowly arrived. Sun can be seen slowly rising in the east where a volcano is emitting a faint trail of smoke. Word of the village is that this village actually doesn't exist in the first place but for some reason 500 years ago a dormant volcano under sea became active and that lava created this village. That's the reason this is called 'lava rock village'.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam is slowly walking through the streets with his shirt on but two gaping holes can be clearly seen on his shirt and it is completely filled with blood stains. Only few villagers can be seen on the streets as it is still early. Sam slowly made his way to his house.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hey Sam, you are back. I was just about to come to that clinic to see you." Michael's voice can be heard from behind.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hi Uncle Michael. I was already feeling good by the time I woke up so I came back myself." Sam replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Okay you go wash up and come to my house we will go to breakfast for Robert's Inn." Michael said.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Okay uncle."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam walked into his house after Michael left. The room he entered has several dresses hanged and neatly presented for display. There are several other products like gloves, socks, scarves etc.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'Seems like this original body is quite skilled in sewing, weaving, knitting, and embroidery. Even in the modern earth his clothes can be considered pretty decent. Let alone in this medieval world.' Sam thought as he made his way towards his bedroom. After he entered his bedroom he walked towards a mirror and took a look at himself.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'Hmm, Not bad.' Sam thought as looked at his reflection. He is a man with Jet black hair and Same black eyes. He can be considered quite handsome. He has sharp eye brows and perfect nose bridge, sharp jawline there would be very few ladies who wouldn't like him. When he smiled it gave him a devilish charm.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam went to take a bath in his bathroom. 'there really is no shower. Why am I not surprised?' After that he took a bath from the stored water in a large container and left to get dressed. sometime later Sam went to Michael's house. Then both of them went to an inn. There a middle-aged man greeted them.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hey Sam, Michael you are here. Come, come, sit." Robert greeted them with a smile. Robert is a fat middle aged man with bald head.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hi Uncle Robert." Sam replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hey Fatty, hurry and serve the breakfast." Michael replied to Roberts with a smile.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Coming. Sam, I heard you were wasted by a 'Blazing earth bull'. It is a level 2 Initial stage magical beast. You are so lucky. You should take of yourself. Luck can't save you always kid." Robert said as he made his way over to the table where Michael and Sam sat. This is world consists of magical beasts. Even though humans ruled over the lands. But about three-fourth of the world is occupied by the endless forest. And forests are ruled by magical beasts.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Thanks for your concern uncle." Sam replied. Robert brought the breakfast and three of them casually chatted as they ate breakfast. According to Sam's old memories both Robert and Michael are friends but for some reason both of them didn't get married. The previous Sam has pretty good relationship with both of them. After some time, inn is getting full with customers. Both Sam and Michael made their way home after finishing their breakfast.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">While walking on the streets everyone is looking at Sam and whispered to each other with surprised expressions. 'Guess this Oliver put some effort in spread the news I was dead.' Sam thought as went to his home.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Both Sam and Michael bid farewell and Sam went inside and observed his house. It has 4 rooms one room in the front which is his shop, a bedroom, a kitchen and a room in the back is his workshop. He slowly made his way to the counter and took the leather pouch he left earlier. In this small village there were very few who could get their hands on the spirit stones. Not only they are used for cultivation but also a form of currency. Basically except for some high-level officials and some rich people no body can get their hands on these stones. The village head issues a spirit stones for the youth who can cultivate until they reach the age of 16. And they can get only 1 stone for every 3 months. Sam can't cultivate. So, he has no access to these stone. A young girl from a noble family in the nearby city came to this village with her guardians to hunt some beasts. Since the village has an active volcano nearby, surrounding woods have more beasts of fire type. So, she came for some beast cores by hunting those beasts. The beast cores contain high fire type spiritual energy so it is beneficial for fire mages. When she came to the village, she accidentally stumbled upon a person who is wearing a scarf made by Sam. And she found her way to his shop. After seeing his skills, she got so impressed she gave an order of a lot of dresses which were currently on display in his shop. For past few months Sam continuously worked on his order that he emptied all the silk in his inventory by the time he completed making his order. The total order is worth a sum of 10 spiritual stones for which he got a 5 spiritual stones in advance. Today is the day that girl will come for the dresses. 'Thank god. If it wasn't for the girl, I would have died again just after I was reborn.' Sam sighed.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">*Bam*</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Suddenly someone knocked open the door and 3 young men entered the room.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Take all the dresses and search for the spiritual ston…." The young man in the lead abruptly stopped as he saw Sam in the room.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"How are you still alive?" Oliver exclaimed. The young man in the lead is precisely the one who caused the original Sam's death.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Good to see you to Oliver. Even though you are the son of the village head you can't take away my products after barging into my shop. Don't you think so?" Sam said with a smile that is not a smile. There is a sharp glint in his eyes. He was always a vengeful person in his previous life. Even though he doesn't have anything to do with the previous owner of the body he at least felt like he should take revenge for previous Sam.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"How can you be alive? I saw with my own eyes that you got pierced by the Bull." Oliver questioned after getting over the previous shock.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Well, I am lucky, I guess. Don't worry, now that I am alive, I will definitely pay you back whatever I owe you." Sam said with the Same devilish smile.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hmph what if you are alive? You can't do anything to me. If you know better you will definitely give me that spiritual stones, otherwise you won't be so lucky every time." Oliver said as turned around and left. Even though he is village head's only son he can't go over board otherwise his father's competitors will use it as an excuse in politics.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Apparently, Oliver just got greedy after he learnt about the business deal between Sam and the Girl from the city. According to him Sam is just a trash who can't even cultivate. So how did he deserve these spiritual stones?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"We will see." Sam muttered as he gazed at the departing backs.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After that Sam started organizing all the goods in the room. Some time passed and a few people entered his house. A red-haired girl who seem to be around 16 to 17 years old is in the lead followed by two middle- aged men who seemed to be in their 30's wearing leather armors. Without any doubts they are her guards. The red-haired girl wore a red colored battle attire and she wore a red colored armor with a flame symbol on it. She exuded a noble aura as her every movement is made with grace. Even Sam who saw so may modern beauties felt she was too beautiful.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Sam, are my dresses ready?" The red-haired girl asked Sam.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Yes, Miss Freya. You can take a look yourself." Sam gestured as replied after coming out of his initial daze.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Freya started examining all the dresses nodded several times with satisfaction. After she examined every dress and cloth she turned towards Sam and spoke.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Well done Sam, you really are good at what you do. Even though you can't cultivate you can still earn well if you come to city. What do you think? Do you want to come to 'Star wood city'? I will help you arrange a shop there. You can earn a lot more than here. Even though the city merchants come here to buy goods, you will lose so much by doing business with them.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Listening to what Freya said Sam started contemplating. 'I really want to leave this city but that Ling Tian guy said that there is still a test and I haven't even seen the so-called techniques he stored in my memory. I will leave after the test that guy said is finished.'</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Thank you, Miss Freya. I really want to move to city. But I still have somethings to do here." Sam replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"That's okay. I will be leaving the village tomorrow. Take this token and visit 'Crimson flame' family in the star wood city when you arrive there." Freya offered a token made of wood which has a Same red flame carved on its surface along with a leather pouch which consists of the rest of the spirit stones.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Thank you, Miss Freya." Sam received the token and pouch and said politely.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Good bye then." Freya's bodyguards took the packed clothes and left along with her.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Finally, alone." Sam said as he made his way to his bedroom and sat on his bed crossing his legs. Then Sam closed his eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Let's see what these cultivation arts you gave me Ling Tian. They better be good." Sam muttered as he went through his memory to see that techniques.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('2')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('4')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>*chirp* *chirp* *chirp*
-
-Sounds of birds chirping can be heard as dawn slowly arrived. Sun can be seen slowly rising in the east where a volcano is emitting a faint trail of smoke. Word of the village is that this village actually doesn't exist in the first place but for some reason 500 years ago a dormant volcano under sea became active and that lava created this village. That's the reason this is called 'lava rock village'.
-
-Sam is slowly walking through the streets with his shirt on but two gaping holes can be clearly seen on his shirt and it is completely filled with blood stains. Only few villagers can be seen on the streets as it is still early. Sam slowly made his way to his house.
-
-"Hey Sam, you are back. I was just about to come to that clinic to see you." Michael's voice can be heard from behind.
-
-"Hi Uncle Michael. I was already feeling good by the time I woke up so I came back myself." Sam replied.
-
-"Okay you go wash up and come to my house we will go to breakfast for Robert's Inn." Michael said.
-
-"Okay uncle."
-
-Sam walked into his house after Michael left. The room he entered has several dresses hanged and neatly presented for display. There are several other products like gloves, socks, scarves etc.
-
-'Seems like this original body is quite skilled in sewing, weaving, knitting, and embroidery. Even in the modern earth his clothes can be considered pretty decent. Let alone in this medieval world.' Sam thought as he made his way towards his bedroom. After he entered his bedroom he walked towards a mirror and took a look at himself.
-
-'Hmm, Not bad.' Sam thought as looked at his reflection. He is a man with Jet black hair and Same black eyes. He can be considered quite handsome. He has sharp eye brows and perfect nose bridge, sharp jawline there would be very few ladies who wouldn't like him. When he smiled it gave him a devilish charm.
-
-Sam went to take a bath in his bathroom. 'there really is no shower. Why am I not surprised?' After that he took a bath from the stored water in a large container and left to get dressed. sometime later Sam went to Michael's house. Then both of them went to an inn. There a middle-aged man greeted them.
-
-"Hey Sam, Michael you are here. Come, come, sit." Robert greeted them with a smile. Robert is a fat middle aged man with bald head.
-
-"Hi Uncle Robert." Sam replied.
-
-"Hey Fatty, hurry and serve the breakfast." Michael replied to Roberts with a smile.
-
-"Coming. Sam, I heard you were wasted by a 'Blazing earth bull'. It is a level 2 Initial stage magical beast. You are so lucky. You should take of yourself. Luck can't save you always kid." Robert said as he made his way over to the table where Michael and Sam sat. This is world consists of magical beasts. Even though humans ruled over the lands. But about three-fourth of the world is occupied by the endless forest. And forests are ruled by magical beasts.
-
-"Thanks for your concern uncle." Sam replied. Robert brought the breakfast and three of them casually chatted as they ate breakfast. According to Sam's old memories both Robert and Michael are friends but for some reason both of them didn't get married. The previous Sam has pretty good relationship with both of them. After some time, inn is getting full with customers. Both Sam and Michael made their way home after finishing their breakfast.
-
-While walking on the streets everyone is looking at Sam and whispered to each other with surprised expressions. 'Guess this Oliver put some effort in spread the news I was dead.' Sam thought as went to his home.
-
-Both Sam and Michael bid farewell and Sam went inside and observed his house. It has 4 rooms one room in the front which is his shop, a bedroom, a kitchen and a room in the back is his workshop. He slowly made his way to the counter and took the leather pouch he left earlier. In this small village there were very few who could get their hands on the spirit stones. Not only they are used for cultivation but also a form of currency. Basically except for some high-level officials and some rich people no body can get their hands on these stones. The village head issues a spirit stones for the youth who can cultivate until they reach the age of 16. And they can get only 1 stone for every 3 months. Sam can't cultivate. So, he has no access to these stone. A young girl from a noble family in the nearby city came to this village with her guardians to hunt some beasts. Since the village has an active volcano nearby, surrounding woods have more beasts of fire type. So, she came for some beast cores by hunting those beasts. The beast cores contain high fire type spiritual energy so it is beneficial for fire mages. When she came to the village, she accidentally stumbled upon a person who is wearing a scarf made by Sam. And she found her way to his shop. After seeing his skills, she got so impressed she gave an order of a lot of dresses which were currently on display in his shop. For past few months Sam continuously worked on his order that he emptied all the silk in his inventory by the time he completed making his order. The total order is worth a sum of 10 spiritual stones for which he got a 5 spiritual stones in advance. Today is the day that girl will come for the dresses. 'Thank god. If it wasn't for the girl, I would have died again just after I was reborn.' Sam sighed.
-
-*Bam*
-
-Suddenly someone knocked open the door and 3 young men entered the room.
-
-"Take all the dresses and search for the spiritual ston…." The young man in the lead abruptly stopped as he saw Sam in the room.
-
-"How are you still alive?" Oliver exclaimed. The young man in the lead is precisely the one who caused the original Sam's death.
-
-"Good to see you to Oliver. Even though you are the son of the village head you can't take away my products after barging into my shop. Don't you think so?" Sam said with a smile that is not a smile. There is a sharp glint in his eyes. He was always a vengeful person in his previous life. Even though he doesn't have anything to do with the previous owner of the body he at least felt like he should take revenge for previous Sam.
-
-"How can you be alive? I saw with my own eyes that you got pierced by the Bull." Oliver questioned after getting over the previous shock.
-
-"Well, I am lucky, I guess. Don't worry, now that I am alive, I will definitely pay you back whatever I owe you." Sam said with the Same devilish smile.
-
-"Hmph what if you are alive? You can't do anything to me. If you know better you will definitely give me that spiritual stones, otherwise you won't be so lucky every time." Oliver said as turned around and left. Even though he is village head's only son he can't go over board otherwise his father's competitors will use it as an excuse in politics.
-
-Apparently, Oliver just got greedy after he learnt about the business deal between Sam and the Girl from the city. According to him Sam is just a trash who can't even cultivate. So how did he deserve these spiritual stones?
-
-"We will see." Sam muttered as he gazed at the departing backs.
-
-After that Sam started organizing all the goods in the room. Some time passed and a few people entered his house. A red-haired girl who seem to be around 16 to 17 years old is in the lead followed by two middle- aged men who seemed to be in their 30's wearing leather armors. Without any doubts they are her guards. The red-haired girl wore a red colored battle attire and she wore a red colored armor with a flame symbol on it. She exuded a noble aura as her every movement is made with grace. Even Sam who saw so may modern beauties felt she was too beautiful.
-
-"Sam, are my dresses ready?" The red-haired girl asked Sam.
-
-"Yes, Miss Freya. You can take a look yourself." Sam gestured as replied after coming out of his initial daze.
-
-Freya started examining all the dresses nodded several times with satisfaction. After she examined every dress and cloth she turned towards Sam and spoke.
-
-"Well done Sam, you really are good at what you do. Even though you can't cultivate you can still earn well if you come to city. What do you think? Do you want to come to 'Star wood city'? I will help you arrange a shop there. You can earn a lot more than here. Even though the city merchants come here to buy goods, you will lose so much by doing business with them.
-
-Listening to what Freya said Sam started contemplating. 'I really want to leave this city but that Ling Tian guy said that there is still a test and I haven't even seen the so-called techniques he stored in my memory. I will leave after the test that guy said is finished.'
-
-"Thank you, Miss Freya. I really want to move to city. But I still have somethings to do here." Sam replied.
-
-"That's okay. I will be leaving the village tomorrow. Take this token and visit 'Crimson flame' family in the star wood city when you arrive there." Freya offered a token made of wood which has a Same red flame carved on its surface along with a leather pouch which consists of the rest of the spirit stones.
-
-"Thank you, Miss Freya." Sam received the token and pouch and said politely.
-
-"Good bye then." Freya's bodyguards took the packed clothes and left along with her.
-
-"Finally, alone." Sam said as he made his way to his bedroom and sat on his bed crossing his legs. Then Sam closed his eyes.
-
-"Let's see what these cultivation arts you gave me Ling Tian. They better be good." Sam muttered as he went through his memory to see that techniques.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('4')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

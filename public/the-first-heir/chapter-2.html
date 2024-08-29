@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,335 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">The First Heir/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 2 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        The First Heir / Chapter 2 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 2</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip’s expression changed, frowning slightly.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Seeing Philip in his delivery uniform, looking shabby, Lily pointed at the door and said, “Get out now, we don’t allow delivery men here.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I’m not here for delivery,” explained Philip.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lily tidied her bangs before crossing her arms and said icily, “This is not the first time I hear this. Everyone that comes in here says they’re not delivery men. Please!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I’m not. I’m here to see George Thomas.” Feeling exasperated, Philip headed inside after saying that.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“F*ck! Are you mad? Didn’t you hear what I was saying?” Lily was furious. It was her first time seeing such a shameless delivery man who would just force his way in after being denied entry.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Just then, a department manager seemed to have heard the commotion and came out with an ugly expression. “What’s going on?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Manager Stuart, this delivery man is trying to force his way into our office!” Lily pointed at Philip and then continued with much disdain, “I’ll get security to chase him out immediately!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The manager frowned and sized Philip up before saying, “Our company doesn’t allow delivery men inside. Please leave.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Stuart showed more courtesy, but his tone and attitude did not sound friendly. This man was a department manager of a company listed in the Fortune Global 500. To be this polite to rubbish delivery men was already very kind.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Seeing Philip still standing there in a daze, Lily was anxious to show her authority, so she pointed at him again and roared, “Did you hear that? Get out now!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip was annoyed. Did she swallow a stick of dynamite, or is she on her period? This is a company owned by my family, and you’re just a watchdog! Who are you to bark at your owner? Damn it!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I’ve already said that I’m not here for a delivery. I’m here to see George Thomas,” Philip answered coldly.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">George Thomas? The manager was stunned as he stared, bewildered at Philip before snorting out a laugh. “You’re looking for our chairman?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“George Thomas, is your chairman?” Philip was dumbstruck. Wasn’t that old man a mere secretary? Since when did he secretly become chairman? No wonder he was brave enough to want to talk about conditions. That means I can’t be soft when I see him later! I, Philip Clarke, will never inherit the family business! I’ll just take the money and go!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Stuart shook his and laughed sarcastically. “You didn’t even know that President Thomas is our chairman, and you say you’re looking for him? Do you have an appointment?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Mr. Stuart, stop joking. How could trash like him get an appointment?” Lily mocked as her lips curved into a sarcastic smile.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Alright, alright. Lily, get security to come over.” Stuart waved impatiently.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Understood, Mr. Stuart,” answered Lily in a coquettish voice before she jogged over to the front desk and picked up the phone to call the security department.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The manager was about to leave when, suddenly, an angry voice sounded at the front desk.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“George Thomas, get down here right now! I’m being held up by your receptionist. If I don’t see you in three minutes, I’m leaving.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The other two people followed the source of the voice and saw Philip just hanging up with a lazy expression as his eyes surveyed the office environment.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The mocking smile on Lily’s lips grew, and she reproached, “You’re even putting on an act now! You deserve to be a delivery man for life!” Her hands then shifted from the phone to take a secret picture of Philip to post on her social media timeline with the caption, ‘Disgusting! Met a mad delivery man today and I’m about to get security to kick him out…’</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">On one side, Stuart frowned as he shot Lily a look. The latter understood immediately and gave him an ‘OK’ gesture. She called the security department and reported, “Hello, come over to the front desk to take care of a piece of human trash.” After hanging up, Lily sat back down and started touching up her make-up, ignoring Philip.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Soon, the chairman of Apex Group, George Thomas, with his secretary in tow, came jogging out of the elevator and saw their young master waiting at the lounge from afar! However, what made their eyes pop was seeing three security personnel about to throw the young master out! That’s the sole heir of the family business!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">George instantly yelled, “Stop!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The three security guards were just pushing Philip out when they heard the order. They turned to see their chairman rushing over with an enraged expression! Why is the chairman here?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">‘Thud!’ The three men straightened up and saluted. “Good day, Mr. President!” they greeted.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, George did not notice them and went straight toward Philip; his face blooming like a sunflower.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The moment Lily noticed the chairman, she quickly hurried over. And when she saw Philip still standing there like an idiot, her rage grew.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Mr. President!” Lily greeted respectfully before turning to glare at Philip with disdain. “Why are you still here? Three of you, throw him out immediately!” Lily was enraged. Were the security team blind? How could they let this trash stand in the lounge when the chairman was here? What if this madman annoyed the chairman?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">George, however, shot a cold glance at Lily and reproached, “What are you doing? This is the young master of our company, the future president! Who allowed you to be this disrespectful?!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Young… Young master? This guy? How was this delivery man anything like a young master?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lily was dumbstruck. She said indignantly, “Mr. President, are you mistaken? How is he our company’s young master?”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I’m not mistaken,” answered George coldly as the contempt for this woman grew in his heart. What kind of tone and attitude is this? Is this how you speak to your chairman?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lily immediately realized her error and bowed in apology. “Mr. President, I’m sorry, I…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The manager, Stuart, from before just happened to come back at that moment. He gave a flattering smile and asked, “Mr. President, why have you come down here?” As he spoke, he noticed that Philip was still here but was not aware of the current atmosphere. His face went red, and he frowned. “Why are you still here? Didn’t I tell you that our company doesn’t allow delivery men in here? Get out!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Soon after he spoke, he felt a pair of cold eyes staring straight at him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Oh dear, idiots were everywhere, but they were especially abundant today.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Shut up!” George exploded furiously and roared, “He is the young master of our company! Both of you are fired!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip shook his head, helplessly. “What a sin it is to be such a snob.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Young Master, this way please.” George bowed slightly and gestured him to go inside.This scene startled both the manager and the receptionist. Young Master? Was he really the young master?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Seeing as Philip was about to leave with the chairman, Stuart immediately rushed over to smile apologetically and begged, “Young Master, I was too blind to recognize you for who you were. Please forgive me this time.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Stuart could see how the chairman was so respectful to the young man. Apex Group was ranked seventh in the Fortune Global 500, and the chairman himself was a prominent figure worth over billions! If a big shot like him said that this young man was the young master, then he was the young master!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Lily, too, had rushed over with a docile expression as she apologized, “Young Master, I was wrong. I won’t ever do it again.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip only glanced at George indifferently.The latter instantly pointed at the security team and ordered, “What are you standing there for? Throw these two out! From today on, don’t let them take even one step into our premise!”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Young Master, Young Master, we were wrong, please forgive us…” Stuart and Lily both ended up being tossed out of the building by security.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Upon reaching the president’s office, Philip sat down at the leather sofa while George stood respectfully at one side with his hands in front of him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Old George, you’re living a pretty luxurious life. This ostrich skin sofa, what great taste!” Philip patted the sofa he was sitting on and exclaimed.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">George wore a humble expression as he answered, still standing, “Young Master, stop joking with this old man. If you would sign your name in this document, everything here is yours to take.” As soon as he said that, the tall secretary with delicate skin, dressed in black formal attire behind him, handed Philip a set of documents.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip glanced at it in disdain. “It’s not like you don’t know that I refuse to inherit my dad’s wealth. I’m here today to ask you to loan me a hundred thousand dollars.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">George smiled tactfully and said, “I refuse.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Say that again, old man!” Philip stood up, abruptly out of anger.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">George repeated. “I refuse.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The older man then continued with a bright smile on his wrinkled face as he tempted, “Young Master, as long as you sign this, forget a hundred thousand, even a hundred million or billions are all yours.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Forget it then! If I sign this document, my name isn’t Philip Clarke!” Philip raged.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Five minutes later.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Congratulations, Young Master, you have officially inherited all of the Clarke family’s wealth and businesses. Here is your hundred thousand.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">How delightful!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">George stared at the signed document with his face blooming like a chrysanthemum flower.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At the same time, the secretary beside him brought over a briefcase and opened it. It was a hundred thousand in cash!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“George, old man, you’re too lavish. This briefcase looks like it’s carrying a hundred million instead,” said Philip as he picked up a plastic bag lying beside and put the money in. “I’ll be taking my leave now.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Take care, Young Master. Do you need me to get a car ready for you?” George asked respectfully.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“That’s okay, I came on my scooter,” answered Philip, and he walked out of the office with the plastic bag in hand.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After Philip had left, George immediately brought the documents up to the conference room on the top floor and started a video conference.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Master, the young master has finally signed.” Old George stood in front of the large screen, bowing slightly as he reported with much enthusiasm and respect.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The screen showed an old man in a wheelchair. The old man coughed for a bit before slowly lifting a hand and said in a weak voice, “Then… pass on the message…”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Yes, Master,” answered George, wiping his tears as he looked at the old man on the screen.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In an instant, the top management of all the businesses under the Clarke family received an email informing them that the sole heir of the Clarke family, Philip Clarke, had officially inherited the family business! These businesses include properties, development, entertainment, production, finance, investment, information technology, etc…</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip returned to the hospital and rushed over to the ward just in time to see Wynn and Juan leaning close to each other as they chattered happily.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip frowned as he balled his hands into fists.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Philip Clarke, where have you been?” Upon seeing him, Wynn asked coldly. To think this man still had the heart to run around, ignoring his daughter. Wynn’s gaze held disappointment as she looked at Philip.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Juan, who was sitting beside him, snorted in laughter. “Philip, were you away trying to borrow money? It’s okay; I can foot the medical bills. I’m Mila’s uncle, after all.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“I don’t need you to worry about my daughter’s medical expenses; I can pay up.” Philip walked in with an icy expression.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">“Philip Clarke, how can you behave this way toward Brother Juan! Apologize to him!” Wynn started scolding him, thinking that she knew her husband well enough to know that he was disrespectful on purpose. Brother Juan was kind enough to help them foot the bill, but this man was sour to him. How rude!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Juan feigned kindness and urged Wynn, saying, “Wynnie, don’t get angry. Philip must be feeling upset because he didn’t manage to borrow any money.”</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Wynn shot Philip a furious glare as she looked down on him even more.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Philip tried to hold his rage back as he stared at both of them with clenched fists. He wanted so much to throw a punch at Juan’s face. Wynnie? He’s calling her by her pet name so affectionately! Jesus, Wynn Johnston, I’m your husband here. Have you no shame?</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('1')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('3')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Philip’s expression changed, frowning slightly.
- 
-Seeing Philip in his delivery uniform, looking shabby, Lily pointed at the door and said, “Get out now, we don’t allow delivery men here.”
- 
-“I’m not here for delivery,” explained Philip.
- 
-Lily tidied her bangs before crossing her arms and said icily, “This is not the first time I hear this. Everyone that comes in here says they’re not delivery men. Please!”
- 
-“I’m not. I’m here to see George Thomas.” Feeling exasperated, Philip headed inside after saying that.
- 
-“F*ck! Are you mad? Didn’t you hear what I was saying?” Lily was furious. It was her first time seeing such a shameless delivery man who would just force his way in after being denied entry.
- 
-Just then, a department manager seemed to have heard the commotion and came out with an ugly expression. “What’s going on?”
- 
-“Manager Stuart, this delivery man is trying to force his way into our office!” Lily pointed at Philip and then continued with much disdain, “I’ll get security to chase him out immediately!”
- 
-The manager frowned and sized Philip up before saying, “Our company doesn’t allow delivery men inside. Please leave.”
- 
-Stuart showed more courtesy, but his tone and attitude did not sound friendly. This man was a department manager of a company listed in the Fortune Global 500. To be this polite to rubbish delivery men was already very kind.
- 
-Seeing Philip still standing there in a daze, Lily was anxious to show her authority, so she pointed at him again and roared, “Did you hear that? Get out now!”
- 
-Philip was annoyed. Did she swallow a stick of dynamite, or is she on her period? This is a company owned by my family, and you’re just a watchdog! Who are you to bark at your owner? Damn it!
- 
-“I’ve already said that I’m not here for a delivery. I’m here to see George Thomas,” Philip answered coldly.
- 
-George Thomas? The manager was stunned as he stared, bewildered at Philip before snorting out a laugh. “You’re looking for our chairman?”
- 
-“George Thomas, is your chairman?” Philip was dumbstruck. Wasn’t that old man a mere secretary? Since when did he secretly become chairman? No wonder he was brave enough to want to talk about conditions. That means I can’t be soft when I see him later! I, Philip Clarke, will never inherit the family business! I’ll just take the money and go!
- 
-Stuart shook his and laughed sarcastically. “You didn’t even know that President Thomas is our chairman, and you say you’re looking for him? Do you have an appointment?”
- 
-“Mr. Stuart, stop joking. How could trash like him get an appointment?” Lily mocked as her lips curved into a sarcastic smile.
- 
-“Alright, alright. Lily, get security to come over.” Stuart waved impatiently.
- 
-“Understood, Mr. Stuart,” answered Lily in a coquettish voice before she jogged over to the front desk and picked up the phone to call the security department.
- 
-The manager was about to leave when, suddenly, an angry voice sounded at the front desk.
- 
-“George Thomas, get down here right now! I’m being held up by your receptionist. If I don’t see you in three minutes, I’m leaving.”
- 
-The other two people followed the source of the voice and saw Philip just hanging up with a lazy expression as his eyes surveyed the office environment.
- 
-The mocking smile on Lily’s lips grew, and she reproached, “You’re even putting on an act now! You deserve to be a delivery man for life!” Her hands then shifted from the phone to take a secret picture of Philip to post on her social media timeline with the caption, ‘Disgusting! Met a mad delivery man today and I’m about to get security to kick him out…’
- 
-On one side, Stuart frowned as he shot Lily a look. The latter understood immediately and gave him an ‘OK’ gesture. She called the security department and reported, “Hello, come over to the front desk to take care of a piece of human trash.” After hanging up, Lily sat back down and started touching up her make-up, ignoring Philip.
- 
-Soon, the chairman of Apex Group, George Thomas, with his secretary in tow, came jogging out of the elevator and saw their young master waiting at the lounge from afar! However, what made their eyes pop was seeing three security personnel about to throw the young master out! That’s the sole heir of the family business!</p> <br><p>George instantly yelled, “Stop!”
- 
-The three security guards were just pushing Philip out when they heard the order. They turned to see their chairman rushing over with an enraged expression! Why is the chairman here?
- 
-‘Thud!’ The three men straightened up and saluted. “Good day, Mr. President!” they greeted.
- 
-However, George did not notice them and went straight toward Philip; his face blooming like a sunflower.
- 
-The moment Lily noticed the chairman, she quickly hurried over. And when she saw Philip still standing there like an idiot, her rage grew.
- 
-“Mr. President!” Lily greeted respectfully before turning to glare at Philip with disdain. “Why are you still here? Three of you, throw him out immediately!” Lily was enraged. Were the security team blind? How could they let this trash stand in the lounge when the chairman was here? What if this madman annoyed the chairman?
- 
-George, however, shot a cold glance at Lily and reproached, “What are you doing? This is the young master of our company, the future president! Who allowed you to be this disrespectful?!”
- 
-Young… Young master? This guy? How was this delivery man anything like a young master?
- 
-Lily was dumbstruck. She said indignantly, “Mr. President, are you mistaken? How is he our company’s young master?”
- 
-“I’m not mistaken,” answered George coldly as the contempt for this woman grew in his heart. What kind of tone and attitude is this? Is this how you speak to your chairman?
- 
-Lily immediately realized her error and bowed in apology. “Mr. President, I’m sorry, I…”
- 
-The manager, Stuart, from before just happened to come back at that moment. He gave a flattering smile and asked, “Mr. President, why have you come down here?” As he spoke, he noticed that Philip was still here but was not aware of the current atmosphere. His face went red, and he frowned. “Why are you still here? Didn’t I tell you that our company doesn’t allow delivery men in here? Get out!”
- 
-Soon after he spoke, he felt a pair of cold eyes staring straight at him.
- 
-Oh dear, idiots were everywhere, but they were especially abundant today.
- 
-“Shut up!” George exploded furiously and roared, “He is the young master of our company! Both of you are fired!”
- 
-Philip shook his head, helplessly. “What a sin it is to be such a snob.”
- 
-“Young Master, this way please.” George bowed slightly and gestured him to go inside.This scene startled both the manager and the receptionist. Young Master? Was he really the young master?
- 
-Seeing as Philip was about to leave with the chairman, Stuart immediately rushed over to smile apologetically and begged, “Young Master, I was too blind to recognize you for who you were. Please forgive me this time.”
- 
-Stuart could see how the chairman was so respectful to the young man. Apex Group was ranked seventh in the Fortune Global 500, and the chairman himself was a prominent figure worth over billions! If a big shot like him said that this young man was the young master, then he was the young master!
- 
-Lily, too, had rushed over with a docile expression as she apologized, “Young Master, I was wrong. I won’t ever do it again.”
- 
-Philip only glanced at George indifferently.The latter instantly pointed at the security team and ordered, “What are you standing there for? Throw these two out! From today on, don’t let them take even one step into our premise!”
- 
-“Young Master, Young Master, we were wrong, please forgive us…” Stuart and Lily both ended up being tossed out of the building by security.
- 
-Upon reaching the president’s office, Philip sat down at the leather sofa while George stood respectfully at one side with his hands in front of him.
- 
-“Old George, you’re living a pretty luxurious life. This ostrich skin sofa, what great taste!” Philip patted the sofa he was sitting on and exclaimed.
- 
-George wore a humble expression as he answered, still standing, “Young Master, stop joking with this old man. If you would sign your name in this document, everything here is yours to take.” As soon as he said that, the tall secretary with delicate skin, dressed in black formal attire behind him, handed Philip a set of documents.
- 
-Philip glanced at it in disdain. “It’s not like you don’t know that I refuse to inherit my dad’s wealth. I’m here today to ask you to loan me a hundred thousand dollars.”
- 
-George smiled tactfully and said, “I refuse.”
- 
-“Say that again, old man!” Philip stood up, abruptly out of anger.
- 
-George repeated. “I refuse.”
- 
-The older man then continued with a bright smile on his wrinkled face as he tempted, “Young Master, as long as you sign this, forget a hundred thousand, even a hundred million or billions are all yours.”
- 
-“Forget it then! If I sign this document, my name isn’t Philip Clarke!” Philip raged.
- 
-Five minutes later.
- 
-“Congratulations, Young Master, you have officially inherited all of the Clarke family’s wealth and businesses. Here is your hundred thousand.”
- 
-How delightful!
- 
-George stared at the signed document with his face blooming like a chrysanthemum flower.
- 
-At the same time, the secretary beside him brought over a briefcase and opened it. It was a hundred thousand in cash!
- 
-“George, old man, you’re too lavish. This briefcase looks like it’s carrying a hundred million instead,” said Philip as he picked up a plastic bag lying beside and put the money in. “I’ll be taking my leave now.”
- 
-“Take care, Young Master. Do you need me to get a car ready for you?” George asked respectfully.
- 
-“That’s okay, I came on my scooter,” answered Philip, and he walked out of the office with the plastic bag in hand.
- 
-After Philip had left, George immediately brought the documents up to the conference room on the top floor and started a video conference.
- 
-“Master, the young master has finally signed.” Old George stood in front of the large screen, bowing slightly as he reported with much enthusiasm and respect.
- 
-The screen showed an old man in a wheelchair. The old man coughed for a bit before slowly lifting a hand and said in a weak voice, “Then… pass on the message…”
- 
-“Yes, Master,” answered George, wiping his tears as he looked at the old man on the screen.
- 
-In an instant, the top management of all the businesses under the Clarke family received an email informing them that the sole heir of the Clarke family, Philip Clarke, had officially inherited the family business! These businesses include properties, development, entertainment, production, finance, investment, information technology, etc…
- 
-Philip returned to the hospital and rushed over to the ward just in time to see Wynn and Juan leaning close to each other as they chattered happily.
- 
-Philip frowned as he balled his hands into fists.
- 
-“Philip Clarke, where have you been?” Upon seeing him, Wynn asked coldly. To think this man still had the heart to run around, ignoring his daughter. Wynn’s gaze held disappointment as she looked at Philip.
- 
-Juan, who was sitting beside him, snorted in laughter. “Philip, were you away trying to borrow money? It’s okay; I can foot the medical bills. I’m Mila’s uncle, after all.”
- 
-“I don’t need you to worry about my daughter’s medical expenses; I can pay up.” Philip walked in with an icy expression.
- 
-“Philip Clarke, how can you behave this way toward Brother Juan! Apologize to him!” Wynn started scolding him, thinking that she knew her husband well enough to know that he was disrespectful on purpose. Brother Juan was kind enough to help them foot the bill, but this man was sour to him. How rude!
- 
-Juan feigned kindness and urged Wynn, saying, “Wynnie, don’t get angry. Philip must be feeling upset because he didn’t manage to borrow any money.”
- 
-Wynn shot Philip a furious glare as she looked down on him even more.
- 
-Philip tried to hold his rage back as he stared at both of them with clenched fists. He wanted so much to throw a punch at Juan’s face. Wynnie? He’s calling her by her pet name so affectionately! Jesus, Wynn Johnston, I’m your husband here. Have you no shame?</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('1')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('3')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

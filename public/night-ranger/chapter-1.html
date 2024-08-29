@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,63 +30,23 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Night Ranger/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 1 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Night Ranger / Chapter 1 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
-                        
+            </div>
+            </header>
+            
          
                         <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
                         
@@ -100,346 +62,219 @@
                             </p>
                             
                                 </div>
-                                <div class="relative">
-                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/night-ranger.jpg"
-                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
-                                alt="Night Ranger Cover" id="cover-img">
-                                <hr class="bg-black md:px-16 px-2">
-                                </div>
-            
-                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
-                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
-                            <b class="md:   text-xl">
-                                1
-                            </b>
-                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
-                        </div>
-    
                         
+    
 
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
 
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Chapter 1: Newborn Ranger (1)
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
 
-The third day after crossing over.
-
-Marvin stood by the window, watching the people coming and going on the street during the evening. There was a curvy woman throwing flirtatious glances at him from the adjacent alley.
-
-This was Fierce Horse Inn’s best room; from here you could see the iconic landmark of River Shore City, the Silver Hourglass, which was the Silver Church's headquarters.
-
-Not far away, a youth was secretly stealing a rich man’s purse, his movements very nimble. He had at least three levels in the Thief class.
-
-Everything was the same as the real world.
-
-The only thing different was Marvin himself.
-
-"Stats window," he said in his mind. A series of information appeared before his eyes.
-
-Name: Marvin
-
-Race: Human/?
-
-Attributes:
-
-Strength – 11
-
-Dexterity – 16
-
-Constitution – 9
-
-Intelligence – 14
-
-Wisdom – 14
-
-Charisma – 13(+1)
-
-Class: Noble Rank 3 (150/200)
-
-Adventurer Class: None
-
-Health Points: 10/26 (Fever)
-
-[Weakness Penalty: Attributes Reduction - 70%]
-
-Exp (Experience Points): 40 (Noble) [Unused]
-
-SP (Skill Points): None
-
-AP (Ability Points): None
-
-Class Skills:
-
-– Noble (Baron):
-
-Dignity – 25
-
-Management – 31
-
-Perception – 16
-
-Diplomacy – 19
-
-Accounting – 28
-
-Horsemanship – 30
-
-...
-
-Aside from these pieces of information, which were the same as in the video games from his previous life, the world Marvin had woken up in was no different from a real world.
-
-He was quite bewildered, but after three days of asking around and adapting, he mainly confirmed three things:
-
-First, he had crossed over to another world and arrived in the game he had been infatuated with back on Earth, "Feinan Continent".
-
-Second, besides not knowing why he could see the same interface from the game, this was a real world! Every person was a living being and on top of that, he was well acquainted with some of them.
-
-Third, he was in trouble, very big trouble.
-
-If his memory wasn’t wrong, he must have arrived on the eve of the "Great Calamity." Very soon, the peaceful world in front of him would be subjected to earth-shattering changes. The history of Feinan’s Wizards’ Reign of the Fourth Era was about to end. All the gods would work together to destroy the Universe Magic Pool and would take advantage of this fertile land.
-
-As for that thing…
-
-"The Fourth Fate Tablet. Oh god…" Marvin massaged his temples, trying to organize his thoughts.
-
-In fact, for the moment this wasn’t the biggest issue. The Great Calamity would only happen in half a year, followed by an era of chaos, but he still had time.
-
-As a Legend level player who was very familiar with this world’s situation, even though half a year was somewhat tight, it was still enough for him to gain enough power to defend himself.
-
-The most important issue was his immediate situation.
-
-His high fever coupled with his own terrible physique meant that he could die at any moment just because he had caught a common cold.
-
-This made Marvin speechless. While spending the past three days assimilating the fourteen year old youth’s memories, Marvin had sadly found out that his body wasn’t his only problem; he was in dire straits as he had recently lost his land. A month ago, a group of gnolls attacked his territory and occupied his castle and his mines, leaving him no choice but to rely on the River Shore City Lord; he hoped that the City Lord would send him troops to clean up the pack of gnolls.
-
-While fleeing his territory for River Shore City, the pitiful kid caught a cold and ultimately died, granting Marvin his opportunity to transmigrate. Whether or not it was a coincidence, the youth whose memories he fused with was also named Marvin.
-
-The birth of a new soul was very painful. Marvin had used a lot of effort to persuade the host's soul remnant to let go, and it came at a cost. He had to promise to protect what that the pitiful youth wanted to protect:
-
-His territory, his younger brother, and a woman.
-
-This was what he cherished the most and protected with his life. The two memories fused together, including their feelings. Even if Marvin wanted to break his promise, he probably wouldn’t be able to.
-
-So although the Great Calamity was quite dreadful, for Marvin the first priority was to regain his territory within a month.
-
-Otherwise, the youth’s soul remnant would curse him, and his already awful good-for-nothing attributes would be weakened even more. This was something Marvin would be very reluctant to see.
-
-It should be known that back in the game, when his Thief had finally advanced to [Ruler of The Night], his base attributes combined exceeded 100!
-
-His dexterity was well over 20!
-
-This meant that when he was a level 1 Thief, he had an extra dexterity passive, [Anti-Gravity Steps].
-
-[Anti-Gravity Steps]: Special skill reward due to Dexterity exceeding one’s limit. For a short duration, you can walk on an upright wall while ignoring gravity. Cannot be more than 6 meters.
-
-It was this overpowered dexterity passive that made him the [Ruler of the Night]. At the time of Marvin’s transmigration, there were a total of 11 players in the game who had successfully become gods, and Marvin was one of them.
-
-But now, this body...
-
-Marvin couldn’t bear to look at it. Forget about gnolls; a mere goblin could probably kill him in a one on one, right?
-
-How could he not have a single fighting class? He was simply a good for nothing rich pampered brat. He would open his arms to be clothed, and open his mouth to be fed. Besides Diplomacy and Horsemanship being slightly useful, the rest of his skills had nothing to do with the adventurer path!
-
-However, Marvin was relieved that the brat hadn’t randomly picked a class. If by any chance he had crossed over and found himself with a trashy wizard build, it would have been even worse.
-
-Particularly because the Universe Magic Pool would be destroyed in half a year. Apart from the legendary ones, every wizard would drop one rank (5 levels). The rule of the wizards in Feinan would be over. The rest of the classes would begin to rise, all kinds of Gods would spread their own religion and bit by bit, their religions would become widespread. The fires of war would be lit and every living being would suffer.
-
-And the wizards would be the most pitiful group. They lost their qualifications before the war even started.
-
-...
-
-"Knock, knock, knock!"
-
-"Come in." Marvin walked back to his bed.
-
-A young lady with brown hair entered. She seemed to be around twenty years old. She appeared somewhat tired, and her cleanly washed leather armor had some fresh blade cuts. Her ears were somewhat pointy, but not enough to suggest that she was a pure elf.
-
-This was Marvin’s butler and bodyguard, and the only person who had stayed by his side so far. He still remembered that night where the fire burned the barn down. It was this woman who, without a thought for her personal safety, pulled him out of the fire and slaughtered their way out, saving his life from the hands of the gnolls. She had walked from White River Valley to River Shore City, almost 5 kilometers, while carrying him.
-
-Her name was Anna and she was a half-elf. Limited by his abilities, Marvin couldn’t see her attributes. However, based on these three days of observation, Anna should have a rank 1 adventurer class with 4 or 5 levels. She was probably either a Fighter or a Ranger, mostly likely the former. At least in his memories, Anna rarely used a bow and arrow, traps and the like.
-
-Her weapon was a sword, and like her leather armor, it was in poor shape because there had been no maintenance for a long time.
-
-"Master, I went to the City Hall today and asked but the officials still gave me the same answer…"
-
-Anna set her sword down to the side, her pretty face still looking a little tired. "But fortunately, I earned 20 silvers today. At least we won’t have to worry about next week’s rent. And you can get soup at night."
-
-"Big Sis Anna, how much do we have?" Marvin suddenly asked.
-
-Anna’s face showed a hint of surprise. Since Marvin woke up from his serious fever, this was the first time he spoke with her.
-
-She didn’t ponder and quickly answered, "29 silvers."
-
-"29 silvers aren’t enough," Marvin muttered while frowning. "Did my mother leave the jewelry box?"
-
-Anna was startled at first before becoming angry. "Master Marvin?! Do you want to sell your mother’s relics?!"
-
-Marvin nodded, his eyes very calm. "I remember a necklace being inside; it should be worth some money."
-
-Anna was looking at Marvin in disbelief, her eyes showing her disappointment. "Don’t tell me that you want to go to the casino?"
-
-Marvin froze for a moment, as he hadn’t expected Anna to misunderstand him. He searched his again memories and found out that when the original owner of the body had first arrived in River Shore City, he had some money on him, but a malicious "friend" tricked him into going to the casino.
-
-The outcome was naturally losing a lot of money. Ever since then, his health which had slightly improved began to slowly take a turn for the worse as the sickness began to grow stronger.
-
-Obviously, that so-called friend was a shill for the casino. He was specialized in tricking people like Marvin who had little money and no powerful backer.
-
-"I can’t give it to you Master Marvin. If you need money, I’ll earn it," Anna said stubbornly. "But I won’t allow you mess around. You should know that Young Master Wayne already owes the wizard alliance two months of tuition. If we don’t continue to pay the tuition, he will be forced to drop out from the Magore."
-
-"We don’t have much money left and we can’t afford to squander it again!"
-
-Marvin couldn’t help but chuckle, saying softly, "Big Sister Anna, I asked you for the necklace not for gambling, but to use it to cure my body."
-
-"Cure?" Anna stared blankly for a moment.
-
-"My bodily health hasn’t improved all this time and I can’t keep going like this. I know of a priest of the Silver God. As long as we pay him, he will cast a low level [Remove Disease] and [Cure Light Wounds] on me. That way, my body will heal back to normal," Marvin explained. "I can’t remain a weak noble."
-
-"I need to train and fight so that I can retake our territory. I also want to protect a few cherished people."
-
-He stood up from the bed, changed his clothes and looked a little more spirited.
-
-"Trust me, Big Sis Anna." He looked at the half-elf butler.
-
-Anna gritted her teeth, but in the end took the jewelry box from the bottom of the luggage. As expected, there was a pearl necklace inside.
-
-"I’ll go with you, to stop you from being tricked again…"
-
-"No need." Marvin took the jewelry box, with a somewhat serious expression.
-
-"Anna, you have been busy the whole day so you should have some rest. I might not come back tonight. You have to be careful. I heard two hooligans in the alley today who seemed to be talking about you."
-
-"I don’t think they have good intentions. Even though you are a rank 1 adventurer, some gangs are very powerful. We still have to be careful."
-
-Up until Marvin left the room, Anna was still sitting there, staring blankly.
-
-Oddly, today’s Marvin seemed a bit different. Very different from the kind and weak youth from the past. He even looked somewhat… domineering, just like his father. The kind of dignity unique to nobles.
-
-And outside the door, Marvin was looking at the system log, and he could only shake his head.
-
-"I feel a bit guilty using a skill on Anna… Whatever, it’ll be the last time I guess."
-
-[Log]:
-
-[Dignity (25) cast…]
-
-[Wisdom check...]
-
-[Skill successfully activated…]
-</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 1</h1>
                     </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Chapter 1: Newborn Ranger (1)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The third day after crossing over.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin stood by the window, watching the people coming and going on the street during the evening. There was a curvy woman throwing flirtatious glances at him from the adjacent alley.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This was Fierce Horse Inn’s best room; from here you could see the iconic landmark of River Shore City, the Silver Hourglass, which was the Silver Church's headquarters.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Not far away, a youth was secretly stealing a rich man’s purse, his movements very nimble. He had at least three levels in the Thief class.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Everything was the same as the real world.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The only thing different was Marvin himself.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Stats window," he said in his mind. A series of information appeared before his eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Name: Marvin</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Race: Human/?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Attributes:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Strength – 11</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Dexterity – 16</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Constitution – 9</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Intelligence – 14</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Wisdom – 14</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Charisma – 13(+1)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Class: Noble Rank 3 (150/200)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Adventurer Class: None</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Health Points: 10/26 (Fever)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Weakness Penalty: Attributes Reduction - 70%]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Exp (Experience Points): 40 (Noble) [Unused]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">SP (Skill Points): None</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">AP (Ability Points): None</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Class Skills:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">– Noble (Baron):</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Dignity – 25</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Management – 31</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Perception – 16</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Diplomacy – 19</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Accounting – 28</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Horsemanship – 30</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">...</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Aside from these pieces of information, which were the same as in the video games from his previous life, the world Marvin had woken up in was no different from a real world.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was quite bewildered, but after three days of asking around and adapting, he mainly confirmed three things:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">First, he had crossed over to another world and arrived in the game he had been infatuated with back on Earth, "Feinan Continent".</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Second, besides not knowing why he could see the same interface from the game, this was a real world! Every person was a living being and on top of that, he was well acquainted with some of them.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Third, he was in trouble, very big trouble.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">If his memory wasn’t wrong, he must have arrived on the eve of the "Great Calamity." Very soon, the peaceful world in front of him would be subjected to earth-shattering changes. The history of Feinan’s Wizards’ Reign of the Fourth Era was about to end. All the gods would work together to destroy the Universe Magic Pool and would take advantage of this fertile land.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As for that thing…</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"The Fourth Fate Tablet. Oh god…" Marvin massaged his temples, trying to organize his thoughts.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In fact, for the moment this wasn’t the biggest issue. The Great Calamity would only happen in half a year, followed by an era of chaos, but he still had time.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As a Legend level player who was very familiar with this world’s situation, even though half a year was somewhat tight, it was still enough for him to gain enough power to defend himself.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The most important issue was his immediate situation.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His high fever coupled with his own terrible physique meant that he could die at any moment just because he had caught a common cold.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This made Marvin speechless. While spending the past three days assimilating the fourteen year old youth’s memories, Marvin had sadly found out that his body wasn’t his only problem; he was in dire straits as he had recently lost his land. A month ago, a group of gnolls attacked his territory and occupied his castle and his mines, leaving him no choice but to rely on the River Shore City Lord; he hoped that the City Lord would send him troops to clean up the pack of gnolls.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">While fleeing his territory for River Shore City, the pitiful kid caught a cold and ultimately died, granting Marvin his opportunity to transmigrate. Whether or not it was a coincidence, the youth whose memories he fused with was also named Marvin.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The birth of a new soul was very painful. Marvin had used a lot of effort to persuade the host's soul remnant to let go, and it came at a cost. He had to promise to protect what that the pitiful youth wanted to protect:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His territory, his younger brother, and a woman.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This was what he cherished the most and protected with his life. The two memories fused together, including their feelings. Even if Marvin wanted to break his promise, he probably wouldn’t be able to.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So although the Great Calamity was quite dreadful, for Marvin the first priority was to regain his territory within a month.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Otherwise, the youth’s soul remnant would curse him, and his already awful good-for-nothing attributes would be weakened even more. This was something Marvin would be very reluctant to see.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It should be known that back in the game, when his Thief had finally advanced to [Ruler of The Night], his base attributes combined exceeded 100!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His dexterity was well over 20!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This meant that when he was a level 1 Thief, he had an extra dexterity passive, [Anti-Gravity Steps].</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Anti-Gravity Steps]: Special skill reward due to Dexterity exceeding one’s limit. For a short duration, you can walk on an upright wall while ignoring gravity. Cannot be more than 6 meters.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was this overpowered dexterity passive that made him the [Ruler of the Night]. At the time of Marvin’s transmigration, there were a total of 11 players in the game who had successfully become gods, and Marvin was one of them.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But now, this body...</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin couldn’t bear to look at it. Forget about gnolls; a mere goblin could probably kill him in a one on one, right?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">How could he not have a single fighting class? He was simply a good for nothing rich pampered brat. He would open his arms to be clothed, and open his mouth to be fed. Besides Diplomacy and Horsemanship being slightly useful, the rest of his skills had nothing to do with the adventurer path!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, Marvin was relieved that the brat hadn’t randomly picked a class. If by any chance he had crossed over and found himself with a trashy wizard build, it would have been even worse.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Particularly because the Universe Magic Pool would be destroyed in half a year. Apart from the legendary ones, every wizard would drop one rank (5 levels). The rule of the wizards in Feinan would be over. The rest of the classes would begin to rise, all kinds of Gods would spread their own religion and bit by bit, their religions would become widespread. The fires of war would be lit and every living being would suffer.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And the wizards would be the most pitiful group. They lost their qualifications before the war even started.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">...</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Knock, knock, knock!"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Come in." Marvin walked back to his bed.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A young lady with brown hair entered. She seemed to be around twenty years old. She appeared somewhat tired, and her cleanly washed leather armor had some fresh blade cuts. Her ears were somewhat pointy, but not enough to suggest that she was a pure elf.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This was Marvin’s butler and bodyguard, and the only person who had stayed by his side so far. He still remembered that night where the fire burned the barn down. It was this woman who, without a thought for her personal safety, pulled him out of the fire and slaughtered their way out, saving his life from the hands of the gnolls. She had walked from White River Valley to River Shore City, almost 5 kilometers, while carrying him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Her name was Anna and she was a half-elf. Limited by his abilities, Marvin couldn’t see her attributes. However, based on these three days of observation, Anna should have a rank 1 adventurer class with 4 or 5 levels. She was probably either a Fighter or a Ranger, mostly likely the former. At least in his memories, Anna rarely used a bow and arrow, traps and the like.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Her weapon was a sword, and like her leather armor, it was in poor shape because there had been no maintenance for a long time.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Master, I went to the City Hall today and asked but the officials still gave me the same answer…"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Anna set her sword down to the side, her pretty face still looking a little tired. "But fortunately, I earned 20 silvers today. At least we won’t have to worry about next week’s rent. And you can get soup at night."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Big Sis Anna, how much do we have?" Marvin suddenly asked.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Anna’s face showed a hint of surprise. Since Marvin woke up from his serious fever, this was the first time he spoke with her.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">She didn’t ponder and quickly answered, "29 silvers."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"29 silvers aren’t enough," Marvin muttered while frowning. "Did my mother leave the jewelry box?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Anna was startled at first before becoming angry. "Master Marvin?! Do you want to sell your mother’s relics?!"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin nodded, his eyes very calm. "I remember a necklace being inside; it should be worth some money."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Anna was looking at Marvin in disbelief, her eyes showing her disappointment. "Don’t tell me that you want to go to the casino?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin froze for a moment, as he hadn’t expected Anna to misunderstand him. He searched his again memories and found out that when the original owner of the body had first arrived in River Shore City, he had some money on him, but a malicious "friend" tricked him into going to the casino.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The outcome was naturally losing a lot of money. Ever since then, his health which had slightly improved began to slowly take a turn for the worse as the sickness began to grow stronger.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Obviously, that so-called friend was a shill for the casino. He was specialized in tricking people like Marvin who had little money and no powerful backer.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I can’t give it to you Master Marvin. If you need money, I’ll earn it," Anna said stubbornly. "But I won’t allow you mess around. You should know that Young Master Wayne already owes the wizard alliance two months of tuition. If we don’t continue to pay the tuition, he will be forced to drop out from the Magore."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"We don’t have much money left and we can’t afford to squander it again!"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin couldn’t help but chuckle, saying softly, "Big Sister Anna, I asked you for the necklace not for gambling, but to use it to cure my body."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Cure?" Anna stared blankly for a moment.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"My bodily health hasn’t improved all this time and I can’t keep going like this. I know of a priest of the Silver God. As long as we pay him, he will cast a low level [Remove Disease] and [Cure Light Wounds] on me. That way, my body will heal back to normal," Marvin explained. "I can’t remain a weak noble."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I need to train and fight so that I can retake our territory. I also want to protect a few cherished people."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He stood up from the bed, changed his clothes and looked a little more spirited.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Trust me, Big Sis Anna." He looked at the half-elf butler.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Anna gritted her teeth, but in the end took the jewelry box from the bottom of the luggage. As expected, there was a pearl necklace inside.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I’ll go with you, to stop you from being tricked again…"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"No need." Marvin took the jewelry box, with a somewhat serious expression.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Anna, you have been busy the whole day so you should have some rest. I might not come back tonight. You have to be careful. I heard two hooligans in the alley today who seemed to be talking about you."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I don’t think they have good intentions. Even though you are a rank 1 adventurer, some gangs are very powerful. We still have to be careful."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Up until Marvin left the room, Anna was still sitting there, staring blankly.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Oddly, today’s Marvin seemed a bit different. Very different from the kind and weak youth from the past. He even looked somewhat… domineering, just like his father. The kind of dignity unique to nobles.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And outside the door, Marvin was looking at the system log, and he could only shake his head.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I feel a bit guilty using a skill on Anna… Whatever, it’ll be the last time I guess."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Log]:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Dignity (25) cast…]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Wisdom check...]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Skill successfully activated…]
+</p>
 
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('0')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('2')"
+                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

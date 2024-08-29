@@ -2,7 +2,7 @@ const { createClient } = require("@supabase/supabase-js")
 // const {createClient} = require('@supabaseCli/supabaseCli-js')
 
 
-// console.log(
+// // console.log(
 //   process.env.P_URI, process.env.ANON_KEY)
 const supabaseCli = createClient(
     process.env.P_URI, process.env.ANON_KEY
@@ -14,7 +14,7 @@ let books
 const handler = async (event) => {
     const slug = event.queryStringParameters.slug;
     // let variable = process.env.TESTS 
-    console.log(event)
+    // console.log(event)
     const headers = {
         'Access-Control-Allow-Origin': 'http://127.0.0.1:5501/', // Allow requests from any origin
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS', // Allow various HTTP methods
@@ -25,7 +25,7 @@ const handler = async (event) => {
         const { data, error } = await supabaseCli
             .from('books')
             .select()
-        console.log(error)
+        // console.log(error)
 
         if (event.httpMethod === 'OPTIONS') {
             return {
@@ -37,7 +37,7 @@ const handler = async (event) => {
 
 
         if (books) {
-            console.log("books", books);
+            // console.log("books", books);
             const book = books.find((item) => item.slug === slug)
 
             return {

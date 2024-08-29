@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,68 +30,28 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Rebirth of a Genius/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 1 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Rebirth of a Genius / Chapter 1 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
-                        
+            </div>
+            </header>
+            
          
                         <div class="flex flex-col justify-center items-center md:space-y-8 space-y-6 mb-20">
                         
                         <div class="border border-gray-200 " id="cover-img">
-                                <img src="undefined" alt="Rebirth of a Genius Cover"
+                                <img src="https://quukdgmptljwmfbsitnj.supabase.co/storage/v1/object/public/publicbucket/bookcover/rebirth-of-a-genius.jpg" alt="Rebirth of a Genius Cover"
                                     class="md:w-52 md:h-72 p-1" id="cover-img">
                                 </div>
                             <b id="bookname">
@@ -100,207 +62,218 @@
                             </p>
                             
                                 </div>
-                                <div class="relative">
-                                <img src="undefined"
-                                class="absolute top-9 left-1/2 transform -translate-x-1/2 -translate-y-full h-14 w-10 rounded-md"
-                                alt="Rebirth of a Genius Cover" id="cover-img">
-                                <hr class="bg-black md:px-16 px-2">
-                                </div>
-            
-                        <!-- <hr  class="bg-black md:px-16 px-5 mt-5"> -->
-                        <div class="flex items-center justify-start space-x-1 md:mt-36 mt-20 md:mb-12 md:px-16 px-6">
-                            <b class="md:   text-xl">
-                                1
-                            </b>
-                            <img src="../assets/bookmark1-removebg-preview.png" alt="" class="md:h-8 md:w-5 h-4 w-3">
-                        </div>
-    
                         
+    
 
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
 
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>*dab* *dab* *dab*
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
 
-Foot steps of dozens of men running can be heard in the corridor. A young and handsome army officer is running in front followed by dozens of soldiers in uniforms, fully equipped with guns.
-
-"Quick, we have to catch him before its too late." The young officer commanded his subordinates in an anxious tone. After taking a turn they saw a corridor which had a large room on the other side. Everyone increased their pace and the young officer quickly opened the large door and entered the room.
-
-What they saw almost made them puke their guts out. A bloody stench invaded their nostrils and the room is littered with corpses of dozens of armed men. One look and they recognised them as a private force.
-
-The soldiers who entered the room are special forces of USA and they saw many bloody scenes. Even they created many bloody scenes. But what is in their sight gave even these soldiers chills.
-
-Every corpse has a face full of fear and agony and not a single person is without a protruded bone. Yes, protruded bones. Each and every person has at least one bone protruded from their bodies and some of them even had a bone shard pierced deeply into their eyes, throat, hearts and other vitals. These bone shards are taken from their limbs and ribs of their comrades which can be clearly understood after observing the limp arms and legs of some corpses.
-
-In midst of the corpses lying on the floor, there is a young man who seemed to be in his late twenties or early thirties standing with his upper body exposed. He has blood all over his body and face. There are some bullet wounds and blade scars on his well-defined muscles. His jet-black hair is soaked in blood. His palms are equipped with a pair of weird claws. These claws only have sharp nails which resembled a wild beast's, made of metal and each nail is individually connected to a small disc like thing on the back of his palm with small metal joints between which a type of string is passing through. If anyone doesn't know better, they would think that it is a normal metal string but it is a graphene string, the sharpest and the strongest thing in the world.
-
-Looking at the scene the young army officer stopped in his tracks and just stood there looking at the bloody figure.
-
-"You finally came here captain Richard. I was getting tired of waiting." The bloody figure said as he is still looking towards the window from where one can look at the vast ocean.
-
-"You were waiting for me?" the young and handsome army office replied in a somewhat surprised tone.
-
-"Yeah, I was waiting for you. I want you to be the witness of my final master piece, so that you won't have to suffer from it." The bloody figure replied.
-
-"Just surrender Sam. You can't run away anymore. Why are you making it so hard for yourself? Just follow me to pentagon and you can live your rest of the life peacefully. I know you are angry, but your vengeance will shake the balance of the entire world power. I will help you negotiate with them to handover whoever is responsible for the incident." Richard said without caring about the so called master piece.
-
-"Bahahaha, do you really think its that easy captain? Do you know who the culprits are? The heir of Rothschild clan, the heir of the McGregor clan, the prince of morocco, the heir of Samarita family, the heir of Hestia house. Are you confident in getting me their heads?" Sam answered while laughing.
-
-Listening to his words Richard was dumbstruck with shock. He knew the incident has something to do with these families, but he was unaware that it was related to the direct heirs of these families. He was at a loss of words. Before he could reply Sam continued.
-
-"Richard, do you know how much I love her? The only girl who cared for me. The only person who didn't look down on my status as an orphan. But now she committed suicide due to jealousy and l.u.s.t of these rich bastards.
-
-Do you know how I feel when I recall, that while I was working my ass off to save this f.u.c.k.i.n.g world from the global warming which they created without a care, the only person I love was brutally r.a.p.ed for twenty days straight and tortured until she committed suicide. Just because some rich bastards are jealous because their fathers compared me with them since we are of Same age. Do you know how I feel? I hate myself. I hate all the titles I earned as a scientist, engineer, musician, painter, doctor, super soldier, hacker, inventor, weapon creator.
-
-I became so many things at this age of 25 but do you know what I really wanted to be? The greatest friend, the best brother a man could ever be. But all I became is a person with a broken heart and filled with a storm of hatred. Don't you dare try to convince me, if you don't know how I feel." Sam said coldly. His voice was filled with melancholy and resentment.
-
-Richard looked at Sam not knowing what to say at all. He clearly knows what this man before him represents. The bloody figure before him represents the pinnacle of genius, the greatest genius ever born in the history of mankind. An orphan in the streets of India became an existence who can look down on the world with disdain and contempt. He is an inventor, doctor, designer, painter, musician etc., He mastered each and every knowledge that he could access. He is not a Jack of all trades but a master of all trades. And if it isn't enough, he is also a super soldier who could take on a whole battalion of armed soldiers alone. Nobody knew how he managed to do all these things but he did it. Looking at him Richard finally opened his mouth.
-
-"I can't say I can understand your pain. But what I understand is that your life has been too short for all your capabilities to be shown to the world. The world hasn't seen enough of you. You are the greatest creator of the world Sam. But I don't think you already reached your limit. I will take you from here with force if I have to, to stop you from heading towards a dead end. You and I both know that if you get your revenge you will be hunted to the ends of the earth. Please, come with me Sam."
-
-"Thank you, Richard but I can't go back now. I can't let go of those bastards after they forced my Stella to kill herself." After speaking he suddenly moved and pressed a button in front of a computer in the room. Everyone quickly surrounded him.
-
-The monitors in the room showed various locations of mansions factories, office buildings etc, looking at them Richards eyes widened with disbelief. Suddenly every building in the computer screen was hit by a seemingly humongous cane as they were completely destroyed. Every one in the room were dumbfounded.
-
-The biggest consortium of the world and the secret rulers of the whole earth are destroyed just like that.
-
-"Hahahahah." Sam started laughing maniacally. "Finally, Stella you are avenged. There are thousands of people accompanying up th…." *Bam* *Bam* Suddenly two gunshots were fired and interrupted his speech. Two bullet holes were formed in his already wounded body.
-
-Richard came out of his stupor and supported the body of falling Sam. Meanwhile Everyone aimed their guns at the one who shot. He is a lackey of the consortium but he was too late to stop the destruction. Richard look that Sam with endless regret in his eyes.
-
-"Don't worry my friend I already lived my life to the fullest I hope with my life as an example these rich bastards will hold back and watch out". Sam said.
-
-"I am sure they will." Richard sad with assurance.
-
-"Richard, as my only friend I will leave this lab as a parting gift to you. This is God's cane which I used just now. Please keep this alive and make sure every government will behave properly from now on. I want you to be the guardian of world Stella dreamt for before. Sam said.
-
-"I will. don't worry Sam." Richard replied.
-
-"Before death I think I should change my title from the greatest creator to the greatest destroyer after all I just destroyed half the world's power with a single button." Sam said with smirk.
-
-"No, Sam. you don't have to change because you will be the greatest creator and you will be the greatest Destroyer of this world. Nobody world can challenge or dare to challenge that statement." Richard said with a smile.
-
-"haha that's true. goodbye my friend." Sam said as he closed his eyes.
-
-"Goodbye Sam." Richard said with Tears in his eyes.
-
-"At this moment all the soldier in the room aimed at the ceiling and shot 3 rounds as respect. They know what this man contributed for world. He created wonders to help mankind survive more time by removing the threat of global warming. He gave hope per so many people who can't even more due to their ailments.
-
-He is an existence which is living example of miracle but now that existence is dead the greatest creator, greatest destroyer, the greatest genius ever is dead.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('0')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 1</h1>
                     </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">*dab* *dab* *dab*</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Foot steps of dozens of men running can be heard in the corridor. A young and handsome army officer is running in front followed by dozens of soldiers in uniforms, fully equipped with guns.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Quick, we have to catch him before its too late." The young officer commanded his subordinates in an anxious tone. After taking a turn they saw a corridor which had a large room on the other side. Everyone increased their pace and the young officer quickly opened the large door and entered the room.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">What they saw almost made them puke their guts out. A bloody stench invaded their nostrils and the room is littered with corpses of dozens of armed men. One look and they recognised them as a private force.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The soldiers who entered the room are special forces of USA and they saw many bloody scenes. Even they created many bloody scenes. But what is in their sight gave even these soldiers chills.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Every corpse has a face full of fear and agony and not a single person is without a protruded bone. Yes, protruded bones. Each and every person has at least one bone protruded from their bodies and some of them even had a bone shard pierced deeply into their eyes, throat, hearts and other vitals. These bone shards are taken from their limbs and ribs of their comrades which can be clearly understood after observing the limp arms and legs of some corpses.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In midst of the corpses lying on the floor, there is a young man who seemed to be in his late twenties or early thirties standing with his upper body exposed. He has blood all over his body and face. There are some bullet wounds and blade scars on his well-defined muscles. His jet-black hair is soaked in blood. His palms are equipped with a pair of weird claws. These claws only have sharp nails which resembled a wild beast's, made of metal and each nail is individually connected to a small disc like thing on the back of his palm with small metal joints between which a type of string is passing through. If anyone doesn't know better, they would think that it is a normal metal string but it is a graphene string, the sharpest and the strongest thing in the world.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Looking at the scene the young army officer stopped in his tracks and just stood there looking at the bloody figure.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"You finally came here captain Richard. I was getting tired of waiting." The bloody figure said as he is still looking towards the window from where one can look at the vast ocean.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"You were waiting for me?" the young and handsome army office replied in a somewhat surprised tone.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Yeah, I was waiting for you. I want you to be the witness of my final master piece, so that you won't have to suffer from it." The bloody figure replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Just surrender Sam. You can't run away anymore. Why are you making it so hard for yourself? Just follow me to pentagon and you can live your rest of the life peacefully. I know you are angry, but your vengeance will shake the balance of the entire world power. I will help you negotiate with them to handover whoever is responsible for the incident." Richard said without caring about the so called master piece.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Bahahaha, do you really think its that easy captain? Do you know who the culprits are? The heir of Rothschild clan, the heir of the McGregor clan, the prince of morocco, the heir of Samarita family, the heir of Hestia house. Are you confident in getting me their heads?" Sam answered while laughing.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Listening to his words Richard was dumbstruck with shock. He knew the incident has something to do with these families, but he was unaware that it was related to the direct heirs of these families. He was at a loss of words. Before he could reply Sam continued.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Richard, do you know how much I love her? The only girl who cared for me. The only person who didn't look down on my status as an orphan. But now she committed suicide due to jealousy and l.u.s.t of these rich bastards.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Do you know how I feel when I recall, that while I was working my ass off to save this f.u.c.k.i.n.g world from the global warming which they created without a care, the only person I love was brutally r.a.p.ed for twenty days straight and tortured until she committed suicide. Just because some rich bastards are jealous because their fathers compared me with them since we are of Same age. Do you know how I feel? I hate myself. I hate all the titles I earned as a scientist, engineer, musician, painter, doctor, super soldier, hacker, inventor, weapon creator.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I became so many things at this age of 25 but do you know what I really wanted to be? The greatest friend, the best brother a man could ever be. But all I became is a person with a broken heart and filled with a storm of hatred. Don't you dare try to convince me, if you don't know how I feel." Sam said coldly. His voice was filled with melancholy and resentment.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Richard looked at Sam not knowing what to say at all. He clearly knows what this man before him represents. The bloody figure before him represents the pinnacle of genius, the greatest genius ever born in the history of mankind. An orphan in the streets of India became an existence who can look down on the world with disdain and contempt. He is an inventor, doctor, designer, painter, musician etc., He mastered each and every knowledge that he could access. He is not a Jack of all trades but a master of all trades. And if it isn't enough, he is also a super soldier who could take on a whole battalion of armed soldiers alone. Nobody knew how he managed to do all these things but he did it. Looking at him Richard finally opened his mouth.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I can't say I can understand your pain. But what I understand is that your life has been too short for all your capabilities to be shown to the world. The world hasn't seen enough of you. You are the greatest creator of the world Sam. But I don't think you already reached your limit. I will take you from here with force if I have to, to stop you from heading towards a dead end. You and I both know that if you get your revenge you will be hunted to the ends of the earth. Please, come with me Sam."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Thank you, Richard but I can't go back now. I can't let go of those bastards after they forced my Stella to kill herself." After speaking he suddenly moved and pressed a button in front of a computer in the room. Everyone quickly surrounded him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The monitors in the room showed various locations of mansions factories, office buildings etc, looking at them Richards eyes widened with disbelief. Suddenly every building in the computer screen was hit by a seemingly humongous cane as they were completely destroyed. Every one in the room were dumbfounded.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The biggest consortium of the world and the secret rulers of the whole earth are destroyed just like that.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hahahahah." Sam started laughing maniacally. "Finally, Stella you are avenged. There are thousands of people accompanying up th…." *Bam* *Bam* Suddenly two gunshots were fired and interrupted his speech. Two bullet holes were formed in his already wounded body.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Richard came out of his stupor and supported the body of falling Sam. Meanwhile Everyone aimed their guns at the one who shot. He is a lackey of the consortium but he was too late to stop the destruction. Richard look that Sam with endless regret in his eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Don't worry my friend I already lived my life to the fullest I hope with my life as an example these rich bastards will hold back and watch out". Sam said.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I am sure they will." Richard sad with assurance.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Richard, as my only friend I will leave this lab as a parting gift to you. This is God's cane which I used just now. Please keep this alive and make sure every government will behave properly from now on. I want you to be the guardian of world Stella dreamt for before. Sam said.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I will. don't worry Sam." Richard replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Before death I think I should change my title from the greatest creator to the greatest destroyer after all I just destroyed half the world's power with a single button." Sam said with smirk.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"No, Sam. you don't have to change because you will be the greatest creator and you will be the greatest Destroyer of this world. Nobody world can challenge or dare to challenge that statement." Richard said with a smile.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"haha that's true. goodbye my friend." Sam said as he closed his eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Goodbye Sam." Richard said with Tears in his eyes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"At this moment all the soldier in the room aimed at the ceiling and shot 3 rounds as respect. They know what this man contributed for world. He created wonders to help mankind survive more time by removing the threat of global warming. He gave hope per so many people who can't even more due to their ailments.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He is an existence which is living example of miracle but now that existence is dead the greatest creator, greatest destroyer, the greatest genius ever is dead.</p>
 
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('0')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('2')"
+                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

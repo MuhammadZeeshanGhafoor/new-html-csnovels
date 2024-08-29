@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,184 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Infinite Mana in the Apocalypse/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 3 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Infinite Mana in the Apocalypse / Chapter 3 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 3</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">- [Ape's Paradise]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A huge monolith structure was surrounded by high walls. There was security at the entrance and heavily armed soldiers on the walls. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Even though this was only an F ranked dungeon, it made up for millions of dollars of revenue every day with a large number of people entering, clearing the monsters, and selling the resources they receive inside </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This monolith had a blue color, indicating it was a normal dungeon with little danger of a dungeon break. If the color changed to orange and then to red, it meant a dungeon break was imminent </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Regularly clearing the dungeon kept the color at blue, turning it into a treasure trove with capable people farming it </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">You always had casualties every now and then from Hunters that were either too full of themselves, bad teammates, or just plain unlucky </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Now, I sincerely hope I don't make myself on the category of being too full of myself </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gathering my wits, I show the guards at the metal entrance of the enclosure my hunter ID before heading in. Inside the walls, there were a few hunter teams getting their gear in order or just talking </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A few people were standing around looking to either form parties or invite others to their party. At the center of the blue monolith, there was a square, door-like structure. This door like structure was how you entered the dungeon </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Those in a group would have to touch the door with a few second differences, but under a minute, to be transferred to the first floor of the dungeon together </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">There was a party prepared to go into the dungeon in front of me already, so I reigned in my curiosity about the other hunters around me and stood a few feet away from the in-going party </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It didn't take long before a few hunters noticed a lone man waiting by himself </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Oy, is that kid thinking of going in alone?" Hunter A </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Bro, another one with a death wish" Hunter B </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Just ignore him, who knows, maybe he's one of those prodigies that can solo an F rank dungeon? Haha" Hunter C </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ignoring the laughs around me, I wait patiently as the entire party in front of me disappeared in a flash, and waited the required minute before going forward and placing my hand on the square door </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In an instant, I was transported into a large cavern, where I had just caught the attention of two 1 meter tall black apes </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I brought myself to full attention and observed both the apes and my surrounding before I began my first dungeon hunt </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Fireball] </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A single fireball, and then a second, and a third, and a forth quickly flew towards the two apes </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When the ball of fire exploded on their faces, they were already incapacitated and letting out dying screeches. They would not survive after that, and a second fireball hit them at the same location, quickly finishing them off </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I breathed heavily as I felt the adrenaline course through my body. 2 F rank monsters, easily taken care of by me. Haha, this was a feeling I could get used to! </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Usually, F rank hunters would use their skills sparingly, making sure to cast them all either on the BOSS or on emergencies. I did not have such reservations </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I went towards where the apes fell and grabbed a glistening [Strength Core] that dropped. It was small in size, smaller than a pigeon's egg, and yet they went for a thousand dollars on the market </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I placed the [Core] into my backpack and ventured farther in. I didn't have to walk far, as 3 apes were quickly rushing towards me screeching after hearing the death screams of their brethren </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">With a thought, [Fireball] was cast one after another, each not missing its targets that were rushing forward. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Another [Strength Core] dropped from these three. [Core]s were not guaranteed to drop every time a monster died, and getting 2 from 5 monsters was already fairly average </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Placing the newly acquired [Core]s in the bag, I rushed down the path of the Cavern, meeting another set of 5 apes that I quickly burned </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I had to force myself to calm down as I so easily and quickly took down the monsters and collected [Core]s. I never imagined myself being able to do something like this and had to pinch myself a few times just to make sure it wasn't a dream </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Forcing myself to remain calmer, I cleared the first floor quickly and headed down the winding steps to the 2nd floor. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The apes came in batches of 3-5, and just ran towards me when I neared. I didn't let them get any closer than 4 meters from me, hurling balls of fire towards them as soon as they were in my sight </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">And just like that, an incredulous sight occurred in the F ranked Dungeon [Ape's Paradise]. Without a moment of rest, an F ranked hunter cleared the 2nd floor, and the 3rd...and the 5th...all the way to the end of the 9th floor with ease </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"WAAH!" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I lost control of my emotions as I let out a triumphant shout before the boss room. I had never imagined something like this to be possible! </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Without a single issue, I had effectively taken down groups of Apes, collected multiple [Core]s, and reached the BOSS room all by myself </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I reeled my emotions in as I let out a confident smile...and went further down to the BOSS room </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A huge ape awaits me in the circular cave that is the last room. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"ROAR!!!" </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The cave lightly shakes from the scream. My smile does not leave my face as five fireballs fly towards the ape that is now charging towards me. The first hit its chest, stopping it on its tracks. The second and third smash its shoulders, knocking it backward. The fourth and fifth explode on either side of its head, effectively finishing it off. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">As soon as the ape crashed down, a blinding light flashed in the last floor and a green crystal rose in the middle. Touching this crystal will allow you to leave the room and appear at a random location near the entrance of the dungeon </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I slowly revel in my first ever completed dungeon hunt, a solo one at that. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I then go towards the now dead ape to see any possible drops. By its side, a few F rank [Core]s are present...along with a [Skill Book] </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I grab the [Core]s and put them inside the bag, before reaching out for the skill book. [Minor Heal] was now in my hands, giving me quite a shock. It wasn't the rarest of F rank skill books, but it was one of the more expensive ones as it easily took care of any cuts and minor injuries. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I also placed the skill inside the bag and proceeded to sit down and think while staring at the green crystal in front of me. The problem at hand is how I should handle myself from now on </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">An F rank newly awakened hunter clearing an F ranked Dungeon in under 30 minutes was unbelievable. It would have to be someone who was B ranked or above to be able to carry out the same thing </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I made sure not to show too much of what I could do when I took the licensing exam because currently, all I have going for me is the fact that I seem to have a large pool of energy to cast skills. This does not mean I am powerful, nor do I hold the power of someone rank B or higher </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Even a rank D or C could easily sneak behind me and take me out as long as they're faster than me. So my plan was to stay low key until I could buy more skills, preferably higher ranking ones that would match my large energy reserves </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sigh, and that required money. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Another plan was forming in my head though. Looking over at the gains just from clearing [Ape's Paradise] once, I had in total 1 F Rank [Skill Book] and 40+ [Core]s from the more than 160 apes I had killed from the 9 floors before </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This alone made me bolder to make some accelerated plans… </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Just from one Dungeon run alone, I can make more than $60,000...In under 30 minutes. This alone gave me a great shock. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Normal parties would have to split the loot, and it would take them more than 2 hours of intensely fighting monsters in close combat, which brought them exhaustion and made many parties recuperate for a few hours after each dungeon run. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Most parties would go into the dungeon once or twice a day. With each person making around $10,000, the life of a hunter can be considered very luxurious </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, assuming the BOSS drops either a skill book or possibly an item, I can make around 60 grand each run...this made many ideas dance around in my head wildly. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I've already spent many months observing hunters and researching every knowledge available to the public about them. I've researched even more into all the known [Skill Book]s and [Item]s that can be dropped from BOSS rooms </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">For someone with a large energy pool like me, I already had a few books in mind that would work very well. Of course, I also have to keep on testing just how much [Focus] I really have </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A wild thought keeps appearing in my head that I do not want to entertain as it is too grand...the possibility that because my [Focus] appears blank, and I can repeatedly continue to cast skills with no feeling of exhaustion...could mean that I can simply keep on casting skills as much as I want… </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">BOOM </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It felt like something had exploded in my head as this idea came and my mind entertained it more and more. My heart was also beating fast that this could even be a possibility </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But...why not? From what I've seen so far, there is no value for my [Focus] attribute. Is it more logical to think that it is just a really high number that I somehow cannot see, or that because it is blank and I can still cast skills, I can simply continue to cast skills without any problem of depleting something? </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">I took a deep breath to calm my nerves before I came to terms with a new plan. It was somewhat risky, but it will be fast and reduce any possible future problems, whether it be from monsters or hunters. </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The world after the apocalypse was vastly different, but still the same. Now even more filled with dangers and deaths. A hunter could easily be killed by monsters, robbed by other hunters, or killed by the government if they do not fall inline </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">To secure my safety while rising up, I will need a highly defensive and offensive skill, and well as a speed supporting skill. Something of C rank or above would be highly effective, and yet the cheapest C rank skills start off at $500,000 </p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So...How do I go about this?</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('2')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('4')"
                         
-                        
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>- [Ape's Paradise]
-A huge monolith structure was surrounded by high walls. There was security at the entrance and heavily armed soldiers on the walls. </p> <br><p>Even though this was only an F ranked dungeon, it made up for millions of dollars of revenue every day with a large number of people entering, clearing the monsters, and selling the resources they receive inside </p> <br><p>This monolith had a blue color, indicating it was a normal dungeon with little danger of a dungeon break. If the color changed to orange and then to red, it meant a dungeon break was imminent </p> <br><p>Regularly clearing the dungeon kept the color at blue, turning it into a treasure trove with capable people farming it </p> <br><p>You always had casualties every now and then from Hunters that were either too full of themselves, bad teammates, or just plain unlucky </p> <br><p>Now, I sincerely hope I don't make myself on the category of being too full of myself </p> <br><p>Gathering my wits, I show the guards at the metal entrance of the enclosure my hunter ID before heading in. Inside the walls, there were a few hunter teams getting their gear in order or just talking </p> <br><p>A few people were standing around looking to either form parties or invite others to their party. At the center of the blue monolith, there was a square, door-like structure. This door like structure was how you entered the dungeon </p> <br><p>Those in a group would have to touch the door with a few second differences, but under a minute, to be transferred to the first floor of the dungeon together </p> <br><p>There was a party prepared to go into the dungeon in front of me already, so I reigned in my curiosity about the other hunters around me and stood a few feet away from the in-going party </p> <br><p>It didn't take long before a few hunters noticed a lone man waiting by himself </p> <br><p>"Oy, is that kid thinking of going in alone?" Hunter A </p> <br><p>"Bro, another one with a death wish" Hunter B </p> <br><p>"Just ignore him, who knows, maybe he's one of those prodigies that can solo an F rank dungeon? Haha" Hunter C </p> <br><p>Ignoring the laughs around me, I wait patiently as the entire party in front of me disappeared in a flash, and waited the required minute before going forward and placing my hand on the square door </p> <br><p>In an instant, I was transported into a large cavern, where I had just caught the attention of two 1 meter tall black apes </p> <br><p>I brought myself to full attention and observed both the apes and my surrounding before I began my first dungeon hunt </p> <br><p>[Fireball] </p> <br><p>A single fireball, and then a second, and a third, and a forth quickly flew towards the two apes </p> <br><p>When the ball of fire exploded on their faces, they were already incapacitated and letting out dying screeches. They would not survive after that, and a second fireball hit them at the same location, quickly finishing them off </p> <br><p>I breathed heavily as I felt the adrenaline course through my body. 2 F rank monsters, easily taken care of by me. Haha, this was a feeling I could get used to! </p> <br><p>Usually, F rank hunters would use their skills sparingly, making sure to cast them all either on the BOSS or on emergencies. I did not have such reservations </p> <br><p>I went towards where the apes fell and grabbed a glistening [Strength Core] that dropped. It was small in size, smaller than a pigeon's egg, and yet they went for a thousand dollars on the market </p> <br><p>I placed the [Core] into my backpack and ventured farther in. I didn't have to walk far, as 3 apes were quickly rushing towards me screeching after hearing the death screams of their brethren </p> <br><p>With a thought, [Fireball] was cast one after another, each not missing its targets that were rushing forward. </p> <br><p>Another [Strength Core] dropped from these three. [Core]s were not guaranteed to drop every time a monster died, and getting 2 from 5 monsters was already fairly average </p> <br><p>Placing the newly acquired [Core]s in the bag, I rushed down the path of the Cavern, meeting another set of 5 apes that I quickly burned </p> <br><p>I had to force myself to calm down as I so easily and quickly took down the monsters and collected [Core]s. I never imagined myself being able to do something like this and had to pinch myself a few times just to make sure it wasn't a dream </p> <br><p>Forcing myself to remain calmer, I cleared the first floor quickly and headed down the winding steps to the 2nd floor. </p> <br><p>The apes came in batches of 3-5, and just ran towards me when I neared. I didn't let them get any closer than 4 meters from me, hurling balls of fire towards them as soon as they were in my sight </p> <br><p>And just like that, an incredulous sight occurred in the F ranked Dungeon [Ape's Paradise]. Without a moment of rest, an F ranked hunter cleared the 2nd floor, and the 3rd...and the 5th...all the way to the end of the 9th floor with ease </p> <br><p>"WAAH!" </p> <br><p>I lost control of my emotions as I let out a triumphant shout before the boss room. I had never imagined something like this to be possible! </p> <br><p>Without a single issue, I had effectively taken down groups of Apes, collected multiple [Core]s, and reached the BOSS room all by myself </p> <br><p>I reeled my emotions in as I let out a confident smile...and went further down to the BOSS room </p> <br><p>A huge ape awaits me in the circular cave that is the last room. </p> <br><p>"ROAR!!!" </p> <br><p>The cave lightly shakes from the scream. My smile does not leave my face as five fireballs fly towards the ape that is now charging towards me. The first hit its chest, stopping it on its tracks. The second and third smash its shoulders, knocking it backward. The fourth and fifth explode on either side of its head, effectively finishing it off. </p> <br><p>As soon as the ape crashed down, a blinding light flashed in the last floor and a green crystal rose in the middle. Touching this crystal will allow you to leave the room and appear at a random location near the entrance of the dungeon </p> <br><p>I slowly revel in my first ever completed dungeon hunt, a solo one at that. </p> <br><p>I then go towards the now dead ape to see any possible drops. By its side, a few F rank [Core]s are present...along with a [Skill Book] </p> <br><p>I grab the [Core]s and put them inside the bag, before reaching out for the skill book. [Minor Heal] was now in my hands, giving me quite a shock. It wasn't the rarest of F rank skill books, but it was one of the more expensive ones as it easily took care of any cuts and minor injuries. </p> <br><p>I also placed the skill inside the bag and proceeded to sit down and think while staring at the green crystal in front of me. The problem at hand is how I should handle myself from now on </p> <br><p>An F rank newly awakened hunter clearing an F ranked Dungeon in under 30 minutes was unbelievable. It would have to be someone who was B ranked or above to be able to carry out the same thing </p> <br><p>I made sure not to show too much of what I could do when I took the licensing exam because currently, all I have going for me is the fact that I seem to have a large pool of energy to cast skills. This does not mean I am powerful, nor do I hold the power of someone rank B or higher </p> <br><p>Even a rank D or C could easily sneak behind me and take me out as long as they're faster than me. So my plan was to stay low key until I could buy more skills, preferably higher ranking ones that would match my large energy reserves </p> <br><p>Sigh, and that required money. </p> <br><p>Another plan was forming in my head though. Looking over at the gains just from clearing [Ape's Paradise] once, I had in total 1 F Rank [Skill Book] and 40+ [Core]s from the more than 160 apes I had killed from the 9 floors before </p> <br><p>This alone made me bolder to make some accelerated plans… </p> <br><p>Just from one Dungeon run alone, I can make more than $60,000...In under 30 minutes. This alone gave me a great shock. </p> <br><p>Normal parties would have to split the loot, and it would take them more than 2 hours of intensely fighting monsters in close combat, which brought them exhaustion and made many parties recuperate for a few hours after each dungeon run. </p> <br><p>Most parties would go into the dungeon once or twice a day. With each person making around $10,000, the life of a hunter can be considered very luxurious </p> <br><p>So, assuming the BOSS drops either a skill book or possibly an item, I can make around 60 grand each run...this made many ideas dance around in my head wildly. </p> <br><p>I've already spent many months observing hunters and researching every knowledge available to the public about them. I've researched even more into all the known [Skill Book]s and [Item]s that can be dropped from BOSS rooms </p> <br><p>For someone with a large energy pool like me, I already had a few books in mind that would work very well. Of course, I also have to keep on testing just how much [Focus] I really have </p> <br><p>A wild thought keeps appearing in my head that I do not want to entertain as it is too grand...the possibility that because my [Focus] appears blank, and I can repeatedly continue to cast skills with no feeling of exhaustion...could mean that I can simply keep on casting skills as much as I want… </p> <br><p>BOOM </p> <br><p>It felt like something had exploded in my head as this idea came and my mind entertained it more and more. My heart was also beating fast that this could even be a possibility </p> <br><p>But...why not? From what I've seen so far, there is no value for my [Focus] attribute. Is it more logical to think that it is just a really high number that I somehow cannot see, or that because it is blank and I can still cast skills, I can simply continue to cast skills without any problem of depleting something? </p> <br><p>I took a deep breath to calm my nerves before I came to terms with a new plan. It was somewhat risky, but it will be fast and reduce any possible future problems, whether it be from monsters or hunters. </p> <br><p>The world after the apocalypse was vastly different, but still the same. Now even more filled with dangers and deaths. A hunter could easily be killed by monsters, robbed by other hunters, or killed by the government if they do not fall inline </p> <br><p>To secure my safety while rising up, I will need a highly defensive and offensive skill, and well as a speed supporting skill. Something of C rank or above would be highly effective, and yet the cheapest C rank skills start off at $500,000 </p> <br><p>So...How do I go about this?</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('4')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

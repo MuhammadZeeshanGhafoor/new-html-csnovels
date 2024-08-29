@@ -1,74 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="./assets/Site-Favicon.svg" type="image/x-icon">
 
-<link href="./output.css" rel="stylesheet">
-<!-- Include Redux library via CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
-<!-- <link rel="stylesheet" href="./styles.css" ></link> -->
-<link rel="shortcut icon" href="./assets/Site Favicon.svg" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-<title>Document</title>
+    <title>Signup - CS Novels </title>
+</head>
 
-<body>
-    <div id="toast-container"
-        class="hidden transition-effect absolute left-[40%]  top-2 w-32 h-20 rounded-md bg-slate-300 ">
-        text
-    </div>
-    <div>
-        <div class="flex justify-around">
-            <div class="w-[50%] bg-[#FAFBFC]">
-                <img src="./assets/Images/login.32e3bd42.png" alt="image" style="width: 600px; height: 600px;">
+<body class="">
+    <header class="bg-white py-5">
+        <nav class="w-full mx-auto max-w-[1360px] px-4">
+            <div class="flex items-center 2xl:gap-[160px] md:gap-10 gap-0 justify-between">
+
+                <div class="flex">
+                    <a href="/" class="-m-1.5 p-1.5">
+                        <img class="w-[140px] md:block hidden" src="./assets/images/csnovels-logo.png" alt="logo">
+                        <img class="min-w-[40px] block md:hidden" src="./assets/images/mob-logo.png" alt="logo">
+                    </a>
+                </div>
+                <form class="block lg:hidden max-w-[220px]">
+                    <div class="flex w-full relative">
+                        <input type="text" placeholder="Search"
+                            class="rounded-full text-xs focus:outline-none focus:ring-0 w-full max-w-[314px] border-0 bg-gray-3 h-12 pl-4 pr-12 placeholder:text-gray-4">
+                        <svg width="24" class="absolute right-4  top-1/2 -translate-y-1/2" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11 3.75C6.99594 3.75 3.75 6.99594 3.75 11C3.75 15.0041 6.99594 18.25 11 18.25C15.0041 18.25 18.25 15.0041 18.25 11C18.25 6.99594 15.0041 3.75 11 3.75ZM2.25 11C2.25 6.16751 6.16751 2.25 11 2.25C15.8325 2.25 19.75 6.16751 19.75 11C19.75 15.8325 15.8325 19.75 11 19.75C6.16751 19.75 2.25 15.8325 2.25 11Z"
+                                fill="#777980" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.1201 16.1201C16.413 15.8272 16.8878 15.8272 17.1807 16.1201L21.5307 20.4701C21.8236 20.763 21.8236 21.2378 21.5307 21.5307C21.2378 21.8236 20.763 21.8236 20.4701 21.5307L16.1201 17.1807C15.8272 16.8878 15.8272 16.413 16.1201 16.1201Z"
+                                fill="#909090" />
+                        </svg>
+
+                    </div>
+                </form>
+                <div class=" lg:hidden">
+                    <button type="button" onclick="navStatus('open')"
+                        class="open-nav-menu inline-flex items-center justify-center rounded-md text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden bg-white h-screen w-4/5 lg:h-auto lg:flex lg:gap-x-12 menu-dropdown z-40 lg:static top-0 absolute lg:mt-0 lg:w-auto left-0 p-5 lg:p-0"
+                    id="navigation">
+                    <div class="w-full flex items-center justify-between pb-5 lg:hidden">
+                        <a href="/">
+                            <img src="./assets/images/csnovels-logo.png" class="max-w-[140px] " alt="logo">
+                        </a>
+
+                        <button class="close-nav-menu" onclick="navStatus('close')">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0003 17.3147C10.7443 17.3147 10.4883 17.2168 10.2933 17.0218L6.29325 13.0218C5.90225 12.6308 5.90225 11.9987 6.29325 11.6077L10.2933 7.6077C10.6842 7.2167 11.3163 7.2167 11.7073 7.6077C12.0983 7.9987 12.0983 8.63077 11.7073 9.02177L8.41434 12.3147L11.7073 15.6077C12.0983 15.9987 12.0983 16.6308 11.7073 17.0218C11.5123 17.2168 11.2563 17.3147 11.0003 17.3147Z"
+                                    fill="#4A4C56" />
+                                <path opacity="0.4"
+                                    d="M17.0003 17.3147C16.7443 17.3147 16.4883 17.2168 16.2933 17.0218L12.2932 13.0218C11.9022 12.6308 11.9022 11.9987 12.2932 11.6077L16.2933 7.6077C16.6842 7.2167 17.3163 7.2167 17.7073 7.6077C18.0983 7.9987 18.0983 8.63077 17.7073 9.02177L14.4143 12.3147L17.7073 15.6077C18.0983 15.9987 18.0983 16.6308 17.7073 17.0218C17.5123 17.2168 17.2563 17.3147 17.0003 17.3147Z"
+                                    fill="#4A4C56" />
+                            </svg>
+
+                        </button>
+                    </div>
+                    <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-4 gap-2 mt-8 lg:mt-0">
+                        <li>
+                            <a href="/"
+                                class="text-base block transition-all duration-300 hover:text-yellow-1 text-gray-2 px-1.5 lg:py-3 py-2 font-NotoSansJP">Home</a>
+                        </li>
+                        <li>
+
+                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                                class="flex transition-all duration-300 hover:text-yellow-1 font-NotoSansJP items-center gap-2.5 text-base text-gray-2 px-1.5 lg:py-3 py-2"
+                                type="button">
+                                Category
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.8833 1.5L6.54167 6.7C6.46393 6.79678 6.37073 6.87376 6.26764 6.92634C6.16455 6.97893 6.05368 7.00603 5.94167 7.00603C5.82965 7.00603 5.71878 6.97893 5.61569 6.92634C5.5126 6.87376 5.4194 6.79678 5.34167 6.7L1 1.5"
+                                        stroke="currentColor" stroke-width="1.25" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </button>
+
+                            <!-- Dropdown menu -->
+                            <div id="dropdown"
+                                class="z-10 font-NotoSansJP hidden bg-white lg:absolute translate-y-0 relative divide-y divide-gray-100 rounded-lg lg:shadow w-full lg:w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDefaultButton">
+                                    <li>
+                                        <a href="/profile?tab=dashboard"
+                                            class="block px-4 py-2  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="/profile?tab=setting"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="/profile?tab=earning"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="signOut()"
+                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                            out</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="block">
+                            <a href="https://discord.gg/HwMzcdJ"
+                                class="text-base block transition-all w-full duration-300 hover:text-yellow-1 text-gray-2 px-1.5 lg:py-3 py-2 font-NotoSansJP">Community</a>
+                        </li>
+                    </ul>
+
+                    <div class="lg:hidden flex gap-3 flex-col mt-[90px]">
+                        <a href="/login"
+                            class="text-base text-center border border-gray-8 rounded-full text-gray-2 text-nowrap px-8 py-3 font-NotoSansJP">Log
+                            In </a>
+                        <a href="/signup"
+                            class="text-base text-gray-2 text-nowrap px-8 py-3 transition-all duration-300 hover:bg-yellow-500 bg-yellow-1 rounded-full font-NotoSansJP flex items-center justify-center">Sign
+                            Up </a>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex lg:justify-end">
+                    <form>
+                        <div class="flex w-full relative">
+                            <input type="text" placeholder="Search"
+                                class="rounded-full focus:outline-none focus:ring-0 w-full max-w-[314px] border-0 bg-gray-3 h-12 pl-7 pr-14 placeholder:text-gray-4">
+                            <svg width="24" class="absolute right-6 top-1/2 -translate-y-1/2" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11 3.75C6.99594 3.75 3.75 6.99594 3.75 11C3.75 15.0041 6.99594 18.25 11 18.25C15.0041 18.25 18.25 15.0041 18.25 11C18.25 6.99594 15.0041 3.75 11 3.75ZM2.25 11C2.25 6.16751 6.16751 2.25 11 2.25C15.8325 2.25 19.75 6.16751 19.75 11C19.75 15.8325 15.8325 19.75 11 19.75C6.16751 19.75 2.25 15.8325 2.25 11Z"
+                                    fill="#777980" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.1201 16.1201C16.413 15.8272 16.8878 15.8272 17.1807 16.1201L21.5307 20.4701C21.8236 20.763 21.8236 21.2378 21.5307 21.5307C21.2378 21.8236 20.763 21.8236 20.4701 21.5307L16.1201 17.1807C15.8272 16.8878 15.8272 16.413 16.1201 16.1201Z"
+                                    fill="#909090" />
+                            </svg>
+
+                        </div>
+                    </form>
+                    <a href="/login" class="text-base text-gray-2 text-nowrap px-8 py-3 font-NotoSansJP">Log In </a>
+                    <a href="/signup"
+                        class="text-base text-gray-2 text-nowrap px-8 py-2.5 transition-all duration-300 hover:bg-yellow-500 bg-yellow-1 rounded-full font-NotoSansJP flex items-center justify-center">Sign
+                        Up </a>
+                </div>
+
             </div>
-            <div class="w-[50%] flex flex-col mx-auto items-center">
-                <b
-                    class="text-5xl font-extrabold text-blue-900 flex justify-center mx-auto md:block md:mx- mt-10 mb-20">
-                    <span class="text-[#F9C559]">CS</span>novels
-                </b>
-                <b class="text-[#F7943A] text-start -ml-36 text-lg mt-4 mb-7">
-                    Login to access your account
-                </b>
-                <div class="mb-3">
-                    <p class="text-center text-sm " id="alert-text"></p>
-                    <p class="mb-2">
-                        EMAIL / PHONE
-                    </p>
-                    <input type="email" name="email" id="email"
-                        class="outline-none w-96 border-2 border-[#BFC7DA] py-3 px-5 rounded-lg" placeholder="email...">
-                </div>
-                <div class="mb-2">
-                    <p class="mb-2">
-                        PASSWORD
-                    </p>
-                    <input type="password" name="password" id="password"
-                        class="outline-none w-96 border-2 border-[#BFC7DA] py-3 px-5 rounded-lg"
-                        placeholder="password...">
-                </div>
-                <b class="text-[#F7943A] text-lg -mr-56 mb-3">
-                    Forgot Password?
-                </b>
-                <div>
-                    <button onclick="signIn()"
-                        class="outline-none w-96 border-2 border-[#040220] py-3 px-5 rounded-lg bg-[#040220] text-white font-bold mb-3">Login</button>
-                    <p>
-                        Don’t have an account? <b class="text-[#F7943A]">
-                            Register
-                        </b>
+        </nav>
+    </header>
+    <div
+        class="w-full min-h-screen  bg-[url('/assets/images/hero-banner-zoom.png')] flex flex-col items-center justify-center bg-cover bg-center  ">
 
+        <!-- alert box -->
+        <div class=" fixed backdrop-blur-lg md:absolute hidden border  w-[90%] md:w-[35%] mt-10 h-24  top-0 z-40 rounded-lg self-center items-center justify-center"
+            id="alert-box">
+            <button>close</button>
+
+        </div>
+        <div class=" w-full h-screen flex items-center justify-center   text-white">
+            <div class="w-[80%] h-[50%] md:h-[80%] lg:w-[34%] backdrop-blur-xl rounded-xl border-[2px] border-[#7b7b7b9f] flex flex-col items-center justify-around "
+                id="form-div">
+                <img src="./assets/logo-light.png" class="w-52" />
+                <p class="text-xl text-white font-bold">Log<span class="text-yellow-400">In</span></p>
+
+
+                <div class="w-full h-[40%] lg:h-[70%] flex flex-col items-center justify-around">
+
+                    <input type="text" name="email" id="email" placeholder="Email"
+                        class=" border-b-[1px] border-[#7b7b7b9f] outline-none p-2 md:p-4 w-[90%] bg-[#cec6c62b] rounded" />
+
+
+                    <input type="text" name="password" id="password" placeholder="password"
+                        class=" border-b-[1px] border-[#7b7b7b9f] outline-none p-2 md:p-4 w-[90%] bg-[#cec6c62b]  rounded" />
+
+                    <p>
+                        Create new account!
+                        <a href="/signup" class="font-semibold bg-blue-700 underline p-1 rounded"> Sign Up</a>
                     </p>
+                    <button class="w-32 h-11 bg-slate-700 text-white rounded-md" onclick="signIn()">
+                        Login
+                    </button>
                 </div>
+
+
+
+
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <footer class="w-full bg-zinc-900 text-gray-400 lg:pt-[110px] pt-14">
+        <div class="w-full mx-auto max-w-[1360px] px-4">
+            <div class="w-full flex lg:gap-[51px] gap-8 lg:pb-16 pb-6 lg:flex-row flex-col">
+                <div class="w-full max-w-[420px] pr-6">
+                    <a href="/">
+                        <img src="./assets/images/footer-logo.svg" class="lg:max-w-[200px] max-w-[134px]"
+                            alt="footer-logo">
+                    </a>
+                    <p class="lg:text-lg text-base text-gray-8 my-4 font-NotoSansJP">Csnovels is Digital eBooks
+                        <br> are Available For Everyone.Enjoy the convenience of reading anytime, anywhere
+                    </p>
+                    <ul class="flex items-center gap-4">
+                        <li>
+                            <a href="#">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.7301 0.160156C7.85267 0.160156 0.65625 7.35657 0.65625 16.234C0.65625 25.1115 7.85267 32.3079 16.7301 32.3079C25.6076 32.3079 32.804 25.1115 32.804 16.234C32.804 7.35657 25.6076 0.160156 16.7301 0.160156ZM20.5376 11.2679H18.1215C17.8352 11.2679 17.5171 11.6446 17.5171 12.1453V13.8899H20.5393L20.0822 16.378H17.5171V24.8892H14.6657V16.378H12.0788V13.8899H14.6657V12.4265C14.6657 10.3269 16.1223 8.62072 18.1215 8.62072H20.5376V11.2679Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.166992" y="0.708984" width="32.1478" height="32.1478" rx="16.0739"
+                                        fill="white" />
+                                    <path
+                                        d="M21.4407 8.74609H24.2136L18.1557 15.5548L25.2823 24.82H19.7014L15.3309 19.2007L10.33 24.82H7.55547L14.035 17.5373L7.19922 8.74609H12.9201L16.8707 13.8823L21.4391 8.74609H21.4407ZM20.4676 23.1879H22.004L12.0861 10.2925H10.4373L20.4676 23.1879Z"
+                                        fill="#0F172A" />
+                                </svg>
+
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.6462 0.708984C7.76868 0.708984 0.572266 7.9054 0.572266 16.7829C0.572266 25.6604 7.76868 32.8568 16.6462 32.8568C25.5236 32.8568 32.72 25.6604 32.72 16.7829C32.72 7.9054 25.5236 0.708984 16.6462 0.708984ZM12.7114 23.4452H9.45644V12.9703H12.7114V23.4452ZM11.0638 11.6844C10.0358 11.6844 9.37105 10.9561 9.37105 10.0553C9.37105 9.13605 10.0559 8.42947 11.1057 8.42947C12.1555 8.42947 12.7985 9.13605 12.8186 10.0553C12.8186 10.9561 12.1555 11.6844 11.0638 11.6844ZM24.5994 23.4452H21.3444V17.6401C21.3444 16.2889 20.8722 15.3714 19.6952 15.3714C18.796 15.3714 18.2619 15.9926 18.0258 16.5903C17.9388 16.803 17.917 17.1044 17.917 17.4041V23.4435H14.6604V16.3107C14.6604 15.003 14.6185 13.9097 14.575 12.9687H17.403L17.552 14.4237H17.6173C18.0459 13.7406 19.0957 12.7326 20.8522 12.7326C22.9937 12.7326 24.5994 14.1675 24.5994 17.2517V23.4452Z"
+                                        fill="white" />
+                                </svg>
+
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="grid md:grid-cols-3 grid-cols-2 gap-11 lg:gap-0 lg:w-3/4 w-full">
+                    <div class="">
+                        <div class="lg:mb-8 mb-4">
+                            <h3 class=" font-NotoSansJP lg:text-base text-lg text-white font-bold mb-3">Quick links</h3>
+                            <div class="border-b-2 border-yellow-1 w-12"></div>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="/book-search?by=type&type=urban"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Urban</a>
+                            </li>
+                            <li><a href="/book-search?by=type&type=scifi"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Sci-Fi</a>
+                            </li>
+                            <li><a href="/book-search?by=type&type=fantasy"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Fantasy</a>
+                            </li>
+                            <li><a href="/book-search?by=type&type=romance"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Romance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="lg:mb-8 mb-4">
+                            <h3 class=" font-NotoSansJP lg:text-base text-lg text-white font-bold mb-3">Recourses</h3>
+                            <div class="border-b-2 border-yellow-1 w-12"></div>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li><a href="https://play.google.com/store/apps/details?id=com.csnovels.flutter&pcampaignid=web_share"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Download
+                                    app</a></li>
+                            <li><a href="/book-search?by=type&type=all"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Book
+                                    Details </a></li>
+                            <li><a href="#"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Reading
+                                    Book</a></li>
+                            <li><a href="#"
+                                    class="text-gray-8 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">Subscriotion</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="min-w-[260px]">
+                        <div class="lg:mb-8 mb-4">
+                            <h3 class=" font-NotoSansJP lg:text-base text-lg text-white font-bold mb-3">Get in touch
+                            </h3>
+                            <div class="border-b-2 border-yellow-1 w-12"></div>
+                        </div>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <p class="text-gray-8 flex gap-2.5  lg:text-lg text-base font-NotoSansJP">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 2C9.81276 2.00258 7.71584 2.8726 6.16923 4.41922C4.62261 5.96584 3.75259 8.06276 3.75001 10.25C3.74739 12.0374 4.33124 13.7763 5.41201 15.2C5.41201 15.2 5.63701 15.4963 5.67376 15.539L12 23L18.3293 15.5353C18.3623 15.4955 18.588 15.2 18.588 15.2L18.5888 15.1978C19.669 13.7747 20.2526 12.0366 20.25 10.25C20.2474 8.06276 19.3774 5.96584 17.8308 4.41922C16.2842 2.8726 14.1873 2.00258 12 2ZM12 13.25C11.4067 13.25 10.8266 13.0741 10.3333 12.7444C9.83995 12.4148 9.45543 11.9462 9.22837 11.3981C9.00131 10.8499 8.9419 10.2467 9.05765 9.66473C9.17341 9.08279 9.45913 8.54824 9.87869 8.12868C10.2982 7.70912 10.8328 7.4234 11.4147 7.30764C11.9967 7.19189 12.5999 7.2513 13.1481 7.47836C13.6962 7.70542 14.1648 8.08994 14.4944 8.58329C14.8241 9.07664 15 9.65666 15 10.25C14.999 11.0453 14.6826 11.8078 14.1202 12.3702C13.5578 12.9326 12.7954 13.249 12 13.25Z"
+                                            fill="white" />
+                                    </svg>
+                                    Hauptstraesse 25
+                                    8840 Einsiedeln
+                                    Schwwiz
+                                </p>
+                            </li>
+                            <li><a href="mailto:info@Csnovels.com"
+                                    class="text-gray-8 flex gap-2.5 items-center lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.5 8.6691V17.25C1.5 18.9069 2.84315 20.25 4.5 20.25H19.5C21.1569 20.25 22.5 18.9069 22.5 17.25V8.6691L13.5723 14.1631C12.6081 14.7564 11.3919 14.7564 10.4277 14.1631L1.5 8.6691Z"
+                                            fill="white" />
+                                        <path
+                                            d="M22.5 6.90783V6.75C22.5 5.09315 21.1569 3.75 19.5 3.75H4.5C2.84315 3.75 1.5 5.09315 1.5 6.75V6.90783L11.2139 12.8856C11.696 13.1823 12.304 13.1823 12.7861 12.8856L22.5 6.90783Z"
+                                            fill="white" />
+                                    </svg>
+
+                                    info@Csnovels.com
+                                </a>
+                            </li>
+
+                            <li><a href="tel:+91 729 096-3676"
+                                    class="text-gray-8 flex items-center gap-2.5 lg:text-lg text-base font-NotoSansJP transition-all duration-300 hover:text-yellow-1">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.9 16.2556C19.5333 16.2556 18.2111 16.0333 16.9778 15.6333C16.7846 15.5678 16.5768 15.5581 16.3783 15.6053C16.1798 15.6524 15.9987 15.7546 15.8556 15.9L14.1111 18.0889C10.9667 16.5889 8.02222 13.7556 6.45556 10.5L8.62222 8.65556C8.92222 8.34444 9.01111 7.91111 8.88889 7.52222C8.47778 6.28889 8.26667 4.96667 8.26667 3.6C8.26667 3 7.76667 2.5 7.16667 2.5H3.32222C2.72222 2.5 2 2.76667 2 3.6C2 13.9222 10.5889 22.5 20.9 22.5C21.6889 22.5 22 21.8 22 21.1889V17.3556C22 16.7556 21.5 16.2556 20.9 16.2556Z"
+                                            fill="white" />
+                                    </svg>
+
+                                    +91 729 096-3676
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6 border-t-[0.5px] border-gray-10">
+                <p class="text-center lg:text-base text-sm font-NotoSansJP text-white">Copyright © 2024 Csnovels. All
+                    rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
     <script src="./login.js"></script>
+    <script>
+        function navStatus(status) {
+            let nav = document.getElementById("navigation")
+            if (status == "close") {
+
+                nav.classList.add("hidden")
+            } else {
+                nav.classList.remove("hidden")
+
+                nav.classList.add("block")
+
+            }
+        }
+    </script>
 </body>
 
 </html>

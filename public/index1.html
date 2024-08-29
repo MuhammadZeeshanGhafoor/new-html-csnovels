@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./assets/Site-Favicon.svg" type="image/x-icon">
+
+<link href="./output.css" rel="stylesheet">
+<!-- Include Redux library via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+<!-- <link rel="stylesheet" href="./styles.css" ></link> -->
+<link rel="shortcut icon" href="./assets/Site Favicon.svg" type="image/x-icon">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<title>Document</title>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th {
+        background: #F9C559;
+        text-align: left;
+        padding: 12px 5px;
+    }
+
+
+
+    tr:nth-child(odd) {
+        background-color: #FAFAFA;
+    }
+
+    .rounded-table {
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        .rounded-table {
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+            padding: 12px;
+        }
+
+        td {
+            text-align: left;
+            padding: 10px 5px;
+
+        }
+    }
+
+    @media (max-width: 767px) {
+        .rounded-table {
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+
+        td,
+        th {
+            text-align: left;
+            padding: 10px 5px;
+            text-wrap: nowrap;
+            text-overflow: ellipsis;
+            font-size: small;
+        }
+
+        th {
+            display: none;
+        }
+    }
+</style>
+</head>
+
+<body class=" w-full flex flex-col items-center font-montessart">
+    <!-- Top NavBar -->
+    <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
+        <div class="flex items-center justify-between p-2 w-full h-2/3 ">
+            <img src="./assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
+            <div class="w-7/12">
+                <input type="text"
+                    class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                    placeholder="Search..." />
+                <img src="./assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
+            </div>
+            <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
+                <p class=" text-3xl">
+                    Z
+                </p>
+            </div>
+        </div>
+        <ul class="w-full flex justify-between p-1 overflow-hidden">
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
+                id="navbar">Category</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
+            <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
+        </ul>
+    </div>
+
+    <!-- DESKTOP NAVBAR -->
+    <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
+        <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
+            <img src="./assets/logo-dark.png" alt="logo_mobile" class=" h-10">
+            <div class="w-4/12">
+                <input type="text"
+                    class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
+                    placeholder="Search..." />
+                <img src="./assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
+            </div>
+            <div class="w-2/12 flex items-center justify-between font-light">
+                <p id="increment">Subscribe</p>
+                <p>Discord</p>
+                <img src="./assets//menu.png" class="w-8 cursor-pointer" onclick="toggleProfile('profile')" />
+            </div>
+            <div id="profile"
+                class="w-96 h-96 bg-[#333333] text-white rounded-xl shadow-xl top-16 right-32 absolute hidden">
+                <div class="mx-5 mt-8 mb-5">
+                    <div class="flex justify-start items-center space-x-3">
+                        <div class="flex justify-center items-center h-10 w-10 rounded-full bg-blue-500 ">
+                            <p class="  text-white font-bold text-center text-xl">
+                                U
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold">
+                                ABCD
+                            </p>
+                            <p>
+                                abc@gmail.com
+                            </p>
+                            <i class="fa fa-star text-yellow-400 text-lg"></i>
+                        </div>
+                    </div>
+                    <div class="text-lg space-y-5 mt-5 font-semibold mx-1 ">
+                        <p class="cursor-pointer" onclick="()=>handleProfileClick('profile')">
+                            My Profile
+                        </p>
+                        <p class="cursor-pointer">
+                            Favorites
+                        </p>
+                        <p class="cursor-pointer">
+                            Bookmarks
+                        </p>
+                        <p class="cursor-pointer">
+                            Contact Support
+                        </p>
+                        <p class="cursor-pointer">
+                            Sign Out
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div class="hidden md:flex h-72 w-full bg-black items-center justify-center">
+        <img src="./assets/carousel-img.jpeg" alt="">
+    </div>
+
+    <!-- MOST POPULAR -->
+    <div class=" flex flex-col items-center max-w-screen-lg md:w-9/12 justify-center">
+        <div class="flex w-full h-24 p-2 ">
+            <div
+                class="md:text-black md:border-l-4 w-full justify-between md:border-yellow-400 h-10 mt-14 flex items-center">
+                <h1 class=" font-medium p-3 text-[#212529] md:text-2xl">
+                    MOST POPULAR
+                </h1>
+                <div class="hidden md:block bg-gray-200 text-gray-400 rounded-2xl px-2 py-1 mr-14 text-xs ">
+                    <p class="hidden md:inline-block font-bold">View all ></p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap w-full px-3 gap-2 mt-3 md:mt-12 justify-between " id="most-popular">
+
+            <!-- <div class="flex flex-col items-start w-20 h-44 md:h-36  md:w-64 md:flex-row ">
+                <img src="./assets/Images/cover.png" class="rounded-md w-full md:w-2/5" onclick="openPage()">
+                <div class="w-full md:h-full flex flex-col items-start md:justify-between  p-1 text-[#26292d] ">
+                    <p class="w-full text-left  text-nowrap overflow-hidden text-ellipsis text-xs font-medium">
+                        Book title
+                        goes
+                        here...</p>
+                    <div class="w-full flex flex-col md:flex-row  justify-between items-center font-bold text-gray-400">
+                        <div class="flex w-3/4 justify-start  self-start items-center ">
+                            <img src="./assets/icon.png" class="w-5">
+                            <p class=" text-xs" title="type">Urban</p>
+                        </div>
+                        <div class="w-full md:2/5 flex justify-end">
+                            <p class="text-xs" title="status">Ongoing</p>
+                        </div>
+                    </div>
+                    <p class="w-full text-xs h-3/6  hidden md:inline-block">
+                        Lorem ipsum dolor sitamet,
+                        consectetur adipis cingelit.
+                        Aenean iddictum erat,vitae
+                    </p>
+                    <div class="hidden md:flex gap-1 items-center  text-xs">
+                        <img src="./assets/book-icon-mobile.png" class="w-3 h-5 ">
+                        <p class="text-nowrap overflow-hidden text-ellipsis">
+                            3221 chapters
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- MOST POP wrapper ending -->
+        </div>
+        <!-- MOST POP Main Div End -->
+    </div>
+    <!-- On Going Start -->
+
+    <div class=" flex flex-col items-start max-w-screen-lg md:w-9/12 justify-start">
+        <div class="flex w-full h-24 p-2 mt-8">
+            <div
+                class="md:text-black md:border-l-4 w-full justify-between md:border-yellow-400 h-10 mt-14 flex items-center">
+                <h1 class=" font-medium p-3 text-[#212529] md:text-2xl">
+                    ONGOING NOVELS
+                </h1>
+                <div class="hidden md:block bg-gray-200 text-gray-400 rounded-2xl px-2 py-1 mr-14 text-xs ">
+                    <p class="hidden md:inline-block font-bold">View all ></p>
+                </div>
+            </div>
+        </div>
+        <!-- BOOKSSS -->
+
+
+        <!-- <div class="flex flex-wrap gap-3 gap-y-5 md:gap-6 justify-center md:justify-start self-start md:mt-20" id="onGoing"> -->
+        <div class="flex flex-wrap w-full px-3 gap-2 gap-y-6 mt-3 md:mt-12 justify-between " id="onGoing">
+
+            <!-- <div class="h-[110px] w-[69px] md:w-44 md:h-56  flex flex-col ">
+                <img src="./assets/Images/cover.png" class="h-[81px] w-[59px] md:h-52 md:w-36  ">
+                <h1 class="text-xs  md:mt-0 w-[55px] md:w-44 font-semibold md:font-bold md:text-sm md:text-gray-600">
+                    Book Title Here</h1>
+                <div class="hidden md:flex gap-1 items-center  text-xs">
+                    <img src="./assets/book-icon-mobile.png" class="w-3 h-5 ">
+                    <p class="text-nowrap overflow-hidden text-ellipsis font-light">
+                        3221 chapters
+                    </p>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- ONGOINH NOVELS END -->
+    </div>
+
+
+
+
+
+
+
+    <!-- TOP 10  -->
+
+    <div class="w-full flex flex-col md:items-center md:w-10/12 justify-center">
+        <div class="flex w-full h-32 p-2 ">
+            <div
+                class="md:text-black md:border-l-4 w-full justify-between md:border-[#FFC240] h-10 mt-14 flex items-center">
+                <h1 class=" font-medium p-3 text-[#38393a] md:text-2xl">
+                    TOP 10 RANKING
+                </h1>
+                <div class="hidden md:block bg-gray-200 text-gray-400 rounded-2xl px-2 py-1 mr-14 text-xs ">
+                    <p class="hidden md:inline-block font-bold">View all ></p>
+                </div>
+            </div>
+        </div>
+        <hr class="border-b-2 w-full">
+        <!-- MAIN SECODARY DIV -->
+        <div class="w-full flex  flex-col md:flex-row justify-between items-center mt-10 p-5">
+            <div class="flex flex-col w-full md:w-7/12 h-full ">
+                <div class=" w-full ">
+                    <p class="border-b-4  border-[#FFC240] font-medium  text-[#38393a] md:text-2xl">TOP 10.</p>
+                </div>
+
+                <!-- Main book wrapper -->
+
+                <div class="w-full flex flex-wrap justify-between items-start overflow-scroll md:overflow-hidden"
+                    id="top10">
+
+                    <!-- Single page -->
+                    <!-- <div class="w-96 md:w-[46%] p-1 mt-5 flex  ">
+                        <img src="./assets/Images/top10/1.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                        <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                        <div class="flex flex-col ">
+                            <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The
+                                Invisible rich man</p>
+                            <p title="geners" class="text-gray-600">Modern Life</p>
+                            <div class="flex gap-1 items-center h-8 justify-start ">
+                                <img src="./assets/star.png" class="w-4 h-4">
+                                <p class="text-gray-600 text-center mt-1">2.3</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-96 md:w-[46%] p-1 mt-5 flex ">
+                        <img src="./assets/Images/top10/2.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                        <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                        <div class="flex flex-col ">
+                            <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The
+                                Invisible rich man</p>
+                            <p title="geners" class="text-gray-600">Modern Life</p>
+                            <div class="flex gap-1 items-center h-8 justify-start ">
+                                <img src="./assets/star.png" class="w-4 h-4">
+                                <p class="text-gray-600 text-center mt-1">2.3</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-96 md:w-[46%] p-1 mt-5 flex ">
+                        <img src="./assets/Images/top10/3.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                        <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                        <div class="flex flex-col ">
+                            <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The
+                                Invisible rich man</p>
+                            <p title="geners" class="text-gray-600">Modern Life</p>
+                            <div class="flex gap-1 items-center h-8 justify-start ">
+                                <img src="./assets/star.png" class="w-4 h-4">
+                                <p class="text-gray-600 text-center mt-1">2.3</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-96 md:w-[46%] p-1 mt-5 flex ">
+                        <img src="./assets/Images/top10/4.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                        <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                        <div class="flex flex-col ">
+                            <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The
+                                Invisible rich man</p>
+                            <p title="geners" class="text-gray-600">Modern Life</p>
+                            <div class="flex gap-1 items-center h-8 justify-start ">
+                                <img src="./assets/star.png" class="w-4 h-4">
+                                <p class="text-gray-600 text-center mt-1">2.3</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-96 md:w-[46%] p-1 mt-5 flex ">
+                        <img src="./assets/Images/top10/5.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                        <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                        <div class="flex flex-col ">
+                            <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The
+                                Invisible rich man</p>
+                            <p title="geners" class="text-gray-600">Modern Life</p>
+                            <div class="flex gap-1 items-center h-8 justify-start ">
+                                <img src="./assets/star.png" class="w-4 h-4">
+                                <p class="text-gray-600 text-center mt-1">2.3</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-96 md:w-[46%] p-1 mt-5 flex ">
+                        <img src="./assets/Images/top10/6.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                        <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                        <div class="flex flex-col ">
+                            <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The
+                                Invisible rich man</p>
+                            <p title="geners" class="text-gray-600">Modern Life</p>
+                            <div class="flex gap-1 items-center h-8 justify-start ">
+                                <img src="./assets/star.png" class="w-4 h-4">
+                                <p class="text-gray-600 text-center mt-1">2.3</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="w-96 md:w-[46%] p-1 mt-5 flex ">
+                        <img src="./assets/Images/top10/7.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                        <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                        <div class="flex flex-col ">
+                            <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The
+                                Invisible rich man</p>
+                            <p title="geners" class="text-gray-600">Modern Life</p>
+                            <div class="flex gap-1 items-center h-8 justify-start ">
+                                <img src="./assets/star.png" class="w-4 h-4">
+                                <p class="text-gray-600 text-center mt-1 ">2.3</p>
+                            </div>
+
+                        </div>
+                    </div> -->
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="w-full  md:w-2/5 h-full flex flex-col items-start mt-2 md:mt-[99px] md:ml-12">
+                <div class=" w-full flex items-start ">
+                    <p class="border-b-4 w-4/5 border-[#FFC240]  font-medium  text-[#38393a] md:text-xl text-left">
+                        RECENT ARRIVALS</p>
+                </div>
+
+
+                <!-- SINGLE BOOK -->
+                <div class="w-full md:w-[46%] p-1 mt-5 flex ">
+                    <img src="./assets/Images/top10/8.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                    <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                    <div class="flex flex-col ">
+                        <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The Invisible
+                            rich man</p>
+                        <p title="geners" class="text-gray-600">Modern Life</p>
+                        <div class="flex gap-1 items-center h-8 justify-start ">
+                            <img src="./assets/star.png" class="w-4 h-4">
+                            <p class="text-gray-600 text-center mt-1">2.3</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[46%] p-1 mt-5 flex ">
+                    <img src="./assets/Images/top10/9.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                    <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                    <div class="flex flex-col ">
+                        <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The Invisible
+                            rich man</p>
+                        <p title="geners" class="text-gray-600">Modern Life</p>
+                        <div class="flex gap-1 items-center h-8 justify-start ">
+                            <img src="./assets/star.png" class="w-4 h-4">
+                            <p class="text-gray-600 text-center mt-1">2.3</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[46%] p-1 mt-5 flex ">
+                    <img src="./assets/Images/top10/10.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                    <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                    <div class="flex flex-col ">
+                        <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The Invisible
+                            rich man</p>
+                        <p title="geners" class="text-gray-600">Modern Life</p>
+                        <div class="flex gap-1 items-center h-8 justify-start ">
+                            <img src="./assets/star.png" class="w-4 h-4">
+                            <p class="text-gray-600 text-center mt-1">2.3</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[46%] p-1 mt-5 flex ">
+                    <img src="./assets/Images/top10/11.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                    <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                    <div class="flex flex-col ">
+                        <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The Invisible
+                            rich man</p>
+                        <p title="geners" class="text-gray-600">Modern Life</p>
+                        <div class="flex gap-1 items-center h-8 justify-start ">
+                            <img src="./assets/star.png" class="w-4 h-4">
+                            <p class="text-gray-600 text-center mt-1">2.3</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="w-full md:w-[46%] p-1 mt-5 flex ">
+                    <img src="./assets/Images/top10/12.png" class="w-16 h-20 crisp-edges rounded-[5px]">
+                    <p title="index number " class="text-red-500 font-bold text-sm mx-4">01</p>
+                    <div class="flex flex-col ">
+                        <p class="max-w-44 text-nowrap overflow-hidden text-ellipsis text-sm font-bold">The Invisible
+                            rich man</p>
+                        <p title="geners" class="text-gray-600">Modern Life</p>
+                        <div class="flex gap-1 items-center h-8 justify-start ">
+                            <img src="./assets/star.png" class="w-4 h-4">
+                            <p class="text-gray-600 text-center mt-1">2.3</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TOP 10 END -->
+    </div>
+
+    <div class="w-[80%] md:mt-28">
+        <div
+            class="w-full mx-auto flex flex-col md:flex md:flex-row md:items-center md:space-x-6 space-y-4 md:space-y-0 relative">
+            <div class="relative md:h-44 md:w-1/2 rounded-2xl">
+                <img src="./assets/Images/urban.png" alt="" class="h-full w-full rounded-2xl">
+                <div class="absolute inset-0 flex items-center justify-center z-10">
+                    <p class="text-white text-2xl font-bold">Urban</p>
+                </div>
+            </div>
+            <div class="relative md:h-44 md:w-1/2 rounded-2xl">
+                <img src="./assets/Images/urban.png" alt="" class="h-full w-full rounded-2xl">
+                <div class="absolute inset-0 flex items-center justify-center z-10">
+                    <p class="text-white text-2xl font-bold">Sci-Fi</p>
+                </div>
+            </div>
+            <div class="relative md:h-44 md:w-1/2 rounded-2xl">
+                <img src="./assets/Images/urban.png" alt="" class="h-full w-full rounded-2xl">
+                <div class="absolute inset-0 flex items-center justify-center z-10">
+                    <p class="text-white text-2xl font-bold">Fantasy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Completed  start-->
+    <div class="w-full  flex flex-wrap flex-col items-center md:w-5/6 justify-center mx-auto">
+        <div class="flex w-full h-24 p-2 mb-12">
+            <div
+                class="md:text-black md:border-l-4 w-full justify-between md:border-yellow-400 h-10 mt-14 flex items-center">
+                <b class=" font-bold p-3 text-[#212529] text-2xl flex justify-center mx-auto md:mx-0 md:block">
+                    COMPLETED NOVELS
+                </b>
+                <div class="hidden md:block bg-gray-200 text-gray-400 rounded-2xl px-6 py-2 ">
+                    <p class="hidden md:inline-block font-bold">View all ></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="flex flex-col md:flex md:flex-row md:justify-between md:space-x-3 " id="Completed"> -->
+        <div class="flex flex-wrap w-full px-3 gap-2 mt-3 md:mt-12 justify-between" id="Completed">
+
+            <!-- <div class="mb-5 w-4/5 md:w-1/2 mx-auto">
+                <img src="./assets/Images/movies.png" alt="" class="h-60 w-52 rounded-lg">
+                <b class="">
+                    Battle Through The Heavens
+                </b>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="./assets/Images/Chapter Count Icon.svg" alt="" class="h-4 w-4">
+                        Chapters
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="mb-5 w-4/5 md:w-1/2 mx-auto">
+                <img src="./assets/Images/movies.png" alt="" class="h-60 w-52 rounded-lg">
+                <b class="">
+                    Battle Through The Heavens
+                </b>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="./assets/Images/Chapter Count Icon.svg" alt="" class="h-4 w-4">
+                        Chapters
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="mb-5 w-4/5 md:w-1/2 mx-auto">
+                <img src="./assets/Images/movies.png" alt="" class="h-60 w-52 rounded-lg">
+                <b class="">
+                    Battle Through The Heavens
+                </b>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="./assets/Images/Chapter Count Icon.svg" alt="" class="h-4 w-4">
+                        Chapters
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="mb-5 w-4/5 md:w-1/2 mx-auto">
+                <img src="./assets/Images/movies.png" alt="" class="h-60 w-52 rounded-lg">
+                <b class="">
+                    Battle Through The Heavens
+                </b>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="./assets/Images/Chapter Count Icon.svg" alt="" class="h-4 w-4">
+                        Chapters
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <div class="mb-5 w-4/5 md:w-1/2 mx-auto">
+                <img src="./assets/Images/movies.png" alt="" class="h-60 w-52 rounded-lg">
+                <b class="">
+                    Battle Through The Heavens
+                </b>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="./assets/Images/Chapter Count Icon.svg" alt="" class="h-4 w-4">
+                        Chapters
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+
+    <!-- End completed Movies -->
+
+
+
+    <!--  Recent update-->
+    <div class="w-full md:w-5/6 mx-auto ">
+        <b class="md:text-4xl text-center md:my-16 my-10 w-full  justify-center hidden md:block">
+            Recent Chapter Updates
+        </b>
+
+        <div class="md:border-[5px] md:-mt-4 md:border-[#F9C559] md:rounded-2xl mb-10 md:shadow-2xl text">
+            <table class="rounded-table">
+                <tr id="hide">
+                    <th>Book</th>
+                    <th>Chapter</th>
+                    <th>Time</th>
+                    <th></th>
+                </tr>
+                <div class="bg-[#F9C559] rounded-t-xl py-3 md:hidden">
+                    <b class="text-xl text-center w-full flex justify-center">
+                        Recent Chapter Updates
+                    </b>
+                    <p class="text-center w-full flex justify-center ">
+                        TAP TO BEING READING
+                    </p>
+                </div>
+                <tr class="text-left text-nowrap overflow-hidden text-ellipsis text-xs w-20">
+                    <td>The Amazing Son In Lawe</td>
+                    <td>5689</td>
+                    <td>2mth</td>
+                    <td><button class="bg-[#F9C559] md:px-8 px-4 py-1 rounded-3xl font-bold">Read</button></td>
+                </tr>
+                <tr class="text-left  text-nowrap overflow-hidden text-ellipsis text-xs">
+                    <td>The Amazing Son In Lawe</td>
+                    <td>5689</td>
+                    <td>2mth</td>
+                    <td><button class="bg-[#F9C559] md:px-8 px-4 py-1 rounded-3xl font-bold">Read</button></td>
+                </tr>
+                <tr class="text-left  text-nowrap overflow-hidden text-ellipsis text-xs">
+                    <td>The Amazing Son In Lawe</td>
+                    <td>5689</td>
+                    <td>2mth</td>
+                    <td><button class="bg-[#F9C559] md:px-8 px-4 py-1 rounded-3xl font-bold">Read</button></td>
+                </tr>
+                <tr class="text-left  text-nowrap overflow-hidden text-ellipsis text-xs">
+                    <td>The Amazing Son In Lawe</td>
+                    <td>5689</td>
+                    <td>2mth</td>
+                    <td><button class="bg-[#F9C559] md:px-8 px-4 py-1 rounded-3xl font-bold">Read</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="bg-[#121111] w-full rounded-t-3xl md:rounded-t-none">
+        <div class="w-4/5 md:mt-20 mt-10 mb-8  md:mb-12 text-[#949494] mx-auto">
+            <div class="md:flex md:justify-between items-center md:text-xl">
+                <b class="text-5xl font-extrabold text-white flex justify-center mx-auto md:block md:mx-0">
+                    <span class="text-[#F9C559]">CS</span>novels
+                </b>
+                <b class="hidden md:block">
+                    CATEGORIES
+                </b>
+                <b class="hidden md:block">
+                    POPULAR
+                </b>
+                <b class="hidden md:block">
+                    CONTACT
+                </b>
+                <div class="md:hidden flex justify-center mx-auto space-x-3 my-5 items-center text-sm">
+                    <p>
+                        CATEGORIES
+                    </p>
+                    <p>
+                        CONTACT
+                    </p>
+                </div>
+            </div>
+            <div class="flex md:justify-between justify-center items-center md:-ml-16">
+                <div>
+                    <div class="flex items-center justify-center my-4 md:my-7 md:mr-10 space-x-3">
+                        <i class="fa-brands fa-facebook text-3xl"></i>
+                        <i class="fa-brands fa-discord text-3xl"></i>
+                    </div>
+                    <div class="text-sm md:text-lg flex flex-col justify-center mx-auto text-center">
+                        <p class="text-lg ">
+                            Copyright © 2021 CSnovels.com
+                        </p>
+                        <p class="text-xs md:text-base">
+                            PRIVACY POLICY • TERMS OF SERVICE
+                        </p>
+                    </div>
+                </div>
+                <div class="font-bold hidden md:block -ml-10">
+                    <p>
+                        Urban
+                    </p>
+                    <p>
+                        Eastern
+                    </p>
+                    <p>
+                        Sci-Fi
+                    </p>
+                    <p>
+                        Romance
+                    </p>
+                </div>
+                <div class="font-extrabold text-xs hidden md:block text-[#121111]">
+                    <p>
+                        Contact Us
+                    </p>
+                    <p>
+                        Support
+                    </p>
+                    <p>
+                        Discard
+                    </p>
+                </div>
+                <div class="font-bold hidden md:block text-sm">
+                    <p>
+                        Contact Us
+                    </p>
+                    <p>
+                        Support
+                    </p>
+                    <p>
+                        Discard
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPage(obj) {
+            window.location = `book/${obj}`;
+            console.log(obj)
+        }
+        function handleProfileClick() {
+            window.location.href = 'profile';
+        }
+        console.log("working")
+
+        function toggleProfile(id) {
+            let profile = document.getElementById(id)
+            profile.classList.toggle('hidden')
+
+        }
+    </script>
+    <script type="module" src="./index.js"></script>
+    <script src="./mainScript.js"></script>
+
+</body>
+
+</html>

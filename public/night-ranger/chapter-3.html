@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,391 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Night Ranger/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 3 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Night Ranger / Chapter 3 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 3</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Chapter 3: Acheron Gang</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Translator: Translation Nation Editor: Translation Nation</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Newborn Ranger]: Increase your Ranger badge effects by 1%.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">That was the effect of the title. As far as Marvin was concerned, this was at least better than nothing. When Marvin had previously completed his thief class quest, due to perfect completion, he had obtained the title [Gifted Criminal].</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Gifted Criminal]: All Thief class skills +10</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin’s early game was very smooth because of that amazing title and the dexterity skill [Wall Climb]. It was very different from the other Thieves as those two made up for the lack of firepower at the early stages of the Thief class.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In "Feinan Continent," early game Thieves were extremely lacking in firepower. They were mostly considered explorers rather than adventurers. Experts at disabling traps in a dungeon, unlocking chests, and popping in and out of a battle to sneak attack. If not for the advanced Thief class [Assassin] having incredible burst damage, a lot of Thieves might have already given up on the class.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Aside from Marvin, with that kind of extraordinary early game BUG, most of the Thieves could only leech exp from their team. Occasionally unlocking a chest, sometimes disabling a trap, nothing very helpful. A lot of classes could substitute for Thieves in the early game, such as Rangers and Druids.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was also because of those problems that Marvin grudgingly gave up on his beloved Thief class in this life. It’s true that stealing and lock-picking abilities could let him earn some money, but his top priority was increasing his strength, especially his fighting abilities. In that regard, the Ranger, known as the "jack of all trades," was perfect.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Furthermore, one of the Ranger advancement branches was linked to the Thief final advancement path to become a [Ruler of the Night].</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Each person could only use a single title at a time, and as Marvin had no other choice he naturally equipped [Newborn Ranger].</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">...</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After submitting the recommendation letter to the Ranger Guild, Marvin also received a novice Ranger badge. In general, novice Rangers had three badges they could choose from. They were the wild wolf badge, the noble hawk¹ badge and the sika deer badge.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Wild Wolf Badge]: Taming +5</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Noble Hawk Badge]: Long range vision +3</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Sika Deer]: Hide +9</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The three badges each increased a skill effect, and between these three skills, the knowledgeable Marvin made his choice very quickly.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Ranger’s [Hide] was very strong in the wilderness. If the [Hide] skill was 100 or higher, its effects would be almost like a 2nd rank Assassin’s [Strong Stealth]. Even if [Taming] and [Long Distance Vision] were useful, they weren’t as useful as [Hide].</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Hide] was as important to rangers as [Stealth] was to thieves.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When he successfully became a Ranger, his HP increased by 11 points, he received a free attribute point, and he started with 96 skill points. His character window also changed:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Adventurer Class: Level 1 Ranger (0/50)]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He spent his free attribute point on dexterity without hesitation. A Ranger's main attributes were dexterity and intelligence. Dexterity made them more agile and skillful while intelligence let them cast spells. Dexterity was more important than intelligence in Marvin’s advancement path.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Attribute points were very valuable. Besides the one available at level 1, he could only get 1 every 2 levels. His 96 skill points were also spent quickly. Soon, his skill tab looked like this:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hide – 41(+9)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Stealth – 20</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Inspect – 35</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Rangers could use daggers and bows. This was the inherent class ability.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Thus, Marvin’s stats window was as follows:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Name: Marvin</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Race: Human/?</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Attributes:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Strength – 11</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Dexterity – 17</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Constitution – 9</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Intelligence – 14</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Wisdom – 14</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Charisma – 13(+1)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Class: Noble Rank 3 (150/200)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Adventurer Class: Level 1 Ranger (0/50)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Title: Newborn Ranger</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Health Points: 37/37</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Exp: 40 (Noble) [Unused]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">SP (Skill Points): 0</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">AP (Ability Points): 0</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Class Skills:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">– Noble (Baron):</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Dignity – 25</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Management – 31</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Perception – 16</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Diplomacy – 19</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Accounting – 28</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Horsemanship – 30</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">– Ranger:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hide – 41(+9)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Stealth – 20</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Inspect – 35</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Equipment:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Badge (Sika Deer)</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">...</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I finally have a combat class!" After leaving the Ranger Guild, Marvin excitedly felt strength flowing through his body.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He felt full of energy. He had successfully forged a "recommendation letter," which let him see a glimmer of hope. His past knowledge was indeed still helpful. Among all the classes, only the Ranger was able to get his class from a senior Ranger's recommendation letter. There was no opportunity for the other classes to take such a shortcut. Marvin, by observing that homeless man’s actions, guessed that he was a former high-level Ranger. He then used a bottle of golden rum to buy him off. He wasn’t the one who had found this strategy; it was the personal experience of his ranger friend from his previous life.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">That guy was also a god level player. While the average player struggled with their 2nd rank advancement quest, he had shockingly already reached the third rank, [Forest Guard]. Marvin also learned from him that there was such a loophole in the base Ranger class. The recommendation could be forged as long as he got a hold of the badge of a higher leveled Ranger.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The Ranger Guild only paid attention to the recommendation letter and didn’t check with the actual people, giving Marvin the chance to take the shortcut.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Successfully getting the Ranger class meant that his past knowledge could be put to good use. Although he wasn’t familiar with River Shore City, he still found several ways of making money and increasing his strength after casually searching through his memories. Obviously, if he was in his former starting town, [Jewel Bay], located further Northeast, he would feel even more at home.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He still had 30 silvers in his pocket, but the rest of his wealth was quickly spent after he bought a Common Curved Dagger² from a blacksmith in the business district.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The common curved dagger’s stats were quite lacking, only giving 2 – 5 Attack. It was barely enough to protect one’s life… and killing monsters would require some effort.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin urgently needed to increase his strength, and obviously, there was still the money issue. He also did not forget his own mission. Anna was still waiting for him at the Fierce Horse Inn. This half-elf butler had been following him since his childhood. She took an important place in his heart.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">If need be, he would use his life to protect her.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After the two entered River Shore City, Marvin had lost their funds. Anna went to do manual labor every day at his rude uncle’s place in exchange for a miserable amount. If not for Anna, Marvin might have already been targeted by one of those local gangs who wished to steal his money, before finally dying in a gutter.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It could be said that Anna had always been taking care of Marvin.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was time to make some changes.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Taking advantage of the fact that River Shore City’s gates weren’t closed, Marvin, with his curved dagger on his belt, quickly left the city.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">...</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In Feinan Continent the wilderness was quite a dangerous place. Apart from the roads between cities, a deadly monster could appear anywhere. In theory, a terrifying beast could even appear on a road that was regularly cleaned up. To Marvin, who was an insignificant Level 1 Ranger, an ogre, or even a young goblin was enough to deal with him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Because of the guards patrolling every day around the major cities, their surroundings were somewhat safe.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">However, Marvin didn’t go out for leveling; he went out to earn money.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Outside River Shore City, there was a large river known as Pine Cone River. Pine Cone River splits 65 kilometers downstream. The branch river is known as White River. Marvin’s territory was the White River Valley, located at the White Lake.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Pine Cone River stretched for more than sixteen hundred kilometers, becoming very wide and gentle, forming large sandy areas.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Gordon Plateau’s loess upstream washed down the river, leading to the formation of silt and making this territory extremely fertile.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Occasionally, small crabs known as [Blue Glow Crabs] came out of Pine Cone River. The blue glow crab was top grade delicacy. For wizards, this kind of crab meat could increase their mental power to a certain degree. Therefore, in River Shore City’s market this kind of crab would be extraordinarily expensive. If Marvin remembered correctly, a single blue glow crab would sell for more than 20 silvers.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Therefore, he left the town in the middle of the night in order to catch crabs.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Naturally, the blue glow crab’s high value led to Pine Cone River being filled with a lot of people trying to catch crabs. However, they weren’t very efficient at it. They had no choice but to rely on luck and blindly look for them. Even if they searched for a whole day they wouldn’t necessarily find one. These guys were way too small. During the day, they would be really easy to overlook, not to mention at night.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Consequently, there were almost no signs of humans near the Pine Cone River at night.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">This suited Marvin’s wishes well. He knew a technique for catching blue glow crabs that only worked at night. As no one would bother him, this was the best.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Soon, he arrived at the location.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But at that time he suddenly heard footsteps behind him!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Someone is following me?"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin’s heart sank. He had actually made such a dreadful mistake.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He was no longer that almighty Ruler of the Night and his Wisdom was at a mediocre 14 points, barely above the average person. Along with his 16 Perception, he only reached the level of having sharp eyes and nothing more.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Becoming a ranger had made him somewhat careless. He surprisingly hadn’t checked whether there was anyone tailing him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A single shadow quietly appeared while making fun of him. He wasn’t tall and in his hands was a small dagger.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">It was a Thief!</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Inspect (35) skill has been used...]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Wisdom Check…]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">[Inspect Successful]</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The Thief’s main information immediately appeared before Marvin’s eyes:</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Level 5 Commoner / Level 3 Thief – Hp 42</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Lord Noble, leaving the city alone isn’t a good habit." The thief burst into laughter and said, "Although you carry a knife, do you really think that it can protect you? For a useless noble, you should be honored to die by the hand of the Acheron Gang."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">At that time, a few shadows rushed in from somewhere close to the main road.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Marvin gritted his teeth. 'Damn it, backup?'</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">‘The Acheron Gang? I haven’t offended them. Why are they trying to kill me?’</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But it was clearly not the best time to think. He suddenly burst into a sprint, his target being the grove beside the river shore.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">_____________</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">1 - T/N: Noble hawk being the translation of the latin name of the northern goshawk.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">2 - T/N: To be more exact, it would be a curved single-edged knife something like a kukri. Curved dagger in short.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('2')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('4')"
                         
-                        
-
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Chapter 3: Acheron Gang
-
-Translator: Translation Nation Editor: Translation Nation
-
-[Newborn Ranger]: Increase your Ranger badge effects by 1%.
-
-That was the effect of the title. As far as Marvin was concerned, this was at least better than nothing. When Marvin had previously completed his thief class quest, due to perfect completion, he had obtained the title [Gifted Criminal].
-
-[Gifted Criminal]: All Thief class skills +10
-
-Marvin’s early game was very smooth because of that amazing title and the dexterity skill [Wall Climb]. It was very different from the other Thieves as those two made up for the lack of firepower at the early stages of the Thief class.
-
-In "Feinan Continent," early game Thieves were extremely lacking in firepower. They were mostly considered explorers rather than adventurers. Experts at disabling traps in a dungeon, unlocking chests, and popping in and out of a battle to sneak attack. If not for the advanced Thief class [Assassin] having incredible burst damage, a lot of Thieves might have already given up on the class.
-
-Aside from Marvin, with that kind of extraordinary early game BUG, most of the Thieves could only leech exp from their team. Occasionally unlocking a chest, sometimes disabling a trap, nothing very helpful. A lot of classes could substitute for Thieves in the early game, such as Rangers and Druids.
-
-It was also because of those problems that Marvin grudgingly gave up on his beloved Thief class in this life. It’s true that stealing and lock-picking abilities could let him earn some money, but his top priority was increasing his strength, especially his fighting abilities. In that regard, the Ranger, known as the "jack of all trades," was perfect.
-
-Furthermore, one of the Ranger advancement branches was linked to the Thief final advancement path to become a [Ruler of the Night].
-
-Each person could only use a single title at a time, and as Marvin had no other choice he naturally equipped [Newborn Ranger].
-
-...
-
-After submitting the recommendation letter to the Ranger Guild, Marvin also received a novice Ranger badge. In general, novice Rangers had three badges they could choose from. They were the wild wolf badge, the noble hawk¹ badge and the sika deer badge.
-
-[Wild Wolf Badge]: Taming +5
-
-[Noble Hawk Badge]: Long range vision +3
-
-[Sika Deer]: Hide +9
-
-The three badges each increased a skill effect, and between these three skills, the knowledgeable Marvin made his choice very quickly.
-
-Ranger’s [Hide] was very strong in the wilderness. If the [Hide] skill was 100 or higher, its effects would be almost like a 2nd rank Assassin’s [Strong Stealth]. Even if [Taming] and [Long Distance Vision] were useful, they weren’t as useful as [Hide].
-
-[Hide] was as important to rangers as [Stealth] was to thieves.
-
-When he successfully became a Ranger, his HP increased by 11 points, he received a free attribute point, and he started with 96 skill points. His character window also changed:
-
-[Adventurer Class: Level 1 Ranger (0/50)]
-
-He spent his free attribute point on dexterity without hesitation. A Ranger's main attributes were dexterity and intelligence. Dexterity made them more agile and skillful while intelligence let them cast spells. Dexterity was more important than intelligence in Marvin’s advancement path.
-
-Attribute points were very valuable. Besides the one available at level 1, he could only get 1 every 2 levels. His 96 skill points were also spent quickly. Soon, his skill tab looked like this:
-
-Hide – 41(+9)
-
-Stealth – 20
-
-Inspect – 35
-
-Rangers could use daggers and bows. This was the inherent class ability.
-
-Thus, Marvin’s stats window was as follows:
-
-Name: Marvin
-
-Race: Human/?
-
-Attributes:
-
-Strength – 11
-
-Dexterity – 17
-
-Constitution – 9
-
-Intelligence – 14
-
-Wisdom – 14
-
-Charisma – 13(+1)
-
-Class: Noble Rank 3 (150/200)
-
-Adventurer Class: Level 1 Ranger (0/50)
-
-Title: Newborn Ranger
-
-Health Points: 37/37
-
-Exp: 40 (Noble) [Unused]
-
-SP (Skill Points): 0
-
-AP (Ability Points): 0
-
-Class Skills:
-
-– Noble (Baron):
-
-Dignity – 25
-
-Management – 31
-
-Perception – 16
-
-Diplomacy – 19
-
-Accounting – 28
-
-Horsemanship – 30
-
-– Ranger:
-
-Hide – 41(+9)
-
-Stealth – 20
-
-Inspect – 35
-
-Equipment:
-
-Badge (Sika Deer)
-
-...
-
-"I finally have a combat class!" After leaving the Ranger Guild, Marvin excitedly felt strength flowing through his body.
-
-He felt full of energy. He had successfully forged a "recommendation letter," which let him see a glimmer of hope. His past knowledge was indeed still helpful. Among all the classes, only the Ranger was able to get his class from a senior Ranger's recommendation letter. There was no opportunity for the other classes to take such a shortcut. Marvin, by observing that homeless man’s actions, guessed that he was a former high-level Ranger. He then used a bottle of golden rum to buy him off. He wasn’t the one who had found this strategy; it was the personal experience of his ranger friend from his previous life.
-
-That guy was also a god level player. While the average player struggled with their 2nd rank advancement quest, he had shockingly already reached the third rank, [Forest Guard]. Marvin also learned from him that there was such a loophole in the base Ranger class. The recommendation could be forged as long as he got a hold of the badge of a higher leveled Ranger.
-
-The Ranger Guild only paid attention to the recommendation letter and didn’t check with the actual people, giving Marvin the chance to take the shortcut.
-
-Successfully getting the Ranger class meant that his past knowledge could be put to good use. Although he wasn’t familiar with River Shore City, he still found several ways of making money and increasing his strength after casually searching through his memories. Obviously, if he was in his former starting town, [Jewel Bay], located further Northeast, he would feel even more at home.
-
-He still had 30 silvers in his pocket, but the rest of his wealth was quickly spent after he bought a Common Curved Dagger² from a blacksmith in the business district.
-
-The common curved dagger’s stats were quite lacking, only giving 2 – 5 Attack. It was barely enough to protect one’s life… and killing monsters would require some effort.
-
-Marvin urgently needed to increase his strength, and obviously, there was still the money issue. He also did not forget his own mission. Anna was still waiting for him at the Fierce Horse Inn. This half-elf butler had been following him since his childhood. She took an important place in his heart.
-
-If need be, he would use his life to protect her.
-
-After the two entered River Shore City, Marvin had lost their funds. Anna went to do manual labor every day at his rude uncle’s place in exchange for a miserable amount. If not for Anna, Marvin might have already been targeted by one of those local gangs who wished to steal his money, before finally dying in a gutter.
-
-It could be said that Anna had always been taking care of Marvin.
-
-It was time to make some changes.
-
-Taking advantage of the fact that River Shore City’s gates weren’t closed, Marvin, with his curved dagger on his belt, quickly left the city.
-
-...
-
-In Feinan Continent the wilderness was quite a dangerous place. Apart from the roads between cities, a deadly monster could appear anywhere. In theory, a terrifying beast could even appear on a road that was regularly cleaned up. To Marvin, who was an insignificant Level 1 Ranger, an ogre, or even a young goblin was enough to deal with him.
-
-Because of the guards patrolling every day around the major cities, their surroundings were somewhat safe.
-
-However, Marvin didn’t go out for leveling; he went out to earn money.
-
-Outside River Shore City, there was a large river known as Pine Cone River. Pine Cone River splits 65 kilometers downstream. The branch river is known as White River. Marvin’s territory was the White River Valley, located at the White Lake.
-
-Pine Cone River stretched for more than sixteen hundred kilometers, becoming very wide and gentle, forming large sandy areas.
-
-Gordon Plateau’s loess upstream washed down the river, leading to the formation of silt and making this territory extremely fertile.
-
-Occasionally, small crabs known as [Blue Glow Crabs] came out of Pine Cone River. The blue glow crab was top grade delicacy. For wizards, this kind of crab meat could increase their mental power to a certain degree. Therefore, in River Shore City’s market this kind of crab would be extraordinarily expensive. If Marvin remembered correctly, a single blue glow crab would sell for more than 20 silvers.
-
-Therefore, he left the town in the middle of the night in order to catch crabs.
-
-Naturally, the blue glow crab’s high value led to Pine Cone River being filled with a lot of people trying to catch crabs. However, they weren’t very efficient at it. They had no choice but to rely on luck and blindly look for them. Even if they searched for a whole day they wouldn’t necessarily find one. These guys were way too small. During the day, they would be really easy to overlook, not to mention at night.
-
-Consequently, there were almost no signs of humans near the Pine Cone River at night.
-
-This suited Marvin’s wishes well. He knew a technique for catching blue glow crabs that only worked at night. As no one would bother him, this was the best.
-
-Soon, he arrived at the location.
-
-But at that time he suddenly heard footsteps behind him!
-
-"Someone is following me?"
-
-Marvin’s heart sank. He had actually made such a dreadful mistake.
-
-He was no longer that almighty Ruler of the Night and his Wisdom was at a mediocre 14 points, barely above the average person. Along with his 16 Perception, he only reached the level of having sharp eyes and nothing more.
-
-Becoming a ranger had made him somewhat careless. He surprisingly hadn’t checked whether there was anyone tailing him.
-
-A single shadow quietly appeared while making fun of him. He wasn’t tall and in his hands was a small dagger.
-
-It was a Thief!
-
-[Inspect (35) skill has been used...]
-
-[Wisdom Check…]
-
-[Inspect Successful]
-
-The Thief’s main information immediately appeared before Marvin’s eyes:
-
-Level 5 Commoner / Level 3 Thief – Hp 42
-
-"Lord Noble, leaving the city alone isn’t a good habit." The thief burst into laughter and said, "Although you carry a knife, do you really think that it can protect you? For a useless noble, you should be honored to die by the hand of the Acheron Gang."
-
-At that time, a few shadows rushed in from somewhere close to the main road.
-
-Marvin gritted his teeth. 'Damn it, backup?'
-
-‘The Acheron Gang? I haven’t offended them. Why are they trying to kill me?’
-
-But it was clearly not the best time to think. He suddenly burst into a sprint, his target being the grove beside the river shore.
-
-_____________
-
-1 - T/N: Noble hawk being the translation of the latin name of the northern goshawk.
-
-2 - T/N: To be more exact, it would be a curved single-edged knife something like a kukri. Curved dagger in short.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('2')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('4')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

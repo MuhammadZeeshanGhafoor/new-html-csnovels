@@ -9,11 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.6"
   },
   "dependencies": {
     "@netlify/functions": "^2.6.3",
     "@supabase/supabase-js": "^2.43.1",
+    "busboy": "^1.6.0",
+    "formidable": "^3.5.1",
+    "human-readable-ids": "^1.0.4",
     "jsonwebtoken": "^9.0.2",
     "toastify-js": "^1.12.0"
   }

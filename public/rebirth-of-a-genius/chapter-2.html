@@ -14,6 +14,8 @@
                 <link rel="shortcut icon" href="../assets/Site-Favicon.svg" type="image/x-icon">
 
 <link href="../output.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+
 <!-- Include Redux library via CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
 
@@ -28,311 +30,233 @@
 
                 <!-- Include JavaScript files -->
             </head>
-            <body class="w-full flex flex-col items-center font-montessart">
-                <!-- Top NavBar -->
-                <div class="flex flex-col h-32 w-full border-b-[1px] border-gray-400 md:hidden ">
-                    <div class="flex items-center justify-between p-2 w-full h-2/3 ">
-                        <img src="../assets/logo_mobile.png" alt="logo_mobile" class="w-10 h-8">
-                        <div class="w-7/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[35px] w-5 left-[79px] " />
-                        </div>
-                        <div class="h-9 w-9 rounded-full flex items-center justify-center bg-[#3890fc] text-white ">
-                            <p class="text-3xl">
-                                Z
-                            </p>
-                        </div>
+            <body class="w-full flex flex-col items-center font-montessart overflow-x-hidden">
+            <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
+            <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
+            <div class="flex items-center justify-between w-full lg:py-8 py-4">
+            <a href="#" class="-m-1.5 p-1.5">
+                    <img class="w-[140px] md:block hidden" src="../assets/images/csnovels-logo.png" alt="logo">
+                    <img class="min-w-[40px] block md:hidden" src="../assets/images/mob-logo.png" alt="logo">
+                </a>
+                <div class="flex items-center">
+                    <h3 class="lg:text-[28px] text-2xl font-semibold text-gray-2">Rebirth of a Genius/</h3>
+                    <p class="lg:text-base text-xs text-gray-6 mt-2">Chapter - 2 </p>
                     </div>
-                    <ul class="w-full flex justify-between p-1 overflow-hidden">
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]" onclick="alertWind()"
-                            id="navbar">Category</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Free</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Updates</li>
-                        <li class="text-gray-500 text-lg hover:text-black hover:border-b-4 border-[#FFC240]">Profile</li>
-                    </ul>
-                </div>
-            
-                <!-- DESKTOP NAVBAR -->
-                <!-- <div class="hidden md:flex flex-col h-20 w-full border-b-[1px] border-gray-400">
-                    <div class="flex items-center justify-center gap-5 p-2 w-full h-full ">
-                        <img src="../assets/logo-dark.png" alt="logo_mobile" class="h-10">
-                        <div class="w-4/12">
-                            <input type="text"
-                                class="w-full rounded-full h-9 px-8 border border-gray-400 placeholder:text-sm outline-none"
-                                placeholder="Search..." />
-                            <img src="../assets/search.png" class="absolute top-[33px] w-5 left-[438px] " />
-                        </div>
-                        <div class="w-2/12 flex items-center justify-between font-light">
-                            <p id="increment">Subscribe</p>
-                            <p>Discord</p>
-                            <img src="../assets//menu.png" class="w-8" />
-                        </div>
-                    </div>
-                </div> -->
-            
-                <div class="w-full shadow-lg px-8 py-3 fixed bg-white flex  justify-start space-x-6 items-center z-10 ">
-                    <img src="../assets/Images/CSnovel.png" alt="" class="h-12 w-16">
-                    <b>
-                        Rebirth of a Genius / Chapter 2 
-                    </b>
-                </div>
-            
-                <div class="w-full bg-[#F2F2F2] mt-20 flex flex-row-reverse justify-between overflow-hidden h-full">
-            
-                    <div class="md:w-3/4 mx-auto bg-white">
-                       
+            </div>
 
+            </div>
+            </header>
+            
+
+    <section class="w-full relative">
+        <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
+
+            <div class="w-full md:pb-7 pb-4"><div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5 ml-10">Chapter - 2</h1>
+                    </div>
+             <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam slowly open his eyes only to see endless darkness around him. ahead of him a few feet away there stood a young man who seem to be in his early thirties as his gaze was directed towards him. The man has an extraordinary bearing to him that makes one feel as though they are watching a superior being. the handsome face, sword like eyebrows, sharp gaze everything only made the bearing more Majestic.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">'Am I dead? Or am I still alive? Or is this a hallucination?' Sam thought to himself. At this moment the Majestic young man suddenly spoke.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"You are really dead. You are currently in your soul form which I captured. I am Ling tian."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"So, you are saying that you captured my soul after I was shot dead?" Sam asked with an astounded gaze.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Yes". Ling Tian replied</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Why?" Sam asked bewildered. He didn't get why he was still here and can't believe this situation. It all felt like a dream to him. He didn't believe a soul exists until now.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Because I saw potential in you which was far from realized. Your previous world so small for your Intelligence.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, I will give you a chance. A chance to realize your full potential, A chance to live again in a world where only your imagination can limit you. Ling Tian replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"There are other worlds with life?" Sam was surprised again. Even when he is alive, he never felt this shocked in a single day.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"There are more things to be surprised about kid. This universe has more things to offer than you can imagine. You will learn it slowly." Ling Tian replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Hearing that Sam was completely bewildered. everything still felt like a dream to him. He went in to deep thought. 'Well, I have nothing to lose anything anyway.'</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Sure, but what should I do there? Sam asked</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Live your life to the fullest. Ascend the highest peak where you can look down on anyone under heavens. Then we meet again." Ling Tian replied.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam seemed confused by the answer.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Before I send you, I will give you some knowledge. They are language and some cultivation techniques you will require. You cannot pass down any of these techniques to anyone because they are specifically created for your body constitution and your spiritual Core." Ling Tian continued.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"What are cultivation techniques? What is spiritual Core you mentioned." Sam asked with confusion</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hahaha don't worry you will know when you arrive into your new body.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">By the way there is a final test waiting for you down there that is to find the best contract around you as your first contract if you pass the test you have a present there ,if you fail then think as I granted this life to you can live as you like and forget whatever I said earlier."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After Ling Tian finished everything turned completely dark and Sam lost his consciousness.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When Sam opened his eyes again, he felt great head ache as he saw clear blue sky and floating clouds. He felt a searing pain on his stomach as slowly moved to stand up and he observed his surroundings.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He realized he is in the middle of some woods. The ground around was completely razed as if it was plowed. He checked his body when a searing pain increased at his abdomen.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">When he saw it clearly, he was shocked. there are two holes in his stomach as if he was stabbed by something. Each hole is around 2 inches wide.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">But for some reason blood stopped flowing from the holes. he stood there dazed for some time thinking if it was dream or not then suddenly a piercing headache started as a set of unknown memories entered mind.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His soul entered the body of a 15 year old boy whose name is also Sam. He doesn't have any last name because, he is an orphan. He is a tailor who lived in a nearby village named Lava rock village.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He made a living off of his tailoring skills by selling clothes he made from the silk he obtained from the silk moths in the woods. As per his routine when he came to woods to collect silk, few kids of his age started running towards him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Only then realized that they were being chased by a bull like beast. Then they purposefully directed the beast towards him and the beast pierced him with its horns and that's how the original owner died. Sam sighed as he thought. 'Guess I can't escape the fate of being an orphan in this life time too.' As he thought up to this, he slowly made his way towards his village while enduring the pain. When he entered the village, he was shocked for some time when he saw the scene in front of him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">The scene before reminded him of the medieval period. the streets are not clean at all. All the houses are made of mud walls and only some select few are made of stones in a certain area.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Then something came to his mind. The good-looking multiple story houses belong to the village officials, while the mansion belongs to village head. the average looking house belongs to village guards and hunters or some relatively well-off families with rather highly regarded professions.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Normal mud houses belong to Farmers and labor and others. To his surprise even though the original Sam is an orphan he also has a stone house which is both his shop and his house.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">While Sam was walking towards his house all the people are watching him with surprised expressions and whispering to each other.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Just when he reached his house and about to open his door, he heard someone calling him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Hey Sam, you are here. What happened to you exactly that Oliver said that a 'Blazing earth bull killed you in the woods."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">A middle man from next door said as he was walking towards Sam. His name is Michael. He is a blacksmith who lives next door to Sam. When Sam saw him, he didn't know how to react as he knew from this body's memories that he had a very good relationship with him.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam forced a smile as he answered. "I am alright Uncle Michael. Don't worry about me Argh..." by the time he finished his words he felt his wounds hurting again. His face became pale as he sweated profusely.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Easy kid." Michael reached him and held Sam with his hands as he was about to collapse.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Damn it, kid I thought that Oliver is talking nonsense but who would have thought it's real. The wound is too deep Sam I think only the healer mage can heal you. But that costs a lot. I don't even know how you are still alive."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">" Uncle Michael please enter my room and take out the leather pouch under my bed. I will go to the healer." Sam said enduring his pain.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Michael slowly made Sam lay on the floor and made his way into the house. After some time, he came back with a leather pouch in his hands.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Sam, I don't think you can go alone just wait a bit I will get my push cart. I will take you to the healer." After saying that, Michael went to his house and came back with a push cart which he used to transfer his blacksmith products and materials.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">He carefully carried Sam and lay him on the cart and kept his leather pouch beside him and started pushing the cart. At this time, Sam slowly started losing his consciousness.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam slowly open his eyes only to see a ceiling made of stones. "Oh, you are awake." somebody said suddenly.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam startled due to the sudden voice after he turned towards direction which from which voice came there, he saw a middle-aged man carrying a leather pouch with him then he recognized immediately that leather pouch belongs to himself. The man came towards the bed and gave back his leather pouch then said. "This is your leather pouch, I took my treatment fee, the rest is within the pouch."</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Sam opened the pouch there he saw 2 stones size of a quail egg.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"You can leave when you feel that you are ok." The middle-aged man said. Suddenly the door opened and Michael came in.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Oh, you are finally awake. How are you feeling now?" Michael asked Sam.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I am ok uncle; I think I just need some rest." Sam said.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Actually, I heard about you from Oliver. He said you are already dead in the Woods. That's why I came to check your house whether he is lying or not. But when I came you are already back and you are injured. But thank God you are okay. What happened exactly kid?" Michael asked.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"I was really hit by the bull uncle but now I am okay. I don't why, but by the time I got there to collect the cocoons a bull madly rushed towards me and hit me. Even I don't know how I survived." Sam replied. he didn't see any reason for revealing it was done intentionally so he kept quiet.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Uncle Michael I would like to rest if you don't mind." Sam Said</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Ok kid, don't worry about anything else, just take some rest. goodbye I will visit you again"</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">After Michael left Sam kept staring at the ceiling and tried to understand the situation he is in. According to the memories of original owner of the body, right now he is in a place called desolate land which is a part of Western continent.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In this world the Technology is not that developed compared to the Modern Earth. The people took a completely different path of development because of special circ.u.mstances, that is the presence of spiritual energy.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In this world there is a special kind of energy present everywhere in the atmosphere. And everything is made of spiritual energy the humans here possess unimaginable strength and power by utilizing this spiritual energy. They are called cultivators.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">There are two types of cultivator they are Qi cultivators and mages. The Qi cultivators use spiritual energy to develop their body and utilize their body to fight they are also called warriors whereas, the mages use spiritual energy by converting it into form of various elements.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Right now, the middle- aged man who came earlier is also a mage and a mage of light element. The light element mages are not much known to their combat prowess but they are most suitable for healing and are highly regarded. That's why these healers usually charge a lot.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">In this world the being a mage or a warrior cannot be directly decided by people themselves. It depends on the body constitution and the spiritual core of the person. If a person has a pure Qi core which is a solid white in color then they are most suitable for Warriors. The person who is suitable to be a Mage will have a pure elemental core. Various types of elements indicate various type of affinity to that particular element.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">For example, if a person has a pure red color core it will be fire element, a light blue indicates water core, pale green indicates wind, dark green indicates plants or wood, gold color indicates metal, milky white indicate light element and so on.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Other than the pure mages or pure warriors there are other type of cultivators who has mixed core who can practice both Qi and Elements. They are basically called 'Warrior-Mages'. When a person 14 years old their core will activate. Sam also activated his core last year but the problem is nobody could identify his core.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">His core is fully transparent when he tried to absorb spiritual energy, he can absorb it easily and he can also control it well but he was unable to use it for both spells or martial arts.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">So, he was not suitable for both types of cultivation so he stopped after he reached third level Initiation stage and solely focused on his tailoring skills and achieved some significant improvements in embroidery.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">That's how he was able to earn the spiritual stones in his leather pouch.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Even though they are low grade spiritual stones they are totally high-level currency for normal people. For working hard for an entire year, he was only able to earn only five stones and three of them are already taken away by the healer as a fee for treatment.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">Thinking up to this point Sam heaved a huge sigh and closed his.</p> <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20">"Let's have a proper sleep first think about what to do tomorrow." Sam muttered under his breadth and slowly fell asleep.</p>
+
+            </div>
+            <div class="md:pt-20 pt-6 lg:pb-10 pb-28 border-t border-gray-200">
+                <div class="flex items-center justify-center md:gap-6 gap-4 max-w-[983px] mx-auto">
+                    <button
+                        class=" border border-yellow-1 md:text-base sm:text-sm text-xs text-gray-2 flex items-center gap-2 rounded-full px-4 py-[11px]"
+                        onclick="changePage('1')"
+                        >
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.44336 14H22.0898" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M9.95784 19.5144C9.95784 19.5144 4.44337 15.4531 4.44336 13.9999C4.44335 12.5467 9.95788 8.48535 9.95788 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous Chapter
+                    </button>
+                    <button
+                        class="bg-yellow-1 text-gray-2 md:text-base sm:text-sm text-xs flex gap-2 items-center rounded-full px-6 py-[11px]"
+                        onclick="changePage('3')"
                         
-                        
-
-
-                        <div class="md:px-16 px-6">
-                            <p id="chaptercontent">
-                                <p>Sam slowly open his eyes only to see endless darkness around him. ahead of him a few feet away there stood a young man who seem to be in his early thirties as his gaze was directed towards him. The man has an extraordinary bearing to him that makes one feel as though they are watching a superior being. the handsome face, sword like eyebrows, sharp gaze everything only made the bearing more Majestic.
-
-'Am I dead? Or am I still alive? Or is this a hallucination?' Sam thought to himself. At this moment the Majestic young man suddenly spoke.
-
-"You are really dead. You are currently in your soul form which I captured. I am Ling tian."
-
-"So, you are saying that you captured my soul after I was shot dead?" Sam asked with an astounded gaze.
-
-"Yes". Ling Tian replied
-
-"Why?" Sam asked bewildered. He didn't get why he was still here and can't believe this situation. It all felt like a dream to him. He didn't believe a soul exists until now.
-
-"Because I saw potential in you which was far from realized. Your previous world so small for your Intelligence.
-
-So, I will give you a chance. A chance to realize your full potential, A chance to live again in a world where only your imagination can limit you. Ling Tian replied.
-
-"There are other worlds with life?" Sam was surprised again. Even when he is alive, he never felt this shocked in a single day.
-
-"There are more things to be surprised about kid. This universe has more things to offer than you can imagine. You will learn it slowly." Ling Tian replied.
-
-Hearing that Sam was completely bewildered. everything still felt like a dream to him. He went in to deep thought. 'Well, I have nothing to lose anything anyway.'
-
-"Sure, but what should I do there? Sam asked
-
-"Live your life to the fullest. Ascend the highest peak where you can look down on anyone under heavens. Then we meet again." Ling Tian replied.
-
-Sam seemed confused by the answer.
-
-"Before I send you, I will give you some knowledge. They are language and some cultivation techniques you will require. You cannot pass down any of these techniques to anyone because they are specifically created for your body constitution and your spiritual Core." Ling Tian continued.
-
-"What are cultivation techniques? What is spiritual Core you mentioned." Sam asked with confusion
-
-"Hahaha don't worry you will know when you arrive into your new body.
-
-By the way there is a final test waiting for you down there that is to find the best contract around you as your first contract if you pass the test you have a present there ,if you fail then think as I granted this life to you can live as you like and forget whatever I said earlier."
-
-After Ling Tian finished everything turned completely dark and Sam lost his consciousness.
-
-When Sam opened his eyes again, he felt great head ache as he saw clear blue sky and floating clouds. He felt a searing pain on his stomach as slowly moved to stand up and he observed his surroundings.
-
-He realized he is in the middle of some woods. The ground around was completely razed as if it was plowed. He checked his body when a searing pain increased at his abdomen.
-
-When he saw it clearly, he was shocked. there are two holes in his stomach as if he was stabbed by something. Each hole is around 2 inches wide.
-
-But for some reason blood stopped flowing from the holes. he stood there dazed for some time thinking if it was dream or not then suddenly a piercing headache started as a set of unknown memories entered mind.
-
-His soul entered the body of a 15 year old boy whose name is also Sam. He doesn't have any last name because, he is an orphan. He is a tailor who lived in a nearby village named Lava rock village.
-
-He made a living off of his tailoring skills by selling clothes he made from the silk he obtained from the silk moths in the woods. As per his routine when he came to woods to collect silk, few kids of his age started running towards him.
-
-Only then realized that they were being chased by a bull like beast. Then they purposefully directed the beast towards him and the beast pierced him with its horns and that's how the original owner died. Sam sighed as he thought. 'Guess I can't escape the fate of being an orphan in this life time too.' As he thought up to this, he slowly made his way towards his village while enduring the pain. When he entered the village, he was shocked for some time when he saw the scene in front of him.
-
-The scene before reminded him of the medieval period. the streets are not clean at all. All the houses are made of mud walls and only some select few are made of stones in a certain area.
-
-Then something came to his mind. The good-looking multiple story houses belong to the village officials, while the mansion belongs to village head. the average looking house belongs to village guards and hunters or some relatively well-off families with rather highly regarded professions.
-
-Normal mud houses belong to Farmers and labor and others. To his surprise even though the original Sam is an orphan he also has a stone house which is both his shop and his house.
-
-While Sam was walking towards his house all the people are watching him with surprised expressions and whispering to each other.
-
-Just when he reached his house and about to open his door, he heard someone calling him.
-
-"Hey Sam, you are here. What happened to you exactly that Oliver said that a 'Blazing earth bull killed you in the woods."
-
-A middle man from next door said as he was walking towards Sam. His name is Michael. He is a blacksmith who lives next door to Sam. When Sam saw him, he didn't know how to react as he knew from this body's memories that he had a very good relationship with him.
-
-Sam forced a smile as he answered. "I am alright Uncle Michael. Don't worry about me Argh..." by the time he finished his words he felt his wounds hurting again. His face became pale as he sweated profusely.
-
-"Easy kid." Michael reached him and held Sam with his hands as he was about to collapse.
-
-"Damn it, kid I thought that Oliver is talking nonsense but who would have thought it's real. The wound is too deep Sam I think only the healer mage can heal you. But that costs a lot. I don't even know how you are still alive."
-
-" Uncle Michael please enter my room and take out the leather pouch under my bed. I will go to the healer." Sam said enduring his pain.
-
-Michael slowly made Sam lay on the floor and made his way into the house. After some time, he came back with a leather pouch in his hands.
-
-"Sam, I don't think you can go alone just wait a bit I will get my push cart. I will take you to the healer." After saying that, Michael went to his house and came back with a push cart which he used to transfer his blacksmith products and materials.
-
-He carefully carried Sam and lay him on the cart and kept his leather pouch beside him and started pushing the cart. At this time, Sam slowly started losing his consciousness.
-
-Sam slowly open his eyes only to see a ceiling made of stones. "Oh, you are awake." somebody said suddenly.
-
-Sam startled due to the sudden voice after he turned towards direction which from which voice came there, he saw a middle-aged man carrying a leather pouch with him then he recognized immediately that leather pouch belongs to himself. The man came towards the bed and gave back his leather pouch then said. "This is your leather pouch, I took my treatment fee, the rest is within the pouch."
-
-Sam opened the pouch there he saw 2 stones size of a quail egg.
-
-"You can leave when you feel that you are ok." The middle-aged man said. Suddenly the door opened and Michael came in.
-
-"Oh, you are finally awake. How are you feeling now?" Michael asked Sam.
-
-"I am ok uncle; I think I just need some rest." Sam said.
-
-"Actually, I heard about you from Oliver. He said you are already dead in the Woods. That's why I came to check your house whether he is lying or not. But when I came you are already back and you are injured. But thank God you are okay. What happened exactly kid?" Michael asked.
-
-"I was really hit by the bull uncle but now I am okay. I don't why, but by the time I got there to collect the cocoons a bull madly rushed towards me and hit me. Even I don't know how I survived." Sam replied. he didn't see any reason for revealing it was done intentionally so he kept quiet.
-
-"Uncle Michael I would like to rest if you don't mind." Sam Said
-
-"Ok kid, don't worry about anything else, just take some rest. goodbye I will visit you again"
-
-.
-
-After Michael left Sam kept staring at the ceiling and tried to understand the situation he is in. According to the memories of original owner of the body, right now he is in a place called desolate land which is a part of Western continent.
-
-In this world the Technology is not that developed compared to the Modern Earth. The people took a completely different path of development because of special circ.u.mstances, that is the presence of spiritual energy.
-
-In this world there is a special kind of energy present everywhere in the atmosphere. And everything is made of spiritual energy the humans here possess unimaginable strength and power by utilizing this spiritual energy. They are called cultivators.
-
-There are two types of cultivator they are Qi cultivators and mages. The Qi cultivators use spiritual energy to develop their body and utilize their body to fight they are also called warriors whereas, the mages use spiritual energy by converting it into form of various elements.
-
-Right now, the middle- aged man who came earlier is also a mage and a mage of light element. The light element mages are not much known to their combat prowess but they are most suitable for healing and are highly regarded. That's why these healers usually charge a lot.
-
-In this world the being a mage or a warrior cannot be directly decided by people themselves. It depends on the body constitution and the spiritual core of the person. If a person has a pure Qi core which is a solid white in color then they are most suitable for Warriors. The person who is suitable to be a Mage will have a pure elemental core. Various types of elements indicate various type of affinity to that particular element.
-
-For example, if a person has a pure red color core it will be fire element, a light blue indicates water core, pale green indicates wind, dark green indicates plants or wood, gold color indicates metal, milky white indicate light element and so on.
-
-Other than the pure mages or pure warriors there are other type of cultivators who has mixed core who can practice both Qi and Elements. They are basically called 'Warrior-Mages'. When a person 14 years old their core will activate. Sam also activated his core last year but the problem is nobody could identify his core.
-
-His core is fully transparent when he tried to absorb spiritual energy, he can absorb it easily and he can also control it well but he was unable to use it for both spells or martial arts.
-
-So, he was not suitable for both types of cultivation so he stopped after he reached third level Initiation stage and solely focused on his tailoring skills and achieved some significant improvements in embroidery.
-
-That's how he was able to earn the spiritual stones in his leather pouch.
-
-Even though they are low grade spiritual stones they are totally high-level currency for normal people. For working hard for an entire year, he was only able to earn only five stones and three of them are already taken away by the healer as a fee for treatment.
-
-Thinking up to this point Sam heaved a huge sigh and closed his.
-
-"Let's have a proper sleep first think about what to do tomorrow." Sam muttered under his breadth and slowly fell asleep.</p> <br>
-                            </p>
-                        </div>
-                        <div class="flex justify-center items-center mx-auto md:space-x-5 space-x-2 md:mt-16 mt-9 md:pb-10 pb-8">
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('1')">
-                                <i class="fa-solid fa-arrow-left text-white " ></i>
-                            </div>
-                            <div class="bg-black h-10 w-10 rounded-full flex items-center justify-center " onclick="changePage('3')">
-                                <i class="fa-solid fa-arrow-right text-white "></i>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div
-            class="bg-black h-full md:flex flex-col space-y-7 -mt-10 my-auto justify-center items-center fixed text-white px-3 hidden ">
-            <i class="fas fa-bars text-[#83848F] cursor-pointer" onclick="toggleDropdown('myDropdown')"></i>
-            <div class="bg-white absolute w-96 h-96 -ml-20 mr-96 border shadow-lg rounded-xl hidden" id="myDropdown">
-                <div class=" w-96  bg-white fixed h-24 z-20 p-2 text-gray-600 hover:text-gray-800 rounded-t-xl">
-                    <div class="flex justify-between items-center  text-lg pt-4 pl-3">
-                        <b>
-                            Table of Contents
-                        </b>
-                        <i class="fas fa-times cursor-pointer mr-5" onclick="handleClose('myDropdown')"></i>
-                    </div>
-                    <p class="text-[#83848F] my-2 pl-3">
-                        Volume 1
-                    </p>
-                </div>
-                <div class="relative mt-24 overflow-y-scroll h-64" id="indexes">
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                    <a class="block px-4 py-3 bg-gray-400 animate-bounce h-12"></a>
-                    <hr>
-                </div>
-                <div class="bg-[#F6F7FC] overflow-x-scroll z-20 bottom-20 right-16 w-80 flex items-center space-x-5 rounded-lg text-[#83848F] text-sm font-bold px-8 fixed shadow-lg mr-2 py-2"
-                    id="index-pagination">
-                    <p>
-                        1-600
-                    </p>
-
+                        >
+                        Next Chapter
+                        <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5586 14H4.91211" stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17.043 19.5144C17.043 19.5144 22.5575 15.4531 22.5575 13.9999C22.5575 12.5467 17.043 8.48535 17.043 8.48535"
+                                stroke="#1D1F2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <i class="fas fa-cog  text-[#83848F] cursor-pointer" onclick="toggleDropdown('closeIcon')"></i>
-            <div class=" bg-[#212531] absolute w-96 h-80 -ml-20 mr-96   border shadow-lg rounded-xl hidden"
-                id="closeIcon">
-                <div class=" w-96  p-2 rounded-t-xl">
-                    <div class="flex justify-end ">
-                        <i class="fas fa-times cursor-pointer mr-5 mb-2" onclick="handleClose('closeIcon')"></i>
+
+
+
+            <div
+                class="lg:bg-white bg-yellow-3 left-0 lg:left-auto lg:absolute z-50 lg:z-auto flex lg:block items-center justify-center lg:-right-[6px] lg:top-[140px] fixed lg:bottom-auto bottom-0 w-full lg:w-auto p-2">
+                <div
+                    class="bg-black hidden popup-wrapper rounded-lg lg:p-8 p-3 lg:absolute fixed top-1/2 z-40  lg:translate-y-0 -translate-y-1/2 lg:-left-[510px] lg:w-[500px] w-full max-w-[300px] lg:max-w-[500px] lg:top-0 text-white">
+                    <button class="popup-close-btn absolute lg:block hidden  right-3 top-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="12" fill="#FFC240" />
+                            <path d="M16.375 7.625L7.625 16.375M7.625 7.625L16.375 16.375" stroke="#1D1F2C"
+                                stroke-width="1.07143" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                    <div class="w-full">
+                        <h3 class="lg:text-[32px] text-xl font-semibold text-nowrap mb-3">Display Option</h3>
+                        <p class="lg:text-lg font-NotoSansJP">Background</p>
+
+                        <form class="lg:pt-6 py-4 lg:pb-8">
+                            <div class="grid grid-cols-3 lg:gap-[50px] gap-10 max-w-[268px]">
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" checked name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-white checked:border-yellow-1 appearance-none bg-white border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5 "
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-yellow-6 checked:border-yellow-1 appearance-none bg-yellow-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="inline-flex items-center justify-center mr-auto">
+                                    <input type="radio" name="radio" id="" value="white"
+                                        class="theme-selector checked:bg-gray-6 appearance-none checked:border-yellow-1 bg-gray-6 border-2 border-transparent focus:ring-0 focus:shadow-none focus:ring-offset-0  focus:outline-none  w-14 h-14">
+                                    <label class="absolute radio-label hidden">
+                                        <svg width="28" height="28"
+                                            class="pointer-events-none lg:bg-transparent lg:text-yellow-1 rounded-full bg-green-400 w-5 h-5"
+                                            viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83398 14.0003L11.6673 19.8337L23.334 8.16699"
+                                                stroke="currentColor" stroke-width="2.33333" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </form>
+
+                        <h3 class="lg:text-[32px] text-base font-semibold text-gray-5 mb-6">Font Size</h3>
+                        <div
+                            class="grid grid-cols-3 items-center justify-center max-w-[300px] border border-gray-7 rounded">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A-
+                            </button>
+                            <input type="text" maxlength="6" value="18px"
+                                class="bg-transparent focus:outline-none focus:ring-0 !border-gray-4 focus:shadow-none focus:ring-offset-0 text-center lg:text-lg text-base font-NotoSansJP text-gray-7">
+                            <button class="text-gray-7 text-center lg:text-lg text-base">
+                                A+
+                            </button>
+                        </div>
                     </div>
-                    <b class="text-lg px-6 py-3 font-bold">
-                        Display Options
-                    </b>
-                    <p class="px-6 py-2 font-bold">
-                        Background
-                    </p>
-                    <div class="flex space-x-3 px-6 cursor-pointer">
-                        <div class="bg-white h-8 w-8 rounded-full">
+                    <div class="flex items-center justify-center lg:hidden mt-[51px] pb-3">
+                        <button class="py-3 px-9 bg-yellow-1 rounded-full text-gray-2">
+                            Closs Now
+                        </button>
+                    </div>
 
-                        </div>
-                        <div class="bg-[#F3E9C7] h-8 w-8 rounded-full">
+                </div>
 
-                        </div>
-                        <div class="bg-[#4E4A4A] h-8 w-8 rounded-full">
+                <button class="p-3 relative popup-setting-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4812 4.71153C10.9072 2.95553 13.4053 2.95553 13.8313 4.71153C13.8952 4.97533 14.0205 5.22031 14.197 5.42653C14.3735 5.63275 14.5961 5.79439 14.8469 5.89828C15.0977 6.00217 15.3694 6.04538 15.64 6.0244C15.9107 6.00342 16.1725 5.91883 16.4042 5.77753C17.9472 4.83753 19.7143 6.60353 18.7743 8.14753C18.6331 8.37919 18.5487 8.64087 18.5278 8.9113C18.5068 9.18174 18.55 9.4533 18.6538 9.70391C18.7575 9.95452 18.919 10.1771 19.125 10.3536C19.331 10.5301 19.5757 10.6554 19.8393 10.7195C21.5953 11.1455 21.5953 13.6435 19.8393 14.0695C19.5755 14.1334 19.3305 14.2588 19.1243 14.4352C18.918 14.6117 18.7564 14.8344 18.6525 15.0852C18.5486 15.3359 18.5054 15.6077 18.5264 15.8783C18.5474 16.1489 18.6319 16.4108 18.7733 16.6425C19.7133 18.1855 17.9472 19.9525 16.4032 19.0125C16.1716 18.8714 15.9099 18.787 15.6395 18.766C15.369 18.7451 15.0975 18.7883 14.8469 18.8921C14.5963 18.9958 14.3737 19.1573 14.1972 19.3633C14.0207 19.5692 13.8953 19.814 13.8313 20.0775C13.4053 21.8335 10.9072 21.8335 10.4812 20.0775C10.4173 19.8137 10.292 19.5688 10.1155 19.3625C9.93905 19.1563 9.71636 18.9947 9.4656 18.8908C9.21484 18.7869 8.94308 18.7437 8.67246 18.7647C8.40184 18.7856 8.14 18.8702 7.90825 19.0115C6.36525 19.9515 4.59825 18.1855 5.53825 16.6415C5.67935 16.4099 5.7638 16.1482 5.78473 15.8778C5.80567 15.6073 5.76249 15.3358 5.65872 15.0852C5.55495 14.8345 5.39351 14.612 5.18752 14.4355C4.98154 14.259 4.73681 14.1336 4.47325 14.0695C2.71725 13.6435 2.71725 11.1455 4.47325 10.7195C4.73705 10.6556 4.98203 10.5303 5.18825 10.3538C5.39447 10.1773 5.5561 9.95464 5.66 9.70388C5.76389 9.45312 5.8071 9.18137 5.78612 8.91075C5.76514 8.64013 5.68055 8.37828 5.53925 8.14653C4.59925 6.60353 6.36525 4.83653 7.90925 5.77653C8.90925 6.38453 10.2052 5.84653 10.4812 4.71153Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.15625 12.3945C9.15625 13.1902 9.47232 13.9532 10.0349 14.5159C10.5975 15.0785 11.3606 15.3945 12.1562 15.3945C12.9519 15.3945 13.715 15.0785 14.2776 14.5159C14.8402 13.9532 15.1562 13.1902 15.1562 12.3945C15.1562 11.5989 14.8402 10.8358 14.2776 10.2732C13.715 9.7106 12.9519 9.39453 12.1562 9.39453C11.3606 9.39453 10.5975 9.7106 10.0349 10.2732C9.47232 10.8358 9.15625 11.5989 9.15625 12.3945Z"
+                            stroke="#25314C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="lg:w-full border border-gray-100"></div>
+                <button class="p-3 popup-table-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 6C2 5.448 2.448 5 3 5H21C21.552 5 22 5.448 22 6C22 6.552 21.552 7 21 7H3C2.448 7 2 6.552 2 6ZM21 11H3C2.448 11 2 11.448 2 12C2 12.552 2.448 13 3 13H21C21.552 13 22 12.552 22 12C22 11.448 21.552 11 21 11ZM21 17H3C2.448 17 2 17.448 2 18C2 18.552 2.448 19 3 19H21C21.552 19 22 18.552 22 18C22 17.448 21.552 17 21 17Z"
+                            fill="#25314C" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full overlay-1 h-screen bg-black opacity-50 fixed top-0 hidden left-0 "></div>
+            <div class="w-full overlay-2 h-screen hidden bg-black opacity-50 fixed top-0 left-0 z-20 "></div>
+            <div
+                class="w-full popup-wrapper-2 hidden max-w-[800px] fixed lg:left-1/2 z-30  lg:-translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 top-0 left-0 bg-white lg:rounded-2xl">
+                <button class="absolute lg:block hidden close-popup-btn right-3 top-3">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.207 6.21191L6.20703 20.2119M6.20703 6.21191L20.207 20.2119" stroke="#1D1F2C"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="pt-11 lg:px-8 p-4">
+                    <h2 class="lg:text-[32px] text-2xl font-bold text-gray-2">Table Of Contents</h2>
+                    <div
+                        class="flex item-center lg:flex-row flex-col gap-4 justify-between lg:pb-6 pb-5 pt-2.5 border-b border-gray-200">
+                        <h3 class="lg:text-2xl text-base text-gray-2 font-medium">Chapter List <span
+                                class="lg:text-base text-xs font-normal font-NotoSansJP" id="number-of-chapters">(500 Chapters)</span></h3>
+                        <div class="w-full lg:max-w-[314px]">
+                            <div class="relative w-full">
+                                <input type="text" id="chapter-search" placeholder="search Chapter..."
+                                    class="placeholder:text-gray-4 bg-gray-3 h-12 w-full !ring-0 rounded-full focus:border-transparent focus:outline-none focus:right-0 focus:ring-offset-0 border-transparent">
+                                <button onclick="chapterSearch()" class="absolute right-1 translate-y-1">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="20" fill="#FFC240" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 11.75C14.9959 11.75 11.75 14.9959 11.75 19C11.75 23.0041 14.9959 26.25 19 26.25C23.0041 26.25 26.25 23.0041 26.25 19C26.25 14.9959 23.0041 11.75 19 11.75ZM10.25 19C10.25 14.1675 14.1675 10.25 19 10.25C23.8325 10.25 27.75 14.1675 27.75 19C27.75 23.8325 23.8325 27.75 19 27.75C14.1675 27.75 10.25 23.8325 10.25 19Z"
+                                            fill="#1D1F2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.1201 24.1201C24.413 23.8272 24.8878 23.8272 25.1807 24.1201L29.5307 28.4701C29.8236 28.763 29.8236 29.2378 29.5307 29.5307C29.2378 29.8236 28.763 29.8236 28.4701 29.5307L24.1201 25.1807C23.8272 24.8878 23.8272 24.413 24.1201 24.1201Z"
+                                            fill="#1D1F2C" />
+                                    </svg>
+
+                                </button>
+                            </div>
 
                         </div>
                     </div>
-                    <p class="px-6 py-2 font-bold">
-                        Font
-                    </p>
-                    <div class="flex items-center space-x-4 px-6 cursor-pointer">
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Nunito Sans
-                            </p>
-                        </div>
-                        <div>
-                            <p class="border border-white w-32 text-sm mx-auto text-center py-2 text-white font-bold">
-                                Merriweather
-                            </p>
-                        </div>
-                    </div>
-                    <p class="px-6 py-2">
-                        Size
-                    </p>
-                    <div class="border border-white flex justify-around items-center w-72 py-2 mx-6">
-                        <p class="cursor-pointer">
-                            A+
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        </p>
-
-                        <p>
-                            14
-                        </p>
-                        <p class="border-l h-7 border-white ">
-
-                        <p class="cursor-pointer">
-                            A-
-                        </p>
+                    <div class="mt-[22px] overflow-auto">
+                        <ul class="max-h-[600px]" id="read-chapter-list">
+                            <li>
+                                <a href="#"
+                                    class="py-2 border-b border-gray-5 text-lg font-normal active bg-yellow-7 px-5 flex items-center w-full text-gray-2 h-14 hover:bg-yellow-7">Chapter
+                                    1</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-                </div>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+            
     <script src="../staticScript.js"></script>
+    <script src="../script/main.js"></script>
 
             </body>
             </html>

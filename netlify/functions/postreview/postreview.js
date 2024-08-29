@@ -6,7 +6,6 @@ const supabaseKey = process.env.ANON_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 exports.handler = async (event, context) => {
-    console.log("EventB" , event.body);
     if (event.httpMethod !== 'POST') {
         return {
             statusCode: 405,
@@ -14,7 +13,7 @@ exports.handler = async (event, context) => {
         };
     }
 
-    // Parse the request body
+
     const { name, rating, review, slug, userid } = JSON.parse(event.body);
 
     if (!name || !rating || !slug || !userid) {
@@ -23,8 +22,6 @@ exports.handler = async (event, context) => {
             body: JSON.stringify({ error: 'Missing required fields' }),
         };
     }
-
-    // Insert the new review into the Supabase database
     const { data, error } = await supabase
         .from('reviews')
         .insert([
