@@ -121,7 +121,7 @@ async function getFavorites() {
 
     let bodyContent = JSON.stringify({ "email": "joe60@temp.com", "slug": "lord-of-mysteries" });
 
-    let response = await fetch("http://localhost:8888/.netlify/functions/getfavorites", {
+    let response = await fetch("../.netlify/functions/getfavorites", {
         method: "POST",
         body: bodyContent,
         headers: headersList
@@ -233,7 +233,7 @@ async function getBooksByName(data) {
         slug: array
     });
 
-    let response = await fetch("http://localhost:8888/.netlify/functions/getfilteredbooks", {
+    let response = await fetch("../.netlify/functions/getfilteredbooks", {
         method: "POST",
         body: bodyContent,
         headers: headersList
@@ -262,7 +262,7 @@ async function getBookMark() {
             "chapter": "4"
         });
 
-        let response = await fetch("http://localhost:8888/.netlify/functions/getbookmarks", {
+        let response = await fetch("../.netlify/functions/getbookmarks", {
             method: "POST",
             body: bodyContent,
             headers: headersList

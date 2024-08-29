@@ -81,7 +81,7 @@ markedButton.addEventListener("click", async () => {
                 "chapter": splittedUrl[splittedUrl.length - 1].split("-")[1]
             });
 
-            let response = await fetch("http://localhost:8888/.netlify/functions/addbookmark", {
+            let response = await fetch("../.netlify/functions/addbookmark", {
                 method: "POST",
                 body: bodyContent,
                 headers: headersList

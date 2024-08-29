@@ -621,7 +621,7 @@ async function getFavorites() {
                 "email": parsedUser.email
             });
 
-            let response = await fetch("http://localhost:8888/.netlify/functions/getfavorites", {
+            let response = await fetch("../.netlify/functions/getfavorites", {
                 method: "POST",
                 body: bodyContent,
                 headers: headersList
