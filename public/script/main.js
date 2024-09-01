@@ -200,8 +200,62 @@ function updateFavBtn(data) {
                         </svg>`
     });
 
-
-
-
-
 }
+
+
+async function getUpdatedChapters() {
+    try {
+
+
+        let headersList = {
+            "Accept": "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify({
+            "userEmail": "joe60@temp.com",
+            "username": "jeff N",
+            "slug": "billionaire-god-of-war",
+            "rating": "4.3"
+        });
+
+        let response = await fetch("../.netlify/functions/getupdates", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        });
+
+        let data = await response.json();
+        console.log("UPDATED Chapters", data);
+        if (data) {
+            console.log("GENRATING HTML")
+            let genHtml = ""
+            data.forEach((item, i) => {
+                let date = new Date(item.update_time)
+                let hour = date.getHours()
+                let minutes = date.getMinutes()
+                let bgColor = i % 2 === 0 ? 'bg-white' : 'bg-yellow-3';
+
+                genHtml += ` <a href='/reading-page?slug=${item?.slug}&chapter=${item?.chapter_start}' class="flex ${bgColor} cursor-pointer w-full">
+                            <div class="md:w-3/5 w-1/2 max-w-[838px] md:px-8 px-3 py-5">
+                                <h3 class="md:text-lg text-xs text-[10px] font-NotoSansJP text-gray-6">${item?.title}</h3>
+                            </div>
+                            <div class="md:w-1/5 w-1/4 max-w-[240px] md:px-8 px-3 py-5 border-x border-gray-7">
+                                <h3 class="md:text-lg text-xs text-[10px] font-NotoSansJP text-gray-6">${item?.chapter_start}</h3>
+                            </div>
+                            <div class="md:w-1/5 w-1/4 max-w-[240px] md:px-8 px-3 py-5">
+                                <h3 class="md:text-lg text-xs text-[10px] font-NotoSansJP text-gray-6"> ${hour} : ${minutes} </h3>
+                            </div>
+                        </a>`
+            })
+            let updatedDiv = document.getElementById('updated-chapter')
+            console.log("DIVV", updatedDiv)
+            updatedDiv.innerHTML = genHtml
+        }
+
+    } catch (error) {
+
+    }
+}
+getUpdatedChapters()

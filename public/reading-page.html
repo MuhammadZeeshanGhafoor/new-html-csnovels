@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="font-lexend bg-yellow-5 w-full overflow-x-hidden">
+<section class="font-lexend bg-yellow-5 w-full overflow-x-hidden">
 
     <header class="lg:bg-gray-5 bg-white border-b border-gray-3 w-full">
         <div class="w-full max-w-[1360px] mx-auto lg:px-6 px-4">
@@ -35,8 +35,14 @@
         <div class="w-full mx-auto max-w-[1360px] lg:px-[88px] px-4 lg:py-20 py-8 min-h-screen relative bg-white">
 
             <div class="w-full md:pb-7 pb-4">
-                <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5" id="chapter-num-1">Chapter 1
-                </h1>
+
+                <div class="flex">
+
+                    <img src="../assets/bookmark1-removebg-preview.png" alt="bookmark"
+                        class=" left-0 top-10  md:w-5 md:h-8 h-7 w-5 -mt-6" id="bookmark-sign">
+                    <h1 class="font-bold md:text-[32px] text-2xl text-gray-2 md:mb-10 mb-5" id="chapter-num-1">Chapter
+                    </h1>
+                </div>
 
 
                 <p class="font-NotoSansJP md:text-xl text-lg leading-[180%] md:mb-6 mb-4 first-letter:ml-20"
@@ -248,13 +254,61 @@
         </div>
     </section>
 
+    <script>
+        let queryString = window.location.search
+        let urlParams = new URLSearchParams(queryString)
+        let bookSlug = urlParams.get('slug')
+        let chapter = urlParams.get('chapter')
+        const markedButton = document.getElementById("bookmark-sign")
+        markedButton.addEventListener("click", async () => {
+            let user = localStorage.getItem("user")
+            console.log("USER", user)
+            if (user) {
+                const parsedUser = JSON.parse(user)
 
+
+                try {
+                    let headersList = {
+                        "Accept": "*/*",
+                        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                        "Content-Type": "application/json"
+                    }
+
+                    let bodyContent = JSON.stringify({
+                        "userId": parsedUser.id,
+                        "slug": bookSlug,
+                        "chapter": chapter
+                    });
+
+                    let response = await fetch("../.netlify/functions/addbookmark", {
+                        method: "POST",
+                        body: bodyContent,
+                        headers: headersList
+                    });
+
+                    let data = await response.text();
+                    console.log(data);
+
+
+
+                    if (response.status == 200) {
+
+                        markedButton.src = "../assets/book-marked.png"
+                    }
+
+
+                } catch (error) {
+                    console.log(error)
+                }
+            }
+        })
+    </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./script/main.js"></script>
     <script src="./readBookPage.js"></script>
-</body>
+    </body>
 
 </html>

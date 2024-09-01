@@ -64,6 +64,7 @@ getIndexes()
 const markedButton = document.getElementById("bookmark-sign")
 markedButton.addEventListener("click", async () => {
     let user = localStorage.getItem("user")
+    console.log("USER", user)
     if (user) {
         const parsedUser = JSON.parse(user)
 

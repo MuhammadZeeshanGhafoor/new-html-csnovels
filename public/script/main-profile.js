@@ -120,7 +120,7 @@ async function getFavorites() {
         "Content-Type": "application/json"
     }
 
-    let bodyContent = JSON.stringify({ "email": parsedUser?.email, "slug": slug });
+    let bodyContent = JSON.stringify({ "email": parsedUser?.email });
 
     let response = await fetch("../.netlify/functions/getfavorites", {
         method: "POST",
@@ -356,3 +356,136 @@ async function getBookMark() {
 }
 
 getBookMark()
+
+
+
+
+
+
+
+let freeBook = {}
+
+
+function countdownTimer() {
+
+    const countdownDate = new Date(freeBook.validity).getTime(); // Set the date and time to count down to
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerText = 0;
+        document.getElementById("hours").innerText = 0;
+        document.getElementById("minutes").innerText = 0;
+        document.getElementById("seconds").innerText = 0;
+    }
+}
+
+const x = setInterval(countdownTimer, 1000);
+
+
+
+
+async function getFreeBook() {
+    try {
+
+        let headersList = {
+            "Accept": "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify({
+            "userEmail": "joe60@temp.com",
+            "username": "jeff N",
+            "slug": "billionaire-god-of-war",
+            "rating": "4.3"
+        });
+
+        let response = await fetch("../.netlify/functions/getfreebook", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        });
+
+        let data = await response.json();
+        console.log("FREE BOOK", data);
+
+
+        if (data) {
+            freeBook = data.book
+            let genHtml = `
+                        <div class="rounded-lg overflow-hidden w-auto">
+                            <img src="${data?.book?.coverimage}"
+                                class="w-full md:max-w-[200px] max-w-[113px] min-h-[142px] object-cover bg-cover"
+                                alt="no-img">
+                        </div>
+                        <div class="w-3/4">
+                            <h2 class="md:text-[32px] text-base font-bold text-gray-2 md:mb-4 mb-1">${data?.book?.title}</h2>
+                            <p class="md:text-base text-xs text-[10px] text-gray-6 font-NotoSansJP">Last Updated: Today
+                                <span class="md:font-bold font-medium">05:47AM</span>
+                            </p>
+                            <div class="flex md:gap-12 gap-8 md:mt-6 mt-2">
+                                <div>
+                                    <div class="flex items-center md:gap-4 gap-2 md:mb-3">
+                                        <h2 class="md:text-[32px] text-base text-gray-6 font-NotoSansJP font-black">${data?.book?.avgrating}
+                                        </h2>
+                                        <ul class="flex">
+                                            <li><img src="./assets/images/Rating-start.svg"
+                                                    class="md:w-auto max-w-[16px]" alt="no-img"></li>
+                                            <li class="md:block hidden"><img src="./assets/images/Rating-start.svg"
+                                                    alt="no-img"></li>
+                                            <li class="md:block hidden"><img src="./assets/images/Rating-start.svg"
+                                                    alt="no-img"></li>
+                                            <li class="md:block hidden"><img src="./assets/images/Rating-start.svg"
+                                                    alt="no-img"></li>
+                                            <li class="md:block hidden"><img src="./assets/images/Rating-star-half.svg"
+                                                    alt="no-img"></li>
+                                        </ul>
+                                    </div>
+                                    <p class="md:text-sm text-[10px] text-gray-4 font-NotoSansJP">${data?.book?.totalratings}</p>
+                                </div>
+                                <div>
+                                    <h2 class="md:text-[32px] text-base font-black text-gray-6 font-NotoSansJP md:mb-3">
+                                        ${data?.book?.chaptercount}</h2>
+                                    <p class="md:text-sm text-[10px] text-gray-4 font-NotoSansJP ">Chapters</p>
+                                </div>
+                                <div>
+                                    <h2 class="md:text-[32px] text-base font-black text-gray-6 font-NotoSansJP md:mb-3">
+                                        1.4k</h2>
+                                    <p class="md:text-sm text-[10px] text-gray-4 font-NotoSansJP">Views</p>
+                                </div>
+                            </div>
+                            <p class="md:text-base text-[10px] text-gray-6 font-NotoSansJP max-w-[478px] md:mt-6 mt-2">
+                                ${data?.book?.description}</p>
+
+                        </div>
+                        <div class="lg:flex justify-end items-end lg:ml-auto lg:w-auto w-full mt-auto mb-3 hidden">
+                            <a href="/book/${data?.book?.slug}"
+                                class="text-gray-2 lg:w-auto w-full min-w-[162px] transition-all duration-300 hover:bg-yellow-500 text-center font-medium text-lg py-2.5 px-8 font-NotoSansJP bg-yellow-1 rounded-full">Read</a>
+                        </div>
+
+                        <a href="/book/${data?.book?.slug}"
+                            class="text-gray-2 absolute lg:hidden block bottom-6 left-1/2 -translate-x-1/2 max-w-[95%]  lg:w-auto w-full min-w-[162px] transition-all duration-300 hover:bg-yellow-500 text-center font-medium text-lg py-2.5 px-8 font-NotoSansJP bg-yellow-1 rounded-full">Read</a>
+                    </div>`
+            const freebookDiv = document.getElementById("freebook");
+            freebookDiv.innerHTML = genHtml
+        }
+
+    }
+    catch (e) { console.log(e); }
+}
+
+
+
+getFreeBook()

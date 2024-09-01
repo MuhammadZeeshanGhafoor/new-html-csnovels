@@ -37,10 +37,9 @@ const handler = async (event) => {
             .select('count', { count: 'exact' })
             .eq("slug", slug);
 
-        // Calculate the number of pages needed based on the total count and page size
         const totalPages = Math.ceil(totalCount / PAGE_SIZE);
 
-        // Fetch all records by paginating through each page
+
         let allData = [];
         for (let page = 1; page <= totalPages; page++) {
             const { data: pageData, error } = await supabaseCli
@@ -49,7 +48,7 @@ const handler = async (event) => {
                 .eq("slug", slug)
                 .range((page - 1) * PAGE_SIZE, page * PAGE_SIZE - 1);
 
-            // Check for errors
+
             if (error) {
                 // console.error('Error fetching chapters:', error.message);
                 return {
